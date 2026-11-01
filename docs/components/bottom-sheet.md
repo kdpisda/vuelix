@@ -57,9 +57,9 @@ the nearest snap point, keeping the flick's velocity in the spring. Pulling belo
 point closes it. Pressing the handle steps through the snap points; <kbd>↑</kbd>/<kbd>↓</kbd> on
 the handle move one step.
 
-While the sheet is open, the `background` element (`#app` by default) scales down slightly in
-step with the sheet. Point it at your app's root wrapper — it should not contain `position: fixed`
-elements, since a transform makes them scroll with it — or pass `null` to turn it off.
+Pass `background` (e.g. `background="#app"`, or `#__nuxt` in Nuxt) to scale your page down slightly
+in step with the sheet, like a native iOS sheet. Point it at your app's root wrapper; it should not
+contain `position: fixed` elements, since a transform makes them scroll with it. Off by default.
 
 ## API
 
@@ -69,7 +69,7 @@ elements, since a transform makes them scroll with it — or pass `null` to turn
 | `v-model:snap` | `number` | `1` | Index of the current snap point. |
 | `snapPoints` | `number[]` | `[0.25, 0.6, 0.9]` | Visible heights as fractions of the viewport. |
 | `dismissible` | `boolean` | `true` | Allow closing by dragging below the lowest snap point. |
-| `background` | `string \| HTMLElement \| null` | `'#app'` | Element scaled down behind the sheet. |
+| `background` | `string \| HTMLElement \| null` | `null` | Element scaled down behind the sheet (e.g. `'#app'`). |
 | `label` | `string` | — | Accessible name (otherwise the `header` slot labels it). |
 | `class` | `string` | — | Classes for the sheet surface. |
 | `overlayClass` | `string` | — | Classes for the overlay. |

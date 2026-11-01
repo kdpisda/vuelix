@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<{
   dismissible?: boolean
   /**
    * Element scaled down behind the sheet (CSS selector or element), like a
-   * native iOS sheet. `null` disables the effect.
+   * native iOS sheet, e.g. `'#app'`. Off by default (`null`).
    */
   background?: string | HTMLElement | null
   /** Classes for the sheet surface. */
@@ -23,7 +23,7 @@ const props = withDefaults(defineProps<{
 }>(), {
   snapPoints: () => [0.25, 0.6, 0.9],
   dismissible: true,
-  background: '#app',
+  background: null,
 })
 
 const open = defineModel<boolean>('open', { default: false })

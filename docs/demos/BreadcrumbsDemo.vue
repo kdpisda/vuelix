@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { BreadcrumbsItem } from '@/ui/breadcrumbs'
-import { Breadcrumbs } from '@/ui/breadcrumbs'
+import type { BreadcrumbsItem } from '@/components/ui/breadcrumbs'
+import { Breadcrumbs } from '@/components/ui/breadcrumbs'
 import { Folder, Home } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

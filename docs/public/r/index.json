@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 76,
+  "count": 84,
   "items": [
     {
       "slug": "cta-button",
@@ -640,6 +640,104 @@
       ]
     },
     {
+      "slug": "bottom-sheet",
+      "name": "Bottom Sheet",
+      "description": "A mobile-style sheet with snap points, velocity-aware dragging and a background that scales back.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/bottom-sheet",
+      "detail_url": "https://vuelix.dev/r/bottom-sheet.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bottom-sheet.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "BottomSheet"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/bottom-sheet/BottomSheet.vue",
+          "raw_url": "https://vuelix.dev/r/raw/bottom-sheet/BottomSheet.vue"
+        },
+        {
+          "path": "components/ui/bottom-sheet/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bottom-sheet/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "context-menu",
+      "name": "Context Menu",
+      "description": "A right-click / long-press menu with a gliding highlight, shortcuts and a submenu that slides out.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/context-menu",
+      "detail_url": "https://vuelix.dev/r/context-menu.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/context-menu.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ContextMenu"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/context-menu/ContextMenu.vue",
+          "raw_url": "https://vuelix.dev/r/raw/context-menu/ContextMenu.vue"
+        },
+        {
+          "path": "components/ui/context-menu/ContextMenuList.vue",
+          "raw_url": "https://vuelix.dev/r/raw/context-menu/ContextMenuList.vue"
+        },
+        {
+          "path": "components/ui/context-menu/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/context-menu/index.ts"
+        },
+        {
+          "path": "components/ui/context-menu/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/context-menu/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "expanding-modal",
+      "name": "Expanding Modal",
+      "description": "A modal that grows out of the exact button that opened it and collapses back into it.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/expanding-modal",
+      "detail_url": "https://vuelix.dev/r/expanding-modal.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expanding-modal.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ExpandingModal"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/expanding-modal/ExpandingModal.vue",
+          "raw_url": "https://vuelix.dev/r/raw/expanding-modal/ExpandingModal.vue"
+        },
+        {
+          "path": "components/ui/expanding-modal/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/expanding-modal/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "morphing-dialog",
       "name": "Morphing Dialog",
       "description": "A card that morphs into a full dialog using a shared layout transition.",
@@ -670,6 +768,66 @@
       ]
     },
     {
+      "slug": "spring-drawer",
+      "name": "Spring Drawer",
+      "description": "A side drawer that springs in from any edge, with a drag-to-dismiss handle and focus trap.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/spring-drawer",
+      "detail_url": "https://vuelix.dev/r/spring-drawer.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-drawer.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringDrawer"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-drawer/SpringDrawer.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-drawer/SpringDrawer.vue"
+        },
+        {
+          "path": "components/ui/spring-drawer/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-drawer/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spring-popover",
+      "name": "Spring Popover",
+      "description": "A click-to-open popover that springs out of its trigger, with an arrow and smart flipping.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/spring-popover",
+      "detail_url": "https://vuelix.dev/r/spring-popover.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-popover.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringPopover"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-popover/SpringPopover.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-popover/SpringPopover.vue"
+        },
+        {
+          "path": "components/ui/spring-popover/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-popover/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "animated-tabs",
       "name": "Animated Tabs",
       "description": "Tabs with a shared-layout indicator that glides between triggers.",
@@ -696,6 +854,36 @@
         {
           "path": "components/ui/animated-tabs/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/animated-tabs/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "breadcrumbs",
+      "name": "Breadcrumbs",
+      "description": "A breadcrumb trail that staggers in, underlines the current page and springs open collapsed levels.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/breadcrumbs",
+      "detail_url": "https://vuelix.dev/r/breadcrumbs.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/breadcrumbs.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Breadcrumbs"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/breadcrumbs/Breadcrumbs.vue",
+          "raw_url": "https://vuelix.dev/r/raw/breadcrumbs/Breadcrumbs.vue"
+        },
+        {
+          "path": "components/ui/breadcrumbs/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/breadcrumbs/index.ts"
         }
       ]
     },
@@ -735,6 +923,66 @@
         {
           "path": "components/ui/dock/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/dock/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "pagination",
+      "name": "Pagination",
+      "description": "Page buttons with a sliding active pill, smart ellipses and numbers that roll with the direction.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/pagination",
+      "detail_url": "https://vuelix.dev/r/pagination.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/pagination.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Pagination"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/pagination/Pagination.vue",
+          "raw_url": "https://vuelix.dev/r/raw/pagination/Pagination.vue"
+        },
+        {
+          "path": "components/ui/pagination/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/pagination/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spring-sidebar",
+      "name": "Spring Sidebar",
+      "description": "An app sidebar that springs between full width and an icon rail, with a gliding active indicator.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/spring-sidebar",
+      "detail_url": "https://vuelix.dev/r/spring-sidebar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-sidebar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringSidebar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-sidebar/SpringSidebar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-sidebar/SpringSidebar.vue"
+        },
+        {
+          "path": "components/ui/spring-sidebar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-sidebar/index.ts"
         }
       ]
     },

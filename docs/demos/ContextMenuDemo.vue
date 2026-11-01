@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ContextMenuAction, ContextMenuEntry } from '@/ui/context-menu'
-import { ContextMenu } from '@/ui/context-menu'
+import type { ContextMenuAction, ContextMenuEntry } from '@/components/ui/context-menu'
+import { ContextMenu } from '@/components/ui/context-menu'
 import { Copy, FolderOpen, History, Link, Mail, MessageSquare, MousePointerClick, Pencil, Share2, Star, Trash2 } from 'lucide-vue-next'
 import { ref } from 'vue'
 

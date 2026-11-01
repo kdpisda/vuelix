@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SpringButton } from '@/ui/spring-button'
-import { SpringPopover } from '@/ui/spring-popover'
+import { SpringButton } from '@/components/ui/spring-button'
+import { SpringPopover } from '@/components/ui/spring-popover'
 import { Bell, Check, Copy, Share2 } from 'lucide-vue-next'
 import { ref } from 'vue'
 

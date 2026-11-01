@@ -287,6 +287,48 @@
     ]
   },
   {
+    "name": "bottom-sheet",
+    "title": "Bottom Sheet",
+    "description": "A mobile-style sheet with snap points, velocity-aware dragging and a background that scales back.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/bottom-sheet",
+    "exports": [
+      "BottomSheet"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "context-menu",
+    "title": "Context Menu",
+    "description": "A right-click / long-press menu with a gliding highlight, shortcuts and a submenu that slides out.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/context-menu",
+    "exports": [
+      "ContextMenu"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "expanding-modal",
+    "title": "Expanding Modal",
+    "description": "A modal that grows out of the exact button that opened it and collapses back into it.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/expanding-modal",
+    "exports": [
+      "ExpandingModal"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "morphing-dialog",
     "title": "Morphing Dialog",
     "description": "A card that morphs into a full dialog using a shared layout transition.",
@@ -295,6 +337,34 @@
     "url": "/components/morphing-dialog",
     "exports": [
       "MorphingDialog"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spring-drawer",
+    "title": "Spring Drawer",
+    "description": "A side drawer that springs in from any edge, with a drag-to-dismiss handle and focus trap.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/spring-drawer",
+    "exports": [
+      "SpringDrawer"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spring-popover",
+    "title": "Spring Popover",
+    "description": "A click-to-open popover that springs out of its trigger, with an arrow and smart flipping.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/spring-popover",
+    "exports": [
+      "SpringPopover"
     ],
     "dependencies": [
       "motion-v"
@@ -315,6 +385,20 @@
     ]
   },
   {
+    "name": "breadcrumbs",
+    "title": "Breadcrumbs",
+    "description": "A breadcrumb trail that staggers in, underlines the current page and springs open collapsed levels.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/breadcrumbs",
+    "exports": [
+      "Breadcrumbs"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "dock",
     "title": "Dock",
     "description": "A magnifying dock where icons grow as the pointer approaches.",
@@ -324,6 +408,34 @@
     "exports": [
       "Dock",
       "DockItem"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "pagination",
+    "title": "Pagination",
+    "description": "Page buttons with a sliding active pill, smart ellipses and numbers that roll with the direction.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/pagination",
+    "exports": [
+      "Pagination"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spring-sidebar",
+    "title": "Spring Sidebar",
+    "description": "An app sidebar that springs between full width and an icon rail, with a gliding active indicator.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/spring-sidebar",
+    "exports": [
+      "SpringSidebar"
     ],
     "dependencies": [
       "motion-v"

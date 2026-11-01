@@ -512,6 +512,86 @@
       ]
     },
     {
+      "name": "bottom-sheet",
+      "type": "registry:ui",
+      "title": "Bottom Sheet",
+      "description": "A mobile-style sheet with snap points, velocity-aware dragging and a background that scales back.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/bottom-sheet/BottomSheet.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bottom-sheet/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "A right-click / long-press menu with a gliding highlight, shortcuts and a submenu that slides out.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/context-menu/ContextMenu.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/context-menu/ContextMenuList.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/context-menu/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/context-menu/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "expanding-modal",
+      "type": "registry:ui",
+      "title": "Expanding Modal",
+      "description": "A modal that grows out of the exact button that opened it and collapses back into it.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/expanding-modal/ExpandingModal.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/expanding-modal/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "morphing-dialog",
       "type": "registry:ui",
       "title": "Morphing Dialog",
@@ -536,6 +616,54 @@
       ]
     },
     {
+      "name": "spring-drawer",
+      "type": "registry:ui",
+      "title": "Spring Drawer",
+      "description": "A side drawer that springs in from any edge, with a drag-to-dismiss handle and focus trap.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-drawer/SpringDrawer.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-drawer/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spring-popover",
+      "type": "registry:ui",
+      "title": "Spring Popover",
+      "description": "A click-to-open popover that springs out of its trigger, with an arrow and smart flipping.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-popover/SpringPopover.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-popover/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "animated-tabs",
       "type": "registry:ui",
       "title": "Animated Tabs",
@@ -555,6 +683,30 @@
         },
         {
           "path": "registry/ui/animated-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumbs",
+      "type": "registry:ui",
+      "title": "Breadcrumbs",
+      "description": "A breadcrumb trail that staggers in, underlines the current page and springs open collapsed levels.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/breadcrumbs/Breadcrumbs.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/breadcrumbs/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -587,6 +739,54 @@
         },
         {
           "path": "registry/ui/dock/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Page buttons with a sliding active pill, smart ellipses and numbers that roll with the direction.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/pagination/Pagination.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/pagination/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spring-sidebar",
+      "type": "registry:ui",
+      "title": "Spring Sidebar",
+      "description": "An app sidebar that springs between full width and an icon rail, with a gliding active indicator.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-sidebar/SpringSidebar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-sidebar/index.ts",
           "type": "registry:ui"
         }
       ]

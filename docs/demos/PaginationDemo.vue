@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Pagination } from '@/ui/pagination'
+import { Pagination } from '@/components/ui/pagination'
 import { computed, ref } from 'vue'
 
 const page = ref(6)

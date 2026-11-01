@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { BottomSheet } from '@/ui/bottom-sheet'
-import { SpringButton } from '@/ui/spring-button'
+import { BottomSheet } from '@/components/ui/bottom-sheet'
+import { SpringButton } from '@/components/ui/spring-button'
 import { Coffee, MapPin, Star } from 'lucide-vue-next'
 import { ref } from 'vue'
 
@@ -29,7 +29,7 @@ const places = [
       Drag the handle — flick to snap, pull down to dismiss.
     </p>
 
-    <BottomSheet v-model:open="open" v-model:snap="snap" label="Nearby places" class="vp-raw">
+    <BottomSheet v-model:open="open" v-model:snap="snap" label="Nearby places" background="#app" class="vp-raw">
       <template #header>
         <div class="flex items-center justify-between gap-3 pb-2">
           <div>

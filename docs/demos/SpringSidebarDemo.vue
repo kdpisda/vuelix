@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { SpringSidebarItem } from '@/ui/spring-sidebar'
-import { SpringSidebar } from '@/ui/spring-sidebar'
+import type { SpringSidebarItem } from '@/components/ui/spring-sidebar'
+import { SpringSidebar } from '@/components/ui/spring-sidebar'
 import { BarChart3, FolderKanban, Inbox, LayoutDashboard, Settings } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

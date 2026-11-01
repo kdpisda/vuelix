@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ExpandingModal } from '@/ui/expanding-modal'
+import { ExpandingModal } from '@/components/ui/expanding-modal'
 import { CalendarPlus, Clock, HelpCircle, Keyboard, MousePointer2 } from 'lucide-vue-next'
 import { ref } from 'vue'
 

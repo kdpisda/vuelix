@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { SpringDrawerSide } from '@/ui/spring-drawer'
-import { SpringButton } from '@/ui/spring-button'
-import { SpringDrawer } from '@/ui/spring-drawer'
+import type { SpringDrawerSide } from '@/components/ui/spring-drawer'
+import { SpringButton } from '@/components/ui/spring-button'
+import { SpringDrawer } from '@/components/ui/spring-drawer'
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, X } from 'lucide-vue-next'
 import { ref } from 'vue'
 

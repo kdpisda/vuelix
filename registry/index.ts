@@ -21,9 +21,17 @@ import { SpringCheckbox } from './ui/spring-checkbox'
 import { SpringSwitch } from './ui/spring-switch'
 import { WheelPicker, WheelPickerGroup } from './ui/wheel-picker'
 import { AnimatedTooltip } from './ui/animated-tooltip'
+import { BottomSheet } from './ui/bottom-sheet'
+import { ContextMenu } from './ui/context-menu'
+import { ExpandingModal } from './ui/expanding-modal'
 import { MorphingDialog } from './ui/morphing-dialog'
+import { SpringDrawer } from './ui/spring-drawer'
+import { SpringPopover } from './ui/spring-popover'
 import { AnimatedTabs } from './ui/animated-tabs'
+import { Breadcrumbs } from './ui/breadcrumbs'
 import { Dock, DockItem } from './ui/dock'
+import { Pagination } from './ui/pagination'
+import { SpringSidebar } from './ui/spring-sidebar'
 import { Stepper } from './ui/stepper'
 import { AspectRatio } from './ui/aspect-ratio'
 import { AuroraBackground } from './ui/aurora-background'
@@ -98,9 +106,17 @@ export * from './ui/spring-checkbox'
 export * from './ui/spring-switch'
 export * from './ui/wheel-picker'
 export * from './ui/animated-tooltip'
+export * from './ui/bottom-sheet'
+export * from './ui/context-menu'
+export * from './ui/expanding-modal'
 export * from './ui/morphing-dialog'
+export * from './ui/spring-drawer'
+export * from './ui/spring-popover'
 export * from './ui/animated-tabs'
+export * from './ui/breadcrumbs'
 export * from './ui/dock'
+export * from './ui/pagination'
+export * from './ui/spring-sidebar'
 export * from './ui/stepper'
 export * from './ui/aspect-ratio'
 export * from './ui/aurora-background'
@@ -179,10 +195,18 @@ const components: Record<string, Component> = {
   WheelPicker,
   WheelPickerGroup,
   AnimatedTooltip,
+  BottomSheet,
+  ContextMenu,
+  ExpandingModal,
   MorphingDialog,
+  SpringDrawer,
+  SpringPopover,
   AnimatedTabs,
+  Breadcrumbs,
   Dock,
   DockItem,
+  Pagination,
+  SpringSidebar,
   Stepper,
   AspectRatio,
   AuroraBackground,
