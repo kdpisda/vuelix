@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 84,
+  "count": 91,
   "items": [
     {
       "slug": "cta-button",
@@ -1771,6 +1771,222 @@
         {
           "path": "components/ui/timeline/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/timeline/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "action-bar",
+      "name": "Action Bar",
+      "description": "A floating bulk-action bar that springs in on selection, rolls its count and confirms in place.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/action-bar",
+      "detail_url": "https://vuelix.dev/r/action-bar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/action-bar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ActionBar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/action-bar/ActionBar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/action-bar/ActionBar.vue"
+        },
+        {
+          "path": "components/ui/action-bar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/action-bar/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "command-palette",
+      "name": "Command Palette",
+      "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/command-palette",
+      "detail_url": "https://vuelix.dev/r/command-palette.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/command-palette.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CommandPalette",
+          "highlightSegments",
+          "matchCommand"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/command-palette/CommandPalette.vue",
+          "raw_url": "https://vuelix.dev/r/raw/command-palette/CommandPalette.vue"
+        },
+        {
+          "path": "components/ui/command-palette/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/command-palette/index.ts"
+        },
+        {
+          "path": "components/ui/command-palette/match.ts",
+          "raw_url": "https://vuelix.dev/r/raw/command-palette/match.ts"
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-island",
+      "name": "Dynamic Island",
+      "description": "A pill that springs its width, height and radius between live states while the content cross-fades.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/dynamic-island",
+      "detail_url": "https://vuelix.dev/r/dynamic-island.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dynamic-island.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DynamicIsland"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/dynamic-island/DynamicIsland.vue",
+          "raw_url": "https://vuelix.dev/r/raw/dynamic-island/DynamicIsland.vue"
+        },
+        {
+          "path": "components/ui/dynamic-island/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/dynamic-island/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "expandable-tabs",
+      "name": "Expandable Tabs",
+      "description": "An icon-only tab bar where the active tab springs open to reveal its label with a blur-in.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/expandable-tabs",
+      "detail_url": "https://vuelix.dev/r/expandable-tabs.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expandable-tabs.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ExpandableTabs"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/expandable-tabs/ExpandableTabs.vue",
+          "raw_url": "https://vuelix.dev/r/raw/expandable-tabs/ExpandableTabs.vue"
+        },
+        {
+          "path": "components/ui/expandable-tabs/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/expandable-tabs/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "fluid-tabs",
+      "name": "Fluid Tabs",
+      "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/fluid-tabs",
+      "detail_url": "https://vuelix.dev/r/fluid-tabs.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/fluid-tabs.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FluidTabs"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/fluid-tabs/FluidTabs.vue",
+          "raw_url": "https://vuelix.dev/r/raw/fluid-tabs/FluidTabs.vue"
+        },
+        {
+          "path": "components/ui/fluid-tabs/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/fluid-tabs/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "morphing-search",
+      "name": "Morphing Search",
+      "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/morphing-search",
+      "detail_url": "https://vuelix.dev/r/morphing-search.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/morphing-search.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MorphingSearch"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/morphing-search/MorphingSearch.vue",
+          "raw_url": "https://vuelix.dev/r/raw/morphing-search/MorphingSearch.vue"
+        },
+        {
+          "path": "components/ui/morphing-search/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/morphing-search/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "overflow-toolbar",
+      "name": "Overflow Toolbar",
+      "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/overflow-toolbar",
+      "detail_url": "https://vuelix.dev/r/overflow-toolbar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/overflow-toolbar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OverflowToolbar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/overflow-toolbar/OverflowToolbar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/overflow-toolbar/OverflowToolbar.vue"
+        },
+        {
+          "path": "components/ui/overflow-toolbar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/overflow-toolbar/index.ts"
         }
       ]
     },

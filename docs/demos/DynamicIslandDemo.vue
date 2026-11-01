@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DynamicIsland } from '@/ui/dynamic-island'
+import { DynamicIsland } from '@/components/ui/dynamic-island'
 import { CalendarClock, Pause, Phone, PhoneOff, Play, SkipBack, SkipForward, Timer } from 'lucide-vue-next'
 import { motion, useAnimationFrame, useMotionValue, useReducedMotion } from 'motion-v'
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'

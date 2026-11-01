@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { MorphingSearchSuggestion } from '@/ui/morphing-search'
-import { MorphingSearch } from '@/ui/morphing-search'
+import type { MorphingSearchSuggestion } from '@/components/ui/morphing-search'
+import { MorphingSearch } from '@/components/ui/morphing-search'
 import { Boxes, Command, Download, Palette, Smartphone } from 'lucide-vue-next'
 import { ref } from 'vue'
 

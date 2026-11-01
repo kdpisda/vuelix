@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ExpandableTabItem, ExpandableTabSeparator } from '@/ui/expandable-tabs'
-import { ExpandableTabs } from '@/ui/expandable-tabs'
+import type { ExpandableTabItem, ExpandableTabSeparator } from '@/components/ui/expandable-tabs'
+import { ExpandableTabs } from '@/components/ui/expandable-tabs'
 import { Bell, Bookmark, Compass, House, Inbox, Settings, User } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

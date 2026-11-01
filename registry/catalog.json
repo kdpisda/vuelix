@@ -798,6 +798,106 @@
     ]
   },
   {
+    "name": "action-bar",
+    "title": "Action Bar",
+    "description": "A floating bulk-action bar that springs in on selection, rolls its count and confirms in place.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/action-bar",
+    "exports": [
+      "ActionBar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "command-palette",
+    "title": "Command Palette",
+    "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/command-palette",
+    "exports": [
+      "CommandPalette",
+      "highlightSegments",
+      "matchCommand"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "dynamic-island",
+    "title": "Dynamic Island",
+    "description": "A pill that springs its width, height and radius between live states while the content cross-fades.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/dynamic-island",
+    "exports": [
+      "DynamicIsland"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "expandable-tabs",
+    "title": "Expandable Tabs",
+    "description": "An icon-only tab bar where the active tab springs open to reveal its label with a blur-in.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/expandable-tabs",
+    "exports": [
+      "ExpandableTabs"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "fluid-tabs",
+    "title": "Fluid Tabs",
+    "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/fluid-tabs",
+    "exports": [
+      "FluidTabs"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "morphing-search",
+    "title": "Morphing Search",
+    "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/morphing-search",
+    "exports": [
+      "MorphingSearch"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "overflow-toolbar",
+    "title": "Overflow Toolbar",
+    "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/overflow-toolbar",
+    "exports": [
+      "OverflowToolbar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "agent-activity",
     "title": "Agent Activity",
     "description": "Live feed of an agent's steps: new steps slide in, the current one shimmers, sub-steps fold away.",

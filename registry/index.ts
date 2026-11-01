@@ -57,6 +57,13 @@ import { Lightbox } from './ui/lightbox'
 import { MotionBadge } from './ui/motion-badge'
 import { SortableList } from './ui/sortable-list'
 import { Timeline } from './ui/timeline'
+import { ActionBar } from './ui/action-bar'
+import { CommandPalette } from './ui/command-palette'
+import { DynamicIsland } from './ui/dynamic-island'
+import { ExpandableTabs } from './ui/expandable-tabs'
+import { FluidTabs } from './ui/fluid-tabs'
+import { MorphingSearch } from './ui/morphing-search'
+import { OverflowToolbar } from './ui/overflow-toolbar'
 import { AgentActivity } from './ui/agent-activity'
 import { ApprovalCard } from './ui/approval-card'
 import { ChatApp } from './ui/chat-app'
@@ -142,6 +149,13 @@ export * from './ui/lightbox'
 export * from './ui/motion-badge'
 export * from './ui/sortable-list'
 export * from './ui/timeline'
+export * from './ui/action-bar'
+export * from './ui/command-palette'
+export * from './ui/dynamic-island'
+export * from './ui/expandable-tabs'
+export * from './ui/fluid-tabs'
+export * from './ui/morphing-search'
+export * from './ui/overflow-toolbar'
 export * from './ui/agent-activity'
 export * from './ui/approval-card'
 export * from './ui/chat-app'
@@ -233,6 +247,13 @@ const components: Record<string, Component> = {
   MotionBadge,
   SortableList,
   Timeline,
+  ActionBar,
+  CommandPalette,
+  DynamicIsland,
+  ExpandableTabs,
+  FluidTabs,
+  MorphingSearch,
+  OverflowToolbar,
   AgentActivity,
   ApprovalCard,
   ChatApp,

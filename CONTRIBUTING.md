@@ -98,6 +98,8 @@ const emit = defineEmits<{ select: [value: string] }>()
     keyframes don't change. Compute the landing value yourself and animate to it.
   - Generic components (`<script setup generic="T">`) must declare their slots as optional in
     `defineSlots`, or the generated npm entry fails `pnpm typecheck`.
+  - Function refs (`:ref="el => …"`) run on every render — don't set reactive state in them
+    unconditionally (measure → set state → re-render → infinite loop); guard on the element changing.
   - A `defineModel` ref doesn't reflect a new value until the parent re-renders; use the value you
     just set rather than re-reading the model in the same tick.
 - **Accessibility**: real `<button>`s / inputs, correct ARIA roles and states, keyboard support
@@ -125,7 +127,7 @@ command palette) keep it; if it's a distinctive name coined by another library, 
 
 `docs/demos/KebabNameDemo.vue` imports from `@/components/ui/kebab-name` and shows the component at its best
 with realistic content. It renders inside a ~720px-wide, ≥320px-tall stage — make it fit (use
-`max-w-*`). Overlays/toasts should be triggered by a button. Use `lucide-vue-next` for demo icons.
+`max-w-*`). Overlays/toasts should be triggered by a button. Don't bind ⌘K / Ctrl+K in demos — the docs search uses it. Use `lucide-vue-next` for demo icons.
 
 `docs/<section>/kebab-name.md` — copy `docs/components/spring-button.md` and adapt:
 frontmatter (`title`, quoted `description`), `<ComponentPreview>` with the demo + code slot,

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { FluidTabs } from '@/ui/fluid-tabs'
+import { FluidTabs } from '@/components/ui/fluid-tabs'
 import { Activity, CreditCard, LayoutDashboard, Users } from 'lucide-vue-next'
 import { ref } from 'vue'
 

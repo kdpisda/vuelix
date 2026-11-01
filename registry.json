@@ -1426,6 +1426,178 @@
       ]
     },
     {
+      "name": "action-bar",
+      "type": "registry:ui",
+      "title": "Action Bar",
+      "description": "A floating bulk-action bar that springs in on selection, rolls its count and confirms in place.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/action-bar/ActionBar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/action-bar/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "command-palette",
+      "type": "registry:ui",
+      "title": "Command Palette",
+      "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/command-palette/CommandPalette.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/command-palette/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/command-palette/match.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dynamic-island",
+      "type": "registry:ui",
+      "title": "Dynamic Island",
+      "description": "A pill that springs its width, height and radius between live states while the content cross-fades.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/dynamic-island/DynamicIsland.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/dynamic-island/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "expandable-tabs",
+      "type": "registry:ui",
+      "title": "Expandable Tabs",
+      "description": "An icon-only tab bar where the active tab springs open to reveal its label with a blur-in.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/expandable-tabs/ExpandableTabs.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/expandable-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "fluid-tabs",
+      "type": "registry:ui",
+      "title": "Fluid Tabs",
+      "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/fluid-tabs/FluidTabs.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/fluid-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "morphing-search",
+      "type": "registry:ui",
+      "title": "Morphing Search",
+      "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/morphing-search/MorphingSearch.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/morphing-search/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "overflow-toolbar",
+      "type": "registry:ui",
+      "title": "Overflow Toolbar",
+      "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/overflow-toolbar/OverflowToolbar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/overflow-toolbar/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "agent-activity",
       "type": "registry:ui",
       "title": "Agent Activity",

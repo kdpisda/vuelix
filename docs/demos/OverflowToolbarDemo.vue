@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { OverflowToolbarItem } from '@/ui/overflow-toolbar'
-import { OverflowToolbar } from '@/ui/overflow-toolbar'
+import type { OverflowToolbarItem } from '@/components/ui/overflow-toolbar'
+import { OverflowToolbar } from '@/components/ui/overflow-toolbar'
 import {
   AtSign,
   Bold,

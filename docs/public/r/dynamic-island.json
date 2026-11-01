@@ -1,0 +1,27 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "dynamic-island",
+  "title": "Dynamic Island",
+  "description": "A pill that springs its width, height and radius between live states while the content cross-fades.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/dynamic-island/DynamicIsland.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion, useReducedMotion } from 'motion-v'\nimport { computed, onBeforeUnmount, ref } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** Name of the active state; the slot with the same name is rendered. */\n  state?: string\n  /** Largest corner radius (px) once the island grows taller than a pill. */\n  radius?: number\n  /** Accessible name of the live region. */\n  label?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  state: 'idle',\n  radius: 32,\n  label: 'Live activity',\n})\n\ndefineSlots<Record<string, () => unknown>>()\n\nconst reduced = useReducedMotion()\n\n// The shell's size follows whatever the active slot renders: we measure the\n// content box and spring width / height / radius towards it.\nconst size = ref<{ width: number, height: number } | null>(null)\nlet observer: ResizeObserver | undefined\nlet observed: HTMLElement | null = null\n\nfunction track(el: unknown, state: string) {\n  const node = ((el as { $el?: unknown } | null)?.$el ?? el) as HTMLElement | null\n  if (!(node instanceof HTMLElement) || state !== props.state || node === observed)\n    return\n  observed = node\n  observer?.disconnect()\n  const measure = () => (size.value = { width: node.offsetWidth, height: node.offsetHeight })\n  measure()\n  if (typeof ResizeObserver !== 'undefined') {\n    observer = new ResizeObserver(measure)\n    observer.observe(node)\n  }\n}\n\nonBeforeUnmount(() => observer?.disconnect())\n\nconst shell = computed(() => {\n  if (!size.value)\n    return {}\n  const { width, height } = size.value\n  return { width, height, borderRadius: Math.min(height / 2, props.radius) }\n})\n\nconst morph = { type: 'spring', stiffness: 380, damping: 28, mass: 0.9 } as const\nconst content = computed(() => ({\n  initial: reduced.value\n    ? { opacity: 0 }\n    : { opacity: 0, scale: 0.86, filter: 'blur(8px)' },\n  animate: {\n    opacity: 1,\n    scale: 1,\n    filter: 'blur(0px)',\n    transition: { delay: reduced.value ? 0 : 0.08, type: 'spring', stiffness: 320, damping: 30 },\n  },\n  exit: reduced.value\n    ? { opacity: 0, transition: { duration: 0.12 } }\n    : { opacity: 0, scale: 0.9, filter: 'blur(6px)', transition: { duration: 0.16 } },\n}))\n</script>\n\n<template>\n  <motion.div\n    role=\"status\"\n    aria-live=\"polite\"\n    :aria-label=\"props.label\"\n    :data-state=\"props.state\"\n    :class=\"cn(\n      'relative isolate mx-auto h-9 w-28 overflow-hidden bg-foreground text-background shadow-lg',\n      props.class,\n    )\"\n    :style=\"{ borderRadius: '18px' }\"\n    :initial=\"false\"\n    :animate=\"shell\"\n    :transition=\"reduced ? { duration: 0 } : morph\"\n  >\n    <AnimatePresence :initial=\"false\">\n      <motion.div\n        :key=\"props.state\"\n        :ref=\"(el: unknown) => track(el, props.state)\"\n        class=\"absolute inset-x-0 top-0 mx-auto w-max\"\n        :initial=\"content.initial\"\n        :animate=\"content.animate\"\n        :exit=\"content.exit\"\n      >\n        <slot :name=\"props.state\" />\n      </motion.div>\n    </AnimatePresence>\n  </motion.div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/dynamic-island/index.ts",
+      "content": "export { default as DynamicIsland } from './DynamicIsland.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "blocks",
+    "blocks"
+  ],
+  "type": "registry:ui"
+}

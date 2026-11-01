@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { CommandPaletteItem } from '@/ui/command-palette'
-import { CommandPalette } from '@/ui/command-palette'
+import type { CommandPaletteItem } from '@/components/ui/command-palette'
+import { CommandPalette } from '@/components/ui/command-palette'
 import {
   BookOpen,
   Boxes,

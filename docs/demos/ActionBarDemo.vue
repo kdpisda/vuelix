@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ActionBarAction } from '@/ui/action-bar'
-import { ActionBar } from '@/ui/action-bar'
+import type { ActionBarAction } from '@/components/ui/action-bar'
+import { ActionBar } from '@/components/ui/action-bar'
 import { Archive, FileArchive, FileImage, FileSpreadsheet, FileText, FolderInput, RotateCcw, Trash2 } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 
