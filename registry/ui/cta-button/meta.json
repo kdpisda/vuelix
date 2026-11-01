@@ -1,0 +1,10 @@
+{
+  "title": "CTA Button",
+  "description": "Call-to-action buttons with a shimmer sweep, spinning gradient border, magnetic pull or sliding arrow.",
+  "section": "components",
+  "category": "Buttons & Actions",
+  "dependencies": [
+    "motion-v",
+    "class-variance-authority"
+  ]
+}

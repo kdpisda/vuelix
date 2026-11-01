@@ -1,0 +1,10 @@
+{
+  "title": "Icon Swap",
+  "description": "Button that morphs between icon states — copy to check, play to pause — with an optional particle burst.",
+  "section": "components",
+  "category": "Buttons & Actions",
+  "dependencies": [
+    "motion-v",
+    "class-variance-authority"
+  ]
+}
