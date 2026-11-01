@@ -8,4 +8,4 @@ export interface DockContext {
   distance: number
 }
 
-export const DOCK_KEY: InjectionKey<DockContext> = Symbol('VeulixDock')
+export const DOCK_KEY: InjectionKey<DockContext> = Symbol('VuelixDock')

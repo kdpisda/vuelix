@@ -20,7 +20,7 @@
     },
     {
       "path": "registry/ui/dock/context.ts",
-      "content": "import type { MotionValue } from 'motion-v'\nimport type { InjectionKey } from 'vue'\n\nexport interface DockContext {\n  mouseX: MotionValue<number>\n  baseSize: number\n  magnification: number\n  distance: number\n}\n\nexport const DOCK_KEY: InjectionKey<DockContext> = Symbol('VeulixDock')\n",
+      "content": "import type { MotionValue } from 'motion-v'\nimport type { InjectionKey } from 'vue'\n\nexport interface DockContext {\n  mouseX: MotionValue<number>\n  baseSize: number\n  magnification: number\n  distance: number\n}\n\nexport const DOCK_KEY: InjectionKey<DockContext> = Symbol('VuelixDock')\n",
       "type": "registry:ui"
     },
     {

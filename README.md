@@ -1,11 +1,11 @@
-# veulix
+# vuelix
 
-**Animated, copy-paste components for Vue 3 & Nuxt.** Built on Tailwind CSS v4 and [Motion for Vue](https://motion.dev/docs/vue) (`motion-v`), distributed as a [shadcn-vue](https://shadcn-vue.com) registry.
+**Animated, copy-paste components for Vue 3 & Nuxt** — [vuelix.dev](https://vuelix.dev). Built on Tailwind CSS v4 and [Motion for Vue](https://motion.dev/docs/vue) (`motion-v`), distributed as a [shadcn-vue](https://shadcn-vue.com) registry.
 
-You don't install veulix as a dependency. You pull each component's **source** into your project and own it.
+You don't install vuelix as a dependency. You pull each component's **source** into your project and own it.
 
 ```bash
-npx shadcn-vue@latest add https://raw.githubusercontent.com/kdpisda/veulix/main/docs/public/r/dock.json
+npx shadcn-vue@latest add https://vuelix.dev/r/dock.json
 ```
 
 ## Components

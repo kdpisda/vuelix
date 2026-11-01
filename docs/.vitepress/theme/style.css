@@ -9,7 +9,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /*
- * Design tokens — identical names to shadcn-vue, so veulix components drop
+ * Design tokens — identical names to shadcn-vue, so vuelix components drop
  * straight into any shadcn-vue project and pick up its theme.
  */
 :root {
@@ -34,7 +34,7 @@
   --ring: oklch(0.708 0 0);
   --brand: oklch(0.72 0.17 162);
 
-  /* VitePress brand → veulix green */
+  /* VitePress brand → vuelix green */
   --vp-c-brand-1: oklch(0.6 0.15 162);
   --vp-c-brand-2: oklch(0.66 0.16 162);
   --vp-c-brand-3: oklch(0.6 0.15 162);

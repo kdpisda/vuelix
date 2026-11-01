@@ -9,7 +9,7 @@ const props = withDefaults(defineProps<{
   storageKey?: string
   class?: HTMLAttributes['class']
 }>(), {
-  storageKey: 'veulix-color-scheme',
+  storageKey: 'vuelix-color-scheme',
 })
 
 const isDark = useDark({ storageKey: props.storageKey })

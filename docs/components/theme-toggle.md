@@ -53,6 +53,6 @@ import { ThemeToggle } from '@/components/ui/theme-toggle'
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| `storageKey` | `string` | `'veulix-color-scheme'` | localStorage key used by `useDark`. |
+| `storageKey` | `string` | `'vuelix-color-scheme'` | localStorage key used by `useDark`. |
 
 Toggles the `dark` class on `<html>` via `@vueuse/core`. Point `storageKey` at your framework's key (e.g. `nuxt-color-mode`) to stay in sync.

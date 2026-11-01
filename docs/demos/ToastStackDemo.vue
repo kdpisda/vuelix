@@ -3,7 +3,7 @@ import { SpringButton } from '@/ui/spring-button'
 import { toast, ToastStack } from '@/ui/toast-stack'
 
 const samples = [
-  () => toast.success('Deployment complete', { description: 'veulix-docs is live on production.' }),
+  () => toast.success('Deployment complete', { description: 'vuelix-docs is live on production.' }),
   () => toast('Invite sent', { description: 'We emailed ana@example.com.' }),
   () => toast.info('New version available', { description: 'Refresh to update to v1.2.0.' }),
   () => toast.error('Payment failed', { description: 'Your card was declined.' }),

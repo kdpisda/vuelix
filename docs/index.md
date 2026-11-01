@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: veulix
+  name: vuelix
   text: Animated components for Vue
   tagline: Copy-paste components with real spring physics, built on Tailwind CSS and Motion. Free, open source, and yours to customise.
   actions:

@@ -1,6 +1,6 @@
 # Motion Patterns
 
-A few patterns cover almost every component in veulix. They're worth knowing when you customise components or build your own.
+A few patterns cover almost every component in vuelix. They're worth knowing when you customise components or build your own.
 
 ## 1. Springs, not durations
 

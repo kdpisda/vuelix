@@ -1,6 +1,6 @@
 # Introduction
 
-**veulix** is a collection of animated, copy-paste components for **Vue 3** and **Nuxt**, built on [Tailwind CSS](https://tailwindcss.com) and [Motion for Vue](https://motion.dev/docs/vue) (`motion-v`).
+**vuelix** is a collection of animated, copy-paste components for **Vue 3** and **Nuxt**, built on [Tailwind CSS](https://tailwindcss.com) and [Motion for Vue](https://motion.dev/docs/vue) (`motion-v`).
 
 It is not a package you install and import from `node_modules`. You pull the **source** of each component into your project with the `shadcn-vue` CLI (or copy it by hand), then change anything you like: styles, springs, markup, behaviour.
 

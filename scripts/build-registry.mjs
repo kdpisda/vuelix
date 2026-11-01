@@ -30,8 +30,8 @@ const items = catalog.map((item) => {
 
 const registry = {
   $schema: 'https://shadcn-vue.com/schema/registry.json',
-  name: 'veulix',
-  homepage: 'https://github.com/kdpisda/veulix',
+  name: 'vuelix',
+  homepage: 'https://vuelix.dev',
   items,
 }
 

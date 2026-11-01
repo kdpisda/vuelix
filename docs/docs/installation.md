@@ -4,7 +4,7 @@ import { REGISTRY_URL } from '../.vitepress/registry'
 
 # Installation
 
-veulix components are distributed through a [shadcn-vue](https://shadcn-vue.com) compatible registry.
+vuelix components are distributed through a [shadcn-vue](https://shadcn-vue.com) compatible registry.
 
 ## 1. Set up your project
 
@@ -26,20 +26,20 @@ npx shadcn-vue@latest add {{ REGISTRY_URL }}/spring-button.json
 
 The CLI copies the source into `components/ui/spring-button/` and installs its npm dependencies (`motion-v`, etc.).
 
-### Use the `@veulix` namespace (optional)
+### Use the `@vuelix` namespace (optional)
 
 Add the registry to `components.json` so you can install by name:
 
 ```json-vue
 {
   "registries": {
-    "@veulix": "{{ REGISTRY_URL }}/{name}.json"
+    "@vuelix": "{{ REGISTRY_URL }}/{name}.json"
   }
 }
 ```
 
 ```bash
-npx shadcn-vue@latest add @veulix/spring-button @veulix/dock
+npx shadcn-vue@latest add @vuelix/spring-button @vuelix/dock
 ```
 
 ## Manual installation

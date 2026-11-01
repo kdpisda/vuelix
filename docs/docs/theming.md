@@ -1,6 +1,6 @@
 # Theming
 
-veulix uses the **same CSS variable names as shadcn-vue**. If your project already has a shadcn-vue theme, components pick it up automatically: there's nothing to configure.
+vuelix uses the **same CSS variable names as shadcn-vue**. If your project already has a shadcn-vue theme, components pick it up automatically: there's nothing to configure.
 
 ## Tokens
 

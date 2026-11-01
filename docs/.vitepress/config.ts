@@ -31,9 +31,10 @@ const gettingStarted = {
 }
 
 export default defineConfig({
-  title: 'veulix',
+  title: 'vuelix',
   description: 'Animated, copy-paste components for Vue — built on Tailwind CSS and Motion.',
   cleanUrls: true,
+  sitemap: { hostname: 'https://vuelix.dev' },
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
@@ -49,7 +50,7 @@ export default defineConfig({
       '/docs/': [gettingStarted, ...componentSidebar],
       '/components/': [gettingStarted, ...componentSidebar],
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/kdpisda/veulix' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/kdpisda/vuelix' }],
     search: { provider: 'local' },
     outline: [2, 3],
     footer: {
