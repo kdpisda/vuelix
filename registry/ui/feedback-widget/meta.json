@@ -1,0 +1,9 @@
+{
+  "title": "Feedback Widget",
+  "description": "A floating Feedback pill that morphs into an emoji-rating form, then into a check, then back.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

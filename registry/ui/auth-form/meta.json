@@ -1,0 +1,9 @@
+{
+  "title": "Auth Form",
+  "description": "Sign-in / sign-up card with a sliding mode switch, floating labels, a live strength meter and a morphing submit.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

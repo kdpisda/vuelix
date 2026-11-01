@@ -1,0 +1,9 @@
+{
+  "title": "Swipe Actions",
+  "description": "List rows that swipe to reveal actions, rubber-band, full-swipe to commit and collapse away.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

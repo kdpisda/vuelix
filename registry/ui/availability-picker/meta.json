@@ -1,0 +1,9 @@
+{
+  "title": "Availability Picker",
+  "description": "Weekly scheduler with day switches, animated time ranges and a drag-to-paint week grid.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}
