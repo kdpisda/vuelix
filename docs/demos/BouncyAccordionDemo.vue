@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BouncyAccordion } from '@/ui/bouncy-accordion'
+import { BouncyAccordion } from '@/components/ui/bouncy-accordion'
 import { ref } from 'vue'
 
 const open = ref(['what'])

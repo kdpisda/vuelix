@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ColorSwatches } from '@/ui/color-swatches'
+import { ColorSwatches } from '@/components/ui/color-swatches'
 import { computed, ref } from 'vue'
 
 const colors = [

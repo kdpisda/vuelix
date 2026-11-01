@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RadioCards } from '@/ui/radio-cards'
+import { RadioCards } from '@/components/ui/radio-cards'
 import { ref } from 'vue'
 
 const plan = ref('pro')

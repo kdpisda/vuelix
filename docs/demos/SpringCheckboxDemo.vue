@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SpringCheckbox } from '@/ui/spring-checkbox'
+import { SpringCheckbox } from '@/components/ui/spring-checkbox'
 import { computed, reactive } from 'vue'
 
 const channels = reactive([

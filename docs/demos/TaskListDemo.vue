@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { TaskListItem } from '@/ui/task-list'
-import { TaskList } from '@/ui/task-list'
+import type { TaskListItem } from '@/components/ui/task-list'
+import { TaskList } from '@/components/ui/task-list'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 const initial = (): TaskListItem[] => [

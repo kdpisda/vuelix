@@ -59,7 +59,16 @@ import { PromptInput } from './ui/prompt-input'
 import { TaskList } from './ui/task-list'
 import { ToolCall } from './ui/tool-call'
 import { VoiceOrb } from './ui/voice-orb'
+import { BarChart } from './ui/bar-chart'
+import { BumpChart } from './ui/bump-chart'
+import { DonutChart } from './ui/donut-chart'
+import { FunnelChart } from './ui/funnel-chart'
+import { HeatCalendar } from './ui/heat-calendar'
+import { LineChart } from './ui/line-chart'
 import { Sparkline } from './ui/sparkline'
+import { StatusHistory } from './ui/status-history'
+import { Treemap } from './ui/treemap'
+import { ChartTooltip } from './ui/chart-utils'
 
 export * from './ui/cta-button'
 export * from './ui/expanding-button'
@@ -119,7 +128,16 @@ export * from './ui/prompt-input'
 export * from './ui/task-list'
 export * from './ui/tool-call'
 export * from './ui/voice-orb'
+export * from './ui/bar-chart'
+export * from './ui/bump-chart'
+export * from './ui/donut-chart'
+export * from './ui/funnel-chart'
+export * from './ui/heat-calendar'
+export * from './ui/line-chart'
 export * from './ui/sparkline'
+export * from './ui/status-history'
+export * from './ui/treemap'
+export * from './ui/chart-utils'
 export { cn } from './lib/utils'
 
 const components: Record<string, Component> = {
@@ -186,7 +204,16 @@ const components: Record<string, Component> = {
   TaskList,
   ToolCall,
   VoiceOrb,
+  BarChart,
+  BumpChart,
+  DonutChart,
+  FunnelChart,
+  HeatCalendar,
+  LineChart,
   Sparkline,
+  StatusHistory,
+  Treemap,
+  ChartTooltip,
 }
 
 /**

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MotionSelect } from '@/ui/motion-select'
+import { MotionSelect } from '@/components/ui/motion-select'
 import { ref } from 'vue'
 
 const region = ref<string>()

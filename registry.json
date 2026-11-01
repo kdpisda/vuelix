@@ -1478,6 +1478,188 @@
       ]
     },
     {
+      "name": "bar-chart",
+      "type": "registry:ui",
+      "title": "Bar Chart",
+      "description": "Grouped, stacked or horizontal bars that spring up in a stagger and glide between layouts.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/bar-chart/BarChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bar-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bar-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "bump-chart",
+      "type": "registry:ui",
+      "title": "Bump Chart",
+      "description": "Rankings over time as curved lanes that draw in; hover one to bring it forward and dim the rest.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/bump-chart/BumpChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bump-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bump-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "donut-chart",
+      "type": "registry:ui",
+      "title": "Donut Chart",
+      "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/donut-chart/DonutChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/donut-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/donut-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "funnel-chart",
+      "type": "registry:ui",
+      "title": "Funnel Chart",
+      "description": "Conversion funnel whose stages spring open in sequence, joined by curved hand-offs with drop-off rates.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/funnel-chart/FunnelChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/funnel-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/funnel-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heat-calendar",
+      "type": "registry:ui",
+      "title": "Heat Calendar",
+      "description": "A year of daily activity as a weeks × weekdays grid that ripples in; drag across days to select a range.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/heat-calendar/HeatCalendar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/heat-calendar/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/heat-calendar/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "line-chart",
+      "type": "registry:ui",
+      "title": "Line Chart",
+      "description": "Multi-series line or area chart that draws in, morphs on new data and tracks a snapping crosshair.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/line-chart/LineChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/line-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/line-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "sparkline",
       "type": "registry:ui",
       "title": "Sparkline",
@@ -1497,6 +1679,99 @@
         },
         {
           "path": "registry/ui/sparkline/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "status-history",
+      "type": "registry:ui",
+      "title": "Status History",
+      "description": "Uptime bars per day that rise in a wave, coloured by status, with an overall uptime readout.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/status-history/StatusHistory.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/status-history/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/status-history/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "treemap",
+      "type": "registry:ui",
+      "title": "Treemap",
+      "description": "Squarified treemap whose tiles glide to their new size and position whenever the data changes.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/treemap/Treemap.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/treemap/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/treemap/squarify.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/treemap/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chart-utils",
+      "type": "registry:ui",
+      "title": "Chart Utils",
+      "description": "Shared chart helpers: nice ticks, scales, monotone paths, tweened values and a clamped tooltip.",
+      "categories": [
+        "charts",
+        "utilities"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/chart-utils/ChartTooltip.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chart-utils/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chart-utils/utils.ts",
           "type": "registry:ui"
         }
       ]

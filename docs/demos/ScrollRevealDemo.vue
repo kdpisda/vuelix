@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { ScrollRevealPreset } from '@/ui/scroll-reveal'
-import { AnimatedTabs } from '@/ui/animated-tabs'
-import { ScrollProgress, ScrollReveal } from '@/ui/scroll-reveal'
+import type { ScrollRevealPreset } from '@/components/ui/scroll-reveal'
+import { AnimatedTabs } from '@/components/ui/animated-tabs'
+import { ScrollProgress, ScrollReveal } from '@/components/ui/scroll-reveal'
 import { Gauge, Layers, MousePointerClick, Palette, Sparkles, Zap } from 'lucide-vue-next'
 import { ref } from 'vue'
 

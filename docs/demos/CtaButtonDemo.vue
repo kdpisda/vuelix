@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CtaButton } from '@/ui/cta-button'
+import { CtaButton } from '@/components/ui/cta-button'
 import { Sparkles } from 'lucide-vue-next'
 </script>
 

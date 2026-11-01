@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TextReveal } from '@/ui/text-reveal'
+import { TextReveal } from '@/components/ui/text-reveal'
 </script>
 
 <template>

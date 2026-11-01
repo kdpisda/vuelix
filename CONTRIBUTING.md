@@ -41,7 +41,7 @@ For a component named `kebab-name` in section `<section>` (`components`, `blocks
   **no chart, date or UI libraries**: charts are hand-rolled SVG.
 - Optional `exports`: extra value exports re-exported via `export *` (e.g. `["toast", "useToast"]`).
 - Optional `registryDependencies`: other vuelix items this one needs, as full URLs
-  (`"https://vuelix.dev/r/spring-button.json"`). Import them as `@/ui/spring-button`.
+  (`"https://vuelix.dev/r/spring-button.json"`). Import them as `@/components/ui/spring-button`.
 
 ## 2. Code conventions
 
@@ -64,8 +64,9 @@ const emit = defineEmits<{ select: [value: string] }>()
 
 - **Vue 3.5 `<script setup lang="ts">`**, typed `defineProps` / `defineModel` / `defineEmits`.
   Always accept `class` and merge it with `cn(...)` onto the root element.
-- **Imports**: `@/lib/utils` for `cn`, `@/ui/<other>` for other vuelix components, relative paths
-  inside the folder. Nothing else from the repo.
+- **Imports**: `@/lib/utils` for `cn`, `@/components/ui/<other>` for other vuelix components (exactly
+  how the import looks once installed in a user's project), relative paths inside the folder.
+  Nothing else from the repo. `pnpm registry:build` rejects `@/ui/…` imports.
 - **Styling: Tailwind utilities + theme tokens only.** Use `bg-background`, `text-foreground`,
   `bg-card`, `bg-popover`, `bg-muted`, `text-muted-foreground`, `bg-accent`, `bg-primary`,
   `text-primary-foreground`, `bg-secondary`, `border` (border color comes from the theme),
@@ -122,7 +123,7 @@ command palette) keep it; if it's a distinctive name coined by another library, 
 
 ## 4. Demo + docs page
 
-`docs/demos/KebabNameDemo.vue` imports from `@/ui/kebab-name` and shows the component at its best
+`docs/demos/KebabNameDemo.vue` imports from `@/components/ui/kebab-name` and shows the component at its best
 with realistic content. It renders inside a ~720px-wide, ≥320px-tall stage — make it fit (use
 `max-w-*`). Overlays/toasts should be triggered by a button. Use `lucide-vue-next` for demo icons.
 

@@ -828,6 +828,90 @@
     ]
   },
   {
+    "name": "bar-chart",
+    "title": "Bar Chart",
+    "description": "Grouped, stacked or horizontal bars that spring up in a stagger and glide between layouts.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/bar-chart",
+    "exports": [
+      "BarChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "bump-chart",
+    "title": "Bump Chart",
+    "description": "Rankings over time as curved lanes that draw in; hover one to bring it forward and dim the rest.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/bump-chart",
+    "exports": [
+      "BumpChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "donut-chart",
+    "title": "Donut Chart",
+    "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/donut-chart",
+    "exports": [
+      "DonutChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "funnel-chart",
+    "title": "Funnel Chart",
+    "description": "Conversion funnel whose stages spring open in sequence, joined by curved hand-offs with drop-off rates.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/funnel-chart",
+    "exports": [
+      "FunnelChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "heat-calendar",
+    "title": "Heat Calendar",
+    "description": "A year of daily activity as a weeks × weekdays grid that ripples in; drag across days to select a range.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/heat-calendar",
+    "exports": [
+      "HeatCalendar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "line-chart",
+    "title": "Line Chart",
+    "description": "Multi-series line or area chart that draws in, morphs on new data and tracks a snapping crosshair.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/line-chart",
+    "exports": [
+      "LineChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "sparkline",
     "title": "Sparkline",
     "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
@@ -836,6 +920,60 @@
     "url": "/charts/sparkline",
     "exports": [
       "Sparkline"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "status-history",
+    "title": "Status History",
+    "description": "Uptime bars per day that rise in a wave, coloured by status, with an overall uptime readout.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/status-history",
+    "exports": [
+      "StatusHistory"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "treemap",
+    "title": "Treemap",
+    "description": "Squarified treemap whose tiles glide to their new size and position whenever the data changes.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/treemap",
+    "exports": [
+      "Treemap",
+      "squarify"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "chart-utils",
+    "title": "Chart Utils",
+    "description": "Shared chart helpers: nice ticks, scales, monotone paths, tweened values and a clamped tooltip.",
+    "section": "charts",
+    "category": "Utilities",
+    "url": "/charts/chart-utils",
+    "exports": [
+      "ChartTooltip",
+      "areaPath",
+      "chartColor",
+      "clamp",
+      "formatCompact",
+      "linearPath",
+      "linearScale",
+      "monotonePath",
+      "niceTicks",
+      "resample",
+      "useElementWidth",
+      "useTween"
     ],
     "dependencies": [
       "motion-v"

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ApprovalCardStatus } from '@/ui/approval-card'
-import { ApprovalCard } from '@/ui/approval-card'
+import type { ApprovalCardStatus } from '@/components/ui/approval-card'
+import { ApprovalCard } from '@/components/ui/approval-card'
 import { Mail, RotateCcw, Terminal } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

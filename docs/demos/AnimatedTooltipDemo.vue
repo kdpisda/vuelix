@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { AnimatedTooltip } from '@/ui/animated-tooltip'
-import { SpringButton } from '@/ui/spring-button'
+import { AnimatedTooltip } from '@/components/ui/animated-tooltip'
+import { SpringButton } from '@/components/ui/spring-button'
 </script>
 
 <template>

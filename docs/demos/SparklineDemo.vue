@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { NumberTicker } from '@/ui/number-ticker'
-import { Sparkline } from '@/ui/sparkline'
+import { NumberTicker } from '@/components/ui/number-ticker'
+import { Sparkline } from '@/components/ui/sparkline'
 
 const stats = [
   { label: 'Visitors', value: 18420, data: [12, 18, 14, 22, 19, 28, 26, 34, 31, 40], class: 'text-emerald-500' },

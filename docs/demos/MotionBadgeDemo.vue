@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { MotionBadge } from '@/ui/motion-badge'
-import { SpringButton } from '@/ui/spring-button'
+import { MotionBadge } from '@/components/ui/motion-badge'
+import { SpringButton } from '@/components/ui/spring-button'
 import { Bell, Minus, Plus } from 'lucide-vue-next'
 import { ref } from 'vue'
 

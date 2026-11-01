@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Alert } from '@/ui/alert'
-import { SpringButton } from '@/ui/spring-button'
+import { Alert } from '@/components/ui/alert'
+import { SpringButton } from '@/components/ui/spring-button'
 import { computed, reactive } from 'vue'
 
 const open = reactive({ info: true, success: true, warning: true, error: true })

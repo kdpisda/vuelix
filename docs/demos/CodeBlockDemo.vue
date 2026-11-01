@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CodeBlock } from '@/ui/code-block'
+import { CodeBlock } from '@/components/ui/code-block'
 
 const code = `import { onScopeDispose, ref } from 'vue'
 

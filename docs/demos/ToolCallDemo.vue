@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ToolCallStatus } from '@/ui/tool-call'
-import { ToolCall } from '@/ui/tool-call'
+import type { ToolCallStatus } from '@/components/ui/tool-call'
+import { ToolCall } from '@/components/ui/tool-call'
 import { FileText, FlaskConical, Search } from 'lucide-vue-next'
 import { motion } from 'motion-v'
 import { onBeforeUnmount, onMounted, reactive, ref } from 'vue'

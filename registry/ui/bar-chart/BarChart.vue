@@ -4,7 +4,7 @@ import type { BarChartSeries } from './types'
 import { AnimatePresence, motion, useReducedMotion } from 'motion-v'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { cn } from '@/lib/utils'
-import { chartColor, ChartTooltip, formatCompact, linearScale, niceTicks, useElementWidth } from '@/ui/chart-utils'
+import { chartColor, ChartTooltip, formatCompact, linearScale, niceTicks, useElementWidth } from '@/components/ui/chart-utils'
 
 const props = withDefaults(defineProps<{
   /** Categories, one per group / stack. */

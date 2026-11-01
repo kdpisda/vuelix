@@ -4,7 +4,7 @@ import type { HeatCalendarDay, HeatCalendarRange } from './types'
 import { motion, useReducedMotion } from 'motion-v'
 import { computed, ref } from 'vue'
 import { cn } from '@/lib/utils'
-import { chartColor, ChartTooltip, clamp, useElementWidth } from '@/ui/chart-utils'
+import { chartColor, ChartTooltip, clamp, useElementWidth } from '@/components/ui/chart-utils'
 
 const props = withDefaults(defineProps<{
   /** One entry per day with activity (`YYYY-MM-DD`). Missing days count as 0. */

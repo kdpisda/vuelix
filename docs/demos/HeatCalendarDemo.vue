@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { HeatCalendarDay, HeatCalendarRange } from '@/ui/heat-calendar'
-import { HeatCalendar } from '@/ui/heat-calendar'
-import { SpringButton } from '@/ui/spring-button'
+import type { HeatCalendarDay, HeatCalendarRange } from '@/components/ui/heat-calendar'
+import { HeatCalendar } from '@/components/ui/heat-calendar'
+import { SpringButton } from '@/components/ui/spring-button'
 import { Shuffle } from 'lucide-vue-next'
 import { ref } from 'vue'
 

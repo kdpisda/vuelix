@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { FilmstripItem } from '@/ui/filmstrip'
-import { Filmstrip } from '@/ui/filmstrip'
+import type { FilmstripItem } from '@/components/ui/filmstrip'
+import { Filmstrip } from '@/components/ui/filmstrip'
 import { ref } from 'vue'
 
 const shots: [string, string][] = [

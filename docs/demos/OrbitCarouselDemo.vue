@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { OrbitCarousel } from '@/ui/orbit-carousel'
+import { OrbitCarousel } from '@/components/ui/orbit-carousel'
 import { ref } from 'vue'
 
 const places = [

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Combobox } from '@/ui/combobox'
+import { Combobox } from '@/components/ui/combobox'
 import { ref } from 'vue'
 
 const tz = ref('Europe/Lisbon')

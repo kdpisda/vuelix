@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { OtpInput } from '@/ui/otp-input'
+import { OtpInput } from '@/components/ui/otp-input'
 import { ref } from 'vue'
 
 const code = ref('')

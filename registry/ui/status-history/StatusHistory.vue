@@ -4,8 +4,8 @@ import type { StatusHistoryEntry, StatusHistoryStatus } from './types'
 import { motion, useReducedMotion } from 'motion-v'
 import { computed, ref } from 'vue'
 import { cn } from '@/lib/utils'
-import { ChartTooltip, useElementWidth } from '@/ui/chart-utils'
-import { NumberTicker } from '@/ui/number-ticker'
+import { ChartTooltip, useElementWidth } from '@/components/ui/chart-utils'
+import { NumberTicker } from '@/components/ui/number-ticker'
 
 const props = withDefaults(defineProps<{
   /** Oldest first, one entry per period (day, hour…). */

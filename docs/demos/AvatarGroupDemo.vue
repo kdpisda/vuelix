@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AvatarGroup } from '@/ui/avatar-group'
+import { AvatarGroup } from '@/components/ui/avatar-group'
 
 const people = [
   { name: 'Ana Silva', src: 'https://i.pravatar.cc/96?img=47' },

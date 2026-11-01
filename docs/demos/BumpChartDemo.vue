@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { BumpChartSeries } from '@/ui/bump-chart'
-import { BumpChart } from '@/ui/bump-chart'
-import { SpringButton } from '@/ui/spring-button'
+import type { BumpChartSeries } from '@/components/ui/bump-chart'
+import { BumpChart } from '@/components/ui/bump-chart'
+import { SpringButton } from '@/components/ui/spring-button'
 import { Shuffle } from 'lucide-vue-next'
 import { ref } from 'vue'
 

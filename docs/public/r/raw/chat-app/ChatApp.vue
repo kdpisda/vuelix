@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import type { ChatMessageFeedback } from '@/ui/chat-message'
-import type { PromptAttachment } from '@/ui/prompt-input'
+import type { ChatMessageFeedback } from '@/components/ui/chat-message'
+import type { PromptAttachment } from '@/components/ui/prompt-input'
 import { AnimatePresence, motion } from 'motion-v'
 import { computed, nextTick, ref } from 'vue'
 import { cn } from '@/lib/utils'
-import { ChatMessage } from '@/ui/chat-message'
-import { ChatScroller } from '@/ui/chat-scroller'
-import { PromptInput } from '@/ui/prompt-input'
+import { ChatMessage } from '@/components/ui/chat-message'
+import { ChatScroller } from '@/components/ui/chat-scroller'
+import { PromptInput } from '@/components/ui/prompt-input'
 
 export interface ChatAppMessage {
   id: string

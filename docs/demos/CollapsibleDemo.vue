@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Collapsible } from '@/ui/collapsible'
+import { Collapsible } from '@/components/ui/collapsible'
 import { ShoppingBag } from 'lucide-vue-next'
 import { ref } from 'vue'
 

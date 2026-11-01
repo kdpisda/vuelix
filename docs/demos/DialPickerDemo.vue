@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DialPicker } from '@/ui/dial-picker'
+import { DialPicker } from '@/components/ui/dial-picker'
 import { Volume1, Volume2, VolumeX } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

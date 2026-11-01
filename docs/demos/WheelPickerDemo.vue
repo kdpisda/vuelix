@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { WheelPicker, WheelPickerGroup } from '@/ui/wheel-picker'
+import { WheelPicker, WheelPickerGroup } from '@/components/ui/wheel-picker'
 import { AlarmClock } from 'lucide-vue-next'
 import { ref } from 'vue'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AnimatedTabs } from '@/ui/animated-tabs'
+import { AnimatedTabs } from '@/components/ui/animated-tabs'
 import { ref, useSlots } from 'vue'
 
 const props = withDefaults(defineProps<{

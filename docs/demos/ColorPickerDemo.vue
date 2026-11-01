@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ColorPicker, ColorPickerPopover } from '@/ui/color-picker'
+import { ColorPicker, ColorPickerPopover } from '@/components/ui/color-picker'
 import { Sparkles } from 'lucide-vue-next'
 import { ref } from 'vue'
 

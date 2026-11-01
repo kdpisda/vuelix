@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { DataTableColumn } from '@/ui/data-table'
-import { DataTable } from '@/ui/data-table'
+import type { DataTableColumn } from '@/components/ui/data-table'
+import { DataTable } from '@/components/ui/data-table'
 import { Archive, Inbox } from 'lucide-vue-next'
 import { ref } from 'vue'
 

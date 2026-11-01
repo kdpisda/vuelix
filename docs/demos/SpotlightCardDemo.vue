@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SpotlightCard } from '@/ui/spotlight-card'
+import { SpotlightCard } from '@/components/ui/spotlight-card'
 import { ArrowUpRight, Cpu, Globe } from 'lucide-vue-next'
 </script>
 

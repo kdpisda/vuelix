@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { HoverHighlight } from '@/ui/hover-highlight'
+import { HoverHighlight } from '@/components/ui/hover-highlight'
 import { BarChart3, Calendar, FileText, Inbox, Mail, Music, Settings, Users } from 'lucide-vue-next'
 
 const nav = [

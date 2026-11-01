@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ChatMessageFeedback } from '@/ui/chat-message'
-import { ChatMessage } from '@/ui/chat-message'
+import type { ChatMessageFeedback } from '@/components/ui/chat-message'
+import { ChatMessage } from '@/components/ui/chat-message'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 
 type Block = { type: 'p', text: string } | { type: 'ul', items: string[] }

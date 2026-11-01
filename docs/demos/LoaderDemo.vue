@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Loader } from '@/ui/loader'
+import { Loader } from '@/components/ui/loader'
 
 const spinners = [
   { variant: 'dots', name: 'Dots' },

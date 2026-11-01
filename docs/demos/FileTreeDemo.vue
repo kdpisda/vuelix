@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { FileTreeNode } from '@/ui/file-tree'
-import { FileTree } from '@/ui/file-tree'
+import type { FileTreeNode } from '@/components/ui/file-tree'
+import { FileTree } from '@/components/ui/file-tree'
 import { ref } from 'vue'
 
 const files: FileTreeNode[] = [

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import type { ChartPoint } from '@/ui/chart-utils'
+import type { ChartPoint } from '@/components/ui/chart-utils'
 import type { LineChartSeries } from './types'
 import { AnimatePresence, motion, useReducedMotion } from 'motion-v'
 import { computed, ref, useId } from 'vue'
@@ -16,7 +16,7 @@ import {
   niceTicks,
   useElementWidth,
   useTween,
-} from '@/ui/chart-utils'
+} from '@/components/ui/chart-utils'
 
 const props = withDefaults(defineProps<{
   /** X-axis categories, one per data point (dates, months…). */

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SortableList } from '@/ui/sortable-list'
+import { SortableList } from '@/components/ui/sortable-list'
 import { ref } from 'vue'
 
 interface Task { id: number, title: string, tag: string, tone: string }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Dock, DockItem } from '@/ui/dock'
+import { Dock, DockItem } from '@/components/ui/dock'
 import { Calendar, Camera, Home, Mail, Music, Settings } from 'lucide-vue-next'
 
 const apps = [

@@ -4,7 +4,7 @@ import type { BumpChartSeries } from './types'
 import { AnimatePresence, motion, useReducedMotion } from 'motion-v'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { cn } from '@/lib/utils'
-import { chartColor, ChartTooltip, useElementWidth, useTween } from '@/ui/chart-utils'
+import { chartColor, ChartTooltip, useElementWidth, useTween } from '@/components/ui/chart-utils'
 
 const props = withDefaults(defineProps<{
   /** Periods along the x-axis. */

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { LightboxImage } from '@/ui/lightbox'
-import { Lightbox } from '@/ui/lightbox'
+import type { LightboxImage } from '@/components/ui/lightbox'
+import { Lightbox } from '@/components/ui/lightbox'
 
 const photos = [
   { seed: 'harbor', alt: 'Golden Gate Bridge at sunset', caption: 'Golden hour over the Golden Gate, San Francisco.' },

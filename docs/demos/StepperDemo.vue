@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Stepper } from '@/ui/stepper'
-import { SpringButton } from '@/ui/spring-button'
+import { Stepper } from '@/components/ui/stepper'
+import { SpringButton } from '@/components/ui/spring-button'
 import { ref } from 'vue'
 
 const steps = [

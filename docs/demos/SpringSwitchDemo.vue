@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SpringSwitch } from '@/ui/spring-switch'
+import { SpringSwitch } from '@/components/ui/spring-switch'
 import { ref } from 'vue'
 
 const wifi = ref(true)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PullToRefresh } from '@/ui/pull-to-refresh'
+import { PullToRefresh } from '@/components/ui/pull-to-refresh'
 import { RotateCw } from 'lucide-vue-next'
 import { motion } from 'motion-v'
 import { ref } from 'vue'

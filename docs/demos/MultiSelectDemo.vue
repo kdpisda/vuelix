@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MultiSelect } from '@/ui/multi-select'
+import { MultiSelect } from '@/components/ui/multi-select'
 import { ref } from 'vue'
 
 const labels = ref(['bug', 'design'])

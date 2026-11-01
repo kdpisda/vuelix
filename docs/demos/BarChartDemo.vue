@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { BarChartSeries } from '@/ui/bar-chart'
-import { AnimatedTabs } from '@/ui/animated-tabs'
-import { BarChart } from '@/ui/bar-chart'
-import { SpringButton } from '@/ui/spring-button'
+import type { BarChartSeries } from '@/components/ui/bar-chart'
+import { AnimatedTabs } from '@/components/ui/animated-tabs'
+import { BarChart } from '@/components/ui/bar-chart'
+import { SpringButton } from '@/components/ui/spring-button'
 import { Shuffle } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

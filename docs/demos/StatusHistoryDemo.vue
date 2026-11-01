@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { StatusHistoryEntry } from '@/ui/status-history'
-import { SpringButton } from '@/ui/spring-button'
-import { StatusHistory } from '@/ui/status-history'
+import type { StatusHistoryEntry } from '@/components/ui/status-history'
+import { SpringButton } from '@/components/ui/spring-button'
+import { StatusHistory } from '@/components/ui/status-history'
 import { Shuffle } from 'lucide-vue-next'
 import { ref } from 'vue'
 

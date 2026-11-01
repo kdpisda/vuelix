@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { FunnelChartStage } from '@/ui/funnel-chart'
-import { AnimatedTabs } from '@/ui/animated-tabs'
-import { FunnelChart } from '@/ui/funnel-chart'
-import { SpringButton } from '@/ui/spring-button'
+import type { FunnelChartStage } from '@/components/ui/funnel-chart'
+import { AnimatedTabs } from '@/components/ui/animated-tabs'
+import { FunnelChart } from '@/components/ui/funnel-chart'
+import { SpringButton } from '@/components/ui/spring-button'
 import { Shuffle } from 'lucide-vue-next'
 import { ref } from 'vue'
 

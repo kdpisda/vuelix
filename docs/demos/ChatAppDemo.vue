@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ChatAppMessage } from '@/ui/chat-app'
-import { ChatApp } from '@/ui/chat-app'
+import type { ChatAppMessage } from '@/components/ui/chat-app'
+import { ChatApp } from '@/components/ui/chat-app'
 import { onBeforeUnmount, ref } from 'vue'
 
 const messages = ref<ChatAppMessage[]>([])

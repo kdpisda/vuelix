@@ -177,9 +177,12 @@ ${items}
     // the plugin works with both, only their type declarations disagree.
     plugins: [tailwindcss() as any],
     resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('../../registry', import.meta.url)),
-      },
+      // Sources import each other the way they look once installed (`@/components/ui/<name>`),
+      // so map that to registry/ui first, then `@` (e.g. `@/lib/utils`) to registry/.
+      alias: [
+        { find: /^@\/components\/ui\//, replacement: `${fileURLToPath(new URL('../../registry/ui', import.meta.url))}/` },
+        { find: /^@\//, replacement: `${fileURLToPath(new URL('../../registry', import.meta.url))}/` },
+      ],
     },
     ssr: {
       noExternal: ['motion-v'],

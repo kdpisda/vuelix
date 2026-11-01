@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RangeSlider } from '@/ui/range-slider'
+import { RangeSlider } from '@/components/ui/range-slider'
 import { Volume1, Volume2 } from 'lucide-vue-next'
 import { ref } from 'vue'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AuroraBackground } from '@/ui/aurora-background'
+import { AuroraBackground } from '@/components/ui/aurora-background'
 import { ArrowRight } from 'lucide-vue-next'
 </script>
 

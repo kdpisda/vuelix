@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Marquee } from '@/ui/marquee'
+import { Marquee } from '@/components/ui/marquee'
 
 const logos = ['Northwind', 'Acme', 'Globex', 'Umbrella', 'Initech', 'Hooli', 'Stark', 'Wayne']
 const quotes = [

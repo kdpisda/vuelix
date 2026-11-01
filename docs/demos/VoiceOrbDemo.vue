@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { VoiceOrbState } from '@/ui/voice-orb'
-import { VoiceOrb } from '@/ui/voice-orb'
+import type { VoiceOrbState } from '@/components/ui/voice-orb'
+import { VoiceOrb } from '@/components/ui/voice-orb'
 import { Pause, Play } from 'lucide-vue-next'
 import { AnimatePresence, motion } from 'motion-v'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'

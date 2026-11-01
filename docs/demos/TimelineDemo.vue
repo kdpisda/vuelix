@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { TimelineItem } from '@/ui/timeline'
-import { Timeline } from '@/ui/timeline'
+import type { TimelineItem } from '@/components/ui/timeline'
+import { Timeline } from '@/components/ui/timeline'
 import { CreditCard, PackageCheck, PackageOpen, Truck, Warehouse } from 'lucide-vue-next'
 
 const items: TimelineItem[] = [

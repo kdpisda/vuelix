@@ -4,8 +4,8 @@ import type { FunnelChartStage } from './types'
 import { motion, useReducedMotion } from 'motion-v'
 import { computed, ref } from 'vue'
 import { cn } from '@/lib/utils'
-import { chartColor, ChartTooltip, formatCompact, useElementWidth, useTween } from '@/ui/chart-utils'
-import { NumberTicker } from '@/ui/number-ticker'
+import { chartColor, ChartTooltip, formatCompact, useElementWidth, useTween } from '@/components/ui/chart-utils'
+import { NumberTicker } from '@/components/ui/number-ticker'
 
 const props = withDefaults(defineProps<{
   /** Stages in order, from the widest (top of the funnel) down. */

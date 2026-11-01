@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SpringButton } from '@/ui/spring-button'
+import { SpringButton } from '@/components/ui/spring-button'
 import { ref } from 'vue'
 
 const loading = ref(false)

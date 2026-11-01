@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ExpandingButton } from '@/ui/expanding-button'
+import { ExpandingButton } from '@/components/ui/expanding-button'
 import { Check, Link, Mail, MessageCircle, Plus, Send, Share2 } from 'lucide-vue-next'
 import { ref } from 'vue'
 

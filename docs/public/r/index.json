@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 59,
+  "count": 68,
   "items": [
     {
       "slug": "cta-button",
@@ -1841,6 +1841,224 @@
       ]
     },
     {
+      "slug": "bar-chart",
+      "name": "Bar Chart",
+      "description": "Grouped, stacked or horizontal bars that spring up in a stagger and glide between layouts.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/bar-chart",
+      "detail_url": "https://vuelix.dev/r/bar-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bar-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "BarChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/bar-chart/BarChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/bar-chart/BarChart.vue"
+        },
+        {
+          "path": "components/ui/bar-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bar-chart/index.ts"
+        },
+        {
+          "path": "components/ui/bar-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bar-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "bump-chart",
+      "name": "Bump Chart",
+      "description": "Rankings over time as curved lanes that draw in; hover one to bring it forward and dim the rest.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/bump-chart",
+      "detail_url": "https://vuelix.dev/r/bump-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bump-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "BumpChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/bump-chart/BumpChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/bump-chart/BumpChart.vue"
+        },
+        {
+          "path": "components/ui/bump-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bump-chart/index.ts"
+        },
+        {
+          "path": "components/ui/bump-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bump-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "donut-chart",
+      "name": "Donut Chart",
+      "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/donut-chart",
+      "detail_url": "https://vuelix.dev/r/donut-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/donut-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DonutChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/donut-chart/DonutChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/donut-chart/DonutChart.vue"
+        },
+        {
+          "path": "components/ui/donut-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/donut-chart/index.ts"
+        },
+        {
+          "path": "components/ui/donut-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/donut-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "funnel-chart",
+      "name": "Funnel Chart",
+      "description": "Conversion funnel whose stages spring open in sequence, joined by curved hand-offs with drop-off rates.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/funnel-chart",
+      "detail_url": "https://vuelix.dev/r/funnel-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/funnel-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FunnelChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/funnel-chart/FunnelChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/funnel-chart/FunnelChart.vue"
+        },
+        {
+          "path": "components/ui/funnel-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/funnel-chart/index.ts"
+        },
+        {
+          "path": "components/ui/funnel-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/funnel-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "heat-calendar",
+      "name": "Heat Calendar",
+      "description": "A year of daily activity as a weeks × weekdays grid that ripples in; drag across days to select a range.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/heat-calendar",
+      "detail_url": "https://vuelix.dev/r/heat-calendar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/heat-calendar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "HeatCalendar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/heat-calendar/HeatCalendar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/heat-calendar/HeatCalendar.vue"
+        },
+        {
+          "path": "components/ui/heat-calendar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/heat-calendar/index.ts"
+        },
+        {
+          "path": "components/ui/heat-calendar/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/heat-calendar/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "line-chart",
+      "name": "Line Chart",
+      "description": "Multi-series line or area chart that draws in, morphs on new data and tracks a snapping crosshair.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/line-chart",
+      "detail_url": "https://vuelix.dev/r/line-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/line-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "LineChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/line-chart/LineChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/line-chart/LineChart.vue"
+        },
+        {
+          "path": "components/ui/line-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/line-chart/index.ts"
+        },
+        {
+          "path": "components/ui/line-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/line-chart/types.ts"
+        }
+      ]
+    },
+    {
       "slug": "sparkline",
       "name": "Sparkline",
       "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
@@ -1867,6 +2085,129 @@
         {
           "path": "components/ui/sparkline/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/sparkline/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "status-history",
+      "name": "Status History",
+      "description": "Uptime bars per day that rise in a wave, coloured by status, with an overall uptime readout.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/status-history",
+      "detail_url": "https://vuelix.dev/r/status-history.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/status-history.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "StatusHistory"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/status-history/StatusHistory.vue",
+          "raw_url": "https://vuelix.dev/r/raw/status-history/StatusHistory.vue"
+        },
+        {
+          "path": "components/ui/status-history/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/status-history/index.ts"
+        },
+        {
+          "path": "components/ui/status-history/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/status-history/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "treemap",
+      "name": "Treemap",
+      "description": "Squarified treemap whose tiles glide to their new size and position whenever the data changes.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/treemap",
+      "detail_url": "https://vuelix.dev/r/treemap.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/treemap.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Treemap",
+          "squarify"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/treemap/Treemap.vue",
+          "raw_url": "https://vuelix.dev/r/raw/treemap/Treemap.vue"
+        },
+        {
+          "path": "components/ui/treemap/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/treemap/index.ts"
+        },
+        {
+          "path": "components/ui/treemap/squarify.ts",
+          "raw_url": "https://vuelix.dev/r/raw/treemap/squarify.ts"
+        },
+        {
+          "path": "components/ui/treemap/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/treemap/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "chart-utils",
+      "name": "Chart Utils",
+      "description": "Shared chart helpers: nice ticks, scales, monotone paths, tweened values and a clamped tooltip.",
+      "section": "charts",
+      "category": "Utilities",
+      "page_url": "https://vuelix.dev/charts/chart-utils",
+      "detail_url": "https://vuelix.dev/r/chart-utils.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chart-utils.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ChartTooltip",
+          "areaPath",
+          "chartColor",
+          "clamp",
+          "formatCompact",
+          "linearPath",
+          "linearScale",
+          "monotonePath",
+          "niceTicks",
+          "resample",
+          "useElementWidth",
+          "useTween"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/chart-utils/ChartTooltip.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chart-utils/ChartTooltip.vue"
+        },
+        {
+          "path": "components/ui/chart-utils/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chart-utils/index.ts"
+        },
+        {
+          "path": "components/ui/chart-utils/utils.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chart-utils/utils.ts"
         }
       ]
     }

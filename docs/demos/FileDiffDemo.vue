@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { FileDiffDecision } from '@/ui/file-diff'
-import { FileDiff } from '@/ui/file-diff'
+import type { FileDiffDecision } from '@/components/ui/file-diff'
+import { FileDiff } from '@/components/ui/file-diff'
 import { computed, ref } from 'vue'
 
 // Exactly what `git diff` prints — the agent's proposed change.

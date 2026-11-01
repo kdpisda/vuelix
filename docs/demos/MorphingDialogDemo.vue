@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MorphingDialog } from '@/ui/morphing-dialog'
+import { MorphingDialog } from '@/components/ui/morphing-dialog'
 </script>
 
 <template>

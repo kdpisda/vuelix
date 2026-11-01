@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { DonutChartDatum } from '@/ui/donut-chart'
-import { DonutChart } from '@/ui/donut-chart'
-import { SpringButton } from '@/ui/spring-button'
+import type { DonutChartDatum } from '@/components/ui/donut-chart'
+import { DonutChart } from '@/components/ui/donut-chart'
+import { SpringButton } from '@/components/ui/spring-button'
 import { Shuffle } from 'lucide-vue-next'
 import { ref } from 'vue'
 

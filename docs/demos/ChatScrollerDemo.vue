@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ChatMessage } from '@/ui/chat-message'
-import { ChatScroller } from '@/ui/chat-scroller'
+import { ChatMessage } from '@/components/ui/chat-message'
+import { ChatScroller } from '@/components/ui/chat-scroller'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 interface Msg { id: number, from: 'user' | 'assistant', text: string, time: string, streaming?: boolean, appear?: boolean }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { TreemapItem } from '@/ui/treemap'
-import { SpringButton } from '@/ui/spring-button'
-import { Treemap } from '@/ui/treemap'
+import type { TreemapItem } from '@/components/ui/treemap'
+import { SpringButton } from '@/components/ui/spring-button'
+import { Treemap } from '@/components/ui/treemap'
 import { Shuffle } from 'lucide-vue-next'
 import { ref } from 'vue'
 

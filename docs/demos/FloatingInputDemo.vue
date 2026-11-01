@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { FloatingInput } from '@/ui/floating-input'
+import { FloatingInput } from '@/components/ui/floating-input'
 import { AtSign, KeyRound, User } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

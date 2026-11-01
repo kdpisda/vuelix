@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { DateRange } from '@/ui/date-range-picker'
-import { DateRangePicker } from '@/ui/date-range-picker'
+import type { DateRange } from '@/components/ui/date-range-picker'
+import { DateRangePicker } from '@/components/ui/date-range-picker'
 import { onMounted, ref } from 'vue'
 
 const range = ref<DateRange>({ start: null, end: null })

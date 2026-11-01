@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AspectRatio } from '@/ui/aspect-ratio'
+import { AspectRatio } from '@/components/ui/aspect-ratio'
 import { ref } from 'vue'
 
 const presets = [

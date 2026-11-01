@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { IconSwapState } from '@/ui/icon-swap'
-import { IconSwap } from '@/ui/icon-swap'
+import type { IconSwapState } from '@/components/ui/icon-swap'
+import { IconSwap } from '@/components/ui/icon-swap'
 import { Check, Copy, Heart, Moon, Pause, Play, Sun, Volume1, Volume2, VolumeX } from 'lucide-vue-next'
 import { ref } from 'vue'
 

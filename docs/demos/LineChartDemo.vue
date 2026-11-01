@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { LineChartSeries } from '@/ui/line-chart'
-import { LineChart } from '@/ui/line-chart'
-import { SpringButton } from '@/ui/spring-button'
+import type { LineChartSeries } from '@/components/ui/line-chart'
+import { LineChart } from '@/components/ui/line-chart'
+import { SpringButton } from '@/components/ui/spring-button'
 import { Shuffle } from 'lucide-vue-next'
 import { ref } from 'vue'
 

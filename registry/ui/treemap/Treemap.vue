@@ -4,7 +4,7 @@ import type { TreemapItem } from './types'
 import { AnimatePresence, motion, useReducedMotion } from 'motion-v'
 import { computed, ref } from 'vue'
 import { cn } from '@/lib/utils'
-import { chartColor, ChartTooltip, formatCompact, useElementWidth } from '@/ui/chart-utils'
+import { chartColor, ChartTooltip, formatCompact, useElementWidth } from '@/components/ui/chart-utils'
 import { squarify } from './squarify'
 
 const props = withDefaults(defineProps<{

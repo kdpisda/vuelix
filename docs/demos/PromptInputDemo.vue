@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { PromptAttachment } from '@/ui/prompt-input'
-import { PromptInput } from '@/ui/prompt-input'
+import type { PromptAttachment } from '@/components/ui/prompt-input'
+import { PromptInput } from '@/components/ui/prompt-input'
 import { ChevronDown, Globe } from 'lucide-vue-next'
 import { AnimatePresence, motion } from 'motion-v'
 import { onBeforeUnmount, ref } from 'vue'
