@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 41,
+  "count": 50,
   "items": [
     {
       "slug": "cta-button",
@@ -1261,6 +1261,286 @@
         {
           "path": "components/ui/timeline/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/timeline/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "approval-card",
+      "name": "Approval Card",
+      "description": "Asks the user to approve an agent action, then collapses into a compact resolved row with a stamp that slams in.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/approval-card",
+      "detail_url": "https://vuelix.dev/r/approval-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/approval-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ApprovalCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/approval-card/ApprovalCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/approval-card/ApprovalCard.vue"
+        },
+        {
+          "path": "components/ui/approval-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/approval-card/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "chat-message",
+      "name": "Chat Message",
+      "description": "A chat message with avatar, streaming caret and copy, retry and feedback actions that fade in on hover.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/chat-message",
+      "detail_url": "https://vuelix.dev/r/chat-message.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-message.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ChatBubble",
+          "ChatMessage"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/chat-message/ChatBubble.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chat-message/ChatBubble.vue"
+        },
+        {
+          "path": "components/ui/chat-message/ChatMessage.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chat-message/ChatMessage.vue"
+        },
+        {
+          "path": "components/ui/chat-message/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chat-message/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "chat-scroller",
+      "name": "Chat Scroller",
+      "description": "A conversation viewport that sticks to the latest message, springs in a jump pill and keeps its place on prepend.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/chat-scroller",
+      "detail_url": "https://vuelix.dev/r/chat-scroller.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-scroller.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ChatScroller"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/chat-scroller/ChatScroller.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chat-scroller/ChatScroller.vue"
+        },
+        {
+          "path": "components/ui/chat-scroller/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chat-scroller/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "code-block",
+      "name": "Code Block",
+      "description": "Code with a file header, line numbers, highlighted lines, a copy-to-check button and a springy collapse for long snippets.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/code-block",
+      "detail_url": "https://vuelix.dev/r/code-block.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/code-block.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CodeBlock"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/code-block/CodeBlock.vue",
+          "raw_url": "https://vuelix.dev/r/raw/code-block/CodeBlock.vue"
+        },
+        {
+          "path": "components/ui/code-block/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/code-block/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "file-diff",
+      "name": "File Diff",
+      "description": "A unified diff viewer with a change bar, folding unchanged lines and per-hunk accept or reject that springs shut.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/file-diff",
+      "detail_url": "https://vuelix.dev/r/file-diff.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-diff.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FileDiff",
+          "parseUnifiedDiff"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/file-diff/FileDiff.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-diff/FileDiff.vue"
+        },
+        {
+          "path": "components/ui/file-diff/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-diff/index.ts"
+        },
+        {
+          "path": "components/ui/file-diff/parse-diff.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-diff/parse-diff.ts"
+        }
+      ]
+    },
+    {
+      "slug": "prompt-input",
+      "name": "Prompt Input",
+      "description": "An AI composer with an auto-growing textarea, pop-in attachment chips and a send button that morphs into stop.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/prompt-input",
+      "detail_url": "https://vuelix.dev/r/prompt-input.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/prompt-input.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "PromptInput"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/prompt-input/PromptInput.vue",
+          "raw_url": "https://vuelix.dev/r/raw/prompt-input/PromptInput.vue"
+        },
+        {
+          "path": "components/ui/prompt-input/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/prompt-input/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "task-list",
+      "name": "Task List",
+      "description": "An agent's plan with a live progress bar, spinning active step, drawn checkmarks and a strike that sweeps across.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/task-list",
+      "detail_url": "https://vuelix.dev/r/task-list.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/task-list.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "TaskList"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/task-list/TaskList.vue",
+          "raw_url": "https://vuelix.dev/r/raw/task-list/TaskList.vue"
+        },
+        {
+          "path": "components/ui/task-list/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/task-list/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "tool-call",
+      "name": "Tool Call",
+      "description": "A collapsible card for a tool invocation with a live status indicator, timer and pretty-printed arguments and result.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/tool-call",
+      "detail_url": "https://vuelix.dev/r/tool-call.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/tool-call.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ToolCall"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/tool-call/ToolCall.vue",
+          "raw_url": "https://vuelix.dev/r/raw/tool-call/ToolCall.vue"
+        },
+        {
+          "path": "components/ui/tool-call/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/tool-call/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "voice-orb",
+      "name": "Voice Orb",
+      "description": "A living orb for voice assistants that deforms with the audio level as it listens, thinks and speaks.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/voice-orb",
+      "detail_url": "https://vuelix.dev/r/voice-orb.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/voice-orb.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "VoiceOrb"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/voice-orb/VoiceOrb.vue",
+          "raw_url": "https://vuelix.dev/r/raw/voice-orb/VoiceOrb.vue"
+        },
+        {
+          "path": "components/ui/voice-orb/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/voice-orb/index.ts"
         }
       ]
     },

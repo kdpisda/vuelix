@@ -1014,6 +1014,230 @@
       ]
     },
     {
+      "name": "approval-card",
+      "type": "registry:ui",
+      "title": "Approval Card",
+      "description": "Asks the user to approve an agent action, then collapses into a compact resolved row with a stamp that slams in.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/approval-card/ApprovalCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/approval-card/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chat-message",
+      "type": "registry:ui",
+      "title": "Chat Message",
+      "description": "A chat message with avatar, streaming caret and copy, retry and feedback actions that fade in on hover.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/chat-message/ChatBubble.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chat-message/ChatMessage.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chat-message/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chat-scroller",
+      "type": "registry:ui",
+      "title": "Chat Scroller",
+      "description": "A conversation viewport that sticks to the latest message, springs in a jump pill and keeps its place on prepend.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/chat-scroller/ChatScroller.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chat-scroller/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "Code Block",
+      "description": "Code with a file header, line numbers, highlighted lines, a copy-to-check button and a springy collapse for long snippets.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/code-block/CodeBlock.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/code-block/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-diff",
+      "type": "registry:ui",
+      "title": "File Diff",
+      "description": "A unified diff viewer with a change bar, folding unchanged lines and per-hunk accept or reject that springs shut.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/file-diff/FileDiff.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-diff/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-diff/parse-diff.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "prompt-input",
+      "type": "registry:ui",
+      "title": "Prompt Input",
+      "description": "An AI composer with an auto-growing textarea, pop-in attachment chips and a send button that morphs into stop.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/prompt-input/PromptInput.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/prompt-input/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "task-list",
+      "type": "registry:ui",
+      "title": "Task List",
+      "description": "An agent's plan with a live progress bar, spinning active step, drawn checkmarks and a strike that sweeps across.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/task-list/TaskList.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/task-list/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tool-call",
+      "type": "registry:ui",
+      "title": "Tool Call",
+      "description": "A collapsible card for a tool invocation with a live status indicator, timer and pretty-printed arguments and result.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/tool-call/ToolCall.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/tool-call/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "voice-orb",
+      "type": "registry:ui",
+      "title": "Voice Orb",
+      "description": "A living orb for voice assistants that deforms with the audio level as it listens, thinks and speaks.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/voice-orb/VoiceOrb.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/voice-orb/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "sparkline",
       "type": "registry:ui",
       "title": "Sparkline",

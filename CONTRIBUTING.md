@@ -100,6 +100,12 @@ const emit = defineEmits<{ select: [value: string] }>()
   `outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50`.
 - **SSR-safe**: no `window` / `document` at setup top level — use `onMounted` or guards.
   Use `useId()` for ids. `Teleport to="body"` for overlays.
+- **Exported names are global**: the npm entry re-exports every component with `export *`, so
+  component, type and helper names must be unique across the library — prefix types
+  (`ToolCallStatus`, not `Status`). `pnpm typecheck` fails on a clash.
+- **CSS variables in inline styles / SVG**: the theme maps tokens with `@theme inline`, so only the
+  raw variables exist at runtime — use `var(--chart-1)`, `var(--primary)`, never
+  `var(--color-chart-1)`. For SVG gradients, `stop-color="currentColor"` + a `text-chart-*` class works well.
 - **No new global state** except via module-level `reactive` for imperative APIs (see toast-stack).
 - Keep each component self-contained and readable — people will copy and edit it.
 
@@ -132,5 +138,7 @@ npx vitepress preview docs --port 4173 &
 node scripts/check-pages.mjs --port 4173 --out .shots components/kebab-name
 node scripts/check-pages.mjs --port 4173 --out .shots --reduced components/kebab-name  # hydration check
 ```
+
+`vitepress preview` indexes files at startup — restart it after every `pnpm build`.
 
 Look at the light **and** dark screenshots in `.shots/`. Zero console errors is required.

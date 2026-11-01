@@ -41,6 +41,15 @@ import { Lightbox } from './ui/lightbox'
 import { MotionBadge } from './ui/motion-badge'
 import { SortableList } from './ui/sortable-list'
 import { Timeline } from './ui/timeline'
+import { ApprovalCard } from './ui/approval-card'
+import { ChatBubble, ChatMessage } from './ui/chat-message'
+import { ChatScroller } from './ui/chat-scroller'
+import { CodeBlock } from './ui/code-block'
+import { FileDiff } from './ui/file-diff'
+import { PromptInput } from './ui/prompt-input'
+import { TaskList } from './ui/task-list'
+import { ToolCall } from './ui/tool-call'
+import { VoiceOrb } from './ui/voice-orb'
 import { Sparkline } from './ui/sparkline'
 
 export * from './ui/cta-button'
@@ -83,6 +92,15 @@ export * from './ui/lightbox'
 export * from './ui/motion-badge'
 export * from './ui/sortable-list'
 export * from './ui/timeline'
+export * from './ui/approval-card'
+export * from './ui/chat-message'
+export * from './ui/chat-scroller'
+export * from './ui/code-block'
+export * from './ui/file-diff'
+export * from './ui/prompt-input'
+export * from './ui/task-list'
+export * from './ui/tool-call'
+export * from './ui/voice-orb'
 export * from './ui/sparkline'
 export { cn } from './lib/utils'
 
@@ -130,6 +148,16 @@ const components: Record<string, Component> = {
   MotionBadge,
   SortableList,
   Timeline,
+  ApprovalCard,
+  ChatBubble,
+  ChatMessage,
+  ChatScroller,
+  CodeBlock,
+  FileDiff,
+  PromptInput,
+  TaskList,
+  ToolCall,
+  VoiceOrb,
   Sparkline,
 }
 
