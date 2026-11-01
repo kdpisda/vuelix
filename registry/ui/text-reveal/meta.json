@@ -1,0 +1,9 @@
+{
+  "title": "Text Reveal",
+  "description": "Staggered word or character reveal with blur and lift.",
+  "section": "components",
+  "category": "Text & Motion",
+  "dependencies": [
+    "motion-v"
+  ]
+}

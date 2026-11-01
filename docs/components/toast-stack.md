@@ -1,6 +1,6 @@
 ---
 title: Toast Stack
-description: Stacked notifications that fan out on hover, with a tiny imperative API.
+description: "Stacked notifications that fan out on hover, with a tiny imperative API."
 ---
 
 <script setup>

@@ -20,7 +20,8 @@
     }
   ],
   "categories": [
-    "forms"
+    "components",
+    "inputs-forms"
   ],
   "type": "registry:ui"
 }

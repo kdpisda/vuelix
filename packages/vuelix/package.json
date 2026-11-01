@@ -1,0 +1,67 @@
+{
+  "name": "vuelix",
+  "version": "0.1.0",
+  "description": "Animated components for Vue 3 & Nuxt, built on Tailwind CSS and Motion.",
+  "license": "MIT",
+  "author": "Kuldeep Pisda (https://kdpisda.in)",
+  "homepage": "https://vuelix.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdpisda/vuelix.git",
+    "directory": "packages/vuelix"
+  },
+  "bugs": "https://github.com/kdpisda/vuelix/issues",
+  "keywords": [
+    "vue",
+    "vue3",
+    "nuxt",
+    "components",
+    "animation",
+    "motion",
+    "tailwindcss",
+    "ui"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./tailwind.css": "./dist/tailwind.css",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "style": "./dist/tailwind.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "motion-v": ">=2.0.0",
+    "tailwindcss": ">=4.0.0",
+    "vue": ">=3.5.0"
+  },
+  "dependencies": {
+    "@vueuse/core": "^15.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.7.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^7.0.0",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

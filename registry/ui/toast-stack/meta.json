@@ -1,0 +1,14 @@
+{
+  "title": "Toast Stack",
+  "description": "Stacked notifications that fan out on hover, with a tiny imperative API.",
+  "section": "components",
+  "category": "Feedback",
+  "dependencies": [
+    "motion-v"
+  ],
+  "exports": [
+    "toast",
+    "useToast",
+    "dismissToast"
+  ]
+}

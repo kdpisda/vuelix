@@ -21,7 +21,8 @@
     }
   ],
   "categories": [
-    "navigation"
+    "components",
+    "buttons-actions"
   ],
   "type": "registry:ui"
 }

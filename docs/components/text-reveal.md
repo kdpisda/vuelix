@@ -1,6 +1,6 @@
 ---
 title: Text Reveal
-description: Staggered word or character reveal with blur and lift.
+description: "Staggered word or character reveal with blur and lift."
 ---
 
 <script setup>

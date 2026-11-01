@@ -30,6 +30,7 @@
     }
   ],
   "categories": [
+    "components",
     "navigation"
   ],
   "type": "registry:ui"

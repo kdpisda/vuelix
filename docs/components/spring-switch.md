@@ -1,6 +1,6 @@
 ---
 title: Spring Switch
-description: A toggle whose thumb springs across and stretches while pressed.
+description: "A toggle whose thumb springs across and stretches while pressed."
 ---
 
 <script setup>

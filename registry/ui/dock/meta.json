@@ -1,0 +1,9 @@
+{
+  "title": "Dock",
+  "description": "A magnifying dock where icons grow as the pointer approaches.",
+  "section": "components",
+  "category": "Navigation",
+  "dependencies": [
+    "motion-v"
+  ]
+}

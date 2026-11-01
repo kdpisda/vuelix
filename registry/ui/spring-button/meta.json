@@ -1,0 +1,10 @@
+{
+  "title": "Spring Button",
+  "description": "A button with springy hover/press physics and a morphing loading state.",
+  "section": "components",
+  "category": "Buttons & Actions",
+  "dependencies": [
+    "motion-v",
+    "class-variance-authority"
+  ]
+}

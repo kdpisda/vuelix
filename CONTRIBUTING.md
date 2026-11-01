@@ -1,0 +1,126 @@
+# Contributing a component
+
+vuelix ships every component two ways — as copy-paste source (shadcn-vue registry) and as the
+`vuelix` npm package — both built from the same files in `registry/ui/<name>/`. This guide is the
+contract every component follows. Read an existing component first; `registry/ui/animated-tabs`,
+`registry/ui/toast-stack` and `registry/ui/sparkline` are good references.
+
+## 1. Files
+
+For a component named `kebab-name` in section `<section>` (`components`, `blocks`, `ai` or `charts`):
+
+| File | Purpose |
+| --- | --- |
+| `registry/ui/kebab-name/KebabName.vue` | The component (more `.vue` / `.ts` files in the same folder are fine) |
+| `registry/ui/kebab-name/index.ts` | Barrel: `export { default as KebabName } from './KebabName.vue'` (+ types / helpers) |
+| `registry/ui/kebab-name/meta.json` | Title, description, section, category, npm dependencies |
+| `docs/demos/KebabNameDemo.vue` | Live demo shown on the docs page |
+| `docs/<section>/kebab-name.md` | Docs page |
+
+**Never edit generated files**: `registry/catalog.json`, `registry.json`, `registry/index.ts`,
+`docs/public/r/*`. Run `pnpm registry:build` to regenerate them.
+
+### meta.json
+
+```json
+{
+  "title": "Kebab Name",
+  "description": "One sentence, under ~110 characters, describing what it does and what moves.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": ["motion-v"]
+}
+```
+
+- `section`: `components` · `blocks` · `ai` · `charts`
+- `category` for `components`: `Buttons & Actions`, `Inputs & Forms`, `Overlays`, `Navigation`,
+  `Layout & Surfaces`, `Text & Motion`, `Feedback`, `Data Display`. For `blocks`, `ai` and `charts`
+  use the section name (`Blocks`, `AI`, `Charts`) unless told otherwise.
+- `dependencies`: every npm package the component imports (besides `vue`). Allowed:
+  `motion-v`, `@vueuse/core`, `class-variance-authority`. Anything else needs a very good reason —
+  **no chart, date or UI libraries**: charts are hand-rolled SVG.
+- Optional `exports`: extra value exports re-exported via `export *` (e.g. `["toast", "useToast"]`).
+- Optional `registryDependencies`: other vuelix items this one needs, as full URLs
+  (`"https://vuelix.dev/r/spring-button.json"`). Import them as `@/ui/spring-button`.
+
+## 2. Code conventions
+
+```vue
+<script setup lang="ts">
+import type { HTMLAttributes } from 'vue'
+import { motion } from 'motion-v'
+import { cn } from '@/lib/utils'
+
+const props = withDefaults(defineProps<{
+  /** JSDoc every prop — it shows up in editors. */
+  size?: 'sm' | 'md'
+  class?: HTMLAttributes['class']
+}>(), { size: 'md' })
+
+const model = defineModel<string>()
+const emit = defineEmits<{ select: [value: string] }>()
+</script>
+```
+
+- **Vue 3.5 `<script setup lang="ts">`**, typed `defineProps` / `defineModel` / `defineEmits`.
+  Always accept `class` and merge it with `cn(...)` onto the root element.
+- **Imports**: `@/lib/utils` for `cn`, `@/ui/<other>` for other vuelix components, relative paths
+  inside the folder. Nothing else from the repo.
+- **Styling: Tailwind utilities + theme tokens only.** Use `bg-background`, `text-foreground`,
+  `bg-card`, `bg-popover`, `bg-muted`, `text-muted-foreground`, `bg-accent`, `bg-primary`,
+  `text-primary-foreground`, `bg-secondary`, `border` (border color comes from the theme),
+  `ring-ring`, `bg-destructive`, `bg-brand`, `text-chart-1…5` / `fill-chart-*` / `stroke-chart-*`.
+  - No `dark:` variants and no hard-coded colors in components — tokens already switch with `.dark`.
+    (Demos may use Tailwind palette colors / gradients for content imagery.)
+  - **No `<style>` blocks.** The npm package ships no component CSS. Use Tailwind arbitrary
+    values (`[mask-image:…]`, `[perspective:900px]`) or inline `:style` for one-offs.
+- **Motion** (`motion-v`, the Vue port of Framer Motion; API: `<motion.div :animate :initial :exit
+  :transition :while-hover :while-press :layout :layout-id>`, `AnimatePresence`, `useMotionValue`,
+  `useSpring`, `useTransform`, `useMotionTemplate`, `useInView`, `useAnimate`, `useReducedMotion`,
+  `useDomRef`):
+  - Prefer springs (`{ type: 'spring', stiffness, damping }`) for interactive motion; keep the
+    spring config in a const at the top so it's easy to tune.
+  - `layout-id`s must be unique per instance: ``const id = `vx-x-${useId()}` ``.
+  - `AnimatePresence` only animates the exit of **motion** children with a `key`.
+    Infinitely repeating animations never finish an exit — keep those outside `AnimatePresence`.
+  - Pointer-driven effects go through motion values, not Vue refs (no re-render per frame).
+  - Decorative motion (parallax, tilt, idle loops) must check `useReducedMotion()`.
+  - `ref` on a motion component gives a component instance — use `useDomRef()` for the element.
+- **Accessibility**: real `<button>`s / inputs, correct ARIA roles and states, keyboard support
+  (arrows / Home / End / Escape where expected), visible focus:
+  `outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50`.
+- **SSR-safe**: no `window` / `document` at setup top level — use `onMounted` or guards.
+  Use `useId()` for ids. `Teleport to="body"` for overlays.
+- **No new global state** except via module-level `reactive` for imperative APIs (see toast-stack).
+- Keep each component self-contained and readable — people will copy and edit it.
+
+## 3. Originality
+
+vuelix takes inspiration from great libraries but **never copies them**. Implement from the concept
+in your own words: your own markup, motion choreography, API and naming. Don't open or paraphrase
+another library's source. If a concept name is a well-known generic pattern (tabs, drawer, dock,
+command palette) keep it; if it's a distinctive name coined by another library, choose a new one.
+
+## 4. Demo + docs page
+
+`docs/demos/KebabNameDemo.vue` imports from `@/ui/kebab-name` and shows the component at its best
+with realistic content. It renders inside a ~720px-wide, ≥320px-tall stage — make it fit (use
+`max-w-*`). Overlays/toasts should be triggered by a button. Use `lucide-vue-next` for demo icons.
+
+`docs/<section>/kebab-name.md` — copy `docs/components/spring-button.md` and adapt:
+frontmatter (`title`, quoted `description`), `<ComponentPreview>` with the demo + code slot,
+`## Installation` with `<InstallTabs name="kebab-name" />` and the manual-install details block
+listing **every** file in the folder, `## Usage`, `## API` (props table; add emits / slots / exposed
+functions when relevant).
+
+## 5. Checks before committing
+
+```bash
+pnpm registry:build              # validates meta.json, regenerates the registry
+pnpm typecheck                   # vue-tsc over registry + demos
+pnpm build                       # docs site
+npx vitepress preview docs --port 4173 &
+node scripts/check-pages.mjs --port 4173 --out .shots components/kebab-name
+```
+
+Look at the light **and** dark screenshots in `.shots/`. Zero console errors is required.

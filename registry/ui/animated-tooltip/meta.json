@@ -1,0 +1,9 @@
+{
+  "title": "Animated Tooltip",
+  "description": "A lightweight tooltip that springs out from any side with a blur-in.",
+  "section": "components",
+  "category": "Overlays",
+  "dependencies": [
+    "motion-v"
+  ]
+}

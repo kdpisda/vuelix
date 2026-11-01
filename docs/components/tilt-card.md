@@ -1,6 +1,6 @@
 ---
 title: Tilt Card
-description: A 3D card that tilts toward the pointer with a moving glare.
+description: "A 3D card that tilts toward the pointer with a moving glare."
 ---
 
 <script setup>

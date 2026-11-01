@@ -1,6 +1,6 @@
 ---
 title: Spring Button
-description: A button with springy hover/press physics and a morphing loading state.
+description: "A button with springy hover/press physics and a morphing loading state."
 ---
 
 <script setup>

@@ -1,6 +1,6 @@
 ---
 title: Sparkline
-description: A tiny trend line that draws itself in, with a smooth monotone curve.
+description: "A tiny trend line that draws itself in, with a smooth monotone curve."
 ---
 
 <script setup>

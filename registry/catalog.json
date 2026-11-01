@@ -1,17 +1,218 @@
 [
-  { "name": "spring-button", "title": "Spring Button", "category": "Primitives", "description": "A button with springy hover/press physics and a morphing loading state.", "dependencies": ["motion-v", "class-variance-authority"] },
-  { "name": "animated-tabs", "title": "Animated Tabs", "category": "Primitives", "description": "Tabs with a shared-layout indicator that glides between triggers.", "dependencies": ["motion-v"] },
-  { "name": "spring-switch", "title": "Spring Switch", "category": "Primitives", "description": "A toggle whose thumb springs across and stretches while pressed.", "dependencies": ["motion-v"] },
-  { "name": "animated-tooltip", "title": "Animated Tooltip", "category": "Primitives", "description": "A lightweight tooltip that springs out from any side with a blur-in.", "dependencies": ["motion-v"] },
-  { "name": "bouncy-accordion", "title": "Bouncy Accordion", "category": "Primitives", "description": "Accordion panels that open with a bouncy height spring and blur-in content.", "dependencies": ["motion-v"] },
-  { "name": "number-ticker", "title": "Number Ticker", "category": "Text & Numbers", "description": "Counts up to a value with spring physics when scrolled into view.", "dependencies": ["motion-v"] },
-  { "name": "text-reveal", "title": "Text Reveal", "category": "Text & Numbers", "description": "Staggered word or character reveal with blur and lift.", "dependencies": ["motion-v"] },
-  { "name": "tilt-card", "title": "Tilt Card", "category": "Surfaces", "description": "A 3D card that tilts toward the pointer with a moving glare.", "dependencies": ["motion-v"] },
-  { "name": "morphing-dialog", "title": "Morphing Dialog", "category": "Surfaces", "description": "A card that morphs into a full dialog using a shared layout transition.", "dependencies": ["motion-v"] },
-  { "name": "dock", "title": "Dock", "category": "Navigation", "description": "A magnifying dock where icons grow as the pointer approaches.", "dependencies": ["motion-v"] },
-  { "name": "theme-toggle", "title": "Theme Toggle", "category": "Navigation", "description": "A sun/moon toggle with a rotating swap animation.", "dependencies": ["motion-v", "@vueuse/core"] },
-  { "name": "toast-stack", "title": "Toast Stack", "category": "Feedback", "description": "Stacked notifications that fan out on hover, with a tiny imperative API.", "dependencies": ["motion-v"] },
-  { "name": "avatar-group", "title": "Avatar Group", "category": "Data Display", "description": "Overlapping avatars that spread apart on hover with springy name tags.", "dependencies": ["motion-v"] },
-  { "name": "sparkline", "title": "Sparkline", "category": "Charts", "description": "A tiny trend line that draws itself in, with a smooth monotone curve.", "dependencies": ["motion-v"] },
-  { "name": "otp-input", "title": "OTP Input", "category": "Forms", "description": "One-time-code input with popping digits, a blinking caret and an error shake.", "dependencies": ["motion-v"] }
+  {
+    "name": "spring-button",
+    "title": "Spring Button",
+    "description": "A button with springy hover/press physics and a morphing loading state.",
+    "section": "components",
+    "category": "Buttons & Actions",
+    "url": "/components/spring-button",
+    "exports": [
+      "SpringButton"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
+    ]
+  },
+  {
+    "name": "theme-toggle",
+    "title": "Theme Toggle",
+    "description": "A sun/moon toggle with a rotating swap animation.",
+    "section": "components",
+    "category": "Buttons & Actions",
+    "url": "/components/theme-toggle",
+    "exports": [
+      "ThemeToggle"
+    ],
+    "dependencies": [
+      "motion-v",
+      "@vueuse/core"
+    ]
+  },
+  {
+    "name": "otp-input",
+    "title": "OTP Input",
+    "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/otp-input",
+    "exports": [
+      "OtpInput"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spring-switch",
+    "title": "Spring Switch",
+    "description": "A toggle whose thumb springs across and stretches while pressed.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/spring-switch",
+    "exports": [
+      "SpringSwitch"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "animated-tooltip",
+    "title": "Animated Tooltip",
+    "description": "A lightweight tooltip that springs out from any side with a blur-in.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/animated-tooltip",
+    "exports": [
+      "AnimatedTooltip"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "morphing-dialog",
+    "title": "Morphing Dialog",
+    "description": "A card that morphs into a full dialog using a shared layout transition.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/morphing-dialog",
+    "exports": [
+      "MorphingDialog"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "animated-tabs",
+    "title": "Animated Tabs",
+    "description": "Tabs with a shared-layout indicator that glides between triggers.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/animated-tabs",
+    "exports": [
+      "AnimatedTabs"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "dock",
+    "title": "Dock",
+    "description": "A magnifying dock where icons grow as the pointer approaches.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/dock",
+    "exports": [
+      "Dock",
+      "DockItem"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "bouncy-accordion",
+    "title": "Bouncy Accordion",
+    "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/bouncy-accordion",
+    "exports": [
+      "BouncyAccordion"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "tilt-card",
+    "title": "Tilt Card",
+    "description": "A 3D card that tilts toward the pointer with a moving glare.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/tilt-card",
+    "exports": [
+      "TiltCard"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "number-ticker",
+    "title": "Number Ticker",
+    "description": "Counts up to a value with spring physics when scrolled into view.",
+    "section": "components",
+    "category": "Text & Motion",
+    "url": "/components/number-ticker",
+    "exports": [
+      "NumberTicker"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "text-reveal",
+    "title": "Text Reveal",
+    "description": "Staggered word or character reveal with blur and lift.",
+    "section": "components",
+    "category": "Text & Motion",
+    "url": "/components/text-reveal",
+    "exports": [
+      "TextReveal"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "toast-stack",
+    "title": "Toast Stack",
+    "description": "Stacked notifications that fan out on hover, with a tiny imperative API.",
+    "section": "components",
+    "category": "Feedback",
+    "url": "/components/toast-stack",
+    "exports": [
+      "ToastStack",
+      "toast",
+      "useToast",
+      "dismissToast"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "avatar-group",
+    "title": "Avatar Group",
+    "description": "Overlapping avatars that spread apart on hover with springy name tags.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/avatar-group",
+    "exports": [
+      "AvatarGroup"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "sparkline",
+    "title": "Sparkline",
+    "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/sparkline",
+    "exports": [
+      "Sparkline"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  }
 ]

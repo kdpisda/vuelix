@@ -1,0 +1,480 @@
+{
+  "name": "vuelix",
+  "homepage": "https://vuelix.dev",
+  "description": "Animated, copy-paste components for Vue 3 & Nuxt, built on Tailwind CSS v4 and motion-v.",
+  "utils": {
+    "path": "lib/utils.ts",
+    "raw_url": "https://vuelix.dev/r/raw/utils.ts"
+  },
+  "count": 15,
+  "items": [
+    {
+      "slug": "spring-button",
+      "name": "Spring Button",
+      "description": "A button with springy hover/press physics and a morphing loading state.",
+      "section": "components",
+      "category": "Buttons & Actions",
+      "page_url": "https://vuelix.dev/components/spring-button",
+      "detail_url": "https://vuelix.dev/r/spring-button.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-button.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringButton"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-button/SpringButton.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-button/SpringButton.vue"
+        },
+        {
+          "path": "components/ui/spring-button/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-button/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "theme-toggle",
+      "name": "Theme Toggle",
+      "description": "A sun/moon toggle with a rotating swap animation.",
+      "section": "components",
+      "category": "Buttons & Actions",
+      "page_url": "https://vuelix.dev/components/theme-toggle",
+      "detail_url": "https://vuelix.dev/r/theme-toggle.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/theme-toggle.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ThemeToggle"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "@vueuse/core"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/theme-toggle/ThemeToggle.vue",
+          "raw_url": "https://vuelix.dev/r/raw/theme-toggle/ThemeToggle.vue"
+        },
+        {
+          "path": "components/ui/theme-toggle/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/theme-toggle/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "otp-input",
+      "name": "OTP Input",
+      "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/otp-input",
+      "detail_url": "https://vuelix.dev/r/otp-input.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/otp-input.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OtpInput"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/otp-input/OtpInput.vue",
+          "raw_url": "https://vuelix.dev/r/raw/otp-input/OtpInput.vue"
+        },
+        {
+          "path": "components/ui/otp-input/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/otp-input/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spring-switch",
+      "name": "Spring Switch",
+      "description": "A toggle whose thumb springs across and stretches while pressed.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/spring-switch",
+      "detail_url": "https://vuelix.dev/r/spring-switch.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-switch.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringSwitch"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-switch/SpringSwitch.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-switch/SpringSwitch.vue"
+        },
+        {
+          "path": "components/ui/spring-switch/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-switch/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "animated-tooltip",
+      "name": "Animated Tooltip",
+      "description": "A lightweight tooltip that springs out from any side with a blur-in.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/animated-tooltip",
+      "detail_url": "https://vuelix.dev/r/animated-tooltip.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/animated-tooltip.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AnimatedTooltip"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/animated-tooltip/AnimatedTooltip.vue",
+          "raw_url": "https://vuelix.dev/r/raw/animated-tooltip/AnimatedTooltip.vue"
+        },
+        {
+          "path": "components/ui/animated-tooltip/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/animated-tooltip/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "morphing-dialog",
+      "name": "Morphing Dialog",
+      "description": "A card that morphs into a full dialog using a shared layout transition.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/morphing-dialog",
+      "detail_url": "https://vuelix.dev/r/morphing-dialog.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/morphing-dialog.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MorphingDialog"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/morphing-dialog/MorphingDialog.vue",
+          "raw_url": "https://vuelix.dev/r/raw/morphing-dialog/MorphingDialog.vue"
+        },
+        {
+          "path": "components/ui/morphing-dialog/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/morphing-dialog/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "animated-tabs",
+      "name": "Animated Tabs",
+      "description": "Tabs with a shared-layout indicator that glides between triggers.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/animated-tabs",
+      "detail_url": "https://vuelix.dev/r/animated-tabs.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/animated-tabs.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AnimatedTabs"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/animated-tabs/AnimatedTabs.vue",
+          "raw_url": "https://vuelix.dev/r/raw/animated-tabs/AnimatedTabs.vue"
+        },
+        {
+          "path": "components/ui/animated-tabs/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/animated-tabs/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "dock",
+      "name": "Dock",
+      "description": "A magnifying dock where icons grow as the pointer approaches.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/dock",
+      "detail_url": "https://vuelix.dev/r/dock.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dock.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Dock",
+          "DockItem"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/dock/Dock.vue",
+          "raw_url": "https://vuelix.dev/r/raw/dock/Dock.vue"
+        },
+        {
+          "path": "components/ui/dock/DockItem.vue",
+          "raw_url": "https://vuelix.dev/r/raw/dock/DockItem.vue"
+        },
+        {
+          "path": "components/ui/dock/context.ts",
+          "raw_url": "https://vuelix.dev/r/raw/dock/context.ts"
+        },
+        {
+          "path": "components/ui/dock/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/dock/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "bouncy-accordion",
+      "name": "Bouncy Accordion",
+      "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/bouncy-accordion",
+      "detail_url": "https://vuelix.dev/r/bouncy-accordion.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bouncy-accordion.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "BouncyAccordion"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/bouncy-accordion/BouncyAccordion.vue",
+          "raw_url": "https://vuelix.dev/r/raw/bouncy-accordion/BouncyAccordion.vue"
+        },
+        {
+          "path": "components/ui/bouncy-accordion/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bouncy-accordion/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "tilt-card",
+      "name": "Tilt Card",
+      "description": "A 3D card that tilts toward the pointer with a moving glare.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/tilt-card",
+      "detail_url": "https://vuelix.dev/r/tilt-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/tilt-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "TiltCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/tilt-card/TiltCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/tilt-card/TiltCard.vue"
+        },
+        {
+          "path": "components/ui/tilt-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/tilt-card/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "number-ticker",
+      "name": "Number Ticker",
+      "description": "Counts up to a value with spring physics when scrolled into view.",
+      "section": "components",
+      "category": "Text & Motion",
+      "page_url": "https://vuelix.dev/components/number-ticker",
+      "detail_url": "https://vuelix.dev/r/number-ticker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/number-ticker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "NumberTicker"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/number-ticker/NumberTicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/number-ticker/NumberTicker.vue"
+        },
+        {
+          "path": "components/ui/number-ticker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/number-ticker/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "text-reveal",
+      "name": "Text Reveal",
+      "description": "Staggered word or character reveal with blur and lift.",
+      "section": "components",
+      "category": "Text & Motion",
+      "page_url": "https://vuelix.dev/components/text-reveal",
+      "detail_url": "https://vuelix.dev/r/text-reveal.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/text-reveal.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "TextReveal"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/text-reveal/TextReveal.vue",
+          "raw_url": "https://vuelix.dev/r/raw/text-reveal/TextReveal.vue"
+        },
+        {
+          "path": "components/ui/text-reveal/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/text-reveal/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "toast-stack",
+      "name": "Toast Stack",
+      "description": "Stacked notifications that fan out on hover, with a tiny imperative API.",
+      "section": "components",
+      "category": "Feedback",
+      "page_url": "https://vuelix.dev/components/toast-stack",
+      "detail_url": "https://vuelix.dev/r/toast-stack.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/toast-stack.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ToastStack",
+          "toast",
+          "useToast",
+          "dismissToast"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/toast-stack/ToastStack.vue",
+          "raw_url": "https://vuelix.dev/r/raw/toast-stack/ToastStack.vue"
+        },
+        {
+          "path": "components/ui/toast-stack/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/toast-stack/index.ts"
+        },
+        {
+          "path": "components/ui/toast-stack/use-toast.ts",
+          "raw_url": "https://vuelix.dev/r/raw/toast-stack/use-toast.ts"
+        }
+      ]
+    },
+    {
+      "slug": "avatar-group",
+      "name": "Avatar Group",
+      "description": "Overlapping avatars that spread apart on hover with springy name tags.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/avatar-group",
+      "detail_url": "https://vuelix.dev/r/avatar-group.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/avatar-group.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AvatarGroup"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/avatar-group/AvatarGroup.vue",
+          "raw_url": "https://vuelix.dev/r/raw/avatar-group/AvatarGroup.vue"
+        },
+        {
+          "path": "components/ui/avatar-group/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/avatar-group/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "sparkline",
+      "name": "Sparkline",
+      "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/sparkline",
+      "detail_url": "https://vuelix.dev/r/sparkline.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/sparkline.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Sparkline"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/sparkline/Sparkline.vue",
+          "raw_url": "https://vuelix.dev/r/raw/sparkline/Sparkline.vue"
+        },
+        {
+          "path": "components/ui/sparkline/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/sparkline/index.ts"
+        }
+      ]
+    }
+  ]
+}

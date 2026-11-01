@@ -1,6 +1,6 @@
 ---
 title: Dock
-description: A magnifying dock where icons grow as the pointer approaches.
+description: "A magnifying dock where icons grow as the pointer approaches."
 ---
 
 <script setup>

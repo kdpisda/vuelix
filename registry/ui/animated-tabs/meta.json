@@ -1,0 +1,9 @@
+{
+  "title": "Animated Tabs",
+  "description": "Tabs with a shared-layout indicator that glides between triggers.",
+  "section": "components",
+  "category": "Navigation",
+  "dependencies": [
+    "motion-v"
+  ]
+}

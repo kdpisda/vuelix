@@ -20,7 +20,8 @@
     }
   ],
   "categories": [
-    "text-numbers"
+    "components",
+    "text-motion"
   ],
   "type": "registry:ui"
 }

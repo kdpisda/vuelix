@@ -18,5 +18,6 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm typecheck
       - run: pnpm build
-      - name: Registry output is committed and up to date
-        run: git diff --exit-code -- registry.json docs/public/r
+      - run: pnpm build:package
+      - name: Generated registry files are committed and up to date
+        run: git diff --exit-code -- registry.json registry/index.ts docs/public/r
