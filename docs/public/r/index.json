@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 50,
+  "count": 51,
   "items": [
     {
       "slug": "cta-button",
@@ -1291,6 +1291,40 @@
         {
           "path": "components/ui/approval-card/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/approval-card/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "chat-app",
+      "name": "Chat App",
+      "description": "A complete AI chat: header, welcome screen with suggestions, streaming messages and a prompt composer.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/chat-app",
+      "detail_url": "https://vuelix.dev/r/chat-app.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-app.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ChatApp"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chat-message.json",
+        "https://vuelix.dev/r/chat-scroller.json",
+        "https://vuelix.dev/r/prompt-input.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/chat-app/ChatApp.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chat-app/ChatApp.vue"
+        },
+        {
+          "path": "components/ui/chat-app/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chat-app/index.ts"
         }
       ]
     },

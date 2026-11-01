@@ -1038,6 +1038,34 @@
       ]
     },
     {
+      "name": "chat-app",
+      "type": "registry:ui",
+      "title": "Chat App",
+      "description": "A complete AI chat: header, welcome screen with suggestions, streaming messages and a prompt composer.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chat-message.json",
+        "https://vuelix.dev/r/chat-scroller.json",
+        "https://vuelix.dev/r/prompt-input.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/chat-app/ChatApp.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chat-app/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "chat-message",
       "type": "registry:ui",
       "title": "Chat Message",

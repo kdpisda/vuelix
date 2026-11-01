@@ -586,6 +586,20 @@
     ]
   },
   {
+    "name": "chat-app",
+    "title": "Chat App",
+    "description": "A complete AI chat: header, welcome screen with suggestions, streaming messages and a prompt composer.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/chat-app",
+    "exports": [
+      "ChatApp"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "chat-message",
     "title": "Chat Message",
     "description": "A chat message with avatar, streaming caret and copy, retry and feedback actions that fade in on hover.",

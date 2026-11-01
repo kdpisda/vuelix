@@ -42,6 +42,7 @@ import { MotionBadge } from './ui/motion-badge'
 import { SortableList } from './ui/sortable-list'
 import { Timeline } from './ui/timeline'
 import { ApprovalCard } from './ui/approval-card'
+import { ChatApp } from './ui/chat-app'
 import { ChatBubble, ChatMessage } from './ui/chat-message'
 import { ChatScroller } from './ui/chat-scroller'
 import { CodeBlock } from './ui/code-block'
@@ -93,6 +94,7 @@ export * from './ui/motion-badge'
 export * from './ui/sortable-list'
 export * from './ui/timeline'
 export * from './ui/approval-card'
+export * from './ui/chat-app'
 export * from './ui/chat-message'
 export * from './ui/chat-scroller'
 export * from './ui/code-block'
@@ -149,6 +151,7 @@ const components: Record<string, Component> = {
   SortableList,
   Timeline,
   ApprovalCard,
+  ChatApp,
   ChatBubble,
   ChatMessage,
   ChatScroller,
