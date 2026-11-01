@@ -1,0 +1,9 @@
+{
+  "title": "Command Palette",
+  "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}
