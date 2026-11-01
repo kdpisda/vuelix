@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { RadialMenuItem } from '@/ui/radial-menu'
-import { RadialMenu } from '@/ui/radial-menu'
+import type { RadialMenuItem } from '@/components/ui/radial-menu'
+import { RadialMenu } from '@/components/ui/radial-menu'
 import { Camera, FileText, Image, Link, Mic, PenLine } from 'lucide-vue-next'
 import { ref } from 'vue'
 

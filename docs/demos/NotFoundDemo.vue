@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NotFound } from '@/ui/not-found'
+import { NotFound } from '@/components/ui/not-found'
 import { ref } from 'vue'
 
 const searched = ref('')

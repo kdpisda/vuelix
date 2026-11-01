@@ -812,6 +812,20 @@
     ]
   },
   {
+    "name": "card-fan",
+    "title": "Card Fan",
+    "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/card-fan",
+    "exports": [
+      "CardFan"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "command-palette",
     "title": "Command Palette",
     "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
@@ -870,6 +884,20 @@
     ]
   },
   {
+    "name": "match-fixtures",
+    "title": "Match Fixtures",
+    "description": "A fixtures and results list with live minutes, rolling scores, goal flashes and an expandable events timeline.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/match-fixtures",
+    "exports": [
+      "MatchFixtures"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "morphing-search",
     "title": "Morphing Search",
     "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
@@ -884,6 +912,34 @@
     ]
   },
   {
+    "name": "not-found",
+    "title": "Not Found",
+    "description": "A 404 section whose giant digits float, dodge the pointer on springs and can be flung around, with search and links home.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/not-found",
+    "exports": [
+      "NotFound"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "odds-card",
+    "title": "Odds Card",
+    "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/odds-card",
+    "exports": [
+      "OddsCard"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "overflow-toolbar",
     "title": "Overflow Toolbar",
     "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
@@ -892,6 +948,34 @@
     "url": "/blocks/overflow-toolbar",
     "exports": [
       "OverflowToolbar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "radial-menu",
+    "title": "Radial Menu",
+    "description": "A floating button that blooms into a ring of actions with staggered springs, hover labels and arrow-key navigation.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/radial-menu",
+    "exports": [
+      "RadialMenu"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "wallet-card",
+    "title": "Wallet Card",
+    "description": "A stack of payment cards that springs a card to the front, flips it for details and rolls in its balance.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/wallet-card",
+    "exports": [
+      "WalletCard"
     ],
     "dependencies": [
       "motion-v"

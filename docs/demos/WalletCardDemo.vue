@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { WalletCardItem } from '@/ui/wallet-card'
-import { WalletCard } from '@/ui/wallet-card'
+import type { WalletCardItem } from '@/components/ui/wallet-card'
+import { WalletCard } from '@/components/ui/wallet-card'
 import { ref } from 'vue'
 
 const cards: WalletCardItem[] = [

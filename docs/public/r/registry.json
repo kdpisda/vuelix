@@ -1450,6 +1450,30 @@
       ]
     },
     {
+      "name": "card-fan",
+      "type": "registry:ui",
+      "title": "Card Fan",
+      "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/card-fan/CardFan.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/card-fan/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "command-palette",
       "type": "registry:ui",
       "title": "Command Palette",
@@ -1550,6 +1574,38 @@
       ]
     },
     {
+      "name": "match-fixtures",
+      "type": "registry:ui",
+      "title": "Match Fixtures",
+      "description": "A fixtures and results list with live minutes, rolling scores, goal flashes and an expandable events timeline.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/match-fixtures/FixtureCrest.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/match-fixtures/MatchFixtures.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/match-fixtures/RollingNumber.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/match-fixtures/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "morphing-search",
       "type": "registry:ui",
       "title": "Morphing Search",
@@ -1574,6 +1630,62 @@
       ]
     },
     {
+      "name": "not-found",
+      "type": "registry:ui",
+      "title": "Not Found",
+      "description": "A 404 section whose giant digits float, dodge the pointer on springs and can be flung around, with search and links home.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/not-found/NotFound.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/not-found/NotFoundDigit.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/not-found/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "odds-card",
+      "type": "registry:ui",
+      "title": "Odds Card",
+      "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/odds-card/OddsCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/odds-card/RollingNumber.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/odds-card/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "overflow-toolbar",
       "type": "registry:ui",
       "title": "Overflow Toolbar",
@@ -1593,6 +1705,58 @@
         },
         {
           "path": "registry/ui/overflow-toolbar/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radial-menu",
+      "type": "registry:ui",
+      "title": "Radial Menu",
+      "description": "A floating button that blooms into a ring of actions with staggered springs, hover labels and arrow-key navigation.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/radial-menu/RadialMenu.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/radial-menu/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "wallet-card",
+      "type": "registry:ui",
+      "title": "Wallet Card",
+      "description": "A stack of payment cards that springs a card to the front, flips it for details and rolls in its balance.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/wallet-card/RollingNumber.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wallet-card/WalletCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wallet-card/index.ts",
           "type": "registry:ui"
         }
       ]

@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 91,
+  "count": 97,
   "items": [
     {
       "slug": "cta-button",
@@ -1805,6 +1805,36 @@
       ]
     },
     {
+      "slug": "card-fan",
+      "name": "Card Fan",
+      "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/card-fan",
+      "detail_url": "https://vuelix.dev/r/card-fan.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/card-fan.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CardFan"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/card-fan/CardFan.vue",
+          "raw_url": "https://vuelix.dev/r/raw/card-fan/CardFan.vue"
+        },
+        {
+          "path": "components/ui/card-fan/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/card-fan/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "command-palette",
       "name": "Command Palette",
       "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
@@ -1931,6 +1961,44 @@
       ]
     },
     {
+      "slug": "match-fixtures",
+      "name": "Match Fixtures",
+      "description": "A fixtures and results list with live minutes, rolling scores, goal flashes and an expandable events timeline.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/match-fixtures",
+      "detail_url": "https://vuelix.dev/r/match-fixtures.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/match-fixtures.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MatchFixtures"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/match-fixtures/FixtureCrest.vue",
+          "raw_url": "https://vuelix.dev/r/raw/match-fixtures/FixtureCrest.vue"
+        },
+        {
+          "path": "components/ui/match-fixtures/MatchFixtures.vue",
+          "raw_url": "https://vuelix.dev/r/raw/match-fixtures/MatchFixtures.vue"
+        },
+        {
+          "path": "components/ui/match-fixtures/RollingNumber.vue",
+          "raw_url": "https://vuelix.dev/r/raw/match-fixtures/RollingNumber.vue"
+        },
+        {
+          "path": "components/ui/match-fixtures/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/match-fixtures/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "morphing-search",
       "name": "Morphing Search",
       "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
@@ -1961,6 +2029,74 @@
       ]
     },
     {
+      "slug": "not-found",
+      "name": "Not Found",
+      "description": "A 404 section whose giant digits float, dodge the pointer on springs and can be flung around, with search and links home.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/not-found",
+      "detail_url": "https://vuelix.dev/r/not-found.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/not-found.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "NotFound"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/not-found/NotFound.vue",
+          "raw_url": "https://vuelix.dev/r/raw/not-found/NotFound.vue"
+        },
+        {
+          "path": "components/ui/not-found/NotFoundDigit.vue",
+          "raw_url": "https://vuelix.dev/r/raw/not-found/NotFoundDigit.vue"
+        },
+        {
+          "path": "components/ui/not-found/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/not-found/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "odds-card",
+      "name": "Odds Card",
+      "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/odds-card",
+      "detail_url": "https://vuelix.dev/r/odds-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/odds-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OddsCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/odds-card/OddsCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/odds-card/OddsCard.vue"
+        },
+        {
+          "path": "components/ui/odds-card/RollingNumber.vue",
+          "raw_url": "https://vuelix.dev/r/raw/odds-card/RollingNumber.vue"
+        },
+        {
+          "path": "components/ui/odds-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/odds-card/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "overflow-toolbar",
       "name": "Overflow Toolbar",
       "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
@@ -1987,6 +2123,70 @@
         {
           "path": "components/ui/overflow-toolbar/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/overflow-toolbar/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "radial-menu",
+      "name": "Radial Menu",
+      "description": "A floating button that blooms into a ring of actions with staggered springs, hover labels and arrow-key navigation.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/radial-menu",
+      "detail_url": "https://vuelix.dev/r/radial-menu.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/radial-menu.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "RadialMenu"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/radial-menu/RadialMenu.vue",
+          "raw_url": "https://vuelix.dev/r/raw/radial-menu/RadialMenu.vue"
+        },
+        {
+          "path": "components/ui/radial-menu/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/radial-menu/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "wallet-card",
+      "name": "Wallet Card",
+      "description": "A stack of payment cards that springs a card to the front, flips it for details and rolls in its balance.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/wallet-card",
+      "detail_url": "https://vuelix.dev/r/wallet-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/wallet-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "WalletCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/wallet-card/RollingNumber.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wallet-card/RollingNumber.vue"
+        },
+        {
+          "path": "components/ui/wallet-card/WalletCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wallet-card/WalletCard.vue"
+        },
+        {
+          "path": "components/ui/wallet-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/wallet-card/index.ts"
         }
       ]
     },

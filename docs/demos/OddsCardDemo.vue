@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { OddsOutcome, OddsTrade } from '@/ui/odds-card'
-import { OddsCard } from '@/ui/odds-card'
+import type { OddsOutcome, OddsTrade } from '@/components/ui/odds-card'
+import { OddsCard } from '@/components/ui/odds-card'
 import { Sailboat } from 'lucide-vue-next'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Fixture } from '@/ui/match-fixtures'
-import { MatchFixtures } from '@/ui/match-fixtures'
+import type { Fixture } from '@/components/ui/match-fixtures'
+import { MatchFixtures } from '@/components/ui/match-fixtures'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 const teams = {

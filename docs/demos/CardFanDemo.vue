@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { CardFanItem } from '@/ui/card-fan'
-import { CardFan } from '@/ui/card-fan'
+import type { CardFanItem } from '@/components/ui/card-fan'
+import { CardFan } from '@/components/ui/card-fan'
 import { Hand, Shuffle } from 'lucide-vue-next'
 
 const suits = [
