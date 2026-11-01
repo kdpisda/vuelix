@@ -1,0 +1,9 @@
+{
+  "title": "Suggestion Chips",
+  "description": "Prompt suggestions that stagger in, lift on hover, fly into your input on click and reshuffle.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}
