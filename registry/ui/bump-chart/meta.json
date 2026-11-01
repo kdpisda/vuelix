@@ -1,0 +1,12 @@
+{
+  "title": "Bump Chart",
+  "description": "Rankings over time as curved lanes that draw in; hover one to bring it forward and dim the rest.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chart-utils.json"
+  ]
+}

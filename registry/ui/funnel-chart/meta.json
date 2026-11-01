@@ -1,0 +1,13 @@
+{
+  "title": "Funnel Chart",
+  "description": "Conversion funnel whose stages spring open in sequence, joined by curved hand-offs with drop-off rates.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chart-utils.json",
+    "https://vuelix.dev/r/number-ticker.json"
+  ]
+}

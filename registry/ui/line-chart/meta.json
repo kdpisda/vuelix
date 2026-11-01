@@ -1,0 +1,12 @@
+{
+  "title": "Line Chart",
+  "description": "Multi-series line or area chart that draws in, morphs on new data and tracks a snapping crosshair.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chart-utils.json"
+  ]
+}
