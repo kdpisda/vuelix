@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 33,
+  "count": 41,
   "items": [
     {
       "slug": "cta-button",
@@ -631,6 +631,36 @@
       ]
     },
     {
+      "slug": "aspect-ratio",
+      "name": "Aspect Ratio",
+      "description": "A fluid box that holds a ratio and springs smoothly to a new shape when the ratio changes.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/aspect-ratio",
+      "detail_url": "https://vuelix.dev/r/aspect-ratio.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/aspect-ratio.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AspectRatio"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/aspect-ratio/AspectRatio.vue",
+          "raw_url": "https://vuelix.dev/r/raw/aspect-ratio/AspectRatio.vue"
+        },
+        {
+          "path": "components/ui/aspect-ratio/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/aspect-ratio/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "bouncy-accordion",
       "name": "Bouncy Accordion",
       "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
@@ -661,6 +691,36 @@
       ]
     },
     {
+      "slug": "collapsible",
+      "name": "Collapsible",
+      "description": "A single disclosure whose content springs open to its natural height and blurs into focus.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/collapsible",
+      "detail_url": "https://vuelix.dev/r/collapsible.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/collapsible.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Collapsible"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/collapsible/Collapsible.vue",
+          "raw_url": "https://vuelix.dev/r/raw/collapsible/Collapsible.vue"
+        },
+        {
+          "path": "components/ui/collapsible/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/collapsible/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "hover-highlight",
       "name": "Hover Highlight",
       "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
@@ -687,6 +747,36 @@
         {
           "path": "components/ui/hover-highlight/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/hover-highlight/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spotlight-card",
+      "name": "Spotlight Card",
+      "description": "A card lit by a soft spotlight and glowing rim that follow the pointer, with a gentle hover lift.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/spotlight-card",
+      "detail_url": "https://vuelix.dev/r/spotlight-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spotlight-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpotlightCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spotlight-card/SpotlightCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spotlight-card/SpotlightCard.vue"
+        },
+        {
+          "path": "components/ui/spotlight-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spotlight-card/index.ts"
         }
       ]
     },
@@ -974,6 +1064,116 @@
       ]
     },
     {
+      "slug": "data-table",
+      "name": "Data Table",
+      "description": "A sortable, selectable table whose rows glide into their new order and whose selection bar slides up.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/data-table",
+      "detail_url": "https://vuelix.dev/r/data-table.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/data-table.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DataTable"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/data-table/DataTable.vue",
+          "raw_url": "https://vuelix.dev/r/raw/data-table/DataTable.vue"
+        },
+        {
+          "path": "components/ui/data-table/DataTableCheckbox.vue",
+          "raw_url": "https://vuelix.dev/r/raw/data-table/DataTableCheckbox.vue"
+        },
+        {
+          "path": "components/ui/data-table/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/data-table/index.ts"
+        },
+        {
+          "path": "components/ui/data-table/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/data-table/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "file-tree",
+      "name": "File Tree",
+      "description": "A keyboard-navigable file tree whose folders spring open and whose selection glides between rows.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/file-tree",
+      "detail_url": "https://vuelix.dev/r/file-tree.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-tree.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FileTree"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/file-tree/FileTree.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/FileTree.vue"
+        },
+        {
+          "path": "components/ui/file-tree/FileTreeIcon.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/FileTreeIcon.vue"
+        },
+        {
+          "path": "components/ui/file-tree/FileTreeItem.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/FileTreeItem.vue"
+        },
+        {
+          "path": "components/ui/file-tree/context.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/context.ts"
+        },
+        {
+          "path": "components/ui/file-tree/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "lightbox",
+      "name": "Lightbox",
+      "description": "An image grid whose thumbnails morph into a full-screen viewer you can swipe through or drag away.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/lightbox",
+      "detail_url": "https://vuelix.dev/r/lightbox.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/lightbox.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Lightbox"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/lightbox/Lightbox.vue",
+          "raw_url": "https://vuelix.dev/r/raw/lightbox/Lightbox.vue"
+        },
+        {
+          "path": "components/ui/lightbox/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/lightbox/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "motion-badge",
       "name": "Motion Badge",
       "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
@@ -1001,6 +1201,66 @@
         {
           "path": "components/ui/motion-badge/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/motion-badge/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "sortable-list",
+      "name": "Sortable List",
+      "description": "A drag-to-reorder list where rows lift off the page and the rest glide aside; keyboard friendly.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/sortable-list",
+      "detail_url": "https://vuelix.dev/r/sortable-list.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/sortable-list.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SortableList"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/sortable-list/SortableList.vue",
+          "raw_url": "https://vuelix.dev/r/raw/sortable-list/SortableList.vue"
+        },
+        {
+          "path": "components/ui/sortable-list/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/sortable-list/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "timeline",
+      "name": "Timeline",
+      "description": "A vertical timeline whose line draws in as you scroll while each event pops and slides into place.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/timeline",
+      "detail_url": "https://vuelix.dev/r/timeline.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/timeline.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Timeline"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/timeline/Timeline.vue",
+          "raw_url": "https://vuelix.dev/r/raw/timeline/Timeline.vue"
+        },
+        {
+          "path": "components/ui/timeline/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/timeline/index.ts"
         }
       ]
     },

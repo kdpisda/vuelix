@@ -504,6 +504,30 @@
       ]
     },
     {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "A fluid box that holds a ratio and springs smoothly to a new shape when the ratio changes.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/aspect-ratio/AspectRatio.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/aspect-ratio/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "bouncy-accordion",
       "type": "registry:ui",
       "title": "Bouncy Accordion",
@@ -528,6 +552,30 @@
       ]
     },
     {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "A single disclosure whose content springs open to its natural height and blurs into focus.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/collapsible/Collapsible.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/collapsible/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hover-highlight",
       "type": "registry:ui",
       "title": "Hover Highlight",
@@ -547,6 +595,30 @@
         },
         {
           "path": "registry/ui/hover-highlight/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spotlight-card",
+      "type": "registry:ui",
+      "title": "Spotlight Card",
+      "description": "A card lit by a soft spotlight and glowing rim that follow the pointer, with a gentle hover lift.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spotlight-card/SpotlightCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spotlight-card/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -777,6 +849,98 @@
       ]
     },
     {
+      "name": "data-table",
+      "type": "registry:ui",
+      "title": "Data Table",
+      "description": "A sortable, selectable table whose rows glide into their new order and whose selection bar slides up.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/data-table/DataTable.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/data-table/DataTableCheckbox.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/data-table/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/data-table/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-tree",
+      "type": "registry:ui",
+      "title": "File Tree",
+      "description": "A keyboard-navigable file tree whose folders spring open and whose selection glides between rows.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/file-tree/FileTree.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-tree/FileTreeIcon.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-tree/FileTreeItem.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-tree/context.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-tree/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "lightbox",
+      "type": "registry:ui",
+      "title": "Lightbox",
+      "description": "An image grid whose thumbnails morph into a full-screen viewer you can swipe through or drag away.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/lightbox/Lightbox.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/lightbox/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "motion-badge",
       "type": "registry:ui",
       "title": "Motion Badge",
@@ -797,6 +961,54 @@
         },
         {
           "path": "registry/ui/motion-badge/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sortable-list",
+      "type": "registry:ui",
+      "title": "Sortable List",
+      "description": "A drag-to-reorder list where rows lift off the page and the rest glide aside; keyboard friendly.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/sortable-list/SortableList.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/sortable-list/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:ui",
+      "title": "Timeline",
+      "description": "A vertical timeline whose line draws in as you scroll while each event pops and slides into place.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/timeline/Timeline.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/timeline/index.ts",
           "type": "registry:ui"
         }
       ]

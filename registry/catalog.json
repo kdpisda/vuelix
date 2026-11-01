@@ -286,6 +286,20 @@
     ]
   },
   {
+    "name": "aspect-ratio",
+    "title": "Aspect Ratio",
+    "description": "A fluid box that holds a ratio and springs smoothly to a new shape when the ratio changes.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/aspect-ratio",
+    "exports": [
+      "AspectRatio"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "bouncy-accordion",
     "title": "Bouncy Accordion",
     "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
@@ -300,6 +314,20 @@
     ]
   },
   {
+    "name": "collapsible",
+    "title": "Collapsible",
+    "description": "A single disclosure whose content springs open to its natural height and blurs into focus.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/collapsible",
+    "exports": [
+      "Collapsible"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "hover-highlight",
     "title": "Hover Highlight",
     "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
@@ -308,6 +336,20 @@
     "url": "/components/hover-highlight",
     "exports": [
       "HoverHighlight"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spotlight-card",
+    "title": "Spotlight Card",
+    "description": "A card lit by a soft spotlight and glowing rim that follow the pointer, with a gentle hover lift.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/spotlight-card",
+    "exports": [
+      "SpotlightCard"
     ],
     "dependencies": [
       "motion-v"
@@ -445,6 +487,48 @@
     ]
   },
   {
+    "name": "data-table",
+    "title": "Data Table",
+    "description": "A sortable, selectable table whose rows glide into their new order and whose selection bar slides up.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/data-table",
+    "exports": [
+      "DataTable"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "file-tree",
+    "title": "File Tree",
+    "description": "A keyboard-navigable file tree whose folders spring open and whose selection glides between rows.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/file-tree",
+    "exports": [
+      "FileTree"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "lightbox",
+    "title": "Lightbox",
+    "description": "An image grid whose thumbnails morph into a full-screen viewer you can swipe through or drag away.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/lightbox",
+    "exports": [
+      "Lightbox"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "motion-badge",
     "title": "Motion Badge",
     "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
@@ -457,6 +541,34 @@
     "dependencies": [
       "motion-v",
       "class-variance-authority"
+    ]
+  },
+  {
+    "name": "sortable-list",
+    "title": "Sortable List",
+    "description": "A drag-to-reorder list where rows lift off the page and the rest glide aside; keyboard friendly.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/sortable-list",
+    "exports": [
+      "SortableList"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "timeline",
+    "title": "Timeline",
+    "description": "A vertical timeline whose line draws in as you scroll while each event pops and slides into place.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/timeline",
+    "exports": [
+      "Timeline"
+    ],
+    "dependencies": [
+      "motion-v"
     ]
   },
   {

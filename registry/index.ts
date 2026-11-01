@@ -21,8 +21,11 @@ import { MorphingDialog } from './ui/morphing-dialog'
 import { AnimatedTabs } from './ui/animated-tabs'
 import { Dock, DockItem } from './ui/dock'
 import { Stepper } from './ui/stepper'
+import { AspectRatio } from './ui/aspect-ratio'
 import { BouncyAccordion } from './ui/bouncy-accordion'
+import { Collapsible } from './ui/collapsible'
 import { HoverHighlight } from './ui/hover-highlight'
+import { SpotlightCard } from './ui/spotlight-card'
 import { TiltCard } from './ui/tilt-card'
 import { Marquee } from './ui/marquee'
 import { NumberTicker } from './ui/number-ticker'
@@ -32,7 +35,12 @@ import { Alert } from './ui/alert'
 import { Loader } from './ui/loader'
 import { ToastStack } from './ui/toast-stack'
 import { AvatarGroup } from './ui/avatar-group'
+import { DataTable } from './ui/data-table'
+import { FileTree } from './ui/file-tree'
+import { Lightbox } from './ui/lightbox'
 import { MotionBadge } from './ui/motion-badge'
+import { SortableList } from './ui/sortable-list'
+import { Timeline } from './ui/timeline'
 import { Sparkline } from './ui/sparkline'
 
 export * from './ui/cta-button'
@@ -55,8 +63,11 @@ export * from './ui/morphing-dialog'
 export * from './ui/animated-tabs'
 export * from './ui/dock'
 export * from './ui/stepper'
+export * from './ui/aspect-ratio'
 export * from './ui/bouncy-accordion'
+export * from './ui/collapsible'
 export * from './ui/hover-highlight'
+export * from './ui/spotlight-card'
 export * from './ui/tilt-card'
 export * from './ui/marquee'
 export * from './ui/number-ticker'
@@ -66,7 +77,12 @@ export * from './ui/alert'
 export * from './ui/loader'
 export * from './ui/toast-stack'
 export * from './ui/avatar-group'
+export * from './ui/data-table'
+export * from './ui/file-tree'
+export * from './ui/lightbox'
 export * from './ui/motion-badge'
+export * from './ui/sortable-list'
+export * from './ui/timeline'
 export * from './ui/sparkline'
 export { cn } from './lib/utils'
 
@@ -93,8 +109,11 @@ const components: Record<string, Component> = {
   Dock,
   DockItem,
   Stepper,
+  AspectRatio,
   BouncyAccordion,
+  Collapsible,
   HoverHighlight,
+  SpotlightCard,
   TiltCard,
   Marquee,
   NumberTicker,
@@ -105,7 +124,12 @@ const components: Record<string, Component> = {
   Loader,
   ToastStack,
   AvatarGroup,
+  DataTable,
+  FileTree,
+  Lightbox,
   MotionBadge,
+  SortableList,
+  Timeline,
   Sparkline,
 }
 
