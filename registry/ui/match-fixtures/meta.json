@@ -1,0 +1,9 @@
+{
+  "title": "Match Fixtures",
+  "description": "A fixtures and results list with live minutes, rolling scores, goal flashes and an expandable events timeline.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Not Found",
+  "description": "A 404 section whose giant digits float, dodge the pointer on springs and can be flung around, with search and links home.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

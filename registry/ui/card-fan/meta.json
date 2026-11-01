@@ -1,0 +1,9 @@
+{
+  "title": "Card Fan",
+  "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

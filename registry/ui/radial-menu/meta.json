@@ -1,0 +1,9 @@
+{
+  "title": "Radial Menu",
+  "description": "A floating button that blooms into a ring of actions with staggered springs, hover labels and arrow-key navigation.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

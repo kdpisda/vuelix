@@ -1,0 +1,9 @@
+{
+  "title": "Wallet Card",
+  "description": "A stack of payment cards that springs a card to the front, flips it for details and rolls in its balance.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}
