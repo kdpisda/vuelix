@@ -29,6 +29,30 @@
       ]
     },
     {
+      "name": "expanding-button",
+      "type": "registry:ui",
+      "title": "Expanding Button",
+      "description": "A compact button that springs open into an inline panel of actions or a small form, then folds back.",
+      "categories": [
+        "components",
+        "buttons-actions"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/expanding-button/ExpandingButton.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/expanding-button/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "icon-swap",
       "type": "registry:ui",
       "title": "Icon Swap",
@@ -179,6 +203,58 @@
         },
         {
           "path": "registry/ui/combobox/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "date-range-picker",
+      "type": "registry:ui",
+      "title": "Date Range Picker",
+      "description": "A calendar popover with presets, a range band that stretches between dates and sliding months.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/date-range-picker/DateRangePicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/date-range-picker/calendar.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/date-range-picker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dial-picker",
+      "type": "registry:ui",
+      "title": "Dial Picker",
+      "description": "A circular dial: drag the knob around a ticked arc, it snaps to steps while the readout rolls.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/dial-picker/DialPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/dial-picker/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -376,6 +452,42 @@
       ]
     },
     {
+      "name": "wheel-picker",
+      "type": "registry:ui",
+      "title": "Wheel Picker",
+      "description": "An iOS-style 3D scroll wheel with flick momentum that snaps to items; combine wheels for time pickers.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/wheel-picker/WheelPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wheel-picker/WheelPickerGroup.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wheel-picker/WheelPickerItem.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wheel-picker/context.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wheel-picker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "animated-tooltip",
       "type": "registry:ui",
       "title": "Animated Tooltip",
@@ -528,6 +640,30 @@
       ]
     },
     {
+      "name": "aurora-background",
+      "type": "registry:ui",
+      "title": "Aurora Background",
+      "description": "A section backdrop of soft, slowly drifting gradient blobs with optional film grain; transform-only and light on CPU.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/aurora-background/AuroraBackground.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/aurora-background/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "bouncy-accordion",
       "type": "registry:ui",
       "title": "Bouncy Accordion",
@@ -595,6 +731,34 @@
         },
         {
           "path": "registry/ui/hover-highlight/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "orbit-carousel",
+      "type": "registry:ui",
+      "title": "Orbit Carousel",
+      "description": "Cards on a 3D ring: drag to spin with inertia that snaps to the nearest card, or let it orbit slowly.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/orbit-carousel/OrbitCarousel.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/orbit-carousel/OrbitCarouselCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/orbit-carousel/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -797,6 +961,30 @@
       ]
     },
     {
+      "name": "pull-to-refresh",
+      "type": "registry:ui",
+      "title": "Pull to Refresh",
+      "description": "Pull a scroll area down with rubber-band resistance; a spinning indicator holds while your refresh runs.",
+      "categories": [
+        "components",
+        "feedback"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/pull-to-refresh/PullToRefresh.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/pull-to-refresh/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "toast-stack",
       "type": "registry:ui",
       "title": "Toast Stack",
@@ -912,6 +1100,30 @@
         },
         {
           "path": "registry/ui/file-tree/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "filmstrip",
+      "type": "registry:ui",
+      "title": "Filmstrip",
+      "description": "A gallery preview with a draggable thumbnail rail; a frame glides to the active shot as images slide in.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/filmstrip/Filmstrip.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/filmstrip/index.ts",
           "type": "registry:ui"
         }
       ]

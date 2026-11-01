@@ -93,6 +93,10 @@ const emit = defineEmits<{ select: [value: string] }>()
     mismatches for reduced-motion users.
   - Springs can overshoot `filter: blur()` below zero (console warning) — give `filter` its own
     tween: `transition: { ..., filter: { duration: 0.2 } }`.
+  - `animate(mv, mv.get(), { type: 'inertia' })` does nothing — motion skips animations whose
+    keyframes don't change. Compute the landing value yourself and animate to it.
+  - Generic components (`<script setup generic="T">`) must declare their slots as optional in
+    `defineSlots`, or the generated npm entry fails `pnpm typecheck`.
   - A `defineModel` ref doesn't reflect a new value until the parent re-renders; use the value you
     just set rather than re-reading the model in the same tick.
 - **Accessibility**: real `<button>`s / inputs, correct ARIA roles and states, keyboard support

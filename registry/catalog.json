@@ -15,6 +15,20 @@
     ]
   },
   {
+    "name": "expanding-button",
+    "title": "Expanding Button",
+    "description": "A compact button that springs open into an inline panel of actions or a small form, then folds back.",
+    "section": "components",
+    "category": "Buttons & Actions",
+    "url": "/components/expanding-button",
+    "exports": [
+      "ExpandingButton"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "icon-swap",
     "title": "Icon Swap",
     "description": "Button that morphs between icon states — copy to check, play to pause — with an optional particle burst.",
@@ -97,6 +111,35 @@
     "url": "/components/combobox",
     "exports": [
       "Combobox"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "date-range-picker",
+    "title": "Date Range Picker",
+    "description": "A calendar popover with presets, a range band that stretches between dates and sliding months.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/date-range-picker",
+    "exports": [
+      "DateRangePicker",
+      "defaultPresets"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "dial-picker",
+    "title": "Dial Picker",
+    "description": "A circular dial: drag the knob around a ticked arc, it snaps to steps while the readout rolls.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/dial-picker",
+    "exports": [
+      "DialPicker"
     ],
     "dependencies": [
       "motion-v"
@@ -215,6 +258,21 @@
     ]
   },
   {
+    "name": "wheel-picker",
+    "title": "Wheel Picker",
+    "description": "An iOS-style 3D scroll wheel with flick momentum that snaps to items; combine wheels for time pickers.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/wheel-picker",
+    "exports": [
+      "WheelPicker",
+      "WheelPickerGroup"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "animated-tooltip",
     "title": "Animated Tooltip",
     "description": "A lightweight tooltip that springs out from any side with a blur-in.",
@@ -300,6 +358,20 @@
     ]
   },
   {
+    "name": "aurora-background",
+    "title": "Aurora Background",
+    "description": "A section backdrop of soft, slowly drifting gradient blobs with optional film grain; transform-only and light on CPU.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/aurora-background",
+    "exports": [
+      "AuroraBackground"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "bouncy-accordion",
     "title": "Bouncy Accordion",
     "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
@@ -336,6 +408,20 @@
     "url": "/components/hover-highlight",
     "exports": [
       "HoverHighlight"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "orbit-carousel",
+    "title": "Orbit Carousel",
+    "description": "Cards on a 3D ring: drag to spin with inertia that snaps to the nearest card, or let it orbit slowly.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/orbit-carousel",
+    "exports": [
+      "OrbitCarousel"
     ],
     "dependencies": [
       "motion-v"
@@ -456,6 +542,20 @@
     ]
   },
   {
+    "name": "pull-to-refresh",
+    "title": "Pull to Refresh",
+    "description": "Pull a scroll area down with rubber-band resistance; a spinning indicator holds while your refresh runs.",
+    "section": "components",
+    "category": "Feedback",
+    "url": "/components/pull-to-refresh",
+    "exports": [
+      "PullToRefresh"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "toast-stack",
     "title": "Toast Stack",
     "description": "Stacked notifications that fan out on hover, with a tiny imperative API.",
@@ -509,6 +609,20 @@
     "url": "/components/file-tree",
     "exports": [
       "FileTree"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "filmstrip",
+    "title": "Filmstrip",
+    "description": "A gallery preview with a draggable thumbnail rail; a frame glides to the active shot as images slide in.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/filmstrip",
+    "exports": [
+      "Filmstrip"
     ],
     "dependencies": [
       "motion-v"

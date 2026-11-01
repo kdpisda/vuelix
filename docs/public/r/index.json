@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 51,
+  "count": 59,
   "items": [
     {
       "slug": "cta-button",
@@ -36,6 +36,36 @@
         {
           "path": "components/ui/cta-button/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/cta-button/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "expanding-button",
+      "name": "Expanding Button",
+      "description": "A compact button that springs open into an inline panel of actions or a small form, then folds back.",
+      "section": "components",
+      "category": "Buttons & Actions",
+      "page_url": "https://vuelix.dev/components/expanding-button",
+      "detail_url": "https://vuelix.dev/r/expanding-button.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expanding-button.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ExpandingButton"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/expanding-button/ExpandingButton.vue",
+          "raw_url": "https://vuelix.dev/r/raw/expanding-button/ExpandingButton.vue"
+        },
+        {
+          "path": "components/ui/expanding-button/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/expanding-button/index.ts"
         }
       ]
     },
@@ -228,6 +258,71 @@
         {
           "path": "components/ui/combobox/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/combobox/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "date-range-picker",
+      "name": "Date Range Picker",
+      "description": "A calendar popover with presets, a range band that stretches between dates and sliding months.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/date-range-picker",
+      "detail_url": "https://vuelix.dev/r/date-range-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/date-range-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DateRangePicker",
+          "defaultPresets"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/date-range-picker/DateRangePicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/date-range-picker/DateRangePicker.vue"
+        },
+        {
+          "path": "components/ui/date-range-picker/calendar.ts",
+          "raw_url": "https://vuelix.dev/r/raw/date-range-picker/calendar.ts"
+        },
+        {
+          "path": "components/ui/date-range-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/date-range-picker/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "dial-picker",
+      "name": "Dial Picker",
+      "description": "A circular dial: drag the knob around a ticked arc, it snaps to steps while the readout rolls.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/dial-picker",
+      "detail_url": "https://vuelix.dev/r/dial-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dial-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DialPicker"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/dial-picker/DialPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/dial-picker/DialPicker.vue"
+        },
+        {
+          "path": "components/ui/dial-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/dial-picker/index.ts"
         }
       ]
     },
@@ -472,6 +567,49 @@
       ]
     },
     {
+      "slug": "wheel-picker",
+      "name": "Wheel Picker",
+      "description": "An iOS-style 3D scroll wheel with flick momentum that snaps to items; combine wheels for time pickers.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/wheel-picker",
+      "detail_url": "https://vuelix.dev/r/wheel-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/wheel-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "WheelPicker",
+          "WheelPickerGroup"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/wheel-picker/WheelPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/WheelPicker.vue"
+        },
+        {
+          "path": "components/ui/wheel-picker/WheelPickerGroup.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/WheelPickerGroup.vue"
+        },
+        {
+          "path": "components/ui/wheel-picker/WheelPickerItem.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/WheelPickerItem.vue"
+        },
+        {
+          "path": "components/ui/wheel-picker/context.ts",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/context.ts"
+        },
+        {
+          "path": "components/ui/wheel-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "animated-tooltip",
       "name": "Animated Tooltip",
       "description": "A lightweight tooltip that springs out from any side with a blur-in.",
@@ -661,6 +799,36 @@
       ]
     },
     {
+      "slug": "aurora-background",
+      "name": "Aurora Background",
+      "description": "A section backdrop of soft, slowly drifting gradient blobs with optional film grain; transform-only and light on CPU.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/aurora-background",
+      "detail_url": "https://vuelix.dev/r/aurora-background.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/aurora-background.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AuroraBackground"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/aurora-background/AuroraBackground.vue",
+          "raw_url": "https://vuelix.dev/r/raw/aurora-background/AuroraBackground.vue"
+        },
+        {
+          "path": "components/ui/aurora-background/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/aurora-background/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "bouncy-accordion",
       "name": "Bouncy Accordion",
       "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
@@ -747,6 +915,40 @@
         {
           "path": "components/ui/hover-highlight/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/hover-highlight/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "orbit-carousel",
+      "name": "Orbit Carousel",
+      "description": "Cards on a 3D ring: drag to spin with inertia that snaps to the nearest card, or let it orbit slowly.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/orbit-carousel",
+      "detail_url": "https://vuelix.dev/r/orbit-carousel.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/orbit-carousel.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OrbitCarousel"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/orbit-carousel/OrbitCarousel.vue",
+          "raw_url": "https://vuelix.dev/r/raw/orbit-carousel/OrbitCarousel.vue"
+        },
+        {
+          "path": "components/ui/orbit-carousel/OrbitCarouselCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/orbit-carousel/OrbitCarouselCard.vue"
+        },
+        {
+          "path": "components/ui/orbit-carousel/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/orbit-carousel/index.ts"
         }
       ]
     },
@@ -997,6 +1199,36 @@
       ]
     },
     {
+      "slug": "pull-to-refresh",
+      "name": "Pull to Refresh",
+      "description": "Pull a scroll area down with rubber-band resistance; a spinning indicator holds while your refresh runs.",
+      "section": "components",
+      "category": "Feedback",
+      "page_url": "https://vuelix.dev/components/pull-to-refresh",
+      "detail_url": "https://vuelix.dev/r/pull-to-refresh.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/pull-to-refresh.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "PullToRefresh"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/pull-to-refresh/PullToRefresh.vue",
+          "raw_url": "https://vuelix.dev/r/raw/pull-to-refresh/PullToRefresh.vue"
+        },
+        {
+          "path": "components/ui/pull-to-refresh/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/pull-to-refresh/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "toast-stack",
       "name": "Toast Stack",
       "description": "Stacked notifications that fan out on hover, with a tiny imperative API.",
@@ -1140,6 +1372,36 @@
         {
           "path": "components/ui/file-tree/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/file-tree/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "filmstrip",
+      "name": "Filmstrip",
+      "description": "A gallery preview with a draggable thumbnail rail; a frame glides to the active shot as images slide in.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/filmstrip",
+      "detail_url": "https://vuelix.dev/r/filmstrip.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/filmstrip.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Filmstrip"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/filmstrip/Filmstrip.vue",
+          "raw_url": "https://vuelix.dev/r/raw/filmstrip/Filmstrip.vue"
+        },
+        {
+          "path": "components/ui/filmstrip/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/filmstrip/index.ts"
         }
       ]
     },
