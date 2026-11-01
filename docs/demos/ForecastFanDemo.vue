@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ForecastTargets } from '@/ui/forecast-fan'
-import { ForecastFan } from '@/ui/forecast-fan'
+import type { ForecastTargets } from '@/components/ui/forecast-fan'
+import { ForecastFan } from '@/components/ui/forecast-fan'
 import { Shuffle } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

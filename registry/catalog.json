@@ -1267,6 +1267,34 @@
     ]
   },
   {
+    "name": "candlestick-chart",
+    "title": "Candlestick Chart",
+    "description": "Live OHLC candles with volume, a last-price tag and crosshair readout; new candles slide in.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/candlestick-chart",
+    "exports": [
+      "CandlestickChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "depth-heatmap",
+    "title": "Depth Heatmap",
+    "description": "Price × time heatmap of resting liquidity with a price trace; new snapshots slide in live.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/depth-heatmap",
+    "exports": [
+      "DepthHeatmap"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "donut-chart",
     "title": "Donut Chart",
     "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
@@ -1275,6 +1303,20 @@
     "url": "/charts/donut-chart",
     "exports": [
       "DonutChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "forecast-fan",
+    "title": "Forecast Fan",
+    "description": "Price history that opens into a fan of low / median / high targets, with a scrubber that reads into the future.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/forecast-fan",
+    "exports": [
+      "ForecastFan"
     ],
     "dependencies": [
       "motion-v"
@@ -1323,6 +1365,48 @@
     ]
   },
   {
+    "name": "order-book",
+    "title": "Order Book",
+    "description": "Live bid/ask ladder with springy depth bars, a spread row, size-change flashes and a buy/sell balance bar.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/order-book",
+    "exports": [
+      "OrderBook"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "returns-calendar",
+    "title": "Returns Calendar",
+    "description": "Years × months grid of returns tinted by sign and size, with compounded yearly totals; cells pop in diagonally.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/returns-calendar",
+    "exports": [
+      "ReturnsCalendar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "sankey-chart",
+    "title": "Sankey Chart",
+    "description": "Weighted flows between columns of nodes; ribbons draw in and hovering traces a node's whole path.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/sankey-chart",
+    "exports": [
+      "SankeyChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "sparkline",
     "title": "Sparkline",
     "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
@@ -1331,6 +1415,20 @@
     "url": "/charts/sparkline",
     "exports": [
       "Sparkline"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "stacked-area",
+    "title": "Stacked Area",
+    "description": "Composition over time, stacked or 100%; bands morph between modes and an interactive legend isolates series.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/stacked-area",
+    "exports": [
+      "StackedArea"
     ],
     "dependencies": [
       "motion-v"
@@ -1360,6 +1458,20 @@
     "exports": [
       "Treemap",
       "squarify"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "volume-profile",
+    "title": "Volume Profile",
+    "description": "Volume-by-price histogram with a highlighted point of control and value area; bars ripple out from the POC.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/volume-profile",
+    "exports": [
+      "VolumeProfile"
     ],
     "dependencies": [
       "motion-v"

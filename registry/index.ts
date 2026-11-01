@@ -90,13 +90,21 @@ import { ToolCall } from './ui/tool-call'
 import { VoiceOrb } from './ui/voice-orb'
 import { BarChart } from './ui/bar-chart'
 import { BumpChart } from './ui/bump-chart'
+import { CandlestickChart } from './ui/candlestick-chart'
+import { DepthHeatmap } from './ui/depth-heatmap'
 import { DonutChart } from './ui/donut-chart'
+import { ForecastFan } from './ui/forecast-fan'
 import { FunnelChart } from './ui/funnel-chart'
 import { HeatCalendar } from './ui/heat-calendar'
 import { LineChart } from './ui/line-chart'
+import { OrderBook } from './ui/order-book'
+import { ReturnsCalendar } from './ui/returns-calendar'
+import { SankeyChart } from './ui/sankey-chart'
 import { Sparkline } from './ui/sparkline'
+import { StackedArea } from './ui/stacked-area'
 import { StatusHistory } from './ui/status-history'
 import { Treemap } from './ui/treemap'
+import { VolumeProfile } from './ui/volume-profile'
 import { ChartTooltip } from './ui/chart-utils'
 
 export * from './ui/cta-button'
@@ -188,13 +196,21 @@ export * from './ui/tool-call'
 export * from './ui/voice-orb'
 export * from './ui/bar-chart'
 export * from './ui/bump-chart'
+export * from './ui/candlestick-chart'
+export * from './ui/depth-heatmap'
 export * from './ui/donut-chart'
+export * from './ui/forecast-fan'
 export * from './ui/funnel-chart'
 export * from './ui/heat-calendar'
 export * from './ui/line-chart'
+export * from './ui/order-book'
+export * from './ui/returns-calendar'
+export * from './ui/sankey-chart'
 export * from './ui/sparkline'
+export * from './ui/stacked-area'
 export * from './ui/status-history'
 export * from './ui/treemap'
+export * from './ui/volume-profile'
 export * from './ui/chart-utils'
 export { cn } from './lib/utils'
 
@@ -294,13 +310,21 @@ const components: Record<string, Component> = {
   VoiceOrb,
   BarChart,
   BumpChart,
+  CandlestickChart,
+  DepthHeatmap,
   DonutChart,
+  ForecastFan,
   FunnelChart,
   HeatCalendar,
   LineChart,
+  OrderBook,
+  ReturnsCalendar,
+  SankeyChart,
   Sparkline,
+  StackedArea,
   StatusHistory,
   Treemap,
+  VolumeProfile,
   ChartTooltip,
 }
 

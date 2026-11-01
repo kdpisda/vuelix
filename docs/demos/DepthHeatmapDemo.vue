@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { DepthColumn } from '@/ui/depth-heatmap'
-import { DepthHeatmap } from '@/ui/depth-heatmap'
+import type { DepthColumn } from '@/components/ui/depth-heatmap'
+import { DepthHeatmap } from '@/components/ui/depth-heatmap'
 import { Pause, Play, Shuffle } from 'lucide-vue-next'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 

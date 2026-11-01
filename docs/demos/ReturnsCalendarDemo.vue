@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { YearReturns } from '@/ui/returns-calendar'
-import { ReturnsCalendar } from '@/ui/returns-calendar'
+import type { YearReturns } from '@/components/ui/returns-calendar'
+import { ReturnsCalendar } from '@/components/ui/returns-calendar'
 import { Shuffle } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

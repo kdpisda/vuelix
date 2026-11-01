@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Candle } from '@/ui/candlestick-chart'
-import { CandlestickChart } from '@/ui/candlestick-chart'
+import type { Candle } from '@/components/ui/candlestick-chart'
+import { CandlestickChart } from '@/components/ui/candlestick-chart'
 import { Pause, Play, Shuffle } from 'lucide-vue-next'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 

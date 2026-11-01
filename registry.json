@@ -2286,6 +2286,62 @@
       ]
     },
     {
+      "name": "candlestick-chart",
+      "type": "registry:ui",
+      "title": "Candlestick Chart",
+      "description": "Live OHLC candles with volume, a last-price tag and crosshair readout; new candles slide in.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/candlestick-chart/CandlestickChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/candlestick-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/candlestick-chart/scale.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "depth-heatmap",
+      "type": "registry:ui",
+      "title": "Depth Heatmap",
+      "description": "Price × time heatmap of resting liquidity with a price trace; new snapshots slide in live.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/depth-heatmap/DepthHeatmap.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/depth-heatmap/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/depth-heatmap/scale.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "donut-chart",
       "type": "registry:ui",
       "title": "Donut Chart",
@@ -2312,6 +2368,34 @@
         },
         {
           "path": "registry/ui/donut-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "forecast-fan",
+      "type": "registry:ui",
+      "title": "Forecast Fan",
+      "description": "Price history that opens into a fan of low / median / high targets, with a scrubber that reads into the future.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/forecast-fan/ForecastFan.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/forecast-fan/fan.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/forecast-fan/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -2408,6 +2492,90 @@
       ]
     },
     {
+      "name": "order-book",
+      "type": "registry:ui",
+      "title": "Order Book",
+      "description": "Live bid/ask ladder with springy depth bars, a spread row, size-change flashes and a buy/sell balance bar.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/order-book/OrderBook.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/order-book/book.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/order-book/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "returns-calendar",
+      "type": "registry:ui",
+      "title": "Returns Calendar",
+      "description": "Years × months grid of returns tinted by sign and size, with compounded yearly totals; cells pop in diagonally.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/returns-calendar/ReturnsCalendar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/returns-calendar/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/returns-calendar/returns.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sankey-chart",
+      "type": "registry:ui",
+      "title": "Sankey Chart",
+      "description": "Weighted flows between columns of nodes; ribbons draw in and hovering traces a node's whole path.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/sankey-chart/SankeyChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/sankey-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/sankey-chart/layout.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "sparkline",
       "type": "registry:ui",
       "title": "Sparkline",
@@ -2427,6 +2595,34 @@
         },
         {
           "path": "registry/ui/sparkline/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "stacked-area",
+      "type": "registry:ui",
+      "title": "Stacked Area",
+      "description": "Composition over time, stacked or 100%; bands morph between modes and an interactive legend isolates series.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/stacked-area/StackedArea.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/stacked-area/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/stacked-area/stack.ts",
           "type": "registry:ui"
         }
       ]
@@ -2492,6 +2688,34 @@
         },
         {
           "path": "registry/ui/treemap/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "volume-profile",
+      "type": "registry:ui",
+      "title": "Volume Profile",
+      "description": "Volume-by-price histogram with a highlighted point of control and value area; bars ripple out from the POC.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/volume-profile/VolumeProfile.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/volume-profile/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/volume-profile/profile.ts",
           "type": "registry:ui"
         }
       ]

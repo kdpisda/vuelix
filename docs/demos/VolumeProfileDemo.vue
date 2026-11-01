@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { VolumeSample } from '@/ui/volume-profile'
-import { VolumeProfile } from '@/ui/volume-profile'
+import type { VolumeSample } from '@/components/ui/volume-profile'
+import { VolumeProfile } from '@/components/ui/volume-profile'
 import { Shuffle } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

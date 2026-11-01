@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { SankeyLink, SankeyNode } from '@/ui/sankey-chart'
-import { SankeyChart } from '@/ui/sankey-chart'
+import type { SankeyLink, SankeyNode } from '@/components/ui/sankey-chart'
+import { SankeyChart } from '@/components/ui/sankey-chart'
 import { Shuffle } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

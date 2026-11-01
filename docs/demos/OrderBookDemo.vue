@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { BookLevel } from '@/ui/order-book'
-import { OrderBook } from '@/ui/order-book'
+import type { BookLevel } from '@/components/ui/order-book'
+import { OrderBook } from '@/components/ui/order-book'
 import { Pause, Play, Shuffle } from 'lucide-vue-next'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 

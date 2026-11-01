@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 97,
+  "count": 105,
   "items": [
     {
       "slug": "cta-button",
@@ -2840,6 +2840,74 @@
       ]
     },
     {
+      "slug": "candlestick-chart",
+      "name": "Candlestick Chart",
+      "description": "Live OHLC candles with volume, a last-price tag and crosshair readout; new candles slide in.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/candlestick-chart",
+      "detail_url": "https://vuelix.dev/r/candlestick-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/candlestick-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CandlestickChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/candlestick-chart/CandlestickChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/candlestick-chart/CandlestickChart.vue"
+        },
+        {
+          "path": "components/ui/candlestick-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/candlestick-chart/index.ts"
+        },
+        {
+          "path": "components/ui/candlestick-chart/scale.ts",
+          "raw_url": "https://vuelix.dev/r/raw/candlestick-chart/scale.ts"
+        }
+      ]
+    },
+    {
+      "slug": "depth-heatmap",
+      "name": "Depth Heatmap",
+      "description": "Price × time heatmap of resting liquidity with a price trace; new snapshots slide in live.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/depth-heatmap",
+      "detail_url": "https://vuelix.dev/r/depth-heatmap.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/depth-heatmap.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DepthHeatmap"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/depth-heatmap/DepthHeatmap.vue",
+          "raw_url": "https://vuelix.dev/r/raw/depth-heatmap/DepthHeatmap.vue"
+        },
+        {
+          "path": "components/ui/depth-heatmap/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/depth-heatmap/index.ts"
+        },
+        {
+          "path": "components/ui/depth-heatmap/scale.ts",
+          "raw_url": "https://vuelix.dev/r/raw/depth-heatmap/scale.ts"
+        }
+      ]
+    },
+    {
       "slug": "donut-chart",
       "name": "Donut Chart",
       "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
@@ -2873,6 +2941,40 @@
         {
           "path": "components/ui/donut-chart/types.ts",
           "raw_url": "https://vuelix.dev/r/raw/donut-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "forecast-fan",
+      "name": "Forecast Fan",
+      "description": "Price history that opens into a fan of low / median / high targets, with a scrubber that reads into the future.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/forecast-fan",
+      "detail_url": "https://vuelix.dev/r/forecast-fan.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/forecast-fan.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ForecastFan"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/forecast-fan/ForecastFan.vue",
+          "raw_url": "https://vuelix.dev/r/raw/forecast-fan/ForecastFan.vue"
+        },
+        {
+          "path": "components/ui/forecast-fan/fan.ts",
+          "raw_url": "https://vuelix.dev/r/raw/forecast-fan/fan.ts"
+        },
+        {
+          "path": "components/ui/forecast-fan/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/forecast-fan/index.ts"
         }
       ]
     },
@@ -2986,6 +3088,108 @@
       ]
     },
     {
+      "slug": "order-book",
+      "name": "Order Book",
+      "description": "Live bid/ask ladder with springy depth bars, a spread row, size-change flashes and a buy/sell balance bar.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/order-book",
+      "detail_url": "https://vuelix.dev/r/order-book.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/order-book.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OrderBook"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/order-book/OrderBook.vue",
+          "raw_url": "https://vuelix.dev/r/raw/order-book/OrderBook.vue"
+        },
+        {
+          "path": "components/ui/order-book/book.ts",
+          "raw_url": "https://vuelix.dev/r/raw/order-book/book.ts"
+        },
+        {
+          "path": "components/ui/order-book/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/order-book/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "returns-calendar",
+      "name": "Returns Calendar",
+      "description": "Years × months grid of returns tinted by sign and size, with compounded yearly totals; cells pop in diagonally.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/returns-calendar",
+      "detail_url": "https://vuelix.dev/r/returns-calendar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/returns-calendar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ReturnsCalendar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/returns-calendar/ReturnsCalendar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/returns-calendar/ReturnsCalendar.vue"
+        },
+        {
+          "path": "components/ui/returns-calendar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/returns-calendar/index.ts"
+        },
+        {
+          "path": "components/ui/returns-calendar/returns.ts",
+          "raw_url": "https://vuelix.dev/r/raw/returns-calendar/returns.ts"
+        }
+      ]
+    },
+    {
+      "slug": "sankey-chart",
+      "name": "Sankey Chart",
+      "description": "Weighted flows between columns of nodes; ribbons draw in and hovering traces a node's whole path.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/sankey-chart",
+      "detail_url": "https://vuelix.dev/r/sankey-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/sankey-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SankeyChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/sankey-chart/SankeyChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/sankey-chart/SankeyChart.vue"
+        },
+        {
+          "path": "components/ui/sankey-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/sankey-chart/index.ts"
+        },
+        {
+          "path": "components/ui/sankey-chart/layout.ts",
+          "raw_url": "https://vuelix.dev/r/raw/sankey-chart/layout.ts"
+        }
+      ]
+    },
+    {
       "slug": "sparkline",
       "name": "Sparkline",
       "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
@@ -3012,6 +3216,40 @@
         {
           "path": "components/ui/sparkline/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/sparkline/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "stacked-area",
+      "name": "Stacked Area",
+      "description": "Composition over time, stacked or 100%; bands morph between modes and an interactive legend isolates series.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/stacked-area",
+      "detail_url": "https://vuelix.dev/r/stacked-area.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/stacked-area.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "StackedArea"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/stacked-area/StackedArea.vue",
+          "raw_url": "https://vuelix.dev/r/raw/stacked-area/StackedArea.vue"
+        },
+        {
+          "path": "components/ui/stacked-area/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/stacked-area/index.ts"
+        },
+        {
+          "path": "components/ui/stacked-area/stack.ts",
+          "raw_url": "https://vuelix.dev/r/raw/stacked-area/stack.ts"
         }
       ]
     },
@@ -3090,6 +3328,40 @@
         {
           "path": "components/ui/treemap/types.ts",
           "raw_url": "https://vuelix.dev/r/raw/treemap/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "volume-profile",
+      "name": "Volume Profile",
+      "description": "Volume-by-price histogram with a highlighted point of control and value area; bars ripple out from the POC.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/volume-profile",
+      "detail_url": "https://vuelix.dev/r/volume-profile.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/volume-profile.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "VolumeProfile"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/volume-profile/VolumeProfile.vue",
+          "raw_url": "https://vuelix.dev/r/raw/volume-profile/VolumeProfile.vue"
+        },
+        {
+          "path": "components/ui/volume-profile/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/volume-profile/index.ts"
+        },
+        {
+          "path": "components/ui/volume-profile/profile.ts",
+          "raw_url": "https://vuelix.dev/r/raw/volume-profile/profile.ts"
         }
       ]
     },

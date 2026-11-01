@@ -98,6 +98,10 @@ const emit = defineEmits<{ select: [value: string] }>()
     keyframes don't change. Compute the landing value yourself and animate to it.
   - Generic components (`<script setup generic="T">`) must declare their slots as optional in
     `defineSlots`, or the generated npm entry fails `pnpm typecheck`.
+  - SVG elements get `transform-box: fill-box` + a centered origin from motion — set custom origins
+    with `:style="{ originX: 0, originY: 1 }"` (fractions), not `transformOrigin` in px.
+  - Reset a motion value with `mv.jump(v)` (not `set`) right before `animate(mv, …)`, otherwise the
+    spring inherits a velocity spike and overshoots.
   - Function refs (`:ref="el => …"`) run on every render — don't set reactive state in them
     unconditionally (measure → set state → re-render → infinite loop); guard on the element changing.
   - A `defineModel` ref doesn't reflect a new value until the parent re-renders; use the value you

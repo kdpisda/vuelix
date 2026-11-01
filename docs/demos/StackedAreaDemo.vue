@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { StackedSeries } from '@/ui/stacked-area'
-import { AnimatedTabs } from '@/ui/animated-tabs'
-import { StackedArea } from '@/ui/stacked-area'
+import type { StackedSeries } from '@/components/ui/stacked-area'
+import { AnimatedTabs } from '@/components/ui/animated-tabs'
+import { StackedArea } from '@/components/ui/stacked-area'
 import { Shuffle } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 
