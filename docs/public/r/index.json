@@ -6,8 +6,70 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 24,
+  "count": 33,
   "items": [
+    {
+      "slug": "cta-button",
+      "name": "CTA Button",
+      "description": "Call-to-action buttons with a shimmer sweep, spinning gradient border, magnetic pull or sliding arrow.",
+      "section": "components",
+      "category": "Buttons & Actions",
+      "page_url": "https://vuelix.dev/components/cta-button",
+      "detail_url": "https://vuelix.dev/r/cta-button.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/cta-button.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CtaButton"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/cta-button/CtaButton.vue",
+          "raw_url": "https://vuelix.dev/r/raw/cta-button/CtaButton.vue"
+        },
+        {
+          "path": "components/ui/cta-button/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/cta-button/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "icon-swap",
+      "name": "Icon Swap",
+      "description": "Button that morphs between icon states — copy to check, play to pause — with an optional particle burst.",
+      "section": "components",
+      "category": "Buttons & Actions",
+      "page_url": "https://vuelix.dev/components/icon-swap",
+      "detail_url": "https://vuelix.dev/r/icon-swap.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/icon-swap.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "IconSwap"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/icon-swap/IconSwap.vue",
+          "raw_url": "https://vuelix.dev/r/raw/icon-swap/IconSwap.vue"
+        },
+        {
+          "path": "components/ui/icon-swap/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/icon-swap/index.ts"
+        }
+      ]
+    },
     {
       "slug": "spring-button",
       "name": "Spring Button",
@@ -539,6 +601,36 @@
       ]
     },
     {
+      "slug": "stepper",
+      "name": "Stepper",
+      "description": "Multi-step progress with spring-filled connectors, steps that morph into checks and a pulsing current step.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/stepper",
+      "detail_url": "https://vuelix.dev/r/stepper.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/stepper.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Stepper"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/stepper/Stepper.vue",
+          "raw_url": "https://vuelix.dev/r/raw/stepper/Stepper.vue"
+        },
+        {
+          "path": "components/ui/stepper/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/stepper/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "bouncy-accordion",
       "name": "Bouncy Accordion",
       "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
@@ -565,6 +657,36 @@
         {
           "path": "components/ui/bouncy-accordion/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/bouncy-accordion/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "hover-highlight",
+      "name": "Hover Highlight",
+      "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/hover-highlight",
+      "detail_url": "https://vuelix.dev/r/hover-highlight.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/hover-highlight.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "HoverHighlight"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/hover-highlight/HoverHighlight.vue",
+          "raw_url": "https://vuelix.dev/r/raw/hover-highlight/HoverHighlight.vue"
+        },
+        {
+          "path": "components/ui/hover-highlight/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/hover-highlight/index.ts"
         }
       ]
     },
@@ -599,6 +721,36 @@
       ]
     },
     {
+      "slug": "marquee",
+      "name": "Marquee",
+      "description": "Seamless infinite scroller in any direction that eases to a stop on hover, with faded edges.",
+      "section": "components",
+      "category": "Text & Motion",
+      "page_url": "https://vuelix.dev/components/marquee",
+      "detail_url": "https://vuelix.dev/r/marquee.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/marquee.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Marquee"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/marquee/Marquee.vue",
+          "raw_url": "https://vuelix.dev/r/raw/marquee/Marquee.vue"
+        },
+        {
+          "path": "components/ui/marquee/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/marquee/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "number-ticker",
       "name": "Number Ticker",
       "description": "Counts up to a value with spring physics when scrolled into view.",
@@ -629,6 +781,41 @@
       ]
     },
     {
+      "slug": "scroll-reveal",
+      "name": "Scroll Reveal",
+      "description": "Reveals children with staggered presets as they scroll into view, plus a springy reading progress bar.",
+      "section": "components",
+      "category": "Text & Motion",
+      "page_url": "https://vuelix.dev/components/scroll-reveal",
+      "detail_url": "https://vuelix.dev/r/scroll-reveal.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/scroll-reveal.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ScrollProgress",
+          "ScrollReveal"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/scroll-reveal/ScrollProgress.vue",
+          "raw_url": "https://vuelix.dev/r/raw/scroll-reveal/ScrollProgress.vue"
+        },
+        {
+          "path": "components/ui/scroll-reveal/ScrollReveal.vue",
+          "raw_url": "https://vuelix.dev/r/raw/scroll-reveal/ScrollReveal.vue"
+        },
+        {
+          "path": "components/ui/scroll-reveal/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/scroll-reveal/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "text-reveal",
       "name": "Text Reveal",
       "description": "Staggered word or character reveal with blur and lift.",
@@ -655,6 +842,67 @@
         {
           "path": "components/ui/text-reveal/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/text-reveal/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "alert",
+      "name": "Alert",
+      "description": "Inline alert whose icon pops and draws itself in, with a dismiss that smoothly collapses its height.",
+      "section": "components",
+      "category": "Feedback",
+      "page_url": "https://vuelix.dev/components/alert",
+      "detail_url": "https://vuelix.dev/r/alert.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/alert.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Alert"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/alert/Alert.vue",
+          "raw_url": "https://vuelix.dev/r/raw/alert/Alert.vue"
+        },
+        {
+          "path": "components/ui/alert/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/alert/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "loader",
+      "name": "Loader",
+      "description": "Five loaders — wave, orbit, bars, ring and a typing skeleton — that calm down for reduced motion.",
+      "section": "components",
+      "category": "Feedback",
+      "page_url": "https://vuelix.dev/components/loader",
+      "detail_url": "https://vuelix.dev/r/loader.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/loader.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Loader"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/loader/Loader.vue",
+          "raw_url": "https://vuelix.dev/r/raw/loader/Loader.vue"
+        },
+        {
+          "path": "components/ui/loader/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/loader/index.ts"
         }
       ]
     },
@@ -722,6 +970,37 @@
         {
           "path": "components/ui/avatar-group/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/avatar-group/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "motion-badge",
+      "name": "Motion Badge",
+      "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/motion-badge",
+      "detail_url": "https://vuelix.dev/r/motion-badge.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/motion-badge.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MotionBadge"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/motion-badge/MotionBadge.vue",
+          "raw_url": "https://vuelix.dev/r/raw/motion-badge/MotionBadge.vue"
+        },
+        {
+          "path": "components/ui/motion-badge/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/motion-badge/index.ts"
         }
       ]
     },

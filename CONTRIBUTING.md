@@ -88,6 +88,13 @@ const emit = defineEmits<{ select: [value: string] }>()
   - Pointer-driven effects go through motion values, not Vue refs (no re-render per frame).
   - Decorative motion (parallax, tilt, idle loops) must check `useReducedMotion()`.
   - `ref` on a motion component gives a component instance — use `useDomRef()` for the element.
+  - `useReducedMotion()` is `false` during SSR but may be `true` in the browser. If it changes the
+    **markup** (not just animation values), read it only after `onMounted`, or you'll get hydration
+    mismatches for reduced-motion users.
+  - Springs can overshoot `filter: blur()` below zero (console warning) — give `filter` its own
+    tween: `transition: { ..., filter: { duration: 0.2 } }`.
+  - A `defineModel` ref doesn't reflect a new value until the parent re-renders; use the value you
+    just set rather than re-reading the model in the same tick.
 - **Accessibility**: real `<button>`s / inputs, correct ARIA roles and states, keyboard support
   (arrows / Home / End / Escape where expected), visible focus:
   `outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50`.
@@ -123,6 +130,7 @@ pnpm typecheck                   # vue-tsc over registry + demos
 pnpm build                       # docs site
 npx vitepress preview docs --port 4173 &
 node scripts/check-pages.mjs --port 4173 --out .shots components/kebab-name
+node scripts/check-pages.mjs --port 4173 --out .shots --reduced components/kebab-name  # hydration check
 ```
 
 Look at the light **and** dark screenshots in `.shots/`. Zero console errors is required.

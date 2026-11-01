@@ -1,0 +1,32 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "scroll-reveal",
+  "title": "Scroll Reveal",
+  "description": "Reveals children with staggered presets as they scroll into view, plus a springy reading progress bar.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/scroll-reveal/ScrollProgress.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { motion, useReducedMotion, useScroll, useSpring } from 'motion-v'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** Scrollable element to track. Defaults to the page. */\n  container?: HTMLElement | null\n  /** Edge the bar sticks to. */\n  position?: 'top' | 'bottom'\n  /** `fixed` to the viewport, or `absolute` inside the nearest positioned parent. */\n  fixed?: boolean\n  class?: HTMLAttributes['class']\n}>(), {\n  container: null,\n  position: 'top',\n  fixed: true,\n})\n\nconst reduced = useReducedMotion()\nconst { scrollYProgress } = useScroll(() => ({ container: props.container ?? undefined }))\n// A light spring smooths out wheel steps; reduced motion follows the scroll exactly.\nconst smooth = useSpring(scrollYProgress, { stiffness: 220, damping: 32, restDelta: 0.001 })\n</script>\n\n<template>\n  <motion.div\n    aria-hidden=\"true\"\n    :class=\"cn(\n      'inset-x-0 z-50 h-1 origin-left bg-brand',\n      props.fixed ? 'fixed' : 'absolute',\n      props.position === 'top' ? 'top-0' : 'bottom-0',\n      props.class,\n    )\"\n    :style=\"{ scaleX: reduced ? scrollYProgress : smooth }\"\n  />\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/scroll-reveal/ScrollReveal.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes, VNode } from 'vue'\nimport { motion, useReducedMotion } from 'motion-v'\nimport { Comment, computed, Fragment, Text, useSlots } from 'vue'\nimport { cn } from '@/lib/utils'\n\nexport type ScrollRevealPreset = 'fade-up' | 'blur-in' | 'scale' | 'slide-left' | 'slide-right'\n\nconst props = withDefaults(defineProps<{\n  /** How each child enters. `slide-left` comes in from the left, `slide-right` from the right. */\n  preset?: ScrollRevealPreset\n  /** Seconds between consecutive children. */\n  stagger?: number\n  /** Seconds before the first child starts. */\n  delay?: number\n  /** Travel distance in px for `fade-up` and the slides. */\n  distance?: number\n  /** Reveal only the first time; otherwise hide again when scrolled out. */\n  once?: boolean\n  /** Fraction of the wrapper that must be visible before it reveals (0 … 1). */\n  amount?: number\n  /** Element rendered for the wrapper. */\n  as?: string\n  /** Classes for the element wrapped around each child (e.g. `h-full` in a grid). */\n  itemClass?: HTMLAttributes['class']\n  class?: HTMLAttributes['class']\n}>(), {\n  preset: 'fade-up',\n  stagger: 0.08,\n  delay: 0,\n  distance: 24,\n  once: true,\n  amount: 0.25,\n  as: 'div',\n})\n\nconst slots = useSlots()\nconst reduced = useReducedMotion()\n\n// Every top-level child gets its own motion wrapper so it can be staggered.\n// v-for output arrives as a Fragment, so unwrap those and drop comments / whitespace.\nfunction flatten(nodes: VNode[]): VNode[] {\n  return nodes.flatMap((node) => {\n    if (node.type === Fragment)\n      return flatten(node.children as VNode[])\n    if (node.type === Comment || (node.type === Text && !String(node.children).trim()))\n      return []\n    return [node]\n  })\n}\nconst children = () => flatten(slots.default?.() ?? [])\n\nconst container = computed(() => ({\n  hidden: {},\n  visible: { transition: { staggerChildren: props.stagger, delayChildren: props.delay } },\n}))\n\nconst item = computed(() => {\n  const d = props.distance\n  const hidden = reduced.value\n    ? { opacity: 0 }\n    : {\n        'fade-up': { opacity: 0, y: d },\n        'blur-in': { opacity: 0, scale: 0.98, filter: 'blur(10px)' },\n        'scale': { opacity: 0, scale: 0.88 },\n        'slide-left': { opacity: 0, x: -d * 1.6 },\n        'slide-right': { opacity: 0, x: d * 1.6 },\n      }[props.preset]\n  return {\n    hidden,\n    visible: {\n      opacity: 1,\n      x: 0,\n      y: 0,\n      scale: 1,\n      filter: 'blur(0px)',\n      transition: reduced.value\n        ? { duration: 0.4 }\n        : { type: 'spring', stiffness: 170, damping: 24, mass: 0.9, filter: { duration: 0.5 } },\n    },\n  }\n})\n</script>\n\n<template>\n  <motion.div\n    :as=\"props.as\"\n    :class=\"cn(props.class)\"\n    initial=\"hidden\"\n    while-in-view=\"visible\"\n    :in-view-options=\"{ once: props.once, amount: props.amount }\"\n    :variants=\"container\"\n  >\n    <motion.div\n      v-for=\"(child, i) in children()\"\n      :key=\"child.key ?? i\"\n      :class=\"cn(props.itemClass)\"\n      :variants=\"item\"\n    >\n      <component :is=\"child\" />\n    </motion.div>\n  </motion.div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/scroll-reveal/index.ts",
+      "content": "export { default as ScrollProgress } from './ScrollProgress.vue'\nexport { default as ScrollReveal } from './ScrollReveal.vue'\nexport type { ScrollRevealPreset } from './ScrollReveal.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "components",
+    "text-motion"
+  ],
+  "type": "registry:ui"
+}

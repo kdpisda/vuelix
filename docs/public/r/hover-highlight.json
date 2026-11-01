@@ -1,0 +1,27 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "hover-highlight",
+  "title": "Hover Highlight",
+  "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/hover-highlight/HoverHighlight.vue",
+      "content": "<script setup lang=\"ts\" generic=\"T\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion, useReducedMotion } from 'motion-v'\nimport { ref, useId } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** Items to render — each one gets the `#item` slot. */\n  items: T[]\n  /** Property name (or function) that gives each item a stable key. Defaults to the index. */\n  itemKey?: keyof T | ((item: T, index: number) => string | number)\n  /** Element for the wrapper, e.g. `ul` or `nav`. */\n  as?: string\n  /** Element for each item, e.g. `li`. */\n  itemAs?: string\n  /** Classes for every item wrapper. */\n  itemClass?: HTMLAttributes['class']\n  /** Classes for the moving highlight (colour, radius, shadow…). */\n  highlightClass?: HTMLAttributes['class']\n  class?: HTMLAttributes['class']\n}>(), {\n  as: 'div',\n  itemAs: 'div',\n})\n\nconst emit = defineEmits<{ highlight: [item: T | null, index: number] }>()\n\n// One shared layout id per instance, so several lists on a page never swap highlights.\nconst layoutId = `vx-hover-highlight-${useId()}`\nconst reduced = useReducedMotion()\nconst active = ref<number | null>(null)\n// Fade in only when entering the group; between items the highlight is already visible and just travels.\nconst fromOutside = ref(true)\n\nfunction keyOf(item: T, index: number) {\n  if (typeof props.itemKey === 'function')\n    return props.itemKey(item, index)\n  if (props.itemKey !== undefined)\n    return item[props.itemKey] as unknown as string | number\n  return index\n}\n\nfunction set(index: number | null) {\n  if (active.value === index)\n    return\n  fromOutside.value = active.value === null\n  active.value = index\n  emit('highlight', index === null ? null : props.items[index]!, index ?? -1)\n}\n\nfunction onFocusOut(e: FocusEvent) {\n  if (!(e.currentTarget as HTMLElement).contains(e.relatedTarget as Node | null))\n    set(null)\n}\n\nconst spring = { type: 'spring', stiffness: 480, damping: 38, mass: 0.8 } as const\n</script>\n\n<template>\n  <component\n    :is=\"props.as\"\n    :class=\"cn('relative', props.class)\"\n    @pointerleave=\"set(null)\"\n    @focusout=\"onFocusOut\"\n  >\n    <component\n      :is=\"props.itemAs\"\n      v-for=\"(item, index) in props.items\"\n      :key=\"keyOf(item, index)\"\n      :class=\"cn('relative isolate', props.itemClass)\"\n      :data-highlighted=\"active === index ? '' : undefined\"\n      @pointerenter=\"set(index)\"\n      @focusin=\"set(index)\"\n    >\n      <AnimatePresence>\n        <motion.span\n          v-if=\"active === index\"\n          key=\"highlight\"\n          aria-hidden=\"true\"\n          :layout-id=\"reduced ? undefined : layoutId\"\n          :class=\"cn('pointer-events-none absolute inset-0 -z-10 rounded-lg bg-accent', props.highlightClass)\"\n          :initial=\"fromOutside ? { opacity: 0 } : false\"\n          :animate=\"{ opacity: 1 }\"\n          :exit=\"{ opacity: 0 }\"\n          :transition=\"reduced ? { duration: 0.12 } : { ...spring, opacity: { duration: 0.15 } }\"\n        />\n      </AnimatePresence>\n      <slot name=\"item\" :item=\"item\" :index=\"index\" :active=\"active === index\" />\n    </component>\n  </component>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/hover-highlight/index.ts",
+      "content": "export { default as HoverHighlight } from './HoverHighlight.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "components",
+    "layout-surfaces"
+  ],
+  "type": "registry:ui"
+}

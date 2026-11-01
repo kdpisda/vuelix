@@ -1,5 +1,35 @@
 [
   {
+    "name": "cta-button",
+    "title": "CTA Button",
+    "description": "Call-to-action buttons with a shimmer sweep, spinning gradient border, magnetic pull or sliding arrow.",
+    "section": "components",
+    "category": "Buttons & Actions",
+    "url": "/components/cta-button",
+    "exports": [
+      "CtaButton"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
+    ]
+  },
+  {
+    "name": "icon-swap",
+    "title": "Icon Swap",
+    "description": "Button that morphs between icon states — copy to check, play to pause — with an optional particle burst.",
+    "section": "components",
+    "category": "Buttons & Actions",
+    "url": "/components/icon-swap",
+    "exports": [
+      "IconSwap"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
+    ]
+  },
+  {
     "name": "spring-button",
     "title": "Spring Button",
     "description": "A button with springy hover/press physics and a morphing loading state.",
@@ -242,6 +272,20 @@
     ]
   },
   {
+    "name": "stepper",
+    "title": "Stepper",
+    "description": "Multi-step progress with spring-filled connectors, steps that morph into checks and a pulsing current step.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/stepper",
+    "exports": [
+      "Stepper"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "bouncy-accordion",
     "title": "Bouncy Accordion",
     "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
@@ -250,6 +294,20 @@
     "url": "/components/bouncy-accordion",
     "exports": [
       "BouncyAccordion"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "hover-highlight",
+    "title": "Hover Highlight",
+    "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/hover-highlight",
+    "exports": [
+      "HoverHighlight"
     ],
     "dependencies": [
       "motion-v"
@@ -270,6 +328,20 @@
     ]
   },
   {
+    "name": "marquee",
+    "title": "Marquee",
+    "description": "Seamless infinite scroller in any direction that eases to a stop on hover, with faded edges.",
+    "section": "components",
+    "category": "Text & Motion",
+    "url": "/components/marquee",
+    "exports": [
+      "Marquee"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "number-ticker",
     "title": "Number Ticker",
     "description": "Counts up to a value with spring physics when scrolled into view.",
@@ -284,6 +356,21 @@
     ]
   },
   {
+    "name": "scroll-reveal",
+    "title": "Scroll Reveal",
+    "description": "Reveals children with staggered presets as they scroll into view, plus a springy reading progress bar.",
+    "section": "components",
+    "category": "Text & Motion",
+    "url": "/components/scroll-reveal",
+    "exports": [
+      "ScrollProgress",
+      "ScrollReveal"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "text-reveal",
     "title": "Text Reveal",
     "description": "Staggered word or character reveal with blur and lift.",
@@ -292,6 +379,35 @@
     "url": "/components/text-reveal",
     "exports": [
       "TextReveal"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "alert",
+    "title": "Alert",
+    "description": "Inline alert whose icon pops and draws itself in, with a dismiss that smoothly collapses its height.",
+    "section": "components",
+    "category": "Feedback",
+    "url": "/components/alert",
+    "exports": [
+      "Alert"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
+    ]
+  },
+  {
+    "name": "loader",
+    "title": "Loader",
+    "description": "Five loaders — wave, orbit, bars, ring and a typing skeleton — that calm down for reduced motion.",
+    "section": "components",
+    "category": "Feedback",
+    "url": "/components/loader",
+    "exports": [
+      "Loader"
     ],
     "dependencies": [
       "motion-v"
@@ -326,6 +442,21 @@
     ],
     "dependencies": [
       "motion-v"
+    ]
+  },
+  {
+    "name": "motion-badge",
+    "title": "Motion Badge",
+    "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/motion-badge",
+    "exports": [
+      "MotionBadge"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
     ]
   },
   {

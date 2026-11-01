@@ -4,6 +4,56 @@
   "homepage": "https://vuelix.dev",
   "items": [
     {
+      "name": "cta-button",
+      "type": "registry:ui",
+      "title": "CTA Button",
+      "description": "Call-to-action buttons with a shimmer sweep, spinning gradient border, magnetic pull or sliding arrow.",
+      "categories": [
+        "components",
+        "buttons-actions"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/cta-button/CtaButton.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/cta-button/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "icon-swap",
+      "type": "registry:ui",
+      "title": "Icon Swap",
+      "description": "Button that morphs between icon states — copy to check, play to pause — with an optional particle burst.",
+      "categories": [
+        "components",
+        "buttons-actions"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/icon-swap/IconSwap.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/icon-swap/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "spring-button",
       "type": "registry:ui",
       "title": "Spring Button",
@@ -430,6 +480,30 @@
       ]
     },
     {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "Stepper",
+      "description": "Multi-step progress with spring-filled connectors, steps that morph into checks and a pulsing current step.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/stepper/Stepper.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/stepper/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "bouncy-accordion",
       "type": "registry:ui",
       "title": "Bouncy Accordion",
@@ -449,6 +523,30 @@
         },
         {
           "path": "registry/ui/bouncy-accordion/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hover-highlight",
+      "type": "registry:ui",
+      "title": "Hover Highlight",
+      "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/hover-highlight/HoverHighlight.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/hover-highlight/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -478,6 +576,30 @@
       ]
     },
     {
+      "name": "marquee",
+      "type": "registry:ui",
+      "title": "Marquee",
+      "description": "Seamless infinite scroller in any direction that eases to a stop on hover, with faded edges.",
+      "categories": [
+        "components",
+        "text-motion"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/marquee/Marquee.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/marquee/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "number-ticker",
       "type": "registry:ui",
       "title": "Number Ticker",
@@ -502,6 +624,34 @@
       ]
     },
     {
+      "name": "scroll-reveal",
+      "type": "registry:ui",
+      "title": "Scroll Reveal",
+      "description": "Reveals children with staggered presets as they scroll into view, plus a springy reading progress bar.",
+      "categories": [
+        "components",
+        "text-motion"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/scroll-reveal/ScrollProgress.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/scroll-reveal/ScrollReveal.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/scroll-reveal/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "text-reveal",
       "type": "registry:ui",
       "title": "Text Reveal",
@@ -521,6 +671,55 @@
         },
         {
           "path": "registry/ui/text-reveal/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Inline alert whose icon pops and draws itself in, with a dismiss that smoothly collapses its height.",
+      "categories": [
+        "components",
+        "feedback"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/alert/Alert.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/alert/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "loader",
+      "type": "registry:ui",
+      "title": "Loader",
+      "description": "Five loaders — wave, orbit, bars, ring and a typing skeleton — that calm down for reduced motion.",
+      "categories": [
+        "components",
+        "feedback"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/loader/Loader.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/loader/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -573,6 +772,31 @@
         },
         {
           "path": "registry/ui/avatar-group/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "motion-badge",
+      "type": "registry:ui",
+      "title": "Motion Badge",
+      "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/motion-badge/MotionBadge.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/motion-badge/index.ts",
           "type": "registry:ui"
         }
       ]
