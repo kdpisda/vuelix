@@ -1,0 +1,9 @@
+{
+  "title": "Loader",
+  "description": "Five loaders — wave, orbit, bars, ring and a typing skeleton — that calm down for reduced motion.",
+  "section": "components",
+  "category": "Feedback",
+  "dependencies": [
+    "motion-v"
+  ]
+}

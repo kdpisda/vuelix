@@ -1,0 +1,9 @@
+{
+  "title": "Dynamic Island",
+  "description": "A pill that springs its width, height and radius between live states while the content cross-fades.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -1,5 +1,49 @@
 [
   {
+    "name": "cta-button",
+    "title": "CTA Button",
+    "description": "Call-to-action buttons with a shimmer sweep, spinning gradient border, magnetic pull or sliding arrow.",
+    "section": "components",
+    "category": "Buttons & Actions",
+    "url": "/components/cta-button",
+    "exports": [
+      "CtaButton"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
+    ]
+  },
+  {
+    "name": "expanding-button",
+    "title": "Expanding Button",
+    "description": "A compact button that springs open into an inline panel of actions or a small form, then folds back.",
+    "section": "components",
+    "category": "Buttons & Actions",
+    "url": "/components/expanding-button",
+    "exports": [
+      "ExpandingButton"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "icon-swap",
+    "title": "Icon Swap",
+    "description": "Button that morphs between icon states — copy to check, play to pause — with an optional particle burst.",
+    "section": "components",
+    "category": "Buttons & Actions",
+    "url": "/components/icon-swap",
+    "exports": [
+      "IconSwap"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
+    ]
+  },
+  {
     "name": "spring-button",
     "title": "Spring Button",
     "description": "A button with springy hover/press physics and a morphing loading state.",
@@ -30,6 +74,120 @@
     ]
   },
   {
+    "name": "color-picker",
+    "title": "Color Picker",
+    "description": "HSV color picker with springy thumbs, hex/RGB/HSL fields, eyedropper, recents and a popover variant.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/color-picker",
+    "exports": [
+      "ColorPicker",
+      "ColorPickerPopover"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "color-swatches",
+    "title": "Color Swatches",
+    "description": "Color picker where a springy ring hops between swatches, with an optional custom color.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/color-swatches",
+    "exports": [
+      "ColorSwatches"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "combobox",
+    "title": "Combobox",
+    "description": "Searchable select whose options glide in and out as you type, with the matched text highlighted.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/combobox",
+    "exports": [
+      "Combobox"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "date-range-picker",
+    "title": "Date Range Picker",
+    "description": "A calendar popover with presets, a range band that stretches between dates and sliding months.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/date-range-picker",
+    "exports": [
+      "DateRangePicker",
+      "defaultPresets"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "dial-picker",
+    "title": "Dial Picker",
+    "description": "A circular dial: drag the knob around a ticked arc, it snaps to steps while the readout rolls.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/dial-picker",
+    "exports": [
+      "DialPicker"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "floating-input",
+    "title": "Floating Input",
+    "description": "Text field whose label springs up on focus, with an animated focus ring, clear button and sliding error.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/floating-input",
+    "exports": [
+      "FloatingInput"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "motion-select",
+    "title": "Motion Select",
+    "description": "Single-select dropdown that scales out of its trigger, with a gliding highlight and drawn-in check.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/motion-select",
+    "exports": [
+      "MotionSelect"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "multi-select",
+    "title": "Multi Select",
+    "description": "Pick many options: choices pop into the field as chips and reflow with layout animation.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/multi-select",
+    "exports": [
+      "MultiSelect"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "otp-input",
     "title": "OTP Input",
     "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
@@ -38,6 +196,48 @@
     "url": "/components/otp-input",
     "exports": [
       "OtpInput"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "radio-cards",
+    "title": "Radio Cards",
+    "description": "Radio group where the selection ring and dot spring between options, as cards or a compact list.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/radio-cards",
+    "exports": [
+      "RadioCards"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "range-slider",
+    "title": "Range Slider",
+    "description": "Single or dual-thumb slider with growing thumbs, a value bubble that follows, and an animated fill.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/range-slider",
+    "exports": [
+      "RangeSlider"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spring-checkbox",
+    "title": "Spring Checkbox",
+    "description": "Checkbox that squishes on press and draws its check mark in, with an indeterminate state.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/spring-checkbox",
+    "exports": [
+      "SpringCheckbox"
     ],
     "dependencies": [
       "motion-v"
@@ -58,6 +258,21 @@
     ]
   },
   {
+    "name": "wheel-picker",
+    "title": "Wheel Picker",
+    "description": "An iOS-style 3D scroll wheel with flick momentum that snaps to items; combine wheels for time pickers.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/wheel-picker",
+    "exports": [
+      "WheelPicker",
+      "WheelPickerGroup"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "animated-tooltip",
     "title": "Animated Tooltip",
     "description": "A lightweight tooltip that springs out from any side with a blur-in.",
@@ -66,6 +281,48 @@
     "url": "/components/animated-tooltip",
     "exports": [
       "AnimatedTooltip"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "bottom-sheet",
+    "title": "Bottom Sheet",
+    "description": "A mobile-style sheet with snap points, velocity-aware dragging and a background that scales back.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/bottom-sheet",
+    "exports": [
+      "BottomSheet"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "context-menu",
+    "title": "Context Menu",
+    "description": "A right-click / long-press menu with a gliding highlight, shortcuts and a submenu that slides out.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/context-menu",
+    "exports": [
+      "ContextMenu"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "expanding-modal",
+    "title": "Expanding Modal",
+    "description": "A modal that grows out of the exact button that opened it and collapses back into it.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/expanding-modal",
+    "exports": [
+      "ExpandingModal"
     ],
     "dependencies": [
       "motion-v"
@@ -86,6 +343,34 @@
     ]
   },
   {
+    "name": "spring-drawer",
+    "title": "Spring Drawer",
+    "description": "A side drawer that springs in from any edge, with a drag-to-dismiss handle and focus trap.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/spring-drawer",
+    "exports": [
+      "SpringDrawer"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spring-popover",
+    "title": "Spring Popover",
+    "description": "A click-to-open popover that springs out of its trigger, with an arrow and smart flipping.",
+    "section": "components",
+    "category": "Overlays",
+    "url": "/components/spring-popover",
+    "exports": [
+      "SpringPopover"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "animated-tabs",
     "title": "Animated Tabs",
     "description": "Tabs with a shared-layout indicator that glides between triggers.",
@@ -94,6 +379,20 @@
     "url": "/components/animated-tabs",
     "exports": [
       "AnimatedTabs"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "breadcrumbs",
+    "title": "Breadcrumbs",
+    "description": "A breadcrumb trail that staggers in, underlines the current page and springs open collapsed levels.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/breadcrumbs",
+    "exports": [
+      "Breadcrumbs"
     ],
     "dependencies": [
       "motion-v"
@@ -115,6 +414,76 @@
     ]
   },
   {
+    "name": "pagination",
+    "title": "Pagination",
+    "description": "Page buttons with a sliding active pill, smart ellipses and numbers that roll with the direction.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/pagination",
+    "exports": [
+      "Pagination"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spring-sidebar",
+    "title": "Spring Sidebar",
+    "description": "An app sidebar that springs between full width and an icon rail, with a gliding active indicator.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/spring-sidebar",
+    "exports": [
+      "SpringSidebar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "stepper",
+    "title": "Stepper",
+    "description": "Multi-step progress with spring-filled connectors, steps that morph into checks and a pulsing current step.",
+    "section": "components",
+    "category": "Navigation",
+    "url": "/components/stepper",
+    "exports": [
+      "Stepper"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "aspect-ratio",
+    "title": "Aspect Ratio",
+    "description": "A fluid box that holds a ratio and springs smoothly to a new shape when the ratio changes.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/aspect-ratio",
+    "exports": [
+      "AspectRatio"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "aurora-background",
+    "title": "Aurora Background",
+    "description": "A section backdrop of soft, slowly drifting gradient blobs with optional film grain; transform-only and light on CPU.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/aurora-background",
+    "exports": [
+      "AuroraBackground"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "bouncy-accordion",
     "title": "Bouncy Accordion",
     "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
@@ -123,6 +492,62 @@
     "url": "/components/bouncy-accordion",
     "exports": [
       "BouncyAccordion"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "collapsible",
+    "title": "Collapsible",
+    "description": "A single disclosure whose content springs open to its natural height and blurs into focus.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/collapsible",
+    "exports": [
+      "Collapsible"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "hover-highlight",
+    "title": "Hover Highlight",
+    "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/hover-highlight",
+    "exports": [
+      "HoverHighlight"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "orbit-carousel",
+    "title": "Orbit Carousel",
+    "description": "Cards on a 3D ring: drag to spin with inertia that snaps to the nearest card, or let it orbit slowly.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/orbit-carousel",
+    "exports": [
+      "OrbitCarousel"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spotlight-card",
+    "title": "Spotlight Card",
+    "description": "A card lit by a soft spotlight and glowing rim that follow the pointer, with a gentle hover lift.",
+    "section": "components",
+    "category": "Layout & Surfaces",
+    "url": "/components/spotlight-card",
+    "exports": [
+      "SpotlightCard"
     ],
     "dependencies": [
       "motion-v"
@@ -143,6 +568,20 @@
     ]
   },
   {
+    "name": "marquee",
+    "title": "Marquee",
+    "description": "Seamless infinite scroller in any direction that eases to a stop on hover, with faded edges.",
+    "section": "components",
+    "category": "Text & Motion",
+    "url": "/components/marquee",
+    "exports": [
+      "Marquee"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "number-ticker",
     "title": "Number Ticker",
     "description": "Counts up to a value with spring physics when scrolled into view.",
@@ -157,6 +596,21 @@
     ]
   },
   {
+    "name": "scroll-reveal",
+    "title": "Scroll Reveal",
+    "description": "Reveals children with staggered presets as they scroll into view, plus a springy reading progress bar.",
+    "section": "components",
+    "category": "Text & Motion",
+    "url": "/components/scroll-reveal",
+    "exports": [
+      "ScrollProgress",
+      "ScrollReveal"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "text-reveal",
     "title": "Text Reveal",
     "description": "Staggered word or character reveal with blur and lift.",
@@ -165,6 +619,49 @@
     "url": "/components/text-reveal",
     "exports": [
       "TextReveal"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "alert",
+    "title": "Alert",
+    "description": "Inline alert whose icon pops and draws itself in, with a dismiss that smoothly collapses its height.",
+    "section": "components",
+    "category": "Feedback",
+    "url": "/components/alert",
+    "exports": [
+      "Alert"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
+    ]
+  },
+  {
+    "name": "loader",
+    "title": "Loader",
+    "description": "Five loaders — wave, orbit, bars, ring and a typing skeleton — that calm down for reduced motion.",
+    "section": "components",
+    "category": "Feedback",
+    "url": "/components/loader",
+    "exports": [
+      "Loader"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "pull-to-refresh",
+    "title": "Pull to Refresh",
+    "description": "Pull a scroll area down with rubber-band resistance; a spinning indicator holds while your refresh runs.",
+    "section": "components",
+    "category": "Feedback",
+    "url": "/components/pull-to-refresh",
+    "exports": [
+      "PullToRefresh"
     ],
     "dependencies": [
       "motion-v"
@@ -202,6 +699,842 @@
     ]
   },
   {
+    "name": "data-table",
+    "title": "Data Table",
+    "description": "A sortable, selectable table whose rows glide into their new order and whose selection bar slides up.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/data-table",
+    "exports": [
+      "DataTable"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "file-tree",
+    "title": "File Tree",
+    "description": "A keyboard-navigable file tree whose folders spring open and whose selection glides between rows.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/file-tree",
+    "exports": [
+      "FileTree"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "filmstrip",
+    "title": "Filmstrip",
+    "description": "A gallery preview with a draggable thumbnail rail; a frame glides to the active shot as images slide in.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/filmstrip",
+    "exports": [
+      "Filmstrip"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "lightbox",
+    "title": "Lightbox",
+    "description": "An image grid whose thumbnails morph into a full-screen viewer you can swipe through or drag away.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/lightbox",
+    "exports": [
+      "Lightbox"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "motion-badge",
+    "title": "Motion Badge",
+    "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/motion-badge",
+    "exports": [
+      "MotionBadge"
+    ],
+    "dependencies": [
+      "motion-v",
+      "class-variance-authority"
+    ]
+  },
+  {
+    "name": "sortable-list",
+    "title": "Sortable List",
+    "description": "A drag-to-reorder list where rows lift off the page and the rest glide aside; keyboard friendly.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/sortable-list",
+    "exports": [
+      "SortableList"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "timeline",
+    "title": "Timeline",
+    "description": "A vertical timeline whose line draws in as you scroll while each event pops and slides into place.",
+    "section": "components",
+    "category": "Data Display",
+    "url": "/components/timeline",
+    "exports": [
+      "Timeline"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "action-bar",
+    "title": "Action Bar",
+    "description": "A floating bulk-action bar that springs in on selection, rolls its count and confirms in place.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/action-bar",
+    "exports": [
+      "ActionBar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "auth-form",
+    "title": "Auth Form",
+    "description": "Sign-in / sign-up card with a sliding mode switch, floating labels, a live strength meter and a morphing submit.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/auth-form",
+    "exports": [
+      "AuthForm",
+      "passwordStrength"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "availability-picker",
+    "title": "Availability Picker",
+    "description": "Weekly scheduler with day switches, animated time ranges and a drag-to-paint week grid.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/availability-picker",
+    "exports": [
+      "AvailabilityPicker",
+      "dayMinutes"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "card-fan",
+    "title": "Card Fan",
+    "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/card-fan",
+    "exports": [
+      "CardFan"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "command-palette",
+    "title": "Command Palette",
+    "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/command-palette",
+    "exports": [
+      "CommandPalette",
+      "highlightSegments",
+      "matchCommand"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "dynamic-island",
+    "title": "Dynamic Island",
+    "description": "A pill that springs its width, height and radius between live states while the content cross-fades.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/dynamic-island",
+    "exports": [
+      "DynamicIsland"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "expandable-tabs",
+    "title": "Expandable Tabs",
+    "description": "An icon-only tab bar where the active tab springs open to reveal its label with a blur-in.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/expandable-tabs",
+    "exports": [
+      "ExpandableTabs"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "feedback-widget",
+    "title": "Feedback Widget",
+    "description": "A floating Feedback pill that morphs into an emoji-rating form, then into a check, then back.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/feedback-widget",
+    "exports": [
+      "FeedbackWidget"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "file-dropzone",
+    "title": "File Dropzone",
+    "description": "Drag-and-drop uploads that swell on hover, with thumbnails, live progress bars, retry and remove.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/file-dropzone",
+    "exports": [
+      "FileDropzone"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "fluid-tabs",
+    "title": "Fluid Tabs",
+    "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/fluid-tabs",
+    "exports": [
+      "FluidTabs"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "folder-stack",
+    "title": "Folder Stack",
+    "description": "A folder whose flap tips open as its cards fan out, plus a card pile that deals itself into a grid.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/folder-stack",
+    "exports": [
+      "FolderStack"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "masonry-grid",
+    "title": "Masonry Grid",
+    "description": "Shortest-column masonry that springs into place on resize, reveals items on scroll and loads more at the end.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/masonry-grid",
+    "exports": [
+      "MasonryGrid"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "match-fixtures",
+    "title": "Match Fixtures",
+    "description": "A fixtures and results list with live minutes, rolling scores, goal flashes and an expandable events timeline.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/match-fixtures",
+    "exports": [
+      "MatchFixtures"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "morphing-search",
+    "title": "Morphing Search",
+    "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/morphing-search",
+    "exports": [
+      "MorphingSearch"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "not-found",
+    "title": "Not Found",
+    "description": "A 404 section whose giant digits float, dodge the pointer on springs and can be flung around, with search and links home.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/not-found",
+    "exports": [
+      "NotFound"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "notification-center",
+    "title": "Notification Center",
+    "description": "A bell with a live badge and a panel of per-app stacks that fan open, swipe away and clear in a cascade.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/notification-center",
+    "exports": [
+      "NotificationCenter"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "odds-card",
+    "title": "Odds Card",
+    "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/odds-card",
+    "exports": [
+      "OddsCard"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "overflow-toolbar",
+    "title": "Overflow Toolbar",
+    "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/overflow-toolbar",
+    "exports": [
+      "OverflowToolbar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "radial-menu",
+    "title": "Radial Menu",
+    "description": "A floating button that blooms into a ring of actions with staggered springs, hover labels and arrow-key navigation.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/radial-menu",
+    "exports": [
+      "RadialMenu"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "swipe-actions",
+    "title": "Swipe Actions",
+    "description": "List rows that swipe to reveal actions, rubber-band, full-swipe to commit and collapse away.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/swipe-actions",
+    "exports": [
+      "SwipeActions"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "token-swap",
+    "title": "Token Swap",
+    "description": "Swap card whose rows trade places on a spinning button, with token search, slippage and a review morph.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/token-swap",
+    "exports": [
+      "TokenSwap"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "wallet-card",
+    "title": "Wallet Card",
+    "description": "A stack of payment cards that springs a card to the front, flips it for details and rolls in its balance.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/wallet-card",
+    "exports": [
+      "WalletCard"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "agent-activity",
+    "title": "Agent Activity",
+    "description": "Live feed of an agent's steps: new steps slide in, the current one shimmers, sub-steps fold away.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/agent-activity",
+    "exports": [
+      "AgentActivity"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "approval-card",
+    "title": "Approval Card",
+    "description": "Asks the user to approve an agent action, then collapses into a compact resolved row with a stamp that slams in.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/approval-card",
+    "exports": [
+      "ApprovalCard"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "chat-app",
+    "title": "Chat App",
+    "description": "A complete AI chat: header, welcome screen with suggestions, streaming messages and a prompt composer.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/chat-app",
+    "exports": [
+      "ChatApp"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "chat-message",
+    "title": "Chat Message",
+    "description": "A chat message with avatar, streaming caret and copy, retry and feedback actions that fade in on hover.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/chat-message",
+    "exports": [
+      "ChatBubble",
+      "ChatMessage"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "chat-scroller",
+    "title": "Chat Scroller",
+    "description": "A conversation viewport that sticks to the latest message, springs in a jump pill and keeps its place on prepend.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/chat-scroller",
+    "exports": [
+      "ChatScroller"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "citations",
+    "title": "Citations",
+    "description": "Numbered citation chips with hover cards, linked to a sources list that lights up the cited source.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/citations",
+    "exports": [
+      "CitationChip",
+      "Citations"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "code-block",
+    "title": "Code Block",
+    "description": "Code with a file header, line numbers, highlighted lines, a copy-to-check button and a springy collapse for long snippets.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/code-block",
+    "exports": [
+      "CodeBlock"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "conversation-sidebar",
+    "title": "Conversation Sidebar",
+    "description": "Chat history grouped by date, with search, a gliding active marker, inline rename and an icon rail.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/conversation-sidebar",
+    "exports": [
+      "ConversationSidebar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "file-diff",
+    "title": "File Diff",
+    "description": "A unified diff viewer with a change bar, folding unchanged lines and per-hunk accept or reject that springs shut.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/file-diff",
+    "exports": [
+      "FileDiff",
+      "parseUnifiedDiff"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "image-generation",
+    "title": "Image Generation",
+    "description": "Image placeholder where grainy colour fields sharpen behind a scan line, then the result fades in.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/image-generation",
+    "exports": [
+      "ImageGeneration"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "model-picker",
+    "title": "Model Picker",
+    "description": "Compact AI model dropdown with capability badges, typeahead and a check mark that glides to your pick.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/model-picker",
+    "exports": [
+      "ModelPicker"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "prompt-input",
+    "title": "Prompt Input",
+    "description": "An AI composer with an auto-growing textarea, pop-in attachment chips and a send button that morphs into stop.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/prompt-input",
+    "exports": [
+      "PromptInput"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "streaming-text",
+    "title": "Streaming Text",
+    "description": "Streamed AI answers where each new chunk blurs in, with a blinking cursor and light Markdown.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/streaming-text",
+    "exports": [
+      "StreamingText",
+      "createTextStream",
+      "useTextStream"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "suggestion-chips",
+    "title": "Suggestion Chips",
+    "description": "Prompt suggestions that stagger in, lift on hover, fly into your input on click and reshuffle.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/suggestion-chips",
+    "exports": [
+      "SuggestionChips"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "task-list",
+    "title": "Task List",
+    "description": "An agent's plan with a live progress bar, spinning active step, drawn checkmarks and a strike that sweeps across.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/task-list",
+    "exports": [
+      "TaskList"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "thinking-indicator",
+    "title": "Thinking Indicator",
+    "description": "AI loading states: wave dots, shimmering text, a pulsing orb, a scan bar and a collapsible reasoning panel.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/thinking-indicator",
+    "exports": [
+      "ThinkingIndicator"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "tool-call",
+    "title": "Tool Call",
+    "description": "A collapsible card for a tool invocation with a live status indicator, timer and pretty-printed arguments and result.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/tool-call",
+    "exports": [
+      "ToolCall"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "voice-orb",
+    "title": "Voice Orb",
+    "description": "A living orb for voice assistants that deforms with the audio level as it listens, thinks and speaks.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/voice-orb",
+    "exports": [
+      "VoiceOrb"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "bar-chart",
+    "title": "Bar Chart",
+    "description": "Grouped, stacked or horizontal bars that spring up in a stagger and glide between layouts.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/bar-chart",
+    "exports": [
+      "BarChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "bump-chart",
+    "title": "Bump Chart",
+    "description": "Rankings over time as curved lanes that draw in; hover one to bring it forward and dim the rest.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/bump-chart",
+    "exports": [
+      "BumpChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "candlestick-chart",
+    "title": "Candlestick Chart",
+    "description": "Live OHLC candles with volume, a last-price tag and crosshair readout; new candles slide in.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/candlestick-chart",
+    "exports": [
+      "CandlestickChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "depth-heatmap",
+    "title": "Depth Heatmap",
+    "description": "Price × time heatmap of resting liquidity with a price trace; new snapshots slide in live.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/depth-heatmap",
+    "exports": [
+      "DepthHeatmap"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "donut-chart",
+    "title": "Donut Chart",
+    "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/donut-chart",
+    "exports": [
+      "DonutChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "forecast-fan",
+    "title": "Forecast Fan",
+    "description": "Price history that opens into a fan of low / median / high targets, with a scrubber that reads into the future.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/forecast-fan",
+    "exports": [
+      "ForecastFan"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "funnel-chart",
+    "title": "Funnel Chart",
+    "description": "Conversion funnel whose stages spring open in sequence, joined by curved hand-offs with drop-off rates.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/funnel-chart",
+    "exports": [
+      "FunnelChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "heat-calendar",
+    "title": "Heat Calendar",
+    "description": "A year of daily activity as a weeks × weekdays grid that ripples in; drag across days to select a range.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/heat-calendar",
+    "exports": [
+      "HeatCalendar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "line-chart",
+    "title": "Line Chart",
+    "description": "Multi-series line or area chart that draws in, morphs on new data and tracks a snapping crosshair.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/line-chart",
+    "exports": [
+      "LineChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "order-book",
+    "title": "Order Book",
+    "description": "Live bid/ask ladder with springy depth bars, a spread row, size-change flashes and a buy/sell balance bar.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/order-book",
+    "exports": [
+      "OrderBook"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "returns-calendar",
+    "title": "Returns Calendar",
+    "description": "Years × months grid of returns tinted by sign and size, with compounded yearly totals; cells pop in diagonally.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/returns-calendar",
+    "exports": [
+      "ReturnsCalendar"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "sankey-chart",
+    "title": "Sankey Chart",
+    "description": "Weighted flows between columns of nodes; ribbons draw in and hovering traces a node's whole path.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/sankey-chart",
+    "exports": [
+      "SankeyChart"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "sparkline",
     "title": "Sparkline",
     "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
@@ -210,6 +1543,88 @@
     "url": "/charts/sparkline",
     "exports": [
       "Sparkline"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "stacked-area",
+    "title": "Stacked Area",
+    "description": "Composition over time, stacked or 100%; bands morph between modes and an interactive legend isolates series.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/stacked-area",
+    "exports": [
+      "StackedArea"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "status-history",
+    "title": "Status History",
+    "description": "Uptime bars per day that rise in a wave, coloured by status, with an overall uptime readout.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/status-history",
+    "exports": [
+      "StatusHistory"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "treemap",
+    "title": "Treemap",
+    "description": "Squarified treemap whose tiles glide to their new size and position whenever the data changes.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/treemap",
+    "exports": [
+      "Treemap",
+      "squarify"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "volume-profile",
+    "title": "Volume Profile",
+    "description": "Volume-by-price histogram with a highlighted point of control and value area; bars ripple out from the POC.",
+    "section": "charts",
+    "category": "Charts",
+    "url": "/charts/volume-profile",
+    "exports": [
+      "VolumeProfile"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "chart-utils",
+    "title": "Chart Utils",
+    "description": "Shared chart helpers: nice ticks, scales, monotone paths, tweened values and a clamped tooltip.",
+    "section": "charts",
+    "category": "Utilities",
+    "url": "/charts/chart-utils",
+    "exports": [
+      "ChartTooltip",
+      "areaPath",
+      "chartColor",
+      "clamp",
+      "formatCompact",
+      "linearPath",
+      "linearScale",
+      "monotonePath",
+      "niceTicks",
+      "resample",
+      "useElementWidth",
+      "useTween"
     ],
     "dependencies": [
       "motion-v"

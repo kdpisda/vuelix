@@ -11,7 +11,7 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "types": ["vitepress/client", "node"],
     "baseUrl": ".",
-    "paths": { "@/*": ["registry/*"] }
+    "paths": { "@/components/ui/*": ["registry/ui/*"], "@/*": ["registry/*"] }
   },
   "include": ["docs/env.d.ts", "registry/**/*.ts", "registry/**/*.vue", "docs/demos/**/*.vue", "docs/.vitepress/**/*.ts", "docs/.vitepress/**/*.vue"]
 }

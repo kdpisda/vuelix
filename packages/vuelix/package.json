@@ -1,6 +1,6 @@
 {
   "name": "vuelix",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Animated components for Vue 3 & Nuxt, built on Tailwind CSS and Motion.",
   "license": "MIT",
   "author": "Kuldeep Pisda (https://kdpisda.in)",
@@ -58,7 +58,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.10",
     "vite": "^7.0.0",
-    "vite-plugin-dts": "^4.5.4"
+    "vite-plugin-dts": "^5.1.2"
   },
   "publishConfig": {
     "access": "public",

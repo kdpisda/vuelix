@@ -1,0 +1,9 @@
+{
+  "title": "Lightbox",
+  "description": "An image grid whose thumbnails morph into a full-screen viewer you can swipe through or drag away.",
+  "section": "components",
+  "category": "Data Display",
+  "dependencies": [
+    "motion-v"
+  ]
+}

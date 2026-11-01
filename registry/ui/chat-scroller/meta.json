@@ -1,0 +1,9 @@
+{
+  "title": "Chat Scroller",
+  "description": "A conversation viewport that sticks to the latest message, springs in a jump pill and keeps its place on prepend.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

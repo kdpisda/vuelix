@@ -1,0 +1,27 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "spotlight-card",
+  "title": "Spotlight Card",
+  "description": "A card lit by a soft spotlight and glowing rim that follow the pointer, with a gentle hover lift.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/spotlight-card/SpotlightCard.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from 'motion-v'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** Spotlight colour — any CSS colour, theme tokens included. */\n  color?: string\n  /** Diameter of the spotlight in pixels. */\n  size?: number\n  /** How far the card lifts on hover, in pixels. `0` disables the lift. */\n  lift?: number\n  class?: HTMLAttributes['class']\n}>(), {\n  color: 'var(--brand)',\n  size: 380,\n  lift: 4,\n})\n\nconst reduced = useReducedMotion()\n\n// Pointer position in px relative to the card. Springs smooth out jittery input\n// without a Vue re-render per frame.\nconst mx = useMotionValue(-1000)\nconst my = useMotionValue(-1000)\nconst smooth = { stiffness: 500, damping: 40, mass: 0.4 }\nconst sx = useSpring(mx, smooth)\nconst sy = useSpring(my, smooth)\n\nconst spotlight = useTransform([sx, sy], ([x, y]) =>\n  `radial-gradient(${props.size / 2}px circle at ${x}px ${y}px, color-mix(in oklab, ${props.color} 16%, transparent), transparent 70%)`)\nconst rim = useTransform([sx, sy], ([x, y]) =>\n  `radial-gradient(${props.size / 2.5}px circle at ${x}px ${y}px, ${props.color}, transparent 75%)`)\n\n// Two layers — padding box minus content box — leave only the 1px padding visible.\nconst ringMask = {\n  WebkitMask: 'linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)',\n  WebkitMaskComposite: 'xor',\n  mask: 'linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)',\n  maskComposite: 'exclude',\n}\n\nfunction place(x: number, y: number, instant = false) {\n  if (instant || reduced.value) {\n    mx.jump(x)\n    my.jump(y)\n    sx.jump(x)\n    sy.jump(y)\n  }\n  else {\n    mx.set(x)\n    my.set(y)\n  }\n}\n\nfunction onEnter(e: PointerEvent) {\n  const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()\n  // Start the light where the pointer entered instead of sweeping in from afar.\n  place(e.clientX - rect.left, e.clientY - rect.top, true)\n}\n\nfunction onMove(e: PointerEvent) {\n  const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()\n  place(e.clientX - rect.left, e.clientY - rect.top)\n}\n\n// Keyboard users get the light centred on the card when focus moves inside it.\nfunction onFocusIn(e: FocusEvent) {\n  const el = e.currentTarget as HTMLElement\n  if (!el.matches(':hover'))\n    place(el.offsetWidth / 2, el.offsetHeight / 3, true)\n}\n</script>\n\n<template>\n  <motion.div\n    :class=\"cn(\n      'group/spotlight relative isolate flex flex-col overflow-hidden rounded-2xl border bg-card text-card-foreground shadow-sm transition-shadow duration-300 hover:shadow-lg',\n      props.class,\n    )\"\n    :while-hover=\"reduced || !props.lift ? undefined : { y: -props.lift }\"\n    :transition=\"{ type: 'spring', stiffness: 320, damping: 26 }\"\n    @pointerenter=\"onEnter\"\n    @pointermove=\"onMove\"\n    @focusin=\"onFocusIn\"\n  >\n    <!-- Soft wash of light inside the card -->\n    <motion.div\n      aria-hidden=\"true\"\n      class=\"pointer-events-none absolute inset-0 -z-10 opacity-0 transition-opacity duration-500 group-focus-within/spotlight:opacity-100 group-hover/spotlight:opacity-100\"\n      :style=\"{ background: spotlight }\"\n    />\n    <!-- Border glow: the same light, masked down to a 1px ring -->\n    <div\n      aria-hidden=\"true\"\n      class=\"pointer-events-none absolute inset-0 z-10 rounded-[inherit] p-px opacity-0 transition-opacity duration-500 group-focus-within/spotlight:opacity-100 group-hover/spotlight:opacity-100\"\n      :style=\"ringMask\"\n    >\n      <motion.div class=\"absolute inset-0 rounded-[inherit]\" :style=\"{ background: rim }\" />\n    </div>\n    <div v-if=\"$slots.header\" class=\"px-6 pt-6\">\n      <slot name=\"header\" />\n    </div>\n    <div class=\"flex-1 px-6 py-5\">\n      <slot />\n    </div>\n    <div v-if=\"$slots.footer\" class=\"flex items-center gap-3 border-t px-6 py-4\">\n      <slot name=\"footer\" />\n    </div>\n  </motion.div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/spotlight-card/index.ts",
+      "content": "export { default as SpotlightCard } from './SpotlightCard.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "components",
+    "layout-surfaces"
+  ],
+  "type": "registry:ui"
+}

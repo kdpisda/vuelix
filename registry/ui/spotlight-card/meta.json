@@ -1,0 +1,9 @@
+{
+  "title": "Spotlight Card",
+  "description": "A card lit by a soft spotlight and glowing rim that follow the pointer, with a gentle hover lift.",
+  "section": "components",
+  "category": "Layout & Surfaces",
+  "dependencies": [
+    "motion-v"
+  ]
+}

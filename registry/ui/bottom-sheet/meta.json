@@ -1,0 +1,9 @@
+{
+  "title": "Bottom Sheet",
+  "description": "A mobile-style sheet with snap points, velocity-aware dragging and a background that scales back.",
+  "section": "components",
+  "category": "Overlays",
+  "dependencies": [
+    "motion-v"
+  ]
+}

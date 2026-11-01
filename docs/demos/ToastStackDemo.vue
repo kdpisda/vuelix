@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SpringButton } from '@/ui/spring-button'
-import { toast, ToastStack } from '@/ui/toast-stack'
+import { SpringButton } from '@/components/ui/spring-button'
+import { toast, ToastStack } from '@/components/ui/toast-stack'
 
 const samples = [
   () => toast.success('Deployment complete', { description: 'vuelix-docs is live on production.' }),

@@ -46,6 +46,11 @@ const items = readdirSync(uiDir, { withFileTypes: true })
     if (!existsSync(join(dir, 'index.ts')))
       errors.push(`${name}: missing index.ts`)
     const files = readdirSync(dir).filter(f => /\.(vue|ts)$/.test(f)).sort()
+    for (const f of files) {
+      // Installed copies live in the user's components/ui — `@/ui/…` would not resolve there.
+      if (/['"`]@\/ui\//.test(readFileSync(join(dir, f), 'utf8')))
+        errors.push(`${name}/${f}: import other components as '@/components/ui/<name>', not '@/ui/<name>'`)
+    }
     const index = existsSync(join(dir, 'index.ts')) ? readFileSync(join(dir, 'index.ts'), 'utf8') : ''
     const components = [...index.matchAll(/default as (\w+)/g)].map(m => m[1])
     // Value exports from `export { a, b } from` / `export function x` / `export const x` (not types)

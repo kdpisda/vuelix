@@ -1,0 +1,9 @@
+{
+  "title": "Spring Drawer",
+  "description": "A side drawer that springs in from any edge, with a drag-to-dismiss handle and focus trap.",
+  "section": "components",
+  "category": "Overlays",
+  "dependencies": [
+    "motion-v"
+  ]
+}

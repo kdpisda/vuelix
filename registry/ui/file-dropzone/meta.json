@@ -1,0 +1,9 @@
+{
+  "title": "File Dropzone",
+  "description": "Drag-and-drop uploads that swell on hover, with thumbnails, live progress bars, retry and remove.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

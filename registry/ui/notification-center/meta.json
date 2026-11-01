@@ -1,0 +1,9 @@
+{
+  "title": "Notification Center",
+  "description": "A bell with a live badge and a panel of per-app stacks that fan open, swipe away and clear in a cascade.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

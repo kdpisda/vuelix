@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TiltCard } from '@/ui/tilt-card'
+import { TiltCard } from '@/components/ui/tilt-card'
 </script>
 
 <template>

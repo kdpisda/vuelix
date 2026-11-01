@@ -1,0 +1,9 @@
+{
+  "title": "Token Swap",
+  "description": "Swap card whose rows trade places on a spinning button, with token search, slippage and a review morph.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

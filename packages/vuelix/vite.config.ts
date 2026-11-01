@@ -27,7 +27,10 @@ export default defineConfig({
     },
   ],
   resolve: {
-    alias: { '@': registry },
+    alias: [
+      { find: /^@\/components\/ui\//, replacement: `${registry}/ui/` },
+      { find: /^@\//, replacement: `${registry}/` },
+    ],
   },
   build: {
     outDir: dist,

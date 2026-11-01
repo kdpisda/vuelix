@@ -1,0 +1,9 @@
+{
+  "title": "Filmstrip",
+  "description": "A gallery preview with a draggable thumbnail rail; a frame glides to the active shot as images slide in.",
+  "section": "components",
+  "category": "Data Display",
+  "dependencies": [
+    "motion-v"
+  ]
+}

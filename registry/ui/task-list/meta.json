@@ -1,0 +1,9 @@
+{
+  "title": "Task List",
+  "description": "An agent's plan with a live progress bar, spinning active step, drawn checkmarks and a strike that sweeps across.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

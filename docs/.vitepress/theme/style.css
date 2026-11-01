@@ -122,7 +122,23 @@
  * `.vp-raw.vp-raw` → specificity (0,2,0), enough to beat `.vp-doc h2` (0,1,1).
  * Docs-site only — shipped components don't need this.
  */
-.vp-raw.vp-raw :where(button, input, select, textarea, a, p, h1, h2, h3, h4, h5, h6, ul, ol, li, table, img, svg, pre, code, label),
+.vp-raw.vp-raw :where(button, input, select, textarea, a, p, h1, h2, h3, h4, h5, h6, ul, ol, li, table, thead, tbody, tfoot, tr, th, td, img, svg, pre, code, label, blockquote, hr, main, nav, aside, section, kbd),
 .vp-raw.vp-raw:where(a, button, p, h2) {
   all: revert-layer;
 }
+
+/* `.vp-doc a:hover` (0,2,1) also needs beating for links inside demos. */
+.vp-raw.vp-raw :where(a):hover,
+.vp-raw.vp-raw:where(a):hover {
+  all: revert-layer;
+}
+
+/*
+ * Overlays teleported to <body> (popovers, dialogs, drawers, lightboxes…) live outside .vp-raw,
+ * so give them the same treatment. VitePress' own teleported search box is excluded.
+ */
+body > :where(:not(#app):not(.VPLocalSearchBox)) :where(button, input, select, textarea, a, p, h1, h2, h3, h4, h5, h6, ul, ol, li, table, thead, tbody, tfoot, tr, th, td, img, svg, pre, code, label, blockquote, hr),
+body > :where(:not(#app):not(.VPLocalSearchBox)):where(button, a) {
+  all: revert-layer;
+}
+

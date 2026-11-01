@@ -7,3 +7,7 @@ packages/*/dist
 *.tgz
 .shots
 .claude/
+.shots-*.txt
+.shots-run.sh
+.shots-part-*
+.shots-p.txt

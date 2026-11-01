@@ -1,0 +1,9 @@
+{
+  "title": "Spring Sidebar",
+  "description": "An app sidebar that springs between full width and an icon rail, with a gliding active indicator.",
+  "section": "components",
+  "category": "Navigation",
+  "dependencies": [
+    "motion-v"
+  ]
+}

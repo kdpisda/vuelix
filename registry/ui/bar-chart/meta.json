@@ -1,0 +1,12 @@
+{
+  "title": "Bar Chart",
+  "description": "Grouped, stacked or horizontal bars that spring up in a stagger and glide between layouts.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chart-utils.json"
+  ]
+}

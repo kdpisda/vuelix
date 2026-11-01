@@ -1,0 +1,10 @@
+{
+  "title": "Alert",
+  "description": "Inline alert whose icon pops and draws itself in, with a dismiss that smoothly collapses its height.",
+  "section": "components",
+  "category": "Feedback",
+  "dependencies": [
+    "motion-v",
+    "class-variance-authority"
+  ]
+}

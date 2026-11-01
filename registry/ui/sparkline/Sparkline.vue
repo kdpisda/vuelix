@@ -135,7 +135,6 @@ const trend = computed(() => {
         :initial="{ opacity: 0, scale: 0.6 }"
         :animate="{ opacity: [0.35, 0], scale: [0.6, 1.6] }"
         :transition="{ duration: 1.6, repeat: Infinity, delay: props.duration }"
-        :style="{ transformOrigin: `${last[0]}px ${last[1]}px` }"
       />
       <motion.circle
         :cx="last[0]"
@@ -145,7 +144,6 @@ const trend = computed(() => {
         :initial="{ scale: 0 }"
         :animate="{ scale: 1 }"
         :transition="{ type: 'spring', stiffness: 500, damping: 20, delay: props.duration * 0.9 }"
-        :style="{ transformOrigin: `${last[0]}px ${last[1]}px` }"
       />
     </g>
   </svg>

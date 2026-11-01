@@ -1,0 +1,9 @@
+{
+  "title": "Chart Utils",
+  "description": "Shared chart helpers: nice ticks, scales, monotone paths, tweened values and a clamped tooltip.",
+  "section": "charts",
+  "category": "Utilities",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Overflow Toolbar",
+  "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

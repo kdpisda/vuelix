@@ -1,0 +1,9 @@
+{
+  "title": "Morphing Search",
+  "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

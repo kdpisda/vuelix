@@ -1,0 +1,9 @@
+{
+  "title": "Combobox",
+  "description": "Searchable select whose options glide in and out as you type, with the matched text highlighted.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

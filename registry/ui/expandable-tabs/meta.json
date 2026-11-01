@@ -1,0 +1,9 @@
+{
+  "title": "Expandable Tabs",
+  "description": "An icon-only tab bar where the active tab springs open to reveal its label with a blur-in.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

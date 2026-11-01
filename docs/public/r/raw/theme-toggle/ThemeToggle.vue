@@ -2,6 +2,7 @@
 import type { HTMLAttributes } from 'vue'
 import { useDark, useToggle } from '@vueuse/core'
 import { AnimatePresence, motion } from 'motion-v'
+import { onMounted, ref } from 'vue'
 import { cn } from '@/lib/utils'
 
 const props = withDefaults(defineProps<{
@@ -15,13 +16,18 @@ const props = withDefaults(defineProps<{
 const isDark = useDark({ storageKey: props.storageKey })
 const toggle = useToggle(isDark)
 
+// The server can't know the user's theme, so the theme-dependent icon and label render only
+// after mount (otherwise dark-mode users get a hydration mismatch).
+const mounted = ref(false)
+onMounted(() => (mounted.value = true))
+
 const spring = { type: 'spring', stiffness: 380, damping: 22 } as const
 </script>
 
 <template>
   <motion.button
     type="button"
-    :aria-label="isDark ? 'Switch to light theme' : 'Switch to dark theme'"
+    :aria-label="!mounted ? 'Toggle theme' : isDark ? 'Switch to light theme' : 'Switch to dark theme'"
     :class="cn(
       'relative inline-flex size-10 items-center justify-center overflow-hidden rounded-full border bg-background text-foreground outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50',
       props.class,
@@ -30,7 +36,7 @@ const spring = { type: 'spring', stiffness: 380, damping: 22 } as const
     :transition="spring"
     @click="toggle()"
   >
-    <AnimatePresence mode="popLayout" :initial="false">
+    <AnimatePresence v-if="mounted" mode="popLayout" :initial="false">
       <motion.svg
         v-if="isDark"
         key="moon"

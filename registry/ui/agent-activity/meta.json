@@ -1,0 +1,9 @@
+{
+  "title": "Agent Activity",
+  "description": "Live feed of an agent's steps: new steps slide in, the current one shimmers, sub-steps fold away.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Pagination",
+  "description": "Page buttons with a sliding active pill, smart ellipses and numbers that roll with the direction.",
+  "section": "components",
+  "category": "Navigation",
+  "dependencies": [
+    "motion-v"
+  ]
+}

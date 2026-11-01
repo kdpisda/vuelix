@@ -39,7 +39,7 @@ interface JsonRpcRequest {
   params?: Record<string, any>
 }
 
-const SERVER_INFO = { name: 'vuelix', title: 'vuelix — animated Vue components', version: '0.1.0' }
+const SERVER_INFO = { name: 'vuelix', title: 'vuelix — animated Vue components', version: '0.2.0' }
 const PROTOCOL_VERSIONS = ['2025-06-18', '2025-03-26', '2024-11-05']
 
 const INSTRUCTIONS = `vuelix is a library of animated Vue 3 components (Tailwind CSS v4 + motion-v).

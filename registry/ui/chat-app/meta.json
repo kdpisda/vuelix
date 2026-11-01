@@ -1,0 +1,12 @@
+{
+  "title": "Chat App",
+  "description": "A complete AI chat: header, welcome screen with suggestions, streaming messages and a prompt composer.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": ["motion-v"],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chat-message.json",
+    "https://vuelix.dev/r/chat-scroller.json",
+    "https://vuelix.dev/r/prompt-input.json"
+  ]
+}

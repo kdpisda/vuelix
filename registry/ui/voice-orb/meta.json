@@ -1,0 +1,9 @@
+{
+  "title": "Voice Orb",
+  "description": "A living orb for voice assistants that deforms with the audio level as it listens, thinks and speaks.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

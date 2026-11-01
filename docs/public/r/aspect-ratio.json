@@ -1,0 +1,27 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "aspect-ratio",
+  "title": "Aspect Ratio",
+  "description": "A fluid box that holds a ratio and springs smoothly to a new shape when the ratio changes.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/aspect-ratio/AspectRatio.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { motion, useReducedMotion, useSpring, useTransform } from 'motion-v'\nimport { watch } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** Width divided by height, e.g. `16 / 9`. Changing it animates the box. */\n  ratio?: number\n  /** Optional image rendered edge to edge inside the box. */\n  src?: string\n  alt?: string\n  /** How the image fills the box (`object-fit`). */\n  fit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down'\n  /** Which part of the image stays visible when cropped (`object-position`). */\n  position?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  ratio: 16 / 9,\n  alt: '',\n  fit: 'cover',\n  position: 'center',\n})\n\nconst reduced = useReducedMotion()\n\n// The ratio itself is the animated value, so the box stays fluid in width\n// and never needs to be measured.\nconst ratio = useSpring(props.ratio, { stiffness: 220, damping: 26, mass: 0.9 })\nconst aspectRatio = useTransform(ratio, r => `${Math.max(r, 0.01)}`)\n\nwatch(() => props.ratio, (next) => {\n  if (reduced.value)\n    ratio.jump(next)\n  else\n    ratio.set(next)\n})\n</script>\n\n<template>\n  <motion.div\n    :class=\"cn('relative w-full overflow-hidden rounded-xl bg-muted', props.class)\"\n    :style=\"{ aspectRatio }\"\n  >\n    <img\n      v-if=\"props.src\"\n      :src=\"props.src\"\n      :alt=\"props.alt\"\n      class=\"absolute inset-0 size-full\"\n      :style=\"{ objectFit: props.fit, objectPosition: props.position }\"\n      draggable=\"false\"\n    >\n    <div v-if=\"$slots.default\" class=\"absolute inset-0\">\n      <slot />\n    </div>\n  </motion.div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/aspect-ratio/index.ts",
+      "content": "export { default as AspectRatio } from './AspectRatio.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "components",
+    "layout-surfaces"
+  ],
+  "type": "registry:ui"
+}

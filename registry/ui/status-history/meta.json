@@ -1,0 +1,13 @@
+{
+  "title": "Status History",
+  "description": "Uptime bars per day that rise in a wave, coloured by status, with an overall uptime readout.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chart-utils.json",
+    "https://vuelix.dev/r/number-ticker.json"
+  ]
+}

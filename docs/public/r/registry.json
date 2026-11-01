@@ -4,6 +4,80 @@
   "homepage": "https://vuelix.dev",
   "items": [
     {
+      "name": "cta-button",
+      "type": "registry:ui",
+      "title": "CTA Button",
+      "description": "Call-to-action buttons with a shimmer sweep, spinning gradient border, magnetic pull or sliding arrow.",
+      "categories": [
+        "components",
+        "buttons-actions"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/cta-button/CtaButton.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/cta-button/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "expanding-button",
+      "type": "registry:ui",
+      "title": "Expanding Button",
+      "description": "A compact button that springs open into an inline panel of actions or a small form, then folds back.",
+      "categories": [
+        "components",
+        "buttons-actions"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/expanding-button/ExpandingButton.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/expanding-button/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "icon-swap",
+      "type": "registry:ui",
+      "title": "Icon Swap",
+      "description": "Button that morphs between icon states — copy to check, play to pause — with an optional particle burst.",
+      "categories": [
+        "components",
+        "buttons-actions"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/icon-swap/IconSwap.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/icon-swap/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "spring-button",
       "type": "registry:ui",
       "title": "Spring Button",
@@ -54,6 +128,210 @@
       ]
     },
     {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "title": "Color Picker",
+      "description": "HSV color picker with springy thumbs, hex/RGB/HSL fields, eyedropper, recents and a popover variant.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/color-picker/ColorPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/color-picker/ColorPickerPopover.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/color-picker/color.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/color-picker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "color-swatches",
+      "type": "registry:ui",
+      "title": "Color Swatches",
+      "description": "Color picker where a springy ring hops between swatches, with an optional custom color.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/color-swatches/ColorSwatches.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/color-swatches/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "Searchable select whose options glide in and out as you type, with the matched text highlighted.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/combobox/Combobox.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/combobox/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "date-range-picker",
+      "type": "registry:ui",
+      "title": "Date Range Picker",
+      "description": "A calendar popover with presets, a range band that stretches between dates and sliding months.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/date-range-picker/DateRangePicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/date-range-picker/calendar.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/date-range-picker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dial-picker",
+      "type": "registry:ui",
+      "title": "Dial Picker",
+      "description": "A circular dial: drag the knob around a ticked arc, it snaps to steps while the readout rolls.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/dial-picker/DialPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/dial-picker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "floating-input",
+      "type": "registry:ui",
+      "title": "Floating Input",
+      "description": "Text field whose label springs up on focus, with an animated focus ring, clear button and sliding error.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/floating-input/FloatingInput.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/floating-input/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "motion-select",
+      "type": "registry:ui",
+      "title": "Motion Select",
+      "description": "Single-select dropdown that scales out of its trigger, with a gliding highlight and drawn-in check.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/motion-select/MotionSelect.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/motion-select/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:ui",
+      "title": "Multi Select",
+      "description": "Pick many options: choices pop into the field as chips and reflow with layout animation.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/multi-select/MultiSelect.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/multi-select/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "otp-input",
       "type": "registry:ui",
       "title": "OTP Input",
@@ -73,6 +351,78 @@
         },
         {
           "path": "registry/ui/otp-input/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radio-cards",
+      "type": "registry:ui",
+      "title": "Radio Cards",
+      "description": "Radio group where the selection ring and dot spring between options, as cards or a compact list.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/radio-cards/RadioCards.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/radio-cards/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "range-slider",
+      "type": "registry:ui",
+      "title": "Range Slider",
+      "description": "Single or dual-thumb slider with growing thumbs, a value bubble that follows, and an animated fill.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/range-slider/RangeSlider.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/range-slider/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spring-checkbox",
+      "type": "registry:ui",
+      "title": "Spring Checkbox",
+      "description": "Checkbox that squishes on press and draws its check mark in, with an indeterminate state.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-checkbox/SpringCheckbox.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-checkbox/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -102,6 +452,42 @@
       ]
     },
     {
+      "name": "wheel-picker",
+      "type": "registry:ui",
+      "title": "Wheel Picker",
+      "description": "An iOS-style 3D scroll wheel with flick momentum that snaps to items; combine wheels for time pickers.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/wheel-picker/WheelPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wheel-picker/WheelPickerGroup.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wheel-picker/WheelPickerItem.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wheel-picker/context.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wheel-picker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "animated-tooltip",
       "type": "registry:ui",
       "title": "Animated Tooltip",
@@ -121,6 +507,86 @@
         },
         {
           "path": "registry/ui/animated-tooltip/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "bottom-sheet",
+      "type": "registry:ui",
+      "title": "Bottom Sheet",
+      "description": "A mobile-style sheet with snap points, velocity-aware dragging and a background that scales back.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/bottom-sheet/BottomSheet.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bottom-sheet/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "A right-click / long-press menu with a gliding highlight, shortcuts and a submenu that slides out.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/context-menu/ContextMenu.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/context-menu/ContextMenuList.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/context-menu/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/context-menu/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "expanding-modal",
+      "type": "registry:ui",
+      "title": "Expanding Modal",
+      "description": "A modal that grows out of the exact button that opened it and collapses back into it.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/expanding-modal/ExpandingModal.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/expanding-modal/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -150,6 +616,54 @@
       ]
     },
     {
+      "name": "spring-drawer",
+      "type": "registry:ui",
+      "title": "Spring Drawer",
+      "description": "A side drawer that springs in from any edge, with a drag-to-dismiss handle and focus trap.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-drawer/SpringDrawer.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-drawer/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spring-popover",
+      "type": "registry:ui",
+      "title": "Spring Popover",
+      "description": "A click-to-open popover that springs out of its trigger, with an arrow and smart flipping.",
+      "categories": [
+        "components",
+        "overlays"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-popover/SpringPopover.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-popover/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "animated-tabs",
       "type": "registry:ui",
       "title": "Animated Tabs",
@@ -169,6 +683,30 @@
         },
         {
           "path": "registry/ui/animated-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumbs",
+      "type": "registry:ui",
+      "title": "Breadcrumbs",
+      "description": "A breadcrumb trail that staggers in, underlines the current page and springs open collapsed levels.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/breadcrumbs/Breadcrumbs.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/breadcrumbs/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -206,6 +744,126 @@
       ]
     },
     {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Page buttons with a sliding active pill, smart ellipses and numbers that roll with the direction.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/pagination/Pagination.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/pagination/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spring-sidebar",
+      "type": "registry:ui",
+      "title": "Spring Sidebar",
+      "description": "An app sidebar that springs between full width and an icon rail, with a gliding active indicator.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-sidebar/SpringSidebar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-sidebar/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "Stepper",
+      "description": "Multi-step progress with spring-filled connectors, steps that morph into checks and a pulsing current step.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/stepper/Stepper.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/stepper/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "A fluid box that holds a ratio and springs smoothly to a new shape when the ratio changes.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/aspect-ratio/AspectRatio.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/aspect-ratio/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "aurora-background",
+      "type": "registry:ui",
+      "title": "Aurora Background",
+      "description": "A section backdrop of soft, slowly drifting gradient blobs with optional film grain; transform-only and light on CPU.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/aurora-background/AuroraBackground.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/aurora-background/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "bouncy-accordion",
       "type": "registry:ui",
       "title": "Bouncy Accordion",
@@ -225,6 +883,106 @@
         },
         {
           "path": "registry/ui/bouncy-accordion/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "A single disclosure whose content springs open to its natural height and blurs into focus.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/collapsible/Collapsible.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/collapsible/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hover-highlight",
+      "type": "registry:ui",
+      "title": "Hover Highlight",
+      "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/hover-highlight/HoverHighlight.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/hover-highlight/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "orbit-carousel",
+      "type": "registry:ui",
+      "title": "Orbit Carousel",
+      "description": "Cards on a 3D ring: drag to spin with inertia that snaps to the nearest card, or let it orbit slowly.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/orbit-carousel/OrbitCarousel.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/orbit-carousel/OrbitCarouselCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/orbit-carousel/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spotlight-card",
+      "type": "registry:ui",
+      "title": "Spotlight Card",
+      "description": "A card lit by a soft spotlight and glowing rim that follow the pointer, with a gentle hover lift.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spotlight-card/SpotlightCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spotlight-card/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -254,6 +1012,30 @@
       ]
     },
     {
+      "name": "marquee",
+      "type": "registry:ui",
+      "title": "Marquee",
+      "description": "Seamless infinite scroller in any direction that eases to a stop on hover, with faded edges.",
+      "categories": [
+        "components",
+        "text-motion"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/marquee/Marquee.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/marquee/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "number-ticker",
       "type": "registry:ui",
       "title": "Number Ticker",
@@ -278,6 +1060,34 @@
       ]
     },
     {
+      "name": "scroll-reveal",
+      "type": "registry:ui",
+      "title": "Scroll Reveal",
+      "description": "Reveals children with staggered presets as they scroll into view, plus a springy reading progress bar.",
+      "categories": [
+        "components",
+        "text-motion"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/scroll-reveal/ScrollProgress.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/scroll-reveal/ScrollReveal.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/scroll-reveal/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "text-reveal",
       "type": "registry:ui",
       "title": "Text Reveal",
@@ -297,6 +1107,79 @@
         },
         {
           "path": "registry/ui/text-reveal/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Inline alert whose icon pops and draws itself in, with a dismiss that smoothly collapses its height.",
+      "categories": [
+        "components",
+        "feedback"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/alert/Alert.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/alert/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "loader",
+      "type": "registry:ui",
+      "title": "Loader",
+      "description": "Five loaders — wave, orbit, bars, ring and a typing skeleton — that calm down for reduced motion.",
+      "categories": [
+        "components",
+        "feedback"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/loader/Loader.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/loader/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "pull-to-refresh",
+      "type": "registry:ui",
+      "title": "Pull to Refresh",
+      "description": "Pull a scroll area down with rubber-band resistance; a spinning indicator holds while your refresh runs.",
+      "categories": [
+        "components",
+        "feedback"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/pull-to-refresh/PullToRefresh.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/pull-to-refresh/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -354,6 +1237,1597 @@
       ]
     },
     {
+      "name": "data-table",
+      "type": "registry:ui",
+      "title": "Data Table",
+      "description": "A sortable, selectable table whose rows glide into their new order and whose selection bar slides up.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/data-table/DataTable.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/data-table/DataTableCheckbox.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/data-table/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/data-table/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-tree",
+      "type": "registry:ui",
+      "title": "File Tree",
+      "description": "A keyboard-navigable file tree whose folders spring open and whose selection glides between rows.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/file-tree/FileTree.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-tree/FileTreeIcon.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-tree/FileTreeItem.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-tree/context.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-tree/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "filmstrip",
+      "type": "registry:ui",
+      "title": "Filmstrip",
+      "description": "A gallery preview with a draggable thumbnail rail; a frame glides to the active shot as images slide in.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/filmstrip/Filmstrip.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/filmstrip/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "lightbox",
+      "type": "registry:ui",
+      "title": "Lightbox",
+      "description": "An image grid whose thumbnails morph into a full-screen viewer you can swipe through or drag away.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/lightbox/Lightbox.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/lightbox/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "motion-badge",
+      "type": "registry:ui",
+      "title": "Motion Badge",
+      "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/motion-badge/MotionBadge.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/motion-badge/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sortable-list",
+      "type": "registry:ui",
+      "title": "Sortable List",
+      "description": "A drag-to-reorder list where rows lift off the page and the rest glide aside; keyboard friendly.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/sortable-list/SortableList.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/sortable-list/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:ui",
+      "title": "Timeline",
+      "description": "A vertical timeline whose line draws in as you scroll while each event pops and slides into place.",
+      "categories": [
+        "components",
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/timeline/Timeline.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/timeline/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "action-bar",
+      "type": "registry:ui",
+      "title": "Action Bar",
+      "description": "A floating bulk-action bar that springs in on selection, rolls its count and confirms in place.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/action-bar/ActionBar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/action-bar/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "auth-form",
+      "type": "registry:ui",
+      "title": "Auth Form",
+      "description": "Sign-in / sign-up card with a sliding mode switch, floating labels, a live strength meter and a morphing submit.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/auth-form/AuthField.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/auth-form/AuthForm.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/auth-form/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/auth-form/strength.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "availability-picker",
+      "type": "registry:ui",
+      "title": "Availability Picker",
+      "description": "Weekly scheduler with day switches, animated time ranges and a drag-to-paint week grid.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/availability-picker/AvailabilityGrid.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/availability-picker/AvailabilityPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/availability-picker/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/availability-picker/time.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card-fan",
+      "type": "registry:ui",
+      "title": "Card Fan",
+      "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/card-fan/CardFan.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/card-fan/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "command-palette",
+      "type": "registry:ui",
+      "title": "Command Palette",
+      "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/command-palette/CommandPalette.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/command-palette/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/command-palette/match.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dynamic-island",
+      "type": "registry:ui",
+      "title": "Dynamic Island",
+      "description": "A pill that springs its width, height and radius between live states while the content cross-fades.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/dynamic-island/DynamicIsland.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/dynamic-island/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "expandable-tabs",
+      "type": "registry:ui",
+      "title": "Expandable Tabs",
+      "description": "An icon-only tab bar where the active tab springs open to reveal its label with a blur-in.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/expandable-tabs/ExpandableTabs.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/expandable-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "feedback-widget",
+      "type": "registry:ui",
+      "title": "Feedback Widget",
+      "description": "A floating Feedback pill that morphs into an emoji-rating form, then into a check, then back.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/feedback-widget/FeedbackWidget.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/feedback-widget/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-dropzone",
+      "type": "registry:ui",
+      "title": "File Dropzone",
+      "description": "Drag-and-drop uploads that swell on hover, with thumbnails, live progress bars, retry and remove.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/file-dropzone/FileDropzone.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-dropzone/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "fluid-tabs",
+      "type": "registry:ui",
+      "title": "Fluid Tabs",
+      "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/fluid-tabs/FluidTabs.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/fluid-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "folder-stack",
+      "type": "registry:ui",
+      "title": "Folder Stack",
+      "description": "A folder whose flap tips open as its cards fan out, plus a card pile that deals itself into a grid.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/folder-stack/FolderStack.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/folder-stack/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "masonry-grid",
+      "type": "registry:ui",
+      "title": "Masonry Grid",
+      "description": "Shortest-column masonry that springs into place on resize, reveals items on scroll and loads more at the end.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/masonry-grid/MasonryGrid.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/masonry-grid/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "match-fixtures",
+      "type": "registry:ui",
+      "title": "Match Fixtures",
+      "description": "A fixtures and results list with live minutes, rolling scores, goal flashes and an expandable events timeline.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/match-fixtures/FixtureCrest.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/match-fixtures/MatchFixtures.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/match-fixtures/RollingNumber.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/match-fixtures/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "morphing-search",
+      "type": "registry:ui",
+      "title": "Morphing Search",
+      "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/morphing-search/MorphingSearch.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/morphing-search/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "not-found",
+      "type": "registry:ui",
+      "title": "Not Found",
+      "description": "A 404 section whose giant digits float, dodge the pointer on springs and can be flung around, with search and links home.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/not-found/NotFound.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/not-found/NotFoundDigit.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/not-found/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "notification-center",
+      "type": "registry:ui",
+      "title": "Notification Center",
+      "description": "A bell with a live badge and a panel of per-app stacks that fan open, swipe away and clear in a cascade.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/notification-center/NotificationCenter.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/notification-center/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "odds-card",
+      "type": "registry:ui",
+      "title": "Odds Card",
+      "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/odds-card/OddsCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/odds-card/RollingNumber.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/odds-card/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "overflow-toolbar",
+      "type": "registry:ui",
+      "title": "Overflow Toolbar",
+      "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/overflow-toolbar/OverflowToolbar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/overflow-toolbar/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radial-menu",
+      "type": "registry:ui",
+      "title": "Radial Menu",
+      "description": "A floating button that blooms into a ring of actions with staggered springs, hover labels and arrow-key navigation.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/radial-menu/RadialMenu.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/radial-menu/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "swipe-actions",
+      "type": "registry:ui",
+      "title": "Swipe Actions",
+      "description": "List rows that swipe to reveal actions, rubber-band, full-swipe to commit and collapse away.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/swipe-actions/SwipeActions.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/swipe-actions/SwipeActionsRow.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/swipe-actions/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/swipe-actions/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "token-swap",
+      "type": "registry:ui",
+      "title": "Token Swap",
+      "description": "Swap card whose rows trade places on a spinning button, with token search, slippage and a review morph.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/token-swap/TokenSwap.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/token-swap/TokenSwapIcon.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/token-swap/TokenSwapPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/token-swap/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/token-swap/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "wallet-card",
+      "type": "registry:ui",
+      "title": "Wallet Card",
+      "description": "A stack of payment cards that springs a card to the front, flips it for details and rolls in its balance.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/wallet-card/RollingNumber.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wallet-card/WalletCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/wallet-card/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "agent-activity",
+      "type": "registry:ui",
+      "title": "Agent Activity",
+      "description": "Live feed of an agent's steps: new steps slide in, the current one shimmers, sub-steps fold away.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/agent-activity/AgentActivity.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/agent-activity/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "approval-card",
+      "type": "registry:ui",
+      "title": "Approval Card",
+      "description": "Asks the user to approve an agent action, then collapses into a compact resolved row with a stamp that slams in.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/approval-card/ApprovalCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/approval-card/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chat-app",
+      "type": "registry:ui",
+      "title": "Chat App",
+      "description": "A complete AI chat: header, welcome screen with suggestions, streaming messages and a prompt composer.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chat-message.json",
+        "https://vuelix.dev/r/chat-scroller.json",
+        "https://vuelix.dev/r/prompt-input.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/chat-app/ChatApp.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chat-app/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chat-message",
+      "type": "registry:ui",
+      "title": "Chat Message",
+      "description": "A chat message with avatar, streaming caret and copy, retry and feedback actions that fade in on hover.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/chat-message/ChatBubble.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chat-message/ChatMessage.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chat-message/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chat-scroller",
+      "type": "registry:ui",
+      "title": "Chat Scroller",
+      "description": "A conversation viewport that sticks to the latest message, springs in a jump pill and keeps its place on prepend.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/chat-scroller/ChatScroller.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chat-scroller/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "citations",
+      "type": "registry:ui",
+      "title": "Citations",
+      "description": "Numbered citation chips with hover cards, linked to a sources list that lights up the cited source.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/citations/CitationChip.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/citations/Citations.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/citations/SourceIcon.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/citations/context.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/citations/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "Code Block",
+      "description": "Code with a file header, line numbers, highlighted lines, a copy-to-check button and a springy collapse for long snippets.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/code-block/CodeBlock.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/code-block/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "conversation-sidebar",
+      "type": "registry:ui",
+      "title": "Conversation Sidebar",
+      "description": "Chat history grouped by date, with search, a gliding active marker, inline rename and an icon rail.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/conversation-sidebar/ConversationSidebar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/conversation-sidebar/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-diff",
+      "type": "registry:ui",
+      "title": "File Diff",
+      "description": "A unified diff viewer with a change bar, folding unchanged lines and per-hunk accept or reject that springs shut.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/file-diff/FileDiff.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-diff/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-diff/parse-diff.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "image-generation",
+      "type": "registry:ui",
+      "title": "Image Generation",
+      "description": "Image placeholder where grainy colour fields sharpen behind a scan line, then the result fades in.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/image-generation/ImageGeneration.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/image-generation/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "model-picker",
+      "type": "registry:ui",
+      "title": "Model Picker",
+      "description": "Compact AI model dropdown with capability badges, typeahead and a check mark that glides to your pick.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/model-picker/ModelPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/model-picker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "prompt-input",
+      "type": "registry:ui",
+      "title": "Prompt Input",
+      "description": "An AI composer with an auto-growing textarea, pop-in attachment chips and a send button that morphs into stop.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/prompt-input/PromptInput.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/prompt-input/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "streaming-text",
+      "type": "registry:ui",
+      "title": "Streaming Text",
+      "description": "Streamed AI answers where each new chunk blurs in, with a blinking cursor and light Markdown.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/streaming-text/StreamingText.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/streaming-text/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/streaming-text/markdown.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/streaming-text/use-text-stream.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "suggestion-chips",
+      "type": "registry:ui",
+      "title": "Suggestion Chips",
+      "description": "Prompt suggestions that stagger in, lift on hover, fly into your input on click and reshuffle.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/suggestion-chips/SuggestionChips.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/suggestion-chips/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "task-list",
+      "type": "registry:ui",
+      "title": "Task List",
+      "description": "An agent's plan with a live progress bar, spinning active step, drawn checkmarks and a strike that sweeps across.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/task-list/TaskList.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/task-list/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "thinking-indicator",
+      "type": "registry:ui",
+      "title": "Thinking Indicator",
+      "description": "AI loading states: wave dots, shimmering text, a pulsing orb, a scan bar and a collapsible reasoning panel.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/thinking-indicator/ThinkingIndicator.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/thinking-indicator/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tool-call",
+      "type": "registry:ui",
+      "title": "Tool Call",
+      "description": "A collapsible card for a tool invocation with a live status indicator, timer and pretty-printed arguments and result.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/tool-call/ToolCall.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/tool-call/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "voice-orb",
+      "type": "registry:ui",
+      "title": "Voice Orb",
+      "description": "A living orb for voice assistants that deforms with the audio level as it listens, thinks and speaks.",
+      "categories": [
+        "ai",
+        "ai"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/voice-orb/VoiceOrb.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/voice-orb/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "bar-chart",
+      "type": "registry:ui",
+      "title": "Bar Chart",
+      "description": "Grouped, stacked or horizontal bars that spring up in a stagger and glide between layouts.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/bar-chart/BarChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bar-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bar-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "bump-chart",
+      "type": "registry:ui",
+      "title": "Bump Chart",
+      "description": "Rankings over time as curved lanes that draw in; hover one to bring it forward and dim the rest.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/bump-chart/BumpChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bump-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bump-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "candlestick-chart",
+      "type": "registry:ui",
+      "title": "Candlestick Chart",
+      "description": "Live OHLC candles with volume, a last-price tag and crosshair readout; new candles slide in.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/candlestick-chart/CandlestickChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/candlestick-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/candlestick-chart/scale.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "depth-heatmap",
+      "type": "registry:ui",
+      "title": "Depth Heatmap",
+      "description": "Price × time heatmap of resting liquidity with a price trace; new snapshots slide in live.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/depth-heatmap/DepthHeatmap.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/depth-heatmap/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/depth-heatmap/scale.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "donut-chart",
+      "type": "registry:ui",
+      "title": "Donut Chart",
+      "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/donut-chart/DonutChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/donut-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/donut-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "forecast-fan",
+      "type": "registry:ui",
+      "title": "Forecast Fan",
+      "description": "Price history that opens into a fan of low / median / high targets, with a scrubber that reads into the future.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/forecast-fan/ForecastFan.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/forecast-fan/fan.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/forecast-fan/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "funnel-chart",
+      "type": "registry:ui",
+      "title": "Funnel Chart",
+      "description": "Conversion funnel whose stages spring open in sequence, joined by curved hand-offs with drop-off rates.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/funnel-chart/FunnelChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/funnel-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/funnel-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "heat-calendar",
+      "type": "registry:ui",
+      "title": "Heat Calendar",
+      "description": "A year of daily activity as a weeks × weekdays grid that ripples in; drag across days to select a range.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/heat-calendar/HeatCalendar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/heat-calendar/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/heat-calendar/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "line-chart",
+      "type": "registry:ui",
+      "title": "Line Chart",
+      "description": "Multi-series line or area chart that draws in, morphs on new data and tracks a snapping crosshair.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/line-chart/LineChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/line-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/line-chart/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "order-book",
+      "type": "registry:ui",
+      "title": "Order Book",
+      "description": "Live bid/ask ladder with springy depth bars, a spread row, size-change flashes and a buy/sell balance bar.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/order-book/OrderBook.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/order-book/book.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/order-book/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "returns-calendar",
+      "type": "registry:ui",
+      "title": "Returns Calendar",
+      "description": "Years × months grid of returns tinted by sign and size, with compounded yearly totals; cells pop in diagonally.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/returns-calendar/ReturnsCalendar.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/returns-calendar/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/returns-calendar/returns.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sankey-chart",
+      "type": "registry:ui",
+      "title": "Sankey Chart",
+      "description": "Weighted flows between columns of nodes; ribbons draw in and hovering traces a node's whole path.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/sankey-chart/SankeyChart.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/sankey-chart/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/sankey-chart/layout.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "sparkline",
       "type": "registry:ui",
       "title": "Sparkline",
@@ -373,6 +2847,155 @@
         },
         {
           "path": "registry/ui/sparkline/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "stacked-area",
+      "type": "registry:ui",
+      "title": "Stacked Area",
+      "description": "Composition over time, stacked or 100%; bands morph between modes and an interactive legend isolates series.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/stacked-area/StackedArea.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/stacked-area/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/stacked-area/stack.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "status-history",
+      "type": "registry:ui",
+      "title": "Status History",
+      "description": "Uptime bars per day that rise in a wave, coloured by status, with an overall uptime readout.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/status-history/StatusHistory.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/status-history/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/status-history/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "treemap",
+      "type": "registry:ui",
+      "title": "Treemap",
+      "description": "Squarified treemap whose tiles glide to their new size and position whenever the data changes.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/treemap/Treemap.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/treemap/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/treemap/squarify.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/treemap/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "volume-profile",
+      "type": "registry:ui",
+      "title": "Volume Profile",
+      "description": "Volume-by-price histogram with a highlighted point of control and value area; bars ripple out from the POC.",
+      "categories": [
+        "charts",
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/volume-profile/VolumeProfile.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/volume-profile/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/volume-profile/profile.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chart-utils",
+      "type": "registry:ui",
+      "title": "Chart Utils",
+      "description": "Shared chart helpers: nice ticks, scales, monotone paths, tweened values and a clamped tooltip.",
+      "categories": [
+        "charts",
+        "utilities"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/chart-utils/ChartTooltip.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chart-utils/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/chart-utils/utils.ts",
           "type": "registry:ui"
         }
       ]

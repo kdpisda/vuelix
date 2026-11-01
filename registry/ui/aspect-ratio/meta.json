@@ -1,0 +1,9 @@
+{
+  "title": "Aspect Ratio",
+  "description": "A fluid box that holds a ratio and springs smoothly to a new shape when the ratio changes.",
+  "section": "components",
+  "category": "Layout & Surfaces",
+  "dependencies": [
+    "motion-v"
+  ]
+}

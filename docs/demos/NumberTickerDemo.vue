@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { NumberTicker } from '@/ui/number-ticker'
-import { SpringButton } from '@/ui/spring-button'
+import { NumberTicker } from '@/components/ui/number-ticker'
+import { SpringButton } from '@/components/ui/spring-button'
 import { ref } from 'vue'
 
 const revenue = ref(48291)

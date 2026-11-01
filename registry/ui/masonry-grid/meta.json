@@ -1,0 +1,9 @@
+{
+  "title": "Masonry Grid",
+  "description": "Shortest-column masonry that springs into place on resize, reveals items on scroll and loads more at the end.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -6,8 +6,100 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 15,
+  "count": 114,
   "items": [
+    {
+      "slug": "cta-button",
+      "name": "CTA Button",
+      "description": "Call-to-action buttons with a shimmer sweep, spinning gradient border, magnetic pull or sliding arrow.",
+      "section": "components",
+      "category": "Buttons & Actions",
+      "page_url": "https://vuelix.dev/components/cta-button",
+      "detail_url": "https://vuelix.dev/r/cta-button.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/cta-button.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CtaButton"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/cta-button/CtaButton.vue",
+          "raw_url": "https://vuelix.dev/r/raw/cta-button/CtaButton.vue"
+        },
+        {
+          "path": "components/ui/cta-button/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/cta-button/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "expanding-button",
+      "name": "Expanding Button",
+      "description": "A compact button that springs open into an inline panel of actions or a small form, then folds back.",
+      "section": "components",
+      "category": "Buttons & Actions",
+      "page_url": "https://vuelix.dev/components/expanding-button",
+      "detail_url": "https://vuelix.dev/r/expanding-button.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expanding-button.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ExpandingButton"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/expanding-button/ExpandingButton.vue",
+          "raw_url": "https://vuelix.dev/r/raw/expanding-button/ExpandingButton.vue"
+        },
+        {
+          "path": "components/ui/expanding-button/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/expanding-button/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "icon-swap",
+      "name": "Icon Swap",
+      "description": "Button that morphs between icon states — copy to check, play to pause — with an optional particle burst.",
+      "section": "components",
+      "category": "Buttons & Actions",
+      "page_url": "https://vuelix.dev/components/icon-swap",
+      "detail_url": "https://vuelix.dev/r/icon-swap.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/icon-swap.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "IconSwap"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/icon-swap/IconSwap.vue",
+          "raw_url": "https://vuelix.dev/r/raw/icon-swap/IconSwap.vue"
+        },
+        {
+          "path": "components/ui/icon-swap/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/icon-swap/index.ts"
+        }
+      ]
+    },
     {
       "slug": "spring-button",
       "name": "Spring Button",
@@ -71,6 +163,260 @@
       ]
     },
     {
+      "slug": "color-picker",
+      "name": "Color Picker",
+      "description": "HSV color picker with springy thumbs, hex/RGB/HSL fields, eyedropper, recents and a popover variant.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/color-picker",
+      "detail_url": "https://vuelix.dev/r/color-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/color-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ColorPicker",
+          "ColorPickerPopover"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/color-picker/ColorPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/color-picker/ColorPicker.vue"
+        },
+        {
+          "path": "components/ui/color-picker/ColorPickerPopover.vue",
+          "raw_url": "https://vuelix.dev/r/raw/color-picker/ColorPickerPopover.vue"
+        },
+        {
+          "path": "components/ui/color-picker/color.ts",
+          "raw_url": "https://vuelix.dev/r/raw/color-picker/color.ts"
+        },
+        {
+          "path": "components/ui/color-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/color-picker/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "color-swatches",
+      "name": "Color Swatches",
+      "description": "Color picker where a springy ring hops between swatches, with an optional custom color.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/color-swatches",
+      "detail_url": "https://vuelix.dev/r/color-swatches.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/color-swatches.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ColorSwatches"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/color-swatches/ColorSwatches.vue",
+          "raw_url": "https://vuelix.dev/r/raw/color-swatches/ColorSwatches.vue"
+        },
+        {
+          "path": "components/ui/color-swatches/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/color-swatches/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "combobox",
+      "name": "Combobox",
+      "description": "Searchable select whose options glide in and out as you type, with the matched text highlighted.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/combobox",
+      "detail_url": "https://vuelix.dev/r/combobox.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/combobox.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Combobox"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/combobox/Combobox.vue",
+          "raw_url": "https://vuelix.dev/r/raw/combobox/Combobox.vue"
+        },
+        {
+          "path": "components/ui/combobox/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/combobox/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "date-range-picker",
+      "name": "Date Range Picker",
+      "description": "A calendar popover with presets, a range band that stretches between dates and sliding months.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/date-range-picker",
+      "detail_url": "https://vuelix.dev/r/date-range-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/date-range-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DateRangePicker",
+          "defaultPresets"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/date-range-picker/DateRangePicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/date-range-picker/DateRangePicker.vue"
+        },
+        {
+          "path": "components/ui/date-range-picker/calendar.ts",
+          "raw_url": "https://vuelix.dev/r/raw/date-range-picker/calendar.ts"
+        },
+        {
+          "path": "components/ui/date-range-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/date-range-picker/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "dial-picker",
+      "name": "Dial Picker",
+      "description": "A circular dial: drag the knob around a ticked arc, it snaps to steps while the readout rolls.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/dial-picker",
+      "detail_url": "https://vuelix.dev/r/dial-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dial-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DialPicker"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/dial-picker/DialPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/dial-picker/DialPicker.vue"
+        },
+        {
+          "path": "components/ui/dial-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/dial-picker/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "floating-input",
+      "name": "Floating Input",
+      "description": "Text field whose label springs up on focus, with an animated focus ring, clear button and sliding error.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/floating-input",
+      "detail_url": "https://vuelix.dev/r/floating-input.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/floating-input.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FloatingInput"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/floating-input/FloatingInput.vue",
+          "raw_url": "https://vuelix.dev/r/raw/floating-input/FloatingInput.vue"
+        },
+        {
+          "path": "components/ui/floating-input/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/floating-input/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "motion-select",
+      "name": "Motion Select",
+      "description": "Single-select dropdown that scales out of its trigger, with a gliding highlight and drawn-in check.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/motion-select",
+      "detail_url": "https://vuelix.dev/r/motion-select.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/motion-select.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MotionSelect"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/motion-select/MotionSelect.vue",
+          "raw_url": "https://vuelix.dev/r/raw/motion-select/MotionSelect.vue"
+        },
+        {
+          "path": "components/ui/motion-select/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/motion-select/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "multi-select",
+      "name": "Multi Select",
+      "description": "Pick many options: choices pop into the field as chips and reflow with layout animation.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/multi-select",
+      "detail_url": "https://vuelix.dev/r/multi-select.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/multi-select.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MultiSelect"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/multi-select/MultiSelect.vue",
+          "raw_url": "https://vuelix.dev/r/raw/multi-select/MultiSelect.vue"
+        },
+        {
+          "path": "components/ui/multi-select/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/multi-select/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "otp-input",
       "name": "OTP Input",
       "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
@@ -97,6 +443,96 @@
         {
           "path": "components/ui/otp-input/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/otp-input/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "radio-cards",
+      "name": "Radio Cards",
+      "description": "Radio group where the selection ring and dot spring between options, as cards or a compact list.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/radio-cards",
+      "detail_url": "https://vuelix.dev/r/radio-cards.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/radio-cards.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "RadioCards"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/radio-cards/RadioCards.vue",
+          "raw_url": "https://vuelix.dev/r/raw/radio-cards/RadioCards.vue"
+        },
+        {
+          "path": "components/ui/radio-cards/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/radio-cards/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "range-slider",
+      "name": "Range Slider",
+      "description": "Single or dual-thumb slider with growing thumbs, a value bubble that follows, and an animated fill.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/range-slider",
+      "detail_url": "https://vuelix.dev/r/range-slider.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/range-slider.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "RangeSlider"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/range-slider/RangeSlider.vue",
+          "raw_url": "https://vuelix.dev/r/raw/range-slider/RangeSlider.vue"
+        },
+        {
+          "path": "components/ui/range-slider/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/range-slider/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spring-checkbox",
+      "name": "Spring Checkbox",
+      "description": "Checkbox that squishes on press and draws its check mark in, with an indeterminate state.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/spring-checkbox",
+      "detail_url": "https://vuelix.dev/r/spring-checkbox.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-checkbox.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringCheckbox"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-checkbox/SpringCheckbox.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-checkbox/SpringCheckbox.vue"
+        },
+        {
+          "path": "components/ui/spring-checkbox/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-checkbox/index.ts"
         }
       ]
     },
@@ -131,6 +567,49 @@
       ]
     },
     {
+      "slug": "wheel-picker",
+      "name": "Wheel Picker",
+      "description": "An iOS-style 3D scroll wheel with flick momentum that snaps to items; combine wheels for time pickers.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/wheel-picker",
+      "detail_url": "https://vuelix.dev/r/wheel-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/wheel-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "WheelPicker",
+          "WheelPickerGroup"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/wheel-picker/WheelPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/WheelPicker.vue"
+        },
+        {
+          "path": "components/ui/wheel-picker/WheelPickerGroup.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/WheelPickerGroup.vue"
+        },
+        {
+          "path": "components/ui/wheel-picker/WheelPickerItem.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/WheelPickerItem.vue"
+        },
+        {
+          "path": "components/ui/wheel-picker/context.ts",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/context.ts"
+        },
+        {
+          "path": "components/ui/wheel-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/wheel-picker/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "animated-tooltip",
       "name": "Animated Tooltip",
       "description": "A lightweight tooltip that springs out from any side with a blur-in.",
@@ -157,6 +636,104 @@
         {
           "path": "components/ui/animated-tooltip/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/animated-tooltip/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "bottom-sheet",
+      "name": "Bottom Sheet",
+      "description": "A mobile-style sheet with snap points, velocity-aware dragging and a background that scales back.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/bottom-sheet",
+      "detail_url": "https://vuelix.dev/r/bottom-sheet.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bottom-sheet.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "BottomSheet"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/bottom-sheet/BottomSheet.vue",
+          "raw_url": "https://vuelix.dev/r/raw/bottom-sheet/BottomSheet.vue"
+        },
+        {
+          "path": "components/ui/bottom-sheet/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bottom-sheet/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "context-menu",
+      "name": "Context Menu",
+      "description": "A right-click / long-press menu with a gliding highlight, shortcuts and a submenu that slides out.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/context-menu",
+      "detail_url": "https://vuelix.dev/r/context-menu.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/context-menu.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ContextMenu"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/context-menu/ContextMenu.vue",
+          "raw_url": "https://vuelix.dev/r/raw/context-menu/ContextMenu.vue"
+        },
+        {
+          "path": "components/ui/context-menu/ContextMenuList.vue",
+          "raw_url": "https://vuelix.dev/r/raw/context-menu/ContextMenuList.vue"
+        },
+        {
+          "path": "components/ui/context-menu/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/context-menu/index.ts"
+        },
+        {
+          "path": "components/ui/context-menu/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/context-menu/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "expanding-modal",
+      "name": "Expanding Modal",
+      "description": "A modal that grows out of the exact button that opened it and collapses back into it.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/expanding-modal",
+      "detail_url": "https://vuelix.dev/r/expanding-modal.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expanding-modal.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ExpandingModal"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/expanding-modal/ExpandingModal.vue",
+          "raw_url": "https://vuelix.dev/r/raw/expanding-modal/ExpandingModal.vue"
+        },
+        {
+          "path": "components/ui/expanding-modal/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/expanding-modal/index.ts"
         }
       ]
     },
@@ -191,6 +768,66 @@
       ]
     },
     {
+      "slug": "spring-drawer",
+      "name": "Spring Drawer",
+      "description": "A side drawer that springs in from any edge, with a drag-to-dismiss handle and focus trap.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/spring-drawer",
+      "detail_url": "https://vuelix.dev/r/spring-drawer.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-drawer.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringDrawer"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-drawer/SpringDrawer.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-drawer/SpringDrawer.vue"
+        },
+        {
+          "path": "components/ui/spring-drawer/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-drawer/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spring-popover",
+      "name": "Spring Popover",
+      "description": "A click-to-open popover that springs out of its trigger, with an arrow and smart flipping.",
+      "section": "components",
+      "category": "Overlays",
+      "page_url": "https://vuelix.dev/components/spring-popover",
+      "detail_url": "https://vuelix.dev/r/spring-popover.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-popover.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringPopover"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-popover/SpringPopover.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-popover/SpringPopover.vue"
+        },
+        {
+          "path": "components/ui/spring-popover/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-popover/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "animated-tabs",
       "name": "Animated Tabs",
       "description": "Tabs with a shared-layout indicator that glides between triggers.",
@@ -217,6 +854,36 @@
         {
           "path": "components/ui/animated-tabs/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/animated-tabs/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "breadcrumbs",
+      "name": "Breadcrumbs",
+      "description": "A breadcrumb trail that staggers in, underlines the current page and springs open collapsed levels.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/breadcrumbs",
+      "detail_url": "https://vuelix.dev/r/breadcrumbs.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/breadcrumbs.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Breadcrumbs"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/breadcrumbs/Breadcrumbs.vue",
+          "raw_url": "https://vuelix.dev/r/raw/breadcrumbs/Breadcrumbs.vue"
+        },
+        {
+          "path": "components/ui/breadcrumbs/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/breadcrumbs/index.ts"
         }
       ]
     },
@@ -260,6 +927,156 @@
       ]
     },
     {
+      "slug": "pagination",
+      "name": "Pagination",
+      "description": "Page buttons with a sliding active pill, smart ellipses and numbers that roll with the direction.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/pagination",
+      "detail_url": "https://vuelix.dev/r/pagination.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/pagination.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Pagination"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/pagination/Pagination.vue",
+          "raw_url": "https://vuelix.dev/r/raw/pagination/Pagination.vue"
+        },
+        {
+          "path": "components/ui/pagination/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/pagination/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spring-sidebar",
+      "name": "Spring Sidebar",
+      "description": "An app sidebar that springs between full width and an icon rail, with a gliding active indicator.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/spring-sidebar",
+      "detail_url": "https://vuelix.dev/r/spring-sidebar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-sidebar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringSidebar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-sidebar/SpringSidebar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-sidebar/SpringSidebar.vue"
+        },
+        {
+          "path": "components/ui/spring-sidebar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-sidebar/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "stepper",
+      "name": "Stepper",
+      "description": "Multi-step progress with spring-filled connectors, steps that morph into checks and a pulsing current step.",
+      "section": "components",
+      "category": "Navigation",
+      "page_url": "https://vuelix.dev/components/stepper",
+      "detail_url": "https://vuelix.dev/r/stepper.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/stepper.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Stepper"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/stepper/Stepper.vue",
+          "raw_url": "https://vuelix.dev/r/raw/stepper/Stepper.vue"
+        },
+        {
+          "path": "components/ui/stepper/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/stepper/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "aspect-ratio",
+      "name": "Aspect Ratio",
+      "description": "A fluid box that holds a ratio and springs smoothly to a new shape when the ratio changes.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/aspect-ratio",
+      "detail_url": "https://vuelix.dev/r/aspect-ratio.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/aspect-ratio.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AspectRatio"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/aspect-ratio/AspectRatio.vue",
+          "raw_url": "https://vuelix.dev/r/raw/aspect-ratio/AspectRatio.vue"
+        },
+        {
+          "path": "components/ui/aspect-ratio/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/aspect-ratio/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "aurora-background",
+      "name": "Aurora Background",
+      "description": "A section backdrop of soft, slowly drifting gradient blobs with optional film grain; transform-only and light on CPU.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/aurora-background",
+      "detail_url": "https://vuelix.dev/r/aurora-background.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/aurora-background.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AuroraBackground"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/aurora-background/AuroraBackground.vue",
+          "raw_url": "https://vuelix.dev/r/raw/aurora-background/AuroraBackground.vue"
+        },
+        {
+          "path": "components/ui/aurora-background/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/aurora-background/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "bouncy-accordion",
       "name": "Bouncy Accordion",
       "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
@@ -286,6 +1103,130 @@
         {
           "path": "components/ui/bouncy-accordion/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/bouncy-accordion/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "collapsible",
+      "name": "Collapsible",
+      "description": "A single disclosure whose content springs open to its natural height and blurs into focus.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/collapsible",
+      "detail_url": "https://vuelix.dev/r/collapsible.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/collapsible.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Collapsible"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/collapsible/Collapsible.vue",
+          "raw_url": "https://vuelix.dev/r/raw/collapsible/Collapsible.vue"
+        },
+        {
+          "path": "components/ui/collapsible/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/collapsible/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "hover-highlight",
+      "name": "Hover Highlight",
+      "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/hover-highlight",
+      "detail_url": "https://vuelix.dev/r/hover-highlight.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/hover-highlight.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "HoverHighlight"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/hover-highlight/HoverHighlight.vue",
+          "raw_url": "https://vuelix.dev/r/raw/hover-highlight/HoverHighlight.vue"
+        },
+        {
+          "path": "components/ui/hover-highlight/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/hover-highlight/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "orbit-carousel",
+      "name": "Orbit Carousel",
+      "description": "Cards on a 3D ring: drag to spin with inertia that snaps to the nearest card, or let it orbit slowly.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/orbit-carousel",
+      "detail_url": "https://vuelix.dev/r/orbit-carousel.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/orbit-carousel.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OrbitCarousel"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/orbit-carousel/OrbitCarousel.vue",
+          "raw_url": "https://vuelix.dev/r/raw/orbit-carousel/OrbitCarousel.vue"
+        },
+        {
+          "path": "components/ui/orbit-carousel/OrbitCarouselCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/orbit-carousel/OrbitCarouselCard.vue"
+        },
+        {
+          "path": "components/ui/orbit-carousel/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/orbit-carousel/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spotlight-card",
+      "name": "Spotlight Card",
+      "description": "A card lit by a soft spotlight and glowing rim that follow the pointer, with a gentle hover lift.",
+      "section": "components",
+      "category": "Layout & Surfaces",
+      "page_url": "https://vuelix.dev/components/spotlight-card",
+      "detail_url": "https://vuelix.dev/r/spotlight-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spotlight-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpotlightCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spotlight-card/SpotlightCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spotlight-card/SpotlightCard.vue"
+        },
+        {
+          "path": "components/ui/spotlight-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spotlight-card/index.ts"
         }
       ]
     },
@@ -320,6 +1261,36 @@
       ]
     },
     {
+      "slug": "marquee",
+      "name": "Marquee",
+      "description": "Seamless infinite scroller in any direction that eases to a stop on hover, with faded edges.",
+      "section": "components",
+      "category": "Text & Motion",
+      "page_url": "https://vuelix.dev/components/marquee",
+      "detail_url": "https://vuelix.dev/r/marquee.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/marquee.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Marquee"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/marquee/Marquee.vue",
+          "raw_url": "https://vuelix.dev/r/raw/marquee/Marquee.vue"
+        },
+        {
+          "path": "components/ui/marquee/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/marquee/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "number-ticker",
       "name": "Number Ticker",
       "description": "Counts up to a value with spring physics when scrolled into view.",
@@ -350,6 +1321,41 @@
       ]
     },
     {
+      "slug": "scroll-reveal",
+      "name": "Scroll Reveal",
+      "description": "Reveals children with staggered presets as they scroll into view, plus a springy reading progress bar.",
+      "section": "components",
+      "category": "Text & Motion",
+      "page_url": "https://vuelix.dev/components/scroll-reveal",
+      "detail_url": "https://vuelix.dev/r/scroll-reveal.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/scroll-reveal.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ScrollProgress",
+          "ScrollReveal"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/scroll-reveal/ScrollProgress.vue",
+          "raw_url": "https://vuelix.dev/r/raw/scroll-reveal/ScrollProgress.vue"
+        },
+        {
+          "path": "components/ui/scroll-reveal/ScrollReveal.vue",
+          "raw_url": "https://vuelix.dev/r/raw/scroll-reveal/ScrollReveal.vue"
+        },
+        {
+          "path": "components/ui/scroll-reveal/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/scroll-reveal/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "text-reveal",
       "name": "Text Reveal",
       "description": "Staggered word or character reveal with blur and lift.",
@@ -376,6 +1382,97 @@
         {
           "path": "components/ui/text-reveal/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/text-reveal/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "alert",
+      "name": "Alert",
+      "description": "Inline alert whose icon pops and draws itself in, with a dismiss that smoothly collapses its height.",
+      "section": "components",
+      "category": "Feedback",
+      "page_url": "https://vuelix.dev/components/alert",
+      "detail_url": "https://vuelix.dev/r/alert.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/alert.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Alert"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/alert/Alert.vue",
+          "raw_url": "https://vuelix.dev/r/raw/alert/Alert.vue"
+        },
+        {
+          "path": "components/ui/alert/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/alert/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "loader",
+      "name": "Loader",
+      "description": "Five loaders — wave, orbit, bars, ring and a typing skeleton — that calm down for reduced motion.",
+      "section": "components",
+      "category": "Feedback",
+      "page_url": "https://vuelix.dev/components/loader",
+      "detail_url": "https://vuelix.dev/r/loader.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/loader.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Loader"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/loader/Loader.vue",
+          "raw_url": "https://vuelix.dev/r/raw/loader/Loader.vue"
+        },
+        {
+          "path": "components/ui/loader/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/loader/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "pull-to-refresh",
+      "name": "Pull to Refresh",
+      "description": "Pull a scroll area down with rubber-band resistance; a spinning indicator holds while your refresh runs.",
+      "section": "components",
+      "category": "Feedback",
+      "page_url": "https://vuelix.dev/components/pull-to-refresh",
+      "detail_url": "https://vuelix.dev/r/pull-to-refresh.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/pull-to-refresh.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "PullToRefresh"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/pull-to-refresh/PullToRefresh.vue",
+          "raw_url": "https://vuelix.dev/r/raw/pull-to-refresh/PullToRefresh.vue"
+        },
+        {
+          "path": "components/ui/pull-to-refresh/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/pull-to-refresh/index.ts"
         }
       ]
     },
@@ -447,6 +1544,1960 @@
       ]
     },
     {
+      "slug": "data-table",
+      "name": "Data Table",
+      "description": "A sortable, selectable table whose rows glide into their new order and whose selection bar slides up.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/data-table",
+      "detail_url": "https://vuelix.dev/r/data-table.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/data-table.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DataTable"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/data-table/DataTable.vue",
+          "raw_url": "https://vuelix.dev/r/raw/data-table/DataTable.vue"
+        },
+        {
+          "path": "components/ui/data-table/DataTableCheckbox.vue",
+          "raw_url": "https://vuelix.dev/r/raw/data-table/DataTableCheckbox.vue"
+        },
+        {
+          "path": "components/ui/data-table/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/data-table/index.ts"
+        },
+        {
+          "path": "components/ui/data-table/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/data-table/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "file-tree",
+      "name": "File Tree",
+      "description": "A keyboard-navigable file tree whose folders spring open and whose selection glides between rows.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/file-tree",
+      "detail_url": "https://vuelix.dev/r/file-tree.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-tree.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FileTree"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/file-tree/FileTree.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/FileTree.vue"
+        },
+        {
+          "path": "components/ui/file-tree/FileTreeIcon.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/FileTreeIcon.vue"
+        },
+        {
+          "path": "components/ui/file-tree/FileTreeItem.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/FileTreeItem.vue"
+        },
+        {
+          "path": "components/ui/file-tree/context.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/context.ts"
+        },
+        {
+          "path": "components/ui/file-tree/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-tree/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "filmstrip",
+      "name": "Filmstrip",
+      "description": "A gallery preview with a draggable thumbnail rail; a frame glides to the active shot as images slide in.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/filmstrip",
+      "detail_url": "https://vuelix.dev/r/filmstrip.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/filmstrip.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Filmstrip"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/filmstrip/Filmstrip.vue",
+          "raw_url": "https://vuelix.dev/r/raw/filmstrip/Filmstrip.vue"
+        },
+        {
+          "path": "components/ui/filmstrip/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/filmstrip/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "lightbox",
+      "name": "Lightbox",
+      "description": "An image grid whose thumbnails morph into a full-screen viewer you can swipe through or drag away.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/lightbox",
+      "detail_url": "https://vuelix.dev/r/lightbox.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/lightbox.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Lightbox"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/lightbox/Lightbox.vue",
+          "raw_url": "https://vuelix.dev/r/raw/lightbox/Lightbox.vue"
+        },
+        {
+          "path": "components/ui/lightbox/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/lightbox/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "motion-badge",
+      "name": "Motion Badge",
+      "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/motion-badge",
+      "detail_url": "https://vuelix.dev/r/motion-badge.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/motion-badge.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MotionBadge"
+        ]
+      },
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/motion-badge/MotionBadge.vue",
+          "raw_url": "https://vuelix.dev/r/raw/motion-badge/MotionBadge.vue"
+        },
+        {
+          "path": "components/ui/motion-badge/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/motion-badge/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "sortable-list",
+      "name": "Sortable List",
+      "description": "A drag-to-reorder list where rows lift off the page and the rest glide aside; keyboard friendly.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/sortable-list",
+      "detail_url": "https://vuelix.dev/r/sortable-list.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/sortable-list.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SortableList"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/sortable-list/SortableList.vue",
+          "raw_url": "https://vuelix.dev/r/raw/sortable-list/SortableList.vue"
+        },
+        {
+          "path": "components/ui/sortable-list/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/sortable-list/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "timeline",
+      "name": "Timeline",
+      "description": "A vertical timeline whose line draws in as you scroll while each event pops and slides into place.",
+      "section": "components",
+      "category": "Data Display",
+      "page_url": "https://vuelix.dev/components/timeline",
+      "detail_url": "https://vuelix.dev/r/timeline.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/timeline.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Timeline"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/timeline/Timeline.vue",
+          "raw_url": "https://vuelix.dev/r/raw/timeline/Timeline.vue"
+        },
+        {
+          "path": "components/ui/timeline/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/timeline/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "action-bar",
+      "name": "Action Bar",
+      "description": "A floating bulk-action bar that springs in on selection, rolls its count and confirms in place.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/action-bar",
+      "detail_url": "https://vuelix.dev/r/action-bar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/action-bar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ActionBar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/action-bar/ActionBar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/action-bar/ActionBar.vue"
+        },
+        {
+          "path": "components/ui/action-bar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/action-bar/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "auth-form",
+      "name": "Auth Form",
+      "description": "Sign-in / sign-up card with a sliding mode switch, floating labels, a live strength meter and a morphing submit.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/auth-form",
+      "detail_url": "https://vuelix.dev/r/auth-form.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/auth-form.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AuthForm",
+          "passwordStrength"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/auth-form/AuthField.vue",
+          "raw_url": "https://vuelix.dev/r/raw/auth-form/AuthField.vue"
+        },
+        {
+          "path": "components/ui/auth-form/AuthForm.vue",
+          "raw_url": "https://vuelix.dev/r/raw/auth-form/AuthForm.vue"
+        },
+        {
+          "path": "components/ui/auth-form/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/auth-form/index.ts"
+        },
+        {
+          "path": "components/ui/auth-form/strength.ts",
+          "raw_url": "https://vuelix.dev/r/raw/auth-form/strength.ts"
+        }
+      ]
+    },
+    {
+      "slug": "availability-picker",
+      "name": "Availability Picker",
+      "description": "Weekly scheduler with day switches, animated time ranges and a drag-to-paint week grid.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/availability-picker",
+      "detail_url": "https://vuelix.dev/r/availability-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/availability-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AvailabilityPicker",
+          "dayMinutes"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/availability-picker/AvailabilityGrid.vue",
+          "raw_url": "https://vuelix.dev/r/raw/availability-picker/AvailabilityGrid.vue"
+        },
+        {
+          "path": "components/ui/availability-picker/AvailabilityPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/availability-picker/AvailabilityPicker.vue"
+        },
+        {
+          "path": "components/ui/availability-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/availability-picker/index.ts"
+        },
+        {
+          "path": "components/ui/availability-picker/time.ts",
+          "raw_url": "https://vuelix.dev/r/raw/availability-picker/time.ts"
+        }
+      ]
+    },
+    {
+      "slug": "card-fan",
+      "name": "Card Fan",
+      "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/card-fan",
+      "detail_url": "https://vuelix.dev/r/card-fan.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/card-fan.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CardFan"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/card-fan/CardFan.vue",
+          "raw_url": "https://vuelix.dev/r/raw/card-fan/CardFan.vue"
+        },
+        {
+          "path": "components/ui/card-fan/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/card-fan/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "command-palette",
+      "name": "Command Palette",
+      "description": "A ⌘K palette with fuzzy search, a gliding selection, nested pages that slide in and shortcuts.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/command-palette",
+      "detail_url": "https://vuelix.dev/r/command-palette.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/command-palette.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CommandPalette",
+          "highlightSegments",
+          "matchCommand"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/command-palette/CommandPalette.vue",
+          "raw_url": "https://vuelix.dev/r/raw/command-palette/CommandPalette.vue"
+        },
+        {
+          "path": "components/ui/command-palette/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/command-palette/index.ts"
+        },
+        {
+          "path": "components/ui/command-palette/match.ts",
+          "raw_url": "https://vuelix.dev/r/raw/command-palette/match.ts"
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-island",
+      "name": "Dynamic Island",
+      "description": "A pill that springs its width, height and radius between live states while the content cross-fades.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/dynamic-island",
+      "detail_url": "https://vuelix.dev/r/dynamic-island.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dynamic-island.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DynamicIsland"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/dynamic-island/DynamicIsland.vue",
+          "raw_url": "https://vuelix.dev/r/raw/dynamic-island/DynamicIsland.vue"
+        },
+        {
+          "path": "components/ui/dynamic-island/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/dynamic-island/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "expandable-tabs",
+      "name": "Expandable Tabs",
+      "description": "An icon-only tab bar where the active tab springs open to reveal its label with a blur-in.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/expandable-tabs",
+      "detail_url": "https://vuelix.dev/r/expandable-tabs.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expandable-tabs.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ExpandableTabs"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/expandable-tabs/ExpandableTabs.vue",
+          "raw_url": "https://vuelix.dev/r/raw/expandable-tabs/ExpandableTabs.vue"
+        },
+        {
+          "path": "components/ui/expandable-tabs/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/expandable-tabs/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "feedback-widget",
+      "name": "Feedback Widget",
+      "description": "A floating Feedback pill that morphs into an emoji-rating form, then into a check, then back.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/feedback-widget",
+      "detail_url": "https://vuelix.dev/r/feedback-widget.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/feedback-widget.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FeedbackWidget"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/feedback-widget/FeedbackWidget.vue",
+          "raw_url": "https://vuelix.dev/r/raw/feedback-widget/FeedbackWidget.vue"
+        },
+        {
+          "path": "components/ui/feedback-widget/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/feedback-widget/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "file-dropzone",
+      "name": "File Dropzone",
+      "description": "Drag-and-drop uploads that swell on hover, with thumbnails, live progress bars, retry and remove.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/file-dropzone",
+      "detail_url": "https://vuelix.dev/r/file-dropzone.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-dropzone.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FileDropzone"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/file-dropzone/FileDropzone.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-dropzone/FileDropzone.vue"
+        },
+        {
+          "path": "components/ui/file-dropzone/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-dropzone/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "fluid-tabs",
+      "name": "Fluid Tabs",
+      "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/fluid-tabs",
+      "detail_url": "https://vuelix.dev/r/fluid-tabs.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/fluid-tabs.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FluidTabs"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/fluid-tabs/FluidTabs.vue",
+          "raw_url": "https://vuelix.dev/r/raw/fluid-tabs/FluidTabs.vue"
+        },
+        {
+          "path": "components/ui/fluid-tabs/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/fluid-tabs/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "folder-stack",
+      "name": "Folder Stack",
+      "description": "A folder whose flap tips open as its cards fan out, plus a card pile that deals itself into a grid.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/folder-stack",
+      "detail_url": "https://vuelix.dev/r/folder-stack.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/folder-stack.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FolderStack"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/folder-stack/FolderStack.vue",
+          "raw_url": "https://vuelix.dev/r/raw/folder-stack/FolderStack.vue"
+        },
+        {
+          "path": "components/ui/folder-stack/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/folder-stack/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "masonry-grid",
+      "name": "Masonry Grid",
+      "description": "Shortest-column masonry that springs into place on resize, reveals items on scroll and loads more at the end.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/masonry-grid",
+      "detail_url": "https://vuelix.dev/r/masonry-grid.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/masonry-grid.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MasonryGrid"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/masonry-grid/MasonryGrid.vue",
+          "raw_url": "https://vuelix.dev/r/raw/masonry-grid/MasonryGrid.vue"
+        },
+        {
+          "path": "components/ui/masonry-grid/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/masonry-grid/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "match-fixtures",
+      "name": "Match Fixtures",
+      "description": "A fixtures and results list with live minutes, rolling scores, goal flashes and an expandable events timeline.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/match-fixtures",
+      "detail_url": "https://vuelix.dev/r/match-fixtures.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/match-fixtures.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MatchFixtures"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/match-fixtures/FixtureCrest.vue",
+          "raw_url": "https://vuelix.dev/r/raw/match-fixtures/FixtureCrest.vue"
+        },
+        {
+          "path": "components/ui/match-fixtures/MatchFixtures.vue",
+          "raw_url": "https://vuelix.dev/r/raw/match-fixtures/MatchFixtures.vue"
+        },
+        {
+          "path": "components/ui/match-fixtures/RollingNumber.vue",
+          "raw_url": "https://vuelix.dev/r/raw/match-fixtures/RollingNumber.vue"
+        },
+        {
+          "path": "components/ui/match-fixtures/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/match-fixtures/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "morphing-search",
+      "name": "Morphing Search",
+      "description": "A search icon that springs open into a field, with recent searches and suggestions that stagger in.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/morphing-search",
+      "detail_url": "https://vuelix.dev/r/morphing-search.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/morphing-search.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MorphingSearch"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/morphing-search/MorphingSearch.vue",
+          "raw_url": "https://vuelix.dev/r/raw/morphing-search/MorphingSearch.vue"
+        },
+        {
+          "path": "components/ui/morphing-search/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/morphing-search/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "not-found",
+      "name": "Not Found",
+      "description": "A 404 section whose giant digits float, dodge the pointer on springs and can be flung around, with search and links home.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/not-found",
+      "detail_url": "https://vuelix.dev/r/not-found.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/not-found.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "NotFound"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/not-found/NotFound.vue",
+          "raw_url": "https://vuelix.dev/r/raw/not-found/NotFound.vue"
+        },
+        {
+          "path": "components/ui/not-found/NotFoundDigit.vue",
+          "raw_url": "https://vuelix.dev/r/raw/not-found/NotFoundDigit.vue"
+        },
+        {
+          "path": "components/ui/not-found/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/not-found/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "notification-center",
+      "name": "Notification Center",
+      "description": "A bell with a live badge and a panel of per-app stacks that fan open, swipe away and clear in a cascade.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/notification-center",
+      "detail_url": "https://vuelix.dev/r/notification-center.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/notification-center.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "NotificationCenter"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/notification-center/NotificationCenter.vue",
+          "raw_url": "https://vuelix.dev/r/raw/notification-center/NotificationCenter.vue"
+        },
+        {
+          "path": "components/ui/notification-center/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/notification-center/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "odds-card",
+      "name": "Odds Card",
+      "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/odds-card",
+      "detail_url": "https://vuelix.dev/r/odds-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/odds-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OddsCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/odds-card/OddsCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/odds-card/OddsCard.vue"
+        },
+        {
+          "path": "components/ui/odds-card/RollingNumber.vue",
+          "raw_url": "https://vuelix.dev/r/raw/odds-card/RollingNumber.vue"
+        },
+        {
+          "path": "components/ui/odds-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/odds-card/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "overflow-toolbar",
+      "name": "Overflow Toolbar",
+      "description": "A toolbar that measures its width and springs the actions that don't fit into a “more” menu.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/overflow-toolbar",
+      "detail_url": "https://vuelix.dev/r/overflow-toolbar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/overflow-toolbar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OverflowToolbar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/overflow-toolbar/OverflowToolbar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/overflow-toolbar/OverflowToolbar.vue"
+        },
+        {
+          "path": "components/ui/overflow-toolbar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/overflow-toolbar/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "radial-menu",
+      "name": "Radial Menu",
+      "description": "A floating button that blooms into a ring of actions with staggered springs, hover labels and arrow-key navigation.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/radial-menu",
+      "detail_url": "https://vuelix.dev/r/radial-menu.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/radial-menu.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "RadialMenu"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/radial-menu/RadialMenu.vue",
+          "raw_url": "https://vuelix.dev/r/raw/radial-menu/RadialMenu.vue"
+        },
+        {
+          "path": "components/ui/radial-menu/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/radial-menu/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "swipe-actions",
+      "name": "Swipe Actions",
+      "description": "List rows that swipe to reveal actions, rubber-band, full-swipe to commit and collapse away.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/swipe-actions",
+      "detail_url": "https://vuelix.dev/r/swipe-actions.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/swipe-actions.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SwipeActions"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/swipe-actions/SwipeActions.vue",
+          "raw_url": "https://vuelix.dev/r/raw/swipe-actions/SwipeActions.vue"
+        },
+        {
+          "path": "components/ui/swipe-actions/SwipeActionsRow.vue",
+          "raw_url": "https://vuelix.dev/r/raw/swipe-actions/SwipeActionsRow.vue"
+        },
+        {
+          "path": "components/ui/swipe-actions/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/swipe-actions/index.ts"
+        },
+        {
+          "path": "components/ui/swipe-actions/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/swipe-actions/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "token-swap",
+      "name": "Token Swap",
+      "description": "Swap card whose rows trade places on a spinning button, with token search, slippage and a review morph.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/token-swap",
+      "detail_url": "https://vuelix.dev/r/token-swap.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/token-swap.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "TokenSwap"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/token-swap/TokenSwap.vue",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/TokenSwap.vue"
+        },
+        {
+          "path": "components/ui/token-swap/TokenSwapIcon.vue",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/TokenSwapIcon.vue"
+        },
+        {
+          "path": "components/ui/token-swap/TokenSwapPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/TokenSwapPicker.vue"
+        },
+        {
+          "path": "components/ui/token-swap/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/index.ts"
+        },
+        {
+          "path": "components/ui/token-swap/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "wallet-card",
+      "name": "Wallet Card",
+      "description": "A stack of payment cards that springs a card to the front, flips it for details and rolls in its balance.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/wallet-card",
+      "detail_url": "https://vuelix.dev/r/wallet-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/wallet-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "WalletCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/wallet-card/RollingNumber.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wallet-card/RollingNumber.vue"
+        },
+        {
+          "path": "components/ui/wallet-card/WalletCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/wallet-card/WalletCard.vue"
+        },
+        {
+          "path": "components/ui/wallet-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/wallet-card/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "agent-activity",
+      "name": "Agent Activity",
+      "description": "Live feed of an agent's steps: new steps slide in, the current one shimmers, sub-steps fold away.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/agent-activity",
+      "detail_url": "https://vuelix.dev/r/agent-activity.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/agent-activity.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AgentActivity"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/agent-activity/AgentActivity.vue",
+          "raw_url": "https://vuelix.dev/r/raw/agent-activity/AgentActivity.vue"
+        },
+        {
+          "path": "components/ui/agent-activity/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/agent-activity/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "approval-card",
+      "name": "Approval Card",
+      "description": "Asks the user to approve an agent action, then collapses into a compact resolved row with a stamp that slams in.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/approval-card",
+      "detail_url": "https://vuelix.dev/r/approval-card.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/approval-card.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ApprovalCard"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/approval-card/ApprovalCard.vue",
+          "raw_url": "https://vuelix.dev/r/raw/approval-card/ApprovalCard.vue"
+        },
+        {
+          "path": "components/ui/approval-card/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/approval-card/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "chat-app",
+      "name": "Chat App",
+      "description": "A complete AI chat: header, welcome screen with suggestions, streaming messages and a prompt composer.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/chat-app",
+      "detail_url": "https://vuelix.dev/r/chat-app.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-app.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ChatApp"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chat-message.json",
+        "https://vuelix.dev/r/chat-scroller.json",
+        "https://vuelix.dev/r/prompt-input.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/chat-app/ChatApp.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chat-app/ChatApp.vue"
+        },
+        {
+          "path": "components/ui/chat-app/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chat-app/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "chat-message",
+      "name": "Chat Message",
+      "description": "A chat message with avatar, streaming caret and copy, retry and feedback actions that fade in on hover.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/chat-message",
+      "detail_url": "https://vuelix.dev/r/chat-message.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-message.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ChatBubble",
+          "ChatMessage"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/chat-message/ChatBubble.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chat-message/ChatBubble.vue"
+        },
+        {
+          "path": "components/ui/chat-message/ChatMessage.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chat-message/ChatMessage.vue"
+        },
+        {
+          "path": "components/ui/chat-message/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chat-message/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "chat-scroller",
+      "name": "Chat Scroller",
+      "description": "A conversation viewport that sticks to the latest message, springs in a jump pill and keeps its place on prepend.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/chat-scroller",
+      "detail_url": "https://vuelix.dev/r/chat-scroller.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-scroller.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ChatScroller"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/chat-scroller/ChatScroller.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chat-scroller/ChatScroller.vue"
+        },
+        {
+          "path": "components/ui/chat-scroller/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chat-scroller/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "citations",
+      "name": "Citations",
+      "description": "Numbered citation chips with hover cards, linked to a sources list that lights up the cited source.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/citations",
+      "detail_url": "https://vuelix.dev/r/citations.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/citations.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CitationChip",
+          "Citations"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/citations/CitationChip.vue",
+          "raw_url": "https://vuelix.dev/r/raw/citations/CitationChip.vue"
+        },
+        {
+          "path": "components/ui/citations/Citations.vue",
+          "raw_url": "https://vuelix.dev/r/raw/citations/Citations.vue"
+        },
+        {
+          "path": "components/ui/citations/SourceIcon.vue",
+          "raw_url": "https://vuelix.dev/r/raw/citations/SourceIcon.vue"
+        },
+        {
+          "path": "components/ui/citations/context.ts",
+          "raw_url": "https://vuelix.dev/r/raw/citations/context.ts"
+        },
+        {
+          "path": "components/ui/citations/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/citations/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "code-block",
+      "name": "Code Block",
+      "description": "Code with a file header, line numbers, highlighted lines, a copy-to-check button and a springy collapse for long snippets.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/code-block",
+      "detail_url": "https://vuelix.dev/r/code-block.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/code-block.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CodeBlock"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/code-block/CodeBlock.vue",
+          "raw_url": "https://vuelix.dev/r/raw/code-block/CodeBlock.vue"
+        },
+        {
+          "path": "components/ui/code-block/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/code-block/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "conversation-sidebar",
+      "name": "Conversation Sidebar",
+      "description": "Chat history grouped by date, with search, a gliding active marker, inline rename and an icon rail.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/conversation-sidebar",
+      "detail_url": "https://vuelix.dev/r/conversation-sidebar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/conversation-sidebar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ConversationSidebar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/conversation-sidebar/ConversationSidebar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/conversation-sidebar/ConversationSidebar.vue"
+        },
+        {
+          "path": "components/ui/conversation-sidebar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/conversation-sidebar/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "file-diff",
+      "name": "File Diff",
+      "description": "A unified diff viewer with a change bar, folding unchanged lines and per-hunk accept or reject that springs shut.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/file-diff",
+      "detail_url": "https://vuelix.dev/r/file-diff.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-diff.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FileDiff",
+          "parseUnifiedDiff"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/file-diff/FileDiff.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-diff/FileDiff.vue"
+        },
+        {
+          "path": "components/ui/file-diff/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-diff/index.ts"
+        },
+        {
+          "path": "components/ui/file-diff/parse-diff.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-diff/parse-diff.ts"
+        }
+      ]
+    },
+    {
+      "slug": "image-generation",
+      "name": "Image Generation",
+      "description": "Image placeholder where grainy colour fields sharpen behind a scan line, then the result fades in.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/image-generation",
+      "detail_url": "https://vuelix.dev/r/image-generation.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/image-generation.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ImageGeneration"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/image-generation/ImageGeneration.vue",
+          "raw_url": "https://vuelix.dev/r/raw/image-generation/ImageGeneration.vue"
+        },
+        {
+          "path": "components/ui/image-generation/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/image-generation/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "model-picker",
+      "name": "Model Picker",
+      "description": "Compact AI model dropdown with capability badges, typeahead and a check mark that glides to your pick.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/model-picker",
+      "detail_url": "https://vuelix.dev/r/model-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/model-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ModelPicker"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/model-picker/ModelPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/model-picker/ModelPicker.vue"
+        },
+        {
+          "path": "components/ui/model-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/model-picker/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "prompt-input",
+      "name": "Prompt Input",
+      "description": "An AI composer with an auto-growing textarea, pop-in attachment chips and a send button that morphs into stop.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/prompt-input",
+      "detail_url": "https://vuelix.dev/r/prompt-input.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/prompt-input.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "PromptInput"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/prompt-input/PromptInput.vue",
+          "raw_url": "https://vuelix.dev/r/raw/prompt-input/PromptInput.vue"
+        },
+        {
+          "path": "components/ui/prompt-input/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/prompt-input/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "streaming-text",
+      "name": "Streaming Text",
+      "description": "Streamed AI answers where each new chunk blurs in, with a blinking cursor and light Markdown.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/streaming-text",
+      "detail_url": "https://vuelix.dev/r/streaming-text.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/streaming-text.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "StreamingText",
+          "createTextStream",
+          "useTextStream"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/streaming-text/StreamingText.vue",
+          "raw_url": "https://vuelix.dev/r/raw/streaming-text/StreamingText.vue"
+        },
+        {
+          "path": "components/ui/streaming-text/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/streaming-text/index.ts"
+        },
+        {
+          "path": "components/ui/streaming-text/markdown.ts",
+          "raw_url": "https://vuelix.dev/r/raw/streaming-text/markdown.ts"
+        },
+        {
+          "path": "components/ui/streaming-text/use-text-stream.ts",
+          "raw_url": "https://vuelix.dev/r/raw/streaming-text/use-text-stream.ts"
+        }
+      ]
+    },
+    {
+      "slug": "suggestion-chips",
+      "name": "Suggestion Chips",
+      "description": "Prompt suggestions that stagger in, lift on hover, fly into your input on click and reshuffle.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/suggestion-chips",
+      "detail_url": "https://vuelix.dev/r/suggestion-chips.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/suggestion-chips.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SuggestionChips"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/suggestion-chips/SuggestionChips.vue",
+          "raw_url": "https://vuelix.dev/r/raw/suggestion-chips/SuggestionChips.vue"
+        },
+        {
+          "path": "components/ui/suggestion-chips/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/suggestion-chips/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "task-list",
+      "name": "Task List",
+      "description": "An agent's plan with a live progress bar, spinning active step, drawn checkmarks and a strike that sweeps across.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/task-list",
+      "detail_url": "https://vuelix.dev/r/task-list.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/task-list.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "TaskList"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/task-list/TaskList.vue",
+          "raw_url": "https://vuelix.dev/r/raw/task-list/TaskList.vue"
+        },
+        {
+          "path": "components/ui/task-list/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/task-list/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "thinking-indicator",
+      "name": "Thinking Indicator",
+      "description": "AI loading states: wave dots, shimmering text, a pulsing orb, a scan bar and a collapsible reasoning panel.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/thinking-indicator",
+      "detail_url": "https://vuelix.dev/r/thinking-indicator.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/thinking-indicator.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ThinkingIndicator"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/thinking-indicator/ThinkingIndicator.vue",
+          "raw_url": "https://vuelix.dev/r/raw/thinking-indicator/ThinkingIndicator.vue"
+        },
+        {
+          "path": "components/ui/thinking-indicator/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/thinking-indicator/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "tool-call",
+      "name": "Tool Call",
+      "description": "A collapsible card for a tool invocation with a live status indicator, timer and pretty-printed arguments and result.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/tool-call",
+      "detail_url": "https://vuelix.dev/r/tool-call.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/tool-call.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ToolCall"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/tool-call/ToolCall.vue",
+          "raw_url": "https://vuelix.dev/r/raw/tool-call/ToolCall.vue"
+        },
+        {
+          "path": "components/ui/tool-call/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/tool-call/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "voice-orb",
+      "name": "Voice Orb",
+      "description": "A living orb for voice assistants that deforms with the audio level as it listens, thinks and speaks.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/voice-orb",
+      "detail_url": "https://vuelix.dev/r/voice-orb.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/voice-orb.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "VoiceOrb"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/voice-orb/VoiceOrb.vue",
+          "raw_url": "https://vuelix.dev/r/raw/voice-orb/VoiceOrb.vue"
+        },
+        {
+          "path": "components/ui/voice-orb/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/voice-orb/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "bar-chart",
+      "name": "Bar Chart",
+      "description": "Grouped, stacked or horizontal bars that spring up in a stagger and glide between layouts.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/bar-chart",
+      "detail_url": "https://vuelix.dev/r/bar-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bar-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "BarChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/bar-chart/BarChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/bar-chart/BarChart.vue"
+        },
+        {
+          "path": "components/ui/bar-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bar-chart/index.ts"
+        },
+        {
+          "path": "components/ui/bar-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bar-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "bump-chart",
+      "name": "Bump Chart",
+      "description": "Rankings over time as curved lanes that draw in; hover one to bring it forward and dim the rest.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/bump-chart",
+      "detail_url": "https://vuelix.dev/r/bump-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bump-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "BumpChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/bump-chart/BumpChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/bump-chart/BumpChart.vue"
+        },
+        {
+          "path": "components/ui/bump-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bump-chart/index.ts"
+        },
+        {
+          "path": "components/ui/bump-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/bump-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "candlestick-chart",
+      "name": "Candlestick Chart",
+      "description": "Live OHLC candles with volume, a last-price tag and crosshair readout; new candles slide in.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/candlestick-chart",
+      "detail_url": "https://vuelix.dev/r/candlestick-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/candlestick-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CandlestickChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/candlestick-chart/CandlestickChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/candlestick-chart/CandlestickChart.vue"
+        },
+        {
+          "path": "components/ui/candlestick-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/candlestick-chart/index.ts"
+        },
+        {
+          "path": "components/ui/candlestick-chart/scale.ts",
+          "raw_url": "https://vuelix.dev/r/raw/candlestick-chart/scale.ts"
+        }
+      ]
+    },
+    {
+      "slug": "depth-heatmap",
+      "name": "Depth Heatmap",
+      "description": "Price × time heatmap of resting liquidity with a price trace; new snapshots slide in live.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/depth-heatmap",
+      "detail_url": "https://vuelix.dev/r/depth-heatmap.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/depth-heatmap.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DepthHeatmap"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/depth-heatmap/DepthHeatmap.vue",
+          "raw_url": "https://vuelix.dev/r/raw/depth-heatmap/DepthHeatmap.vue"
+        },
+        {
+          "path": "components/ui/depth-heatmap/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/depth-heatmap/index.ts"
+        },
+        {
+          "path": "components/ui/depth-heatmap/scale.ts",
+          "raw_url": "https://vuelix.dev/r/raw/depth-heatmap/scale.ts"
+        }
+      ]
+    },
+    {
+      "slug": "donut-chart",
+      "name": "Donut Chart",
+      "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/donut-chart",
+      "detail_url": "https://vuelix.dev/r/donut-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/donut-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "DonutChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/donut-chart/DonutChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/donut-chart/DonutChart.vue"
+        },
+        {
+          "path": "components/ui/donut-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/donut-chart/index.ts"
+        },
+        {
+          "path": "components/ui/donut-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/donut-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "forecast-fan",
+      "name": "Forecast Fan",
+      "description": "Price history that opens into a fan of low / median / high targets, with a scrubber that reads into the future.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/forecast-fan",
+      "detail_url": "https://vuelix.dev/r/forecast-fan.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/forecast-fan.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ForecastFan"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/forecast-fan/ForecastFan.vue",
+          "raw_url": "https://vuelix.dev/r/raw/forecast-fan/ForecastFan.vue"
+        },
+        {
+          "path": "components/ui/forecast-fan/fan.ts",
+          "raw_url": "https://vuelix.dev/r/raw/forecast-fan/fan.ts"
+        },
+        {
+          "path": "components/ui/forecast-fan/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/forecast-fan/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "funnel-chart",
+      "name": "Funnel Chart",
+      "description": "Conversion funnel whose stages spring open in sequence, joined by curved hand-offs with drop-off rates.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/funnel-chart",
+      "detail_url": "https://vuelix.dev/r/funnel-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/funnel-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FunnelChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/funnel-chart/FunnelChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/funnel-chart/FunnelChart.vue"
+        },
+        {
+          "path": "components/ui/funnel-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/funnel-chart/index.ts"
+        },
+        {
+          "path": "components/ui/funnel-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/funnel-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "heat-calendar",
+      "name": "Heat Calendar",
+      "description": "A year of daily activity as a weeks × weekdays grid that ripples in; drag across days to select a range.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/heat-calendar",
+      "detail_url": "https://vuelix.dev/r/heat-calendar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/heat-calendar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "HeatCalendar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/heat-calendar/HeatCalendar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/heat-calendar/HeatCalendar.vue"
+        },
+        {
+          "path": "components/ui/heat-calendar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/heat-calendar/index.ts"
+        },
+        {
+          "path": "components/ui/heat-calendar/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/heat-calendar/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "line-chart",
+      "name": "Line Chart",
+      "description": "Multi-series line or area chart that draws in, morphs on new data and tracks a snapping crosshair.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/line-chart",
+      "detail_url": "https://vuelix.dev/r/line-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/line-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "LineChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/line-chart/LineChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/line-chart/LineChart.vue"
+        },
+        {
+          "path": "components/ui/line-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/line-chart/index.ts"
+        },
+        {
+          "path": "components/ui/line-chart/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/line-chart/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "order-book",
+      "name": "Order Book",
+      "description": "Live bid/ask ladder with springy depth bars, a spread row, size-change flashes and a buy/sell balance bar.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/order-book",
+      "detail_url": "https://vuelix.dev/r/order-book.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/order-book.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "OrderBook"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/order-book/OrderBook.vue",
+          "raw_url": "https://vuelix.dev/r/raw/order-book/OrderBook.vue"
+        },
+        {
+          "path": "components/ui/order-book/book.ts",
+          "raw_url": "https://vuelix.dev/r/raw/order-book/book.ts"
+        },
+        {
+          "path": "components/ui/order-book/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/order-book/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "returns-calendar",
+      "name": "Returns Calendar",
+      "description": "Years × months grid of returns tinted by sign and size, with compounded yearly totals; cells pop in diagonally.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/returns-calendar",
+      "detail_url": "https://vuelix.dev/r/returns-calendar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/returns-calendar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ReturnsCalendar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/returns-calendar/ReturnsCalendar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/returns-calendar/ReturnsCalendar.vue"
+        },
+        {
+          "path": "components/ui/returns-calendar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/returns-calendar/index.ts"
+        },
+        {
+          "path": "components/ui/returns-calendar/returns.ts",
+          "raw_url": "https://vuelix.dev/r/raw/returns-calendar/returns.ts"
+        }
+      ]
+    },
+    {
+      "slug": "sankey-chart",
+      "name": "Sankey Chart",
+      "description": "Weighted flows between columns of nodes; ribbons draw in and hovering traces a node's whole path.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/sankey-chart",
+      "detail_url": "https://vuelix.dev/r/sankey-chart.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/sankey-chart.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SankeyChart"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/sankey-chart/SankeyChart.vue",
+          "raw_url": "https://vuelix.dev/r/raw/sankey-chart/SankeyChart.vue"
+        },
+        {
+          "path": "components/ui/sankey-chart/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/sankey-chart/index.ts"
+        },
+        {
+          "path": "components/ui/sankey-chart/layout.ts",
+          "raw_url": "https://vuelix.dev/r/raw/sankey-chart/layout.ts"
+        }
+      ]
+    },
+    {
       "slug": "sparkline",
       "name": "Sparkline",
       "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
@@ -473,6 +3524,197 @@
         {
           "path": "components/ui/sparkline/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/sparkline/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "stacked-area",
+      "name": "Stacked Area",
+      "description": "Composition over time, stacked or 100%; bands morph between modes and an interactive legend isolates series.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/stacked-area",
+      "detail_url": "https://vuelix.dev/r/stacked-area.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/stacked-area.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "StackedArea"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/stacked-area/StackedArea.vue",
+          "raw_url": "https://vuelix.dev/r/raw/stacked-area/StackedArea.vue"
+        },
+        {
+          "path": "components/ui/stacked-area/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/stacked-area/index.ts"
+        },
+        {
+          "path": "components/ui/stacked-area/stack.ts",
+          "raw_url": "https://vuelix.dev/r/raw/stacked-area/stack.ts"
+        }
+      ]
+    },
+    {
+      "slug": "status-history",
+      "name": "Status History",
+      "description": "Uptime bars per day that rise in a wave, coloured by status, with an overall uptime readout.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/status-history",
+      "detail_url": "https://vuelix.dev/r/status-history.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/status-history.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "StatusHistory"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json",
+        "https://vuelix.dev/r/number-ticker.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/status-history/StatusHistory.vue",
+          "raw_url": "https://vuelix.dev/r/raw/status-history/StatusHistory.vue"
+        },
+        {
+          "path": "components/ui/status-history/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/status-history/index.ts"
+        },
+        {
+          "path": "components/ui/status-history/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/status-history/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "treemap",
+      "name": "Treemap",
+      "description": "Squarified treemap whose tiles glide to their new size and position whenever the data changes.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/treemap",
+      "detail_url": "https://vuelix.dev/r/treemap.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/treemap.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Treemap",
+          "squarify"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [
+        "https://vuelix.dev/r/chart-utils.json"
+      ],
+      "files": [
+        {
+          "path": "components/ui/treemap/Treemap.vue",
+          "raw_url": "https://vuelix.dev/r/raw/treemap/Treemap.vue"
+        },
+        {
+          "path": "components/ui/treemap/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/treemap/index.ts"
+        },
+        {
+          "path": "components/ui/treemap/squarify.ts",
+          "raw_url": "https://vuelix.dev/r/raw/treemap/squarify.ts"
+        },
+        {
+          "path": "components/ui/treemap/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/treemap/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "volume-profile",
+      "name": "Volume Profile",
+      "description": "Volume-by-price histogram with a highlighted point of control and value area; bars ripple out from the POC.",
+      "section": "charts",
+      "category": "Charts",
+      "page_url": "https://vuelix.dev/charts/volume-profile",
+      "detail_url": "https://vuelix.dev/r/volume-profile.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/volume-profile.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "VolumeProfile"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/volume-profile/VolumeProfile.vue",
+          "raw_url": "https://vuelix.dev/r/raw/volume-profile/VolumeProfile.vue"
+        },
+        {
+          "path": "components/ui/volume-profile/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/volume-profile/index.ts"
+        },
+        {
+          "path": "components/ui/volume-profile/profile.ts",
+          "raw_url": "https://vuelix.dev/r/raw/volume-profile/profile.ts"
+        }
+      ]
+    },
+    {
+      "slug": "chart-utils",
+      "name": "Chart Utils",
+      "description": "Shared chart helpers: nice ticks, scales, monotone paths, tweened values and a clamped tooltip.",
+      "section": "charts",
+      "category": "Utilities",
+      "page_url": "https://vuelix.dev/charts/chart-utils",
+      "detail_url": "https://vuelix.dev/r/chart-utils.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chart-utils.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ChartTooltip",
+          "areaPath",
+          "chartColor",
+          "clamp",
+          "formatCompact",
+          "linearPath",
+          "linearScale",
+          "monotonePath",
+          "niceTicks",
+          "resample",
+          "useElementWidth",
+          "useTween"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/chart-utils/ChartTooltip.vue",
+          "raw_url": "https://vuelix.dev/r/raw/chart-utils/ChartTooltip.vue"
+        },
+        {
+          "path": "components/ui/chart-utils/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chart-utils/index.ts"
+        },
+        {
+          "path": "components/ui/chart-utils/utils.ts",
+          "raw_url": "https://vuelix.dev/r/raw/chart-utils/utils.ts"
         }
       ]
     }

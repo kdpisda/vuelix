@@ -1,0 +1,9 @@
+{
+  "title": "Color Swatches",
+  "description": "Color picker where a springy ring hops between swatches, with an optional custom color.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

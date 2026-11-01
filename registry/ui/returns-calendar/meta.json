@@ -1,0 +1,9 @@
+{
+  "title": "Returns Calendar",
+  "description": "Years × months grid of returns tinted by sign and size, with compounded yearly totals; cells pop in diagonally.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ]
+}

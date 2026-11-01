@@ -1,0 +1,9 @@
+{
+  "title": "Timeline",
+  "description": "A vertical timeline whose line draws in as you scroll while each event pops and slides into place.",
+  "section": "components",
+  "category": "Data Display",
+  "dependencies": [
+    "motion-v"
+  ]
+}

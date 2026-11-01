@@ -1,0 +1,27 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "aurora-background",
+  "title": "Aurora Background",
+  "description": "A section backdrop of soft, slowly drifting gradient blobs with optional film grain; transform-only and light on CPU.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/aurora-background/AuroraBackground.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { AnimationPlaybackControls } from 'motion-v'\nimport type { HTMLAttributes } from 'vue'\nimport { animate, useInView, useReducedMotion } from 'motion-v'\nimport { computed, onBeforeUnmount, onMounted, ref, useId, watch } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** Blob colours (any CSS colour). Defaults to the chart / brand tokens. */\n  colors?: string[]\n  /** Blur radius of each blob in px. */\n  blur?: number\n  /** Opacity of the whole aurora layer (0–1). */\n  intensity?: number\n  /** Speed multiplier; 1 = one slow drift every ~20s. */\n  speed?: number\n  /** Film-grain overlay (a static SVG noise filter). */\n  grain?: boolean\n  class?: HTMLAttributes['class']\n}>(), {\n  colors: () => ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)'],\n  blur: 40,\n  intensity: 0.65,\n  speed: 1,\n  grain: true,\n})\n\n// Resting place + size of each blob (cycled when there are more colours).\nconst SLOTS = [\n  { left: '-12%', top: '-30%', size: '62%' },\n  { left: '48%', top: '-38%', size: '58%' },\n  { left: '18%', top: '30%', size: '56%' },\n  { left: '62%', top: '24%', size: '50%' },\n  { left: '-8%', top: '42%', size: '46%' },\n  { left: '34%', top: '-10%', size: '40%' },\n]\n// Drift paths (translate is relative to the blob's own size).\nconst PATHS = [\n  { x: ['0%', '22%', '8%', '0%'], y: ['0%', '12%', '28%', '0%'], scale: [1, 1.12, 0.94, 1] },\n  { x: ['0%', '-18%', '-6%', '0%'], y: ['0%', '22%', '6%', '0%'], scale: [1, 0.92, 1.1, 1] },\n  { x: ['0%', '16%', '-14%', '0%'], y: ['0%', '-18%', '-6%', '0%'], scale: [1, 1.08, 1, 1] },\n  { x: ['0%', '-22%', '-10%', '0%'], y: ['0%', '-10%', '14%', '0%'], scale: [1, 1.15, 0.96, 1] },\n]\n\nconst blobs = computed(() => props.colors.map((color, i) => ({ color, ...SLOTS[i % SLOTS.length]! })))\n\nconst noiseId = `vx-aurora-noise-${useId()}`\nconst root = ref<HTMLElement>()\nconst blobEls = ref<HTMLElement[]>([])\nconst reduced = useReducedMotion()\nconst inView = useInView(root)\n\nlet controls: AnimationPlaybackControls[] = []\n\nfunction stop() {\n  controls.forEach(c => c.stop())\n  controls = []\n}\n\nfunction start() {\n  stop()\n  if (reduced.value)\n    return\n  // Transform-only keyframes: the compositor moves each pre-blurred layer.\n  controls = blobEls.value.map((el, i) =>\n    animate(el, PATHS[i % PATHS.length]!, {\n      duration: (18 + i * 5) / Math.max(0.05, props.speed),\n      repeat: Infinity,\n      ease: 'easeInOut',\n    }),\n  )\n  if (!inView.value)\n    controls.forEach(c => c.pause())\n}\n\nonMounted(start)\nwatch([reduced, () => props.speed, () => props.colors.length], start, { flush: 'post' })\nwatch(inView, v => controls.forEach(c => (v ? c.play() : c.pause())))\nonBeforeUnmount(stop)\n</script>\n\n<template>\n  <div ref=\"root\" :class=\"cn('relative isolate overflow-hidden bg-background', props.class)\">\n    <div aria-hidden=\"true\" class=\"pointer-events-none absolute inset-0 -z-10\" :style=\"{ opacity: props.intensity }\">\n      <div\n        v-for=\"(blob, i) in blobs\"\n        :key=\"i\"\n        ref=\"blobEls\"\n        class=\"absolute aspect-square rounded-full will-change-transform\"\n        :style=\"{\n          left: blob.left,\n          top: blob.top,\n          width: blob.size,\n          background: `radial-gradient(circle at center, ${blob.color} 0%, transparent 68%)`,\n          filter: `blur(${props.blur}px)`,\n        }\"\n      />\n    </div>\n    <svg v-if=\"props.grain\" aria-hidden=\"true\" class=\"pointer-events-none absolute inset-0 -z-10 size-full opacity-[0.18] mix-blend-overlay\">\n      <filter :id=\"noiseId\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.85\" numOctaves=\"3\" stitchTiles=\"stitch\" />\n        <feColorMatrix type=\"saturate\" values=\"0\" />\n      </filter>\n      <rect width=\"100%\" height=\"100%\" :filter=\"`url(#${noiseId})`\" />\n    </svg>\n    <slot />\n  </div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/aurora-background/index.ts",
+      "content": "export { default as AuroraBackground } from './AuroraBackground.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "components",
+    "layout-surfaces"
+  ],
+  "type": "registry:ui"
+}

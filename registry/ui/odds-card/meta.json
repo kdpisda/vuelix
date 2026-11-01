@@ -1,0 +1,9 @@
+{
+  "title": "Odds Card",
+  "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}
