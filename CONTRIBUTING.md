@@ -72,6 +72,8 @@ const emit = defineEmits<{ select: [value: string] }>()
   `ring-ring`, `bg-destructive`, `bg-brand`, `text-chart-1…5` / `fill-chart-*` / `stroke-chart-*`.
   - No `dark:` variants and no hard-coded colors in components — tokens already switch with `.dark`.
     (Demos may use Tailwind palette colors / gradients for content imagery.)
+  - **Radius scale is relative to `--radius` (0.75rem)**: `rounded-md` is 10px and `rounded-lg` 12px,
+    so small controls (checkbox boxes, chips < 24px) should use explicit values like `rounded-[6px]`.
   - **No `<style>` blocks.** The npm package ships no component CSS. Use Tailwind arbitrary
     values (`[mask-image:…]`, `[perspective:900px]`) or inline `:style` for one-offs.
 - **Motion** (`motion-v`, the Vue port of Framer Motion; API: `<motion.div :animate :initial :exit

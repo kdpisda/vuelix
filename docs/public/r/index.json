@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 15,
+  "count": 23,
   "items": [
     {
       "slug": "spring-button",
@@ -71,6 +71,156 @@
       ]
     },
     {
+      "slug": "color-swatches",
+      "name": "Color Swatches",
+      "description": "Color picker where a springy ring hops between swatches, with an optional custom color.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/color-swatches",
+      "detail_url": "https://vuelix.dev/r/color-swatches.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/color-swatches.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ColorSwatches"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/color-swatches/ColorSwatches.vue",
+          "raw_url": "https://vuelix.dev/r/raw/color-swatches/ColorSwatches.vue"
+        },
+        {
+          "path": "components/ui/color-swatches/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/color-swatches/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "combobox",
+      "name": "Combobox",
+      "description": "Searchable select whose options glide in and out as you type, with the matched text highlighted.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/combobox",
+      "detail_url": "https://vuelix.dev/r/combobox.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/combobox.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "Combobox"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/combobox/Combobox.vue",
+          "raw_url": "https://vuelix.dev/r/raw/combobox/Combobox.vue"
+        },
+        {
+          "path": "components/ui/combobox/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/combobox/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "floating-input",
+      "name": "Floating Input",
+      "description": "Text field whose label springs up on focus, with an animated focus ring, clear button and sliding error.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/floating-input",
+      "detail_url": "https://vuelix.dev/r/floating-input.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/floating-input.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FloatingInput"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/floating-input/FloatingInput.vue",
+          "raw_url": "https://vuelix.dev/r/raw/floating-input/FloatingInput.vue"
+        },
+        {
+          "path": "components/ui/floating-input/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/floating-input/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "motion-select",
+      "name": "Motion Select",
+      "description": "Single-select dropdown that scales out of its trigger, with a gliding highlight and drawn-in check.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/motion-select",
+      "detail_url": "https://vuelix.dev/r/motion-select.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/motion-select.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MotionSelect"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/motion-select/MotionSelect.vue",
+          "raw_url": "https://vuelix.dev/r/raw/motion-select/MotionSelect.vue"
+        },
+        {
+          "path": "components/ui/motion-select/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/motion-select/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "multi-select",
+      "name": "Multi Select",
+      "description": "Pick many options: choices pop into the field as chips and reflow with layout animation.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/multi-select",
+      "detail_url": "https://vuelix.dev/r/multi-select.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/multi-select.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MultiSelect"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/multi-select/MultiSelect.vue",
+          "raw_url": "https://vuelix.dev/r/raw/multi-select/MultiSelect.vue"
+        },
+        {
+          "path": "components/ui/multi-select/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/multi-select/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "otp-input",
       "name": "OTP Input",
       "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
@@ -97,6 +247,96 @@
         {
           "path": "components/ui/otp-input/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/otp-input/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "radio-cards",
+      "name": "Radio Cards",
+      "description": "Radio group where the selection ring and dot spring between options, as cards or a compact list.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/radio-cards",
+      "detail_url": "https://vuelix.dev/r/radio-cards.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/radio-cards.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "RadioCards"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/radio-cards/RadioCards.vue",
+          "raw_url": "https://vuelix.dev/r/raw/radio-cards/RadioCards.vue"
+        },
+        {
+          "path": "components/ui/radio-cards/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/radio-cards/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "range-slider",
+      "name": "Range Slider",
+      "description": "Single or dual-thumb slider with growing thumbs, a value bubble that follows, and an animated fill.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/range-slider",
+      "detail_url": "https://vuelix.dev/r/range-slider.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/range-slider.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "RangeSlider"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/range-slider/RangeSlider.vue",
+          "raw_url": "https://vuelix.dev/r/raw/range-slider/RangeSlider.vue"
+        },
+        {
+          "path": "components/ui/range-slider/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/range-slider/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "spring-checkbox",
+      "name": "Spring Checkbox",
+      "description": "Checkbox that squishes on press and draws its check mark in, with an indeterminate state.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/spring-checkbox",
+      "detail_url": "https://vuelix.dev/r/spring-checkbox.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-checkbox.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SpringCheckbox"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/spring-checkbox/SpringCheckbox.vue",
+          "raw_url": "https://vuelix.dev/r/raw/spring-checkbox/SpringCheckbox.vue"
+        },
+        {
+          "path": "components/ui/spring-checkbox/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/spring-checkbox/index.ts"
         }
       ]
     },

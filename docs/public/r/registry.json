@@ -54,6 +54,126 @@
       ]
     },
     {
+      "name": "color-swatches",
+      "type": "registry:ui",
+      "title": "Color Swatches",
+      "description": "Color picker where a springy ring hops between swatches, with an optional custom color.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/color-swatches/ColorSwatches.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/color-swatches/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "Searchable select whose options glide in and out as you type, with the matched text highlighted.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/combobox/Combobox.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/combobox/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "floating-input",
+      "type": "registry:ui",
+      "title": "Floating Input",
+      "description": "Text field whose label springs up on focus, with an animated focus ring, clear button and sliding error.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/floating-input/FloatingInput.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/floating-input/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "motion-select",
+      "type": "registry:ui",
+      "title": "Motion Select",
+      "description": "Single-select dropdown that scales out of its trigger, with a gliding highlight and drawn-in check.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/motion-select/MotionSelect.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/motion-select/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:ui",
+      "title": "Multi Select",
+      "description": "Pick many options: choices pop into the field as chips and reflow with layout animation.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/multi-select/MultiSelect.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/multi-select/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "otp-input",
       "type": "registry:ui",
       "title": "OTP Input",
@@ -73,6 +193,78 @@
         },
         {
           "path": "registry/ui/otp-input/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radio-cards",
+      "type": "registry:ui",
+      "title": "Radio Cards",
+      "description": "Radio group where the selection ring and dot spring between options, as cards or a compact list.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/radio-cards/RadioCards.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/radio-cards/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "range-slider",
+      "type": "registry:ui",
+      "title": "Range Slider",
+      "description": "Single or dual-thumb slider with growing thumbs, a value bubble that follows, and an animated fill.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/range-slider/RangeSlider.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/range-slider/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spring-checkbox",
+      "type": "registry:ui",
+      "title": "Spring Checkbox",
+      "description": "Checkbox that squishes on press and draws its check mark in, with an indeterminate state.",
+      "categories": [
+        "components",
+        "inputs-forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-checkbox/SpringCheckbox.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-checkbox/index.ts",
           "type": "registry:ui"
         }
       ]

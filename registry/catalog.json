@@ -30,6 +30,76 @@
     ]
   },
   {
+    "name": "color-swatches",
+    "title": "Color Swatches",
+    "description": "Color picker where a springy ring hops between swatches, with an optional custom color.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/color-swatches",
+    "exports": [
+      "ColorSwatches"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "combobox",
+    "title": "Combobox",
+    "description": "Searchable select whose options glide in and out as you type, with the matched text highlighted.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/combobox",
+    "exports": [
+      "Combobox"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "floating-input",
+    "title": "Floating Input",
+    "description": "Text field whose label springs up on focus, with an animated focus ring, clear button and sliding error.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/floating-input",
+    "exports": [
+      "FloatingInput"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "motion-select",
+    "title": "Motion Select",
+    "description": "Single-select dropdown that scales out of its trigger, with a gliding highlight and drawn-in check.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/motion-select",
+    "exports": [
+      "MotionSelect"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "multi-select",
+    "title": "Multi Select",
+    "description": "Pick many options: choices pop into the field as chips and reflow with layout animation.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/multi-select",
+    "exports": [
+      "MultiSelect"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "otp-input",
     "title": "OTP Input",
     "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
@@ -38,6 +108,48 @@
     "url": "/components/otp-input",
     "exports": [
       "OtpInput"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "radio-cards",
+    "title": "Radio Cards",
+    "description": "Radio group where the selection ring and dot spring between options, as cards or a compact list.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/radio-cards",
+    "exports": [
+      "RadioCards"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "range-slider",
+    "title": "Range Slider",
+    "description": "Single or dual-thumb slider with growing thumbs, a value bubble that follows, and an animated fill.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/range-slider",
+    "exports": [
+      "RangeSlider"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "spring-checkbox",
+    "title": "Spring Checkbox",
+    "description": "Checkbox that squishes on press and draws its check mark in, with an indeterminate state.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/spring-checkbox",
+    "exports": [
+      "SpringCheckbox"
     ],
     "dependencies": [
       "motion-v"

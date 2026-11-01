@@ -3,7 +3,15 @@
 import type { App, Component } from 'vue'
 import { SpringButton } from './ui/spring-button'
 import { ThemeToggle } from './ui/theme-toggle'
+import { ColorSwatches } from './ui/color-swatches'
+import { Combobox } from './ui/combobox'
+import { FloatingInput } from './ui/floating-input'
+import { MotionSelect } from './ui/motion-select'
+import { MultiSelect } from './ui/multi-select'
 import { OtpInput } from './ui/otp-input'
+import { RadioCards } from './ui/radio-cards'
+import { RangeSlider } from './ui/range-slider'
+import { SpringCheckbox } from './ui/spring-checkbox'
 import { SpringSwitch } from './ui/spring-switch'
 import { AnimatedTooltip } from './ui/animated-tooltip'
 import { MorphingDialog } from './ui/morphing-dialog'
@@ -19,7 +27,15 @@ import { Sparkline } from './ui/sparkline'
 
 export * from './ui/spring-button'
 export * from './ui/theme-toggle'
+export * from './ui/color-swatches'
+export * from './ui/combobox'
+export * from './ui/floating-input'
+export * from './ui/motion-select'
+export * from './ui/multi-select'
 export * from './ui/otp-input'
+export * from './ui/radio-cards'
+export * from './ui/range-slider'
+export * from './ui/spring-checkbox'
 export * from './ui/spring-switch'
 export * from './ui/animated-tooltip'
 export * from './ui/morphing-dialog'
@@ -37,7 +53,15 @@ export { cn } from './lib/utils'
 const components: Record<string, Component> = {
   SpringButton,
   ThemeToggle,
+  ColorSwatches,
+  Combobox,
+  FloatingInput,
+  MotionSelect,
+  MultiSelect,
   OtpInput,
+  RadioCards,
+  RangeSlider,
+  SpringCheckbox,
   SpringSwitch,
   AnimatedTooltip,
   MorphingDialog,

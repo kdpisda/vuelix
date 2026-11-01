@@ -1,0 +1,27 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "spring-checkbox",
+  "title": "Spring Checkbox",
+  "description": "Checkbox that squishes on press and draws its check mark in, with an indeterminate state.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/spring-checkbox/SpringCheckbox.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion } from 'motion-v'\nimport { computed, ref, useId, useSlots } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** Shows a dash instead of a check (e.g. a \"select all\" with some items checked). Cleared on click. */\n  indeterminate?: boolean\n  disabled?: boolean\n  /** Renders a hidden input (submitted only while checked). */\n  name?: string\n  /** Value submitted with the form while checked. */\n  value?: string\n  id?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  value: 'on',\n})\n\nconst checked = defineModel<boolean>({ default: false })\nconst emit = defineEmits<{ 'update:indeterminate': [value: boolean] }>()\nconst slots = useSlots()\n\nconst uid = useId()\nconst boxId = computed(() => props.id ?? `vx-checkbox-${uid}`)\nconst pressed = ref(false)\n\nconst state = computed(() => (props.indeterminate ? 'mixed' : checked.value))\nconst on = computed(() => props.indeterminate || checked.value)\n\nconst squish = { type: 'spring', stiffness: 600, damping: 18 } as const\nconst draw = { type: 'spring', stiffness: 260, damping: 26, delay: 0.04 } as const\n\nfunction toggle() {\n  if (props.disabled)\n    return\n  // Indeterminate resolves to checked, like a native checkbox.\n  checked.value = props.indeterminate ? true : !checked.value\n  if (props.indeterminate)\n    emit('update:indeterminate', false)\n}\n</script>\n\n<template>\n  <label\n    :for=\"boxId\"\n    :class=\"cn(\n      'group inline-flex select-none items-center gap-2.5 text-sm',\n      props.disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer',\n      props.class,\n    )\"\n    @pointerdown=\"pressed = !props.disabled\"\n    @pointerup=\"pressed = false\"\n    @pointerleave=\"pressed = false\"\n  >\n    <input v-if=\"props.name && checked\" type=\"hidden\" :name=\"props.name\" :value=\"props.value\">\n    <motion.button\n      :id=\"boxId\"\n      type=\"button\"\n      role=\"checkbox\"\n      :aria-checked=\"state\"\n      :disabled=\"props.disabled\"\n      :class=\"cn(\n        'relative flex size-5 shrink-0 items-center justify-center rounded-[6px] border shadow-xs outline-none transition-colors duration-150 focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed',\n        on ? 'border-primary bg-primary text-primary-foreground' : 'border-input bg-background group-hover:border-ring/70',\n      )\"\n      :animate=\"pressed ? { scaleX: 1.12, scaleY: 0.82 } : { scaleX: 1, scaleY: 1 }\"\n      :transition=\"squish\"\n      @click=\"toggle\"\n    >\n      <svg class=\"size-3.5\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\">\n        <AnimatePresence :initial=\"false\">\n          <motion.path\n            v-if=\"props.indeterminate\"\n            key=\"dash\"\n            d=\"M6 12h12\"\n            :initial=\"{ pathLength: 0, opacity: 0 }\"\n            :animate=\"{ pathLength: 1, opacity: 1 }\"\n            :exit=\"{ pathLength: 0, opacity: 0, transition: { duration: 0.1 } }\"\n            :transition=\"draw\"\n          />\n          <motion.path\n            v-else-if=\"checked\"\n            key=\"check\"\n            d=\"M5 12.5l4.5 4.5L19 7.5\"\n            :initial=\"{ pathLength: 0, opacity: 0 }\"\n            :animate=\"{ pathLength: 1, opacity: 1 }\"\n            :exit=\"{ pathLength: 0, opacity: 0, transition: { duration: 0.1 } }\"\n            :transition=\"draw\"\n          />\n        </AnimatePresence>\n      </svg>\n    </motion.button>\n    <span v-if=\"slots.default\" class=\"leading-5\">\n      <slot />\n    </span>\n  </label>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/spring-checkbox/index.ts",
+      "content": "export { default as SpringCheckbox } from './SpringCheckbox.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "components",
+    "inputs-forms"
+  ],
+  "type": "registry:ui"
+}
