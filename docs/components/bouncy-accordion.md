@@ -1,6 +1,6 @@
 ---
 title: Bouncy Accordion
-description: Accordion panels that open with a bouncy height spring and blur-in content.
+description: "Accordion panels that open with a bouncy height spring and blur-in content."
 ---
 
 <script setup>

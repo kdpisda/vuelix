@@ -33,6 +33,11 @@
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --brand: oklch(0.72 0.17 162);
+  --chart-1: oklch(0.72 0.17 162);
+  --chart-2: oklch(0.68 0.15 230);
+  --chart-3: oklch(0.7 0.17 300);
+  --chart-4: oklch(0.78 0.16 75);
+  --chart-5: oklch(0.66 0.2 20);
 
   /* VitePress brand → vuelix green */
   --vp-c-brand-1: oklch(0.6 0.15 162);
@@ -63,6 +68,11 @@
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
   --brand: oklch(0.78 0.16 162);
+  --chart-1: oklch(0.78 0.16 162);
+  --chart-2: oklch(0.74 0.14 230);
+  --chart-3: oklch(0.76 0.15 300);
+  --chart-4: oklch(0.82 0.15 75);
+  --chart-5: oklch(0.72 0.19 20);
 
   --vp-c-brand-1: oklch(0.78 0.16 162);
   --vp-c-brand-2: oklch(0.72 0.17 162);
@@ -93,6 +103,11 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-brand: var(--brand);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
 }
 
 /* Tailwind preflight must not fight VitePress chrome: keep border color sane */

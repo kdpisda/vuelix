@@ -1,0 +1,9 @@
+{
+  "title": "Spring Switch",
+  "description": "A toggle whose thumb springs across and stretches while pressed.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

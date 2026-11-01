@@ -1,0 +1,9 @@
+{
+  "title": "Morphing Dialog",
+  "description": "A card that morphs into a full dialog using a shared layout transition.",
+  "section": "components",
+  "category": "Overlays",
+  "dependencies": [
+    "motion-v"
+  ]
+}

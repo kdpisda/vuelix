@@ -1,0 +1,9 @@
+{
+  "title": "Sparkline",
+  "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ]
+}

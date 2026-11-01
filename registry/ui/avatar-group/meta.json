@@ -1,0 +1,9 @@
+{
+  "title": "Avatar Group",
+  "description": "Overlapping avatars that spread apart on hover with springy name tags.",
+  "section": "components",
+  "category": "Data Display",
+  "dependencies": [
+    "motion-v"
+  ]
+}

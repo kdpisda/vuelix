@@ -1,40 +1,109 @@
-// Generates registry.json (shadcn-vue registry format) from registry/catalog.json,
-// then runs `shadcn-vue build` to emit installable JSON into docs/public/r.
+// Single source of truth: registry/ui/<name>/meta.json + the component files next to it.
+//
+// Generates (never edit these by hand):
+//   registry/catalog.json   — ordered list of every item (used by the docs site)
+//   registry.json           — shadcn-vue registry manifest
+//   docs/public/r/*.json    — installable registry items (via `shadcn-vue build`)
+//   registry/index.ts       — entry point of the `vuelix` npm package
 import { execSync } from 'node:child_process'
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
-const catalog = JSON.parse(readFileSync(join(root, 'registry/catalog.json'), 'utf8'))
+const uiDir = join(root, 'registry/ui')
 
-const items = catalog.map((item) => {
-  const dir = join(root, 'registry/ui', item.name)
-  const files = readdirSync(dir)
-    .filter(f => /\.(vue|ts)$/.test(f))
-    .sort()
-    .map(f => ({ path: relative(root, join(dir, f)), type: 'registry:ui' }))
-  if (!files.length)
-    throw new Error(`No files for ${item.name}`)
-  return {
-    name: item.name,
-    type: 'registry:ui',
-    title: item.title,
-    description: item.description,
-    categories: [item.category.toLowerCase().replace(/\W+/g, '-')],
-    dependencies: item.dependencies ?? [],
-    registryDependencies: item.registryDependencies ?? [],
-    files,
-  }
-})
+export const SECTIONS = ['components', 'blocks', 'ai', 'charts']
+export const CATEGORY_ORDER = [
+  // components
+  'Buttons & Actions',
+  'Inputs & Forms',
+  'Overlays',
+  'Navigation',
+  'Layout & Surfaces',
+  'Text & Motion',
+  'Feedback',
+  'Data Display',
+  // blocks / ai / charts may use their own categories; unknown ones sort last
+]
 
+const errors = []
+const items = readdirSync(uiDir, { withFileTypes: true })
+  .filter(d => d.isDirectory())
+  .map((d) => {
+    const name = d.name
+    const dir = join(uiDir, name)
+    const metaPath = join(dir, 'meta.json')
+    if (!existsSync(metaPath)) {
+      errors.push(`${name}: missing meta.json`)
+      return null
+    }
+    const meta = JSON.parse(readFileSync(metaPath, 'utf8'))
+    for (const key of ['title', 'description', 'section', 'category'])
+      if (!meta[key]) errors.push(`${name}: meta.json is missing "${key}"`)
+    if (meta.section && !SECTIONS.includes(meta.section))
+      errors.push(`${name}: unknown section "${meta.section}" (use ${SECTIONS.join(', ')})`)
+    if (!existsSync(join(dir, 'index.ts')))
+      errors.push(`${name}: missing index.ts`)
+    const files = readdirSync(dir).filter(f => /\.(vue|ts)$/.test(f)).sort()
+    const index = existsSync(join(dir, 'index.ts')) ? readFileSync(join(dir, 'index.ts'), 'utf8') : ''
+    const components = [...index.matchAll(/default as (\w+)/g)].map(m => m[1])
+    // Value exports from `export { a, b } from` / `export function x` / `export const x` (not types)
+    const values = [
+      ...[...index.matchAll(/^export \{([^}]*)\} from/gm)]
+        .flatMap(m => m[1].split(',').map(s => s.trim()).filter(s => s && !s.startsWith('type ') && !s.startsWith('default as')))
+        .map(s => s.split(/\s+as\s+/).pop()),
+    ]
+    return {
+      name,
+      ...meta,
+      section: meta.section,
+      url: `/${meta.section}/${name}`,
+      components,
+      exports: [...new Set([...components, ...values, ...(meta.exports ?? [])])],
+      files: files.map(f => relative(root, join(dir, f))),
+    }
+  })
+  .filter(Boolean)
+
+if (errors.length) {
+  console.error(`\nRegistry errors:\n  ${errors.join('\n  ')}\n`)
+  process.exit(1)
+}
+
+const rank = c => (CATEGORY_ORDER.includes(c) ? CATEGORY_ORDER.indexOf(c) : CATEGORY_ORDER.length)
+items.sort((a, b) =>
+  SECTIONS.indexOf(a.section) - SECTIONS.indexOf(b.section)
+  || rank(a.category) - rank(b.category)
+  || a.category.localeCompare(b.category)
+  || (a.order ?? 0) - (b.order ?? 0)
+  || a.title.localeCompare(b.title))
+
+// ---------------------------------------------------------------------------
+// registry/catalog.json (docs site)
+// ---------------------------------------------------------------------------
+const catalog = items.map(({ name, title, description, section, category, url, exports, dependencies }) =>
+  ({ name, title, description, section, category, url, exports, dependencies }))
+writeFileSync(join(root, 'registry/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`)
+
+// ---------------------------------------------------------------------------
+// registry.json + docs/public/r (shadcn-vue)
+// ---------------------------------------------------------------------------
 const registry = {
   $schema: 'https://shadcn-vue.com/schema/registry.json',
   name: 'vuelix',
   homepage: 'https://vuelix.dev',
-  items,
+  items: items.map(item => ({
+    name: item.name,
+    type: 'registry:ui',
+    title: item.title,
+    description: item.description,
+    categories: [item.section, item.category.toLowerCase().replace(/\W+/g, '-')],
+    dependencies: item.dependencies ?? [],
+    registryDependencies: item.registryDependencies ?? [],
+    files: item.files.map(path => ({ path, type: 'registry:ui' })),
+  })),
 }
-
 writeFileSync(join(root, 'registry.json'), `${JSON.stringify(registry, null, 2)}\n`)
 console.log(`registry.json: ${items.length} items`)
 
@@ -43,23 +112,13 @@ execSync('npx shadcn-vue build registry.json -o docs/public/r', { cwd: root, std
 // ---------------------------------------------------------------------------
 // registry/index.ts — entry point for the `vuelix` npm package
 // ---------------------------------------------------------------------------
-const imports = []
-const reexports = []
-const names = []
-for (const item of catalog) {
-  const index = readFileSync(join(root, 'registry/ui', item.name, 'index.ts'), 'utf8')
-  const exported = [...index.matchAll(/default as (\w+)/g)].map(m => m[1])
-  names.push(...exported)
-  imports.push(`import { ${exported.join(', ')} } from './ui/${item.name}'`)
-  reexports.push(`export * from './ui/${item.name}'`)
-}
-
+const names = items.flatMap(i => i.components)
 const entry = `// Entry point for the \`vuelix\` npm package.
-// Generated by scripts/build-registry.mjs from registry/catalog.json — do not edit.
+// Generated by scripts/build-registry.mjs from registry/ui/*/meta.json — do not edit.
 import type { App, Component } from 'vue'
-${imports.join('\n')}
+${items.filter(i => i.components.length).map(i => `import { ${i.components.join(', ')} } from './ui/${i.name}'`).join('\n')}
 
-${reexports.join('\n')}
+${items.map(i => `export * from './ui/${i.name}'`).join('\n')}
 export { cn } from './lib/utils'
 
 const components: Record<string, Component> = {

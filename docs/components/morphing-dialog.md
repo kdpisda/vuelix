@@ -1,6 +1,6 @@
 ---
 title: Morphing Dialog
-description: A card that morphs into a full dialog using a shared layout transition.
+description: "A card that morphs into a full dialog using a shared layout transition."
 ---
 
 <script setup>

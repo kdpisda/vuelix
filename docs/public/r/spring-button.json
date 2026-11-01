@@ -21,7 +21,8 @@
     }
   ],
   "categories": [
-    "primitives"
+    "components",
+    "buttons-actions"
   ],
   "type": "registry:ui"
 }

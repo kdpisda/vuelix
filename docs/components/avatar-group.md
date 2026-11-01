@@ -1,6 +1,6 @@
 ---
 title: Avatar Group
-description: Overlapping avatars that spread apart on hover with springy name tags.
+description: "Overlapping avatars that spread apart on hover with springy name tags."
 ---
 
 <script setup>

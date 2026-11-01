@@ -1,6 +1,6 @@
 ---
 title: Number Ticker
-description: Counts up to a value with spring physics when scrolled into view.
+description: "Counts up to a value with spring physics when scrolled into view."
 ---
 
 <script setup>

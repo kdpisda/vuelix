@@ -9,7 +9,8 @@
       "title": "Spring Button",
       "description": "A button with springy hover/press physics and a morphing loading state.",
       "categories": [
-        "primitives"
+        "components",
+        "buttons-actions"
       ],
       "dependencies": [
         "motion-v",
@@ -28,12 +29,38 @@
       ]
     },
     {
-      "name": "animated-tabs",
+      "name": "theme-toggle",
       "type": "registry:ui",
-      "title": "Animated Tabs",
-      "description": "Tabs with a shared-layout indicator that glides between triggers.",
+      "title": "Theme Toggle",
+      "description": "A sun/moon toggle with a rotating swap animation.",
       "categories": [
-        "primitives"
+        "components",
+        "buttons-actions"
+      ],
+      "dependencies": [
+        "motion-v",
+        "@vueuse/core"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/theme-toggle/ThemeToggle.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/theme-toggle/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "otp-input",
+      "type": "registry:ui",
+      "title": "OTP Input",
+      "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
+      "categories": [
+        "components",
+        "inputs-forms"
       ],
       "dependencies": [
         "motion-v"
@@ -41,11 +68,11 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "registry/ui/animated-tabs/AnimatedTabs.vue",
+          "path": "registry/ui/otp-input/OtpInput.vue",
           "type": "registry:ui"
         },
         {
-          "path": "registry/ui/animated-tabs/index.ts",
+          "path": "registry/ui/otp-input/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -56,7 +83,8 @@
       "title": "Spring Switch",
       "description": "A toggle whose thumb springs across and stretches while pressed.",
       "categories": [
-        "primitives"
+        "components",
+        "inputs-forms"
       ],
       "dependencies": [
         "motion-v"
@@ -79,7 +107,8 @@
       "title": "Animated Tooltip",
       "description": "A lightweight tooltip that springs out from any side with a blur-in.",
       "categories": [
-        "primitives"
+        "components",
+        "overlays"
       ],
       "dependencies": [
         "motion-v"
@@ -97,104 +126,13 @@
       ]
     },
     {
-      "name": "bouncy-accordion",
-      "type": "registry:ui",
-      "title": "Bouncy Accordion",
-      "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
-      "categories": [
-        "primitives"
-      ],
-      "dependencies": [
-        "motion-v"
-      ],
-      "registryDependencies": [],
-      "files": [
-        {
-          "path": "registry/ui/bouncy-accordion/BouncyAccordion.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "registry/ui/bouncy-accordion/index.ts",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "number-ticker",
-      "type": "registry:ui",
-      "title": "Number Ticker",
-      "description": "Counts up to a value with spring physics when scrolled into view.",
-      "categories": [
-        "text-numbers"
-      ],
-      "dependencies": [
-        "motion-v"
-      ],
-      "registryDependencies": [],
-      "files": [
-        {
-          "path": "registry/ui/number-ticker/NumberTicker.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "registry/ui/number-ticker/index.ts",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "text-reveal",
-      "type": "registry:ui",
-      "title": "Text Reveal",
-      "description": "Staggered word or character reveal with blur and lift.",
-      "categories": [
-        "text-numbers"
-      ],
-      "dependencies": [
-        "motion-v"
-      ],
-      "registryDependencies": [],
-      "files": [
-        {
-          "path": "registry/ui/text-reveal/TextReveal.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "registry/ui/text-reveal/index.ts",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tilt-card",
-      "type": "registry:ui",
-      "title": "Tilt Card",
-      "description": "A 3D card that tilts toward the pointer with a moving glare.",
-      "categories": [
-        "surfaces"
-      ],
-      "dependencies": [
-        "motion-v"
-      ],
-      "registryDependencies": [],
-      "files": [
-        {
-          "path": "registry/ui/tilt-card/TiltCard.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "registry/ui/tilt-card/index.ts",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
       "name": "morphing-dialog",
       "type": "registry:ui",
       "title": "Morphing Dialog",
       "description": "A card that morphs into a full dialog using a shared layout transition.",
       "categories": [
-        "surfaces"
+        "components",
+        "overlays"
       ],
       "dependencies": [
         "motion-v"
@@ -212,11 +150,36 @@
       ]
     },
     {
+      "name": "animated-tabs",
+      "type": "registry:ui",
+      "title": "Animated Tabs",
+      "description": "Tabs with a shared-layout indicator that glides between triggers.",
+      "categories": [
+        "components",
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/animated-tabs/AnimatedTabs.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/animated-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "dock",
       "type": "registry:ui",
       "title": "Dock",
       "description": "A magnifying dock where icons grow as the pointer approaches.",
       "categories": [
+        "components",
         "navigation"
       ],
       "dependencies": [
@@ -243,25 +206,97 @@
       ]
     },
     {
-      "name": "theme-toggle",
+      "name": "bouncy-accordion",
       "type": "registry:ui",
-      "title": "Theme Toggle",
-      "description": "A sun/moon toggle with a rotating swap animation.",
+      "title": "Bouncy Accordion",
+      "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
       "categories": [
-        "navigation"
+        "components",
+        "layout-surfaces"
       ],
       "dependencies": [
-        "motion-v",
-        "@vueuse/core"
+        "motion-v"
       ],
       "registryDependencies": [],
       "files": [
         {
-          "path": "registry/ui/theme-toggle/ThemeToggle.vue",
+          "path": "registry/ui/bouncy-accordion/BouncyAccordion.vue",
           "type": "registry:ui"
         },
         {
-          "path": "registry/ui/theme-toggle/index.ts",
+          "path": "registry/ui/bouncy-accordion/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tilt-card",
+      "type": "registry:ui",
+      "title": "Tilt Card",
+      "description": "A 3D card that tilts toward the pointer with a moving glare.",
+      "categories": [
+        "components",
+        "layout-surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/tilt-card/TiltCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/tilt-card/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "number-ticker",
+      "type": "registry:ui",
+      "title": "Number Ticker",
+      "description": "Counts up to a value with spring physics when scrolled into view.",
+      "categories": [
+        "components",
+        "text-motion"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/number-ticker/NumberTicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/number-ticker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "text-reveal",
+      "type": "registry:ui",
+      "title": "Text Reveal",
+      "description": "Staggered word or character reveal with blur and lift.",
+      "categories": [
+        "components",
+        "text-motion"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/text-reveal/TextReveal.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/text-reveal/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -272,6 +307,7 @@
       "title": "Toast Stack",
       "description": "Stacked notifications that fan out on hover, with a tiny imperative API.",
       "categories": [
+        "components",
         "feedback"
       ],
       "dependencies": [
@@ -299,6 +335,7 @@
       "title": "Avatar Group",
       "description": "Overlapping avatars that spread apart on hover with springy name tags.",
       "categories": [
+        "components",
         "data-display"
       ],
       "dependencies": [
@@ -322,6 +359,7 @@
       "title": "Sparkline",
       "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
       "categories": [
+        "charts",
         "charts"
       ],
       "dependencies": [
@@ -335,29 +373,6 @@
         },
         {
           "path": "registry/ui/sparkline/index.ts",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "otp-input",
-      "type": "registry:ui",
-      "title": "OTP Input",
-      "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
-      "categories": [
-        "forms"
-      ],
-      "dependencies": [
-        "motion-v"
-      ],
-      "registryDependencies": [],
-      "files": [
-        {
-          "path": "registry/ui/otp-input/OtpInput.vue",
-          "type": "registry:ui"
-        },
-        {
-          "path": "registry/ui/otp-input/index.ts",
           "type": "registry:ui"
         }
       ]

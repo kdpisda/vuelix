@@ -1,0 +1,9 @@
+{
+  "title": "Number Ticker",
+  "description": "Counts up to a value with spring physics when scrolled into view.",
+  "section": "components",
+  "category": "Text & Motion",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 title: Theme Toggle
-description: A sun/moon toggle with a rotating swap animation.
+description: "A sun/moon toggle with a rotating swap animation."
 ---
 
 <script setup>

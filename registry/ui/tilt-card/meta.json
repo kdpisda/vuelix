@@ -1,0 +1,9 @@
+{
+  "title": "Tilt Card",
+  "description": "A 3D card that tilts toward the pointer with a moving glare.",
+  "section": "components",
+  "category": "Layout & Surfaces",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Bouncy Accordion",
+  "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
+  "section": "components",
+  "category": "Layout & Surfaces",
+  "dependencies": [
+    "motion-v"
+  ]
+}

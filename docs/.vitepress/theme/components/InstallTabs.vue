@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import catalog from '../../../../registry/catalog.json'
 import { REGISTRY_URL } from '../../registry'
 
 const props = defineProps<{
@@ -22,7 +23,8 @@ const pascal = computed(() => props.name.split('-').map(p => p[0]!.toUpperCase()
 const command = computed(() => mode.value === 'cli'
   ? `${runner[pm.value]} shadcn-vue@latest add ${REGISTRY_URL}/${props.name}.json`
   : `${adder[pm.value]} vuelix motion-v`)
-const importLine = computed(() => `import { ${(props.imports ?? [pascal.value]).join(', ')} } from 'vuelix'`)
+const exportsFor = computed(() => props.imports ?? catalog.find(c => c.name === props.name)?.exports ?? [pascal.value])
+const importLine = computed(() => `import { ${exportsFor.value.join(', ')} } from 'vuelix'`)
 
 async function copy() {
   await navigator.clipboard.writeText(command.value)

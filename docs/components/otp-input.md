@@ -1,6 +1,6 @@
 ---
 title: OTP Input
-description: One-time-code input with popping digits, a blinking caret and an error shake.
+description: "One-time-code input with popping digits, a blinking caret and an error shake."
 ---
 
 <script setup>

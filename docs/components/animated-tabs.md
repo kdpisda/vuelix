@@ -1,6 +1,6 @@
 ---
 title: Animated Tabs
-description: Tabs with a shared-layout indicator that glides between triggers.
+description: "Tabs with a shared-layout indicator that glides between triggers."
 ---
 
 <script setup>

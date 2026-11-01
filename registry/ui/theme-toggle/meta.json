@@ -1,0 +1,10 @@
+{
+  "title": "Theme Toggle",
+  "description": "A sun/moon toggle with a rotating swap animation.",
+  "section": "components",
+  "category": "Buttons & Actions",
+  "dependencies": [
+    "motion-v",
+    "@vueuse/core"
+  ]
+}

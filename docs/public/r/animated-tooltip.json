@@ -20,7 +20,8 @@
     }
   ],
   "categories": [
-    "primitives"
+    "components",
+    "overlays"
   ],
   "type": "registry:ui"
 }

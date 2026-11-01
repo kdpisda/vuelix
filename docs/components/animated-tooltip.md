@@ -1,6 +1,6 @@
 ---
 title: Animated Tooltip
-description: A lightweight tooltip that springs out from any side with a blur-in.
+description: "A lightweight tooltip that springs out from any side with a blur-in."
 ---
 
 <script setup>

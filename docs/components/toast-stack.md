@@ -1,6 +1,6 @@
 ---
 title: Toast Stack
-description: Stacked notifications that fan out on hover, with a tiny imperative API.
+description: "Stacked notifications that fan out on hover, with a tiny imperative API."
 ---
 
 <script setup>
@@ -22,7 +22,7 @@ Stacked notifications that fan out on hover, with a tiny imperative API.
 
 ## Installation
 
-<InstallTabs name="toast-stack" :imports="['ToastStack', 'toast']" />
+<InstallTabs name="toast-stack" />
 
 :::: details Manual installation
 Install the dependencies:
