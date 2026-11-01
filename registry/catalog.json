@@ -812,6 +812,36 @@
     ]
   },
   {
+    "name": "auth-form",
+    "title": "Auth Form",
+    "description": "Sign-in / sign-up card with a sliding mode switch, floating labels, a live strength meter and a morphing submit.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/auth-form",
+    "exports": [
+      "AuthForm",
+      "passwordStrength"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "availability-picker",
+    "title": "Availability Picker",
+    "description": "Weekly scheduler with day switches, animated time ranges and a drag-to-paint week grid.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/availability-picker",
+    "exports": [
+      "AvailabilityPicker",
+      "dayMinutes"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "card-fan",
     "title": "Card Fan",
     "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
@@ -870,6 +900,34 @@
     ]
   },
   {
+    "name": "feedback-widget",
+    "title": "Feedback Widget",
+    "description": "A floating Feedback pill that morphs into an emoji-rating form, then into a check, then back.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/feedback-widget",
+    "exports": [
+      "FeedbackWidget"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "file-dropzone",
+    "title": "File Dropzone",
+    "description": "Drag-and-drop uploads that swell on hover, with thumbnails, live progress bars, retry and remove.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/file-dropzone",
+    "exports": [
+      "FileDropzone"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "fluid-tabs",
     "title": "Fluid Tabs",
     "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
@@ -878,6 +936,34 @@
     "url": "/blocks/fluid-tabs",
     "exports": [
       "FluidTabs"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "folder-stack",
+    "title": "Folder Stack",
+    "description": "A folder whose flap tips open as its cards fan out, plus a card pile that deals itself into a grid.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/folder-stack",
+    "exports": [
+      "FolderStack"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "masonry-grid",
+    "title": "Masonry Grid",
+    "description": "Shortest-column masonry that springs into place on resize, reveals items on scroll and loads more at the end.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/masonry-grid",
+    "exports": [
+      "MasonryGrid"
     ],
     "dependencies": [
       "motion-v"
@@ -926,6 +1012,20 @@
     ]
   },
   {
+    "name": "notification-center",
+    "title": "Notification Center",
+    "description": "A bell with a live badge and a panel of per-app stacks that fan open, swipe away and clear in a cascade.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/notification-center",
+    "exports": [
+      "NotificationCenter"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "odds-card",
     "title": "Odds Card",
     "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
@@ -962,6 +1062,34 @@
     "url": "/blocks/radial-menu",
     "exports": [
       "RadialMenu"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "swipe-actions",
+    "title": "Swipe Actions",
+    "description": "List rows that swipe to reveal actions, rubber-band, full-swipe to commit and collapse away.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/swipe-actions",
+    "exports": [
+      "SwipeActions"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "token-swap",
+    "title": "Token Swap",
+    "description": "Swap card whose rows trade places on a spinning button, with token search, slippage and a review morph.",
+    "section": "blocks",
+    "category": "Blocks",
+    "url": "/blocks/token-swap",
+    "exports": [
+      "TokenSwap"
     ],
     "dependencies": [
       "motion-v"

@@ -1450,6 +1450,70 @@
       ]
     },
     {
+      "name": "auth-form",
+      "type": "registry:ui",
+      "title": "Auth Form",
+      "description": "Sign-in / sign-up card with a sliding mode switch, floating labels, a live strength meter and a morphing submit.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/auth-form/AuthField.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/auth-form/AuthForm.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/auth-form/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/auth-form/strength.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "availability-picker",
+      "type": "registry:ui",
+      "title": "Availability Picker",
+      "description": "Weekly scheduler with day switches, animated time ranges and a drag-to-paint week grid.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/availability-picker/AvailabilityGrid.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/availability-picker/AvailabilityPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/availability-picker/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/availability-picker/time.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "card-fan",
       "type": "registry:ui",
       "title": "Card Fan",
@@ -1550,6 +1614,54 @@
       ]
     },
     {
+      "name": "feedback-widget",
+      "type": "registry:ui",
+      "title": "Feedback Widget",
+      "description": "A floating Feedback pill that morphs into an emoji-rating form, then into a check, then back.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/feedback-widget/FeedbackWidget.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/feedback-widget/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-dropzone",
+      "type": "registry:ui",
+      "title": "File Dropzone",
+      "description": "Drag-and-drop uploads that swell on hover, with thumbnails, live progress bars, retry and remove.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/file-dropzone/FileDropzone.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/file-dropzone/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "fluid-tabs",
       "type": "registry:ui",
       "title": "Fluid Tabs",
@@ -1569,6 +1681,54 @@
         },
         {
           "path": "registry/ui/fluid-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "folder-stack",
+      "type": "registry:ui",
+      "title": "Folder Stack",
+      "description": "A folder whose flap tips open as its cards fan out, plus a card pile that deals itself into a grid.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/folder-stack/FolderStack.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/folder-stack/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "masonry-grid",
+      "type": "registry:ui",
+      "title": "Masonry Grid",
+      "description": "Shortest-column masonry that springs into place on resize, reveals items on scroll and loads more at the end.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/masonry-grid/MasonryGrid.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/masonry-grid/index.ts",
           "type": "registry:ui"
         }
       ]
@@ -1658,6 +1818,30 @@
       ]
     },
     {
+      "name": "notification-center",
+      "type": "registry:ui",
+      "title": "Notification Center",
+      "description": "A bell with a live badge and a panel of per-app stacks that fan open, swipe away and clear in a cascade.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/notification-center/NotificationCenter.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/notification-center/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "odds-card",
       "type": "registry:ui",
       "title": "Odds Card",
@@ -1729,6 +1913,74 @@
         },
         {
           "path": "registry/ui/radial-menu/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "swipe-actions",
+      "type": "registry:ui",
+      "title": "Swipe Actions",
+      "description": "List rows that swipe to reveal actions, rubber-band, full-swipe to commit and collapse away.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/swipe-actions/SwipeActions.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/swipe-actions/SwipeActionsRow.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/swipe-actions/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/swipe-actions/types.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "token-swap",
+      "type": "registry:ui",
+      "title": "Token Swap",
+      "description": "Swap card whose rows trade places on a spinning button, with token search, slippage and a review morph.",
+      "categories": [
+        "blocks",
+        "blocks"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/token-swap/TokenSwap.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/token-swap/TokenSwapIcon.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/token-swap/TokenSwapPicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/token-swap/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/token-swap/types.ts",
           "type": "registry:ui"
         }
       ]

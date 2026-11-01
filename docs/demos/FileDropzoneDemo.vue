@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { FileDropzoneItem, FileDropzoneUpload } from '@/ui/file-dropzone'
-import { FileDropzone } from '@/ui/file-dropzone'
+import type { FileDropzoneItem, FileDropzoneUpload } from '@/components/ui/file-dropzone'
+import { FileDropzone } from '@/components/ui/file-dropzone'
 import { ref } from 'vue'
 
 const files = ref<FileDropzoneItem[]>([

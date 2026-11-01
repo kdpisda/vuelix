@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { NotificationCenterItem } from '@/ui/notification-center'
-import { NotificationCenter } from '@/ui/notification-center'
+import type { NotificationCenterItem } from '@/components/ui/notification-center'
+import { NotificationCenter } from '@/components/ui/notification-center'
 import { CalendarDays, MessageSquare, Plus, Rocket } from 'lucide-vue-next'
 import { ref } from 'vue'
 

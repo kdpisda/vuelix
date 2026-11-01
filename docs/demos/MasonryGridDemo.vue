@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MasonryGrid } from '@/ui/masonry-grid'
+import { MasonryGrid } from '@/components/ui/masonry-grid'
 import { Heart } from 'lucide-vue-next'
 import { ref } from 'vue'
 

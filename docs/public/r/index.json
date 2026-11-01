@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 105,
+  "count": 114,
   "items": [
     {
       "slug": "cta-button",
@@ -1805,6 +1805,84 @@
       ]
     },
     {
+      "slug": "auth-form",
+      "name": "Auth Form",
+      "description": "Sign-in / sign-up card with a sliding mode switch, floating labels, a live strength meter and a morphing submit.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/auth-form",
+      "detail_url": "https://vuelix.dev/r/auth-form.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/auth-form.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AuthForm",
+          "passwordStrength"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/auth-form/AuthField.vue",
+          "raw_url": "https://vuelix.dev/r/raw/auth-form/AuthField.vue"
+        },
+        {
+          "path": "components/ui/auth-form/AuthForm.vue",
+          "raw_url": "https://vuelix.dev/r/raw/auth-form/AuthForm.vue"
+        },
+        {
+          "path": "components/ui/auth-form/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/auth-form/index.ts"
+        },
+        {
+          "path": "components/ui/auth-form/strength.ts",
+          "raw_url": "https://vuelix.dev/r/raw/auth-form/strength.ts"
+        }
+      ]
+    },
+    {
+      "slug": "availability-picker",
+      "name": "Availability Picker",
+      "description": "Weekly scheduler with day switches, animated time ranges and a drag-to-paint week grid.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/availability-picker",
+      "detail_url": "https://vuelix.dev/r/availability-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/availability-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AvailabilityPicker",
+          "dayMinutes"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/availability-picker/AvailabilityGrid.vue",
+          "raw_url": "https://vuelix.dev/r/raw/availability-picker/AvailabilityGrid.vue"
+        },
+        {
+          "path": "components/ui/availability-picker/AvailabilityPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/availability-picker/AvailabilityPicker.vue"
+        },
+        {
+          "path": "components/ui/availability-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/availability-picker/index.ts"
+        },
+        {
+          "path": "components/ui/availability-picker/time.ts",
+          "raw_url": "https://vuelix.dev/r/raw/availability-picker/time.ts"
+        }
+      ]
+    },
+    {
       "slug": "card-fan",
       "name": "Card Fan",
       "description": "A hand of cards dealt from a deck into a springy fan; hover to lift, click to play, shuffle to re-deal.",
@@ -1931,6 +2009,66 @@
       ]
     },
     {
+      "slug": "feedback-widget",
+      "name": "Feedback Widget",
+      "description": "A floating Feedback pill that morphs into an emoji-rating form, then into a check, then back.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/feedback-widget",
+      "detail_url": "https://vuelix.dev/r/feedback-widget.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/feedback-widget.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FeedbackWidget"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/feedback-widget/FeedbackWidget.vue",
+          "raw_url": "https://vuelix.dev/r/raw/feedback-widget/FeedbackWidget.vue"
+        },
+        {
+          "path": "components/ui/feedback-widget/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/feedback-widget/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "file-dropzone",
+      "name": "File Dropzone",
+      "description": "Drag-and-drop uploads that swell on hover, with thumbnails, live progress bars, retry and remove.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/file-dropzone",
+      "detail_url": "https://vuelix.dev/r/file-dropzone.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-dropzone.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FileDropzone"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/file-dropzone/FileDropzone.vue",
+          "raw_url": "https://vuelix.dev/r/raw/file-dropzone/FileDropzone.vue"
+        },
+        {
+          "path": "components/ui/file-dropzone/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/file-dropzone/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "fluid-tabs",
       "name": "Fluid Tabs",
       "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
@@ -1957,6 +2095,66 @@
         {
           "path": "components/ui/fluid-tabs/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/fluid-tabs/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "folder-stack",
+      "name": "Folder Stack",
+      "description": "A folder whose flap tips open as its cards fan out, plus a card pile that deals itself into a grid.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/folder-stack",
+      "detail_url": "https://vuelix.dev/r/folder-stack.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/folder-stack.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "FolderStack"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/folder-stack/FolderStack.vue",
+          "raw_url": "https://vuelix.dev/r/raw/folder-stack/FolderStack.vue"
+        },
+        {
+          "path": "components/ui/folder-stack/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/folder-stack/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "masonry-grid",
+      "name": "Masonry Grid",
+      "description": "Shortest-column masonry that springs into place on resize, reveals items on scroll and loads more at the end.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/masonry-grid",
+      "detail_url": "https://vuelix.dev/r/masonry-grid.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/masonry-grid.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "MasonryGrid"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/masonry-grid/MasonryGrid.vue",
+          "raw_url": "https://vuelix.dev/r/raw/masonry-grid/MasonryGrid.vue"
+        },
+        {
+          "path": "components/ui/masonry-grid/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/masonry-grid/index.ts"
         }
       ]
     },
@@ -2063,6 +2261,36 @@
       ]
     },
     {
+      "slug": "notification-center",
+      "name": "Notification Center",
+      "description": "A bell with a live badge and a panel of per-app stacks that fan open, swipe away and clear in a cascade.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/notification-center",
+      "detail_url": "https://vuelix.dev/r/notification-center.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/notification-center.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "NotificationCenter"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/notification-center/NotificationCenter.vue",
+          "raw_url": "https://vuelix.dev/r/raw/notification-center/NotificationCenter.vue"
+        },
+        {
+          "path": "components/ui/notification-center/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/notification-center/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "odds-card",
       "name": "Odds Card",
       "description": "A prediction-market card: rolling odds, a live sparkline and Yes/No buttons that morph into an order panel.",
@@ -2153,6 +2381,86 @@
         {
           "path": "components/ui/radial-menu/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/radial-menu/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "swipe-actions",
+      "name": "Swipe Actions",
+      "description": "List rows that swipe to reveal actions, rubber-band, full-swipe to commit and collapse away.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/swipe-actions",
+      "detail_url": "https://vuelix.dev/r/swipe-actions.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/swipe-actions.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SwipeActions"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/swipe-actions/SwipeActions.vue",
+          "raw_url": "https://vuelix.dev/r/raw/swipe-actions/SwipeActions.vue"
+        },
+        {
+          "path": "components/ui/swipe-actions/SwipeActionsRow.vue",
+          "raw_url": "https://vuelix.dev/r/raw/swipe-actions/SwipeActionsRow.vue"
+        },
+        {
+          "path": "components/ui/swipe-actions/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/swipe-actions/index.ts"
+        },
+        {
+          "path": "components/ui/swipe-actions/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/swipe-actions/types.ts"
+        }
+      ]
+    },
+    {
+      "slug": "token-swap",
+      "name": "Token Swap",
+      "description": "Swap card whose rows trade places on a spinning button, with token search, slippage and a review morph.",
+      "section": "blocks",
+      "category": "Blocks",
+      "page_url": "https://vuelix.dev/blocks/token-swap",
+      "detail_url": "https://vuelix.dev/r/token-swap.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/token-swap.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "TokenSwap"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/token-swap/TokenSwap.vue",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/TokenSwap.vue"
+        },
+        {
+          "path": "components/ui/token-swap/TokenSwapIcon.vue",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/TokenSwapIcon.vue"
+        },
+        {
+          "path": "components/ui/token-swap/TokenSwapPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/TokenSwapPicker.vue"
+        },
+        {
+          "path": "components/ui/token-swap/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/index.ts"
+        },
+        {
+          "path": "components/ui/token-swap/types.ts",
+          "raw_url": "https://vuelix.dev/r/raw/token-swap/types.ts"
         }
       ]
     },

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { SwipeAction } from '@/ui/swipe-actions'
-import { SwipeActions } from '@/ui/swipe-actions'
+import type { SwipeAction } from '@/components/ui/swipe-actions'
+import { SwipeActions } from '@/components/ui/swipe-actions'
 import { Archive, Pin, PinOff, RotateCcw, Trash2 } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

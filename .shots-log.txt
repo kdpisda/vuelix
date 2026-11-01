@@ -1,0 +1,6 @@
+✓ [light] /components/ → .shots/components__.light.png
+✓ [light] /blocks/ → .shots/blocks__.light.png
+✓ [light] /ai/ → .shots/ai__.light.png
+✓ [light] /charts/ → .shots/charts__.light.png
+✓ [light] /docs/ → .shots/docs__.light.png
+✓ [light] /docs/installation → .shots/docs__installation.light.png

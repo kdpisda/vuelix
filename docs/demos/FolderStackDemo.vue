@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { FolderStackItem } from '@/ui/folder-stack'
-import { FolderStack } from '@/ui/folder-stack'
+import type { FolderStackItem } from '@/components/ui/folder-stack'
+import { FolderStack } from '@/components/ui/folder-stack'
 import { ref } from 'vue'
 
 const assets: FolderStackItem[] = [

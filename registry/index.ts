@@ -58,17 +58,26 @@ import { MotionBadge } from './ui/motion-badge'
 import { SortableList } from './ui/sortable-list'
 import { Timeline } from './ui/timeline'
 import { ActionBar } from './ui/action-bar'
+import { AuthForm } from './ui/auth-form'
+import { AvailabilityPicker } from './ui/availability-picker'
 import { CardFan } from './ui/card-fan'
 import { CommandPalette } from './ui/command-palette'
 import { DynamicIsland } from './ui/dynamic-island'
 import { ExpandableTabs } from './ui/expandable-tabs'
+import { FeedbackWidget } from './ui/feedback-widget'
+import { FileDropzone } from './ui/file-dropzone'
 import { FluidTabs } from './ui/fluid-tabs'
+import { FolderStack } from './ui/folder-stack'
+import { MasonryGrid } from './ui/masonry-grid'
 import { MatchFixtures } from './ui/match-fixtures'
 import { MorphingSearch } from './ui/morphing-search'
 import { NotFound } from './ui/not-found'
+import { NotificationCenter } from './ui/notification-center'
 import { OddsCard } from './ui/odds-card'
 import { OverflowToolbar } from './ui/overflow-toolbar'
 import { RadialMenu } from './ui/radial-menu'
+import { SwipeActions } from './ui/swipe-actions'
+import { TokenSwap } from './ui/token-swap'
 import { WalletCard } from './ui/wallet-card'
 import { AgentActivity } from './ui/agent-activity'
 import { ApprovalCard } from './ui/approval-card'
@@ -164,17 +173,26 @@ export * from './ui/motion-badge'
 export * from './ui/sortable-list'
 export * from './ui/timeline'
 export * from './ui/action-bar'
+export * from './ui/auth-form'
+export * from './ui/availability-picker'
 export * from './ui/card-fan'
 export * from './ui/command-palette'
 export * from './ui/dynamic-island'
 export * from './ui/expandable-tabs'
+export * from './ui/feedback-widget'
+export * from './ui/file-dropzone'
 export * from './ui/fluid-tabs'
+export * from './ui/folder-stack'
+export * from './ui/masonry-grid'
 export * from './ui/match-fixtures'
 export * from './ui/morphing-search'
 export * from './ui/not-found'
+export * from './ui/notification-center'
 export * from './ui/odds-card'
 export * from './ui/overflow-toolbar'
 export * from './ui/radial-menu'
+export * from './ui/swipe-actions'
+export * from './ui/token-swap'
 export * from './ui/wallet-card'
 export * from './ui/agent-activity'
 export * from './ui/approval-card'
@@ -276,17 +294,26 @@ const components: Record<string, Component> = {
   SortableList,
   Timeline,
   ActionBar,
+  AuthForm,
+  AvailabilityPicker,
   CardFan,
   CommandPalette,
   DynamicIsland,
   ExpandableTabs,
+  FeedbackWidget,
+  FileDropzone,
   FluidTabs,
+  FolderStack,
+  MasonryGrid,
   MatchFixtures,
   MorphingSearch,
   NotFound,
+  NotificationCenter,
   OddsCard,
   OverflowToolbar,
   RadialMenu,
+  SwipeActions,
+  TokenSwap,
   WalletCard,
   AgentActivity,
   ApprovalCard,

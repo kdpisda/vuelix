@@ -1,5 +1,18 @@
 [
   {
+    "version": "0.2.0",
+    "date": "2026-11-01",
+    "title": "100+ components, blocks, AI interfaces and charts",
+    "summary": "vuelix grows from 15 to 114 items across four sections: Components, Blocks, AI and Charts.",
+    "items": [
+      "Components: inputs and pickers (select, combobox, multi-select, date range, wheel, dial, color picker, sliders), overlays (popover, context menu, drawer, bottom sheet, expanding modal), navigation, layout, data display and motion utilities",
+      "Blocks: command palette, dynamic island, morphing search, action bar, notification center, file dropzone, auth form, token swap, wallet card, card fan, radial menu, 404 and more",
+      "AI: chat app, chat message and scroller, prompt input, streaming text, tool calls, approvals, file diffs, citations, agent activity, voice orb and model picker",
+      "Charts: line, bar, donut, funnel, treemap, sankey, candlestick, order book, heat calendar, stacked area, forecast fan and more, all hand-rolled SVG with no chart library",
+      "Cross-component imports now use @/components/ui/<name>, so items with dependencies resolve after a CLI install"
+    ]
+  },
+  {
     "version": "0.1.0",
     "date": "2026-11-01",
     "title": "vuelix is live",

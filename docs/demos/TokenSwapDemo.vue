@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { TokenSwapQuote, TokenSwapToken } from '@/ui/token-swap'
-import { TokenSwap } from '@/ui/token-swap'
+import type { TokenSwapQuote, TokenSwapToken } from '@/components/ui/token-swap'
+import { TokenSwap } from '@/components/ui/token-swap'
 import { ref } from 'vue'
 
 // Mock data — prices in USD.

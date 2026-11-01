@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { AuthFormMode, AuthFormPayload } from '@/ui/auth-form'
-import { AuthForm } from '@/ui/auth-form'
+import type { AuthFormMode, AuthFormPayload } from '@/components/ui/auth-form'
+import { AuthForm } from '@/components/ui/auth-form'
 import { ref } from 'vue'
 
 const mode = ref<AuthFormMode>('sign-up')

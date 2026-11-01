@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { AvailabilityWeek } from '@/ui/availability-picker'
-import { AvailabilityPicker } from '@/ui/availability-picker'
+import type { AvailabilityWeek } from '@/components/ui/availability-picker'
+import { AvailabilityPicker } from '@/components/ui/availability-picker'
 import { ref } from 'vue'
 
 const nineToFive = () => ({ enabled: true, ranges: [{ start: '09:00', end: '12:30' }, { start: '13:30', end: '17:00' }] })

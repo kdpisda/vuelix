@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { FeedbackWidgetPayload } from '@/ui/feedback-widget'
-import { FeedbackWidget } from '@/ui/feedback-widget'
+import type { FeedbackWidgetPayload } from '@/components/ui/feedback-widget'
+import { FeedbackWidget } from '@/components/ui/feedback-widget'
 import { ref } from 'vue'
 
 const last = ref<FeedbackWidgetPayload | null>(null)

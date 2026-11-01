@@ -14,16 +14,21 @@ npx shadcn-vue@latest add https://vuelix.dev/r/dock.json
 
 ## Components
 
+114 items. Browse them all with live demos at [vuelix.dev](https://vuelix.dev).
+
 | Category | Components |
 | --- | --- |
-| Primitives | Spring Button, Animated Tabs, Spring Switch, Animated Tooltip, Bouncy Accordion |
-| Text & Numbers | Number Ticker, Text Reveal |
-| Surfaces | Tilt Card, Morphing Dialog |
-| Navigation | Dock, Theme Toggle |
-| Feedback | Toast Stack |
-| Data Display | Avatar Group |
-| Charts | Sparkline |
-| Forms | OTP Input |
+| Buttons & Actions | CTA Button, Expanding Button, Icon Swap, Spring Button, Theme Toggle |
+| Inputs & Forms | Color Picker, Color Swatches, Combobox, Date Range Picker, Dial Picker, Floating Input, Motion Select, Multi Select, OTP Input, Radio Cards, Range Slider, Spring Checkbox, Spring Switch, Wheel Picker |
+| Overlays | Animated Tooltip, Bottom Sheet, Context Menu, Expanding Modal, Morphing Dialog, Spring Drawer, Spring Popover |
+| Navigation | Animated Tabs, Breadcrumbs, Dock, Pagination, Spring Sidebar, Stepper |
+| Layout & Surfaces | Aspect Ratio, Aurora Background, Bouncy Accordion, Collapsible, Hover Highlight, Orbit Carousel, Spotlight Card, Tilt Card |
+| Text & Motion | Marquee, Number Ticker, Scroll Reveal, Text Reveal |
+| Feedback | Alert, Loader, Pull to Refresh, Toast Stack |
+| Data Display | Avatar Group, Data Table, File Tree, Filmstrip, Lightbox, Motion Badge, Sortable List, Timeline |
+| Blocks | Action Bar, Auth Form, Availability Picker, Card Fan, Command Palette, Dynamic Island, Expandable Tabs, Feedback Widget, File Dropzone, Fluid Tabs, Folder Stack, Masonry Grid, Match Fixtures, Morphing Search, Not Found, Notification Center, Odds Card, Overflow Toolbar, Radial Menu, Swipe Actions, Token Swap, Wallet Card |
+| AI | Agent Activity, Approval Card, Chat App, Chat Message, Chat Scroller, Citations, Code Block, Conversation Sidebar, File Diff, Image Generation, Model Picker, Prompt Input, Streaming Text, Suggestion Chips, Task List, Thinking Indicator, Tool Call, Voice Orb |
+| Charts | Bar Chart, Bump Chart, Candlestick Chart, Depth Heatmap, Donut Chart, Forecast Fan, Funnel Chart, Heat Calendar, Line Chart, Order Book, Returns Calendar, Sankey Chart, Sparkline, Stacked Area, Status History, Treemap, Volume Profile |
 
 ## Repo layout
 
