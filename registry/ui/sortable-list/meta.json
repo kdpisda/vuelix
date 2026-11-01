@@ -1,0 +1,9 @@
+{
+  "title": "Sortable List",
+  "description": "A drag-to-reorder list where rows lift off the page and the rest glide aside; keyboard friendly.",
+  "section": "components",
+  "category": "Data Display",
+  "dependencies": [
+    "motion-v"
+  ]
+}

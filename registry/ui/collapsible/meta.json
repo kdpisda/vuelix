@@ -1,0 +1,9 @@
+{
+  "title": "Collapsible",
+  "description": "A single disclosure whose content springs open to its natural height and blurs into focus.",
+  "section": "components",
+  "category": "Layout & Surfaces",
+  "dependencies": [
+    "motion-v"
+  ]
+}

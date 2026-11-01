@@ -1,0 +1,9 @@
+{
+  "title": "File Tree",
+  "description": "A keyboard-navigable file tree whose folders spring open and whose selection glides between rows.",
+  "section": "components",
+  "category": "Data Display",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Data Table",
+  "description": "A sortable, selectable table whose rows glide into their new order and whose selection bar slides up.",
+  "section": "components",
+  "category": "Data Display",
+  "dependencies": [
+    "motion-v"
+  ]
+}
