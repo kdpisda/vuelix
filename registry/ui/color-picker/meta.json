@@ -1,0 +1,9 @@
+{
+  "title": "Color Picker",
+  "description": "HSV color picker with springy thumbs, hex/RGB/HSL fields, eyedropper, recents and a popover variant.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}
