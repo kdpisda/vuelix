@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "avatar-group",
+  "title": "Avatar Group",
+  "description": "Overlapping avatars that spread apart on hover with springy name tags.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/avatar-group/AvatarGroup.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion } from 'motion-v'\nimport { computed, ref } from 'vue'\nimport { cn } from '@/lib/utils'\n\nexport interface AvatarGroupItem {\n  name: string\n  src?: string\n}\n\nconst props = withDefaults(defineProps<{\n  items: AvatarGroupItem[]\n  /** Avatars shown before collapsing into a \"+N\" bubble. */\n  max?: number\n  size?: number\n  class?: HTMLAttributes['class']\n}>(), {\n  max: 5,\n  size: 40,\n})\n\nconst hovered = ref(false)\nconst active = ref<number | null>(null)\n\nconst shown = computed(() => props.items.slice(0, props.max))\nconst rest = computed(() => props.items.length - shown.value.length)\n\nconst overlap = computed(() => -props.size * 0.3)\n\nfunction initials(name: string) {\n  return name.split(/\\s+/).map(p => p[0]).join('').slice(0, 2).toUpperCase()\n}\n\nconst spring = { type: 'spring', stiffness: 400, damping: 26 } as const\n</script>\n\n<template>\n  <div\n    :class=\"cn('flex items-center', props.class)\"\n    role=\"group\"\n    :aria-label=\"`${props.items.length} people`\"\n    @pointerenter=\"hovered = true\"\n    @pointerleave=\"hovered = false; active = null\"\n  >\n    <motion.div\n      v-for=\"(item, i) in shown\"\n      :key=\"item.name + i\"\n      class=\"relative\"\n      :style=\"{ zIndex: active === i ? 50 : shown.length - i }\"\n      :animate=\"{\n        marginLeft: i === 0 ? 0 : hovered ? 4 : overlap,\n        y: active === i ? -4 : 0,\n        scale: active === i ? 1.12 : 1,\n      }\"\n      :transition=\"spring\"\n      @pointerenter=\"active = i\"\n      @focusin=\"active = i\"\n      @focusout=\"active = null\"\n    >\n      <span\n        tabindex=\"0\"\n        :aria-label=\"item.name\"\n        class=\"flex items-center justify-center overflow-hidden rounded-full bg-muted text-xs font-semibold text-muted-foreground outline-none ring-2 ring-background focus-visible:ring-ring\"\n        :style=\"{ width: `${props.size}px`, height: `${props.size}px` }\"\n      >\n        <img v-if=\"item.src\" :src=\"item.src\" :alt=\"item.name\" class=\"size-full object-cover\" draggable=\"false\">\n        <template v-else>{{ initials(item.name) }}</template>\n      </span>\n      <AnimatePresence>\n        <motion.span\n          v-if=\"active === i\"\n          role=\"tooltip\"\n          class=\"pointer-events-none absolute -top-9 left-1/2 whitespace-nowrap rounded-md bg-foreground px-2 py-1 text-xs font-medium text-background shadow-md\"\n          :initial=\"{ opacity: 0, y: 8, x: '-50%', scale: 0.8, rotate: -6 }\"\n          :animate=\"{ opacity: 1, y: 0, x: '-50%', scale: 1, rotate: 0 }\"\n          :exit=\"{ opacity: 0, y: 4, x: '-50%', scale: 0.9 }\"\n          :transition=\"spring\"\n        >\n          {{ item.name }}\n        </motion.span>\n      </AnimatePresence>\n    </motion.div>\n    <motion.span\n      v-if=\"rest > 0\"\n      class=\"relative flex items-center justify-center rounded-full bg-secondary text-xs font-semibold text-secondary-foreground ring-2 ring-background\"\n      :style=\"{ width: `${props.size}px`, height: `${props.size}px`, zIndex: 0 }\"\n      :animate=\"{ marginLeft: hovered ? 4 : overlap }\"\n      :transition=\"spring\"\n    >\n      +{{ rest }}\n    </motion.span>\n  </div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/avatar-group/index.ts",
+      "content": "export { default as AvatarGroup } from './AvatarGroup.vue'\nexport type { AvatarGroupItem } from './AvatarGroup.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "type": "registry:ui"
+}

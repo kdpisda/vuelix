@@ -1,0 +1,366 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry.json",
+  "name": "veulix",
+  "homepage": "https://github.com/kdpisda/veulix",
+  "items": [
+    {
+      "name": "spring-button",
+      "type": "registry:ui",
+      "title": "Spring Button",
+      "description": "A button with springy hover/press physics and a morphing loading state.",
+      "categories": [
+        "primitives"
+      ],
+      "dependencies": [
+        "motion-v",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-button/SpringButton.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-button/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "animated-tabs",
+      "type": "registry:ui",
+      "title": "Animated Tabs",
+      "description": "Tabs with a shared-layout indicator that glides between triggers.",
+      "categories": [
+        "primitives"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/animated-tabs/AnimatedTabs.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/animated-tabs/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spring-switch",
+      "type": "registry:ui",
+      "title": "Spring Switch",
+      "description": "A toggle whose thumb springs across and stretches while pressed.",
+      "categories": [
+        "primitives"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/spring-switch/SpringSwitch.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/spring-switch/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "animated-tooltip",
+      "type": "registry:ui",
+      "title": "Animated Tooltip",
+      "description": "A lightweight tooltip that springs out from any side with a blur-in.",
+      "categories": [
+        "primitives"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/animated-tooltip/AnimatedTooltip.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/animated-tooltip/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "bouncy-accordion",
+      "type": "registry:ui",
+      "title": "Bouncy Accordion",
+      "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
+      "categories": [
+        "primitives"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/bouncy-accordion/BouncyAccordion.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/bouncy-accordion/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "number-ticker",
+      "type": "registry:ui",
+      "title": "Number Ticker",
+      "description": "Counts up to a value with spring physics when scrolled into view.",
+      "categories": [
+        "text-numbers"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/number-ticker/NumberTicker.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/number-ticker/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "text-reveal",
+      "type": "registry:ui",
+      "title": "Text Reveal",
+      "description": "Staggered word or character reveal with blur and lift.",
+      "categories": [
+        "text-numbers"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/text-reveal/TextReveal.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/text-reveal/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tilt-card",
+      "type": "registry:ui",
+      "title": "Tilt Card",
+      "description": "A 3D card that tilts toward the pointer with a moving glare.",
+      "categories": [
+        "surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/tilt-card/TiltCard.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/tilt-card/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "morphing-dialog",
+      "type": "registry:ui",
+      "title": "Morphing Dialog",
+      "description": "A card that morphs into a full dialog using a shared layout transition.",
+      "categories": [
+        "surfaces"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/morphing-dialog/MorphingDialog.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/morphing-dialog/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dock",
+      "type": "registry:ui",
+      "title": "Dock",
+      "description": "A magnifying dock where icons grow as the pointer approaches.",
+      "categories": [
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/dock/Dock.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/dock/DockItem.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/dock/context.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/dock/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "theme-toggle",
+      "type": "registry:ui",
+      "title": "Theme Toggle",
+      "description": "A sun/moon toggle with a rotating swap animation.",
+      "categories": [
+        "navigation"
+      ],
+      "dependencies": [
+        "motion-v",
+        "@vueuse/core"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/theme-toggle/ThemeToggle.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/theme-toggle/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toast-stack",
+      "type": "registry:ui",
+      "title": "Toast Stack",
+      "description": "Stacked notifications that fan out on hover, with a tiny imperative API.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/toast-stack/ToastStack.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/toast-stack/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/toast-stack/use-toast.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:ui",
+      "title": "Avatar Group",
+      "description": "Overlapping avatars that spread apart on hover with springy name tags.",
+      "categories": [
+        "data-display"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/avatar-group/AvatarGroup.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/avatar-group/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sparkline",
+      "type": "registry:ui",
+      "title": "Sparkline",
+      "description": "A tiny trend line that draws itself in, with a smooth monotone curve.",
+      "categories": [
+        "charts"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/sparkline/Sparkline.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/sparkline/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "otp-input",
+      "type": "registry:ui",
+      "title": "OTP Input",
+      "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
+      "categories": [
+        "forms"
+      ],
+      "dependencies": [
+        "motion-v"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ui/otp-input/OtpInput.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/ui/otp-input/index.ts",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}

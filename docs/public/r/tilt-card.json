@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "tilt-card",
+  "title": "Tilt Card",
+  "description": "A 3D card that tilts toward the pointer with a moving glare.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/tilt-card/TiltCard.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { motion, useMotionTemplate, useMotionValue, useReducedMotion, useSpring, useTransform } from 'motion-v'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** Maximum tilt in degrees. */\n  maxTilt?: number\n  /** Show a moving light reflection. */\n  glare?: boolean\n  scale?: number\n  class?: HTMLAttributes['class']\n}>(), {\n  maxTilt: 12,\n  glare: true,\n  scale: 1.02,\n})\n\nconst reduced = useReducedMotion()\n\n// Pointer position normalised to -0.5 … 0.5\nconst px = useMotionValue(0)\nconst py = useMotionValue(0)\nconst springCfg = { stiffness: 260, damping: 22, mass: 0.6 }\nconst sx = useSpring(px, springCfg)\nconst sy = useSpring(py, springCfg)\n\nconst rotateX = useTransform(sy, v => (reduced.value ? 0 : -v * props.maxTilt * 2))\nconst rotateY = useTransform(sx, v => (reduced.value ? 0 : v * props.maxTilt * 2))\nconst glareX = useTransform(sx, v => `${(v + 0.5) * 100}%`)\nconst glareY = useTransform(sy, v => `${(v + 0.5) * 100}%`)\nconst glareBg = useMotionTemplate`radial-gradient(circle at ${glareX} ${glareY}, rgb(255 255 255 / 0.35), transparent 55%)`\n\nfunction onMove(e: PointerEvent) {\n  const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()\n  px.set((e.clientX - rect.left) / rect.width - 0.5)\n  py.set((e.clientY - rect.top) / rect.height - 0.5)\n}\nfunction onLeave() {\n  px.set(0)\n  py.set(0)\n}\n</script>\n\n<template>\n  <motion.div\n    :class=\"cn('group relative overflow-hidden rounded-2xl border bg-card text-card-foreground shadow-sm [transform-style:preserve-3d]', props.class)\"\n    :style=\"{ rotateX, rotateY, transformPerspective: 900 }\"\n    :while-hover=\"{ scale: props.scale }\"\n    :transition=\"{ type: 'spring', stiffness: 300, damping: 24 }\"\n    @pointermove=\"onMove\"\n    @pointerleave=\"onLeave\"\n  >\n    <slot />\n    <motion.div\n      v-if=\"props.glare\"\n      aria-hidden=\"true\"\n      class=\"pointer-events-none absolute inset-0 opacity-0 mix-blend-overlay transition-opacity duration-300 group-hover:opacity-100\"\n      :style=\"{ background: glareBg }\"\n    />\n  </motion.div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/tilt-card/index.ts",
+      "content": "export { default as TiltCard } from './TiltCard.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "surfaces"
+  ],
+  "type": "registry:ui"
+}

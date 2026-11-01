@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "spring-switch",
+  "title": "Spring Switch",
+  "description": "A toggle whose thumb springs across and stretches while pressed.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/spring-switch/SpringSwitch.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { motion } from 'motion-v'\nimport { ref } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<{\n  disabled?: boolean\n  id?: string\n  name?: string\n  class?: HTMLAttributes['class']\n}>()\n\nconst checked = defineModel<boolean>({ default: false })\nconst pressed = ref(false)\n\nconst spring = { type: 'spring', stiffness: 700, damping: 32 } as const\n</script>\n\n<template>\n  <button\n    :id=\"props.id\"\n    type=\"button\"\n    role=\"switch\"\n    :aria-checked=\"checked\"\n    :disabled=\"props.disabled\"\n    :class=\"cn(\n      'relative inline-flex h-6 w-11 shrink-0 items-center rounded-full p-0.5 outline-none transition-colors duration-200 focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50',\n      checked ? 'justify-end bg-primary' : 'justify-start bg-input',\n      props.class,\n    )\"\n    @click=\"checked = !checked\"\n    @pointerdown=\"pressed = true\"\n    @pointerup=\"pressed = false\"\n    @pointerleave=\"pressed = false\"\n  >\n    <input v-if=\"props.name\" type=\"hidden\" :name=\"props.name\" :value=\"checked ? 'on' : 'off'\">\n    <motion.span\n      layout\n      aria-hidden=\"true\"\n      class=\"block h-5 rounded-full bg-background shadow-md ring-0\"\n      :animate=\"{ width: pressed ? 26 : 20 }\"\n      :transition=\"spring\"\n    />\n  </button>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/spring-switch/index.ts",
+      "content": "export { default as SpringSwitch } from './SpringSwitch.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "primitives"
+  ],
+  "type": "registry:ui"
+}

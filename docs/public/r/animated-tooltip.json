@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "animated-tooltip",
+  "title": "Animated Tooltip",
+  "description": "A lightweight tooltip that springs out from any side with a blur-in.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/animated-tooltip/AnimatedTooltip.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion } from 'motion-v'\nimport { computed, onBeforeUnmount, ref, useId } from 'vue'\nimport { cn } from '@/lib/utils'\n\ntype Side = 'top' | 'bottom' | 'left' | 'right'\n\nconst props = withDefaults(defineProps<{\n  content?: string\n  side?: Side\n  delay?: number\n  class?: HTMLAttributes['class']\n}>(), {\n  side: 'top',\n  delay: 120,\n})\n\nconst open = ref(false)\nconst tooltipId = `vx-tooltip-${useId()}`\nlet timer: ReturnType<typeof setTimeout> | undefined\n\nfunction show() {\n  clearTimeout(timer)\n  timer = setTimeout(() => (open.value = true), props.delay)\n}\nfunction hide() {\n  clearTimeout(timer)\n  open.value = false\n}\nonBeforeUnmount(() => clearTimeout(timer))\n\nconst placement: Record<Side, string> = {\n  top: 'bottom-full left-1/2 mb-2 -translate-x-1/2 origin-bottom',\n  bottom: 'top-full left-1/2 mt-2 -translate-x-1/2 origin-top',\n  left: 'right-full top-1/2 mr-2 -translate-y-1/2 origin-right',\n  right: 'left-full top-1/2 ml-2 -translate-y-1/2 origin-left',\n}\n\nconst offset = computed(() => {\n  const d = 6\n  return {\n    top: { y: d },\n    bottom: { y: -d },\n    left: { x: d },\n    right: { x: -d },\n  }[props.side]\n})\n</script>\n\n<template>\n  <span\n    class=\"relative inline-flex\"\n    :aria-describedby=\"open ? tooltipId : undefined\"\n    @pointerenter=\"show\"\n    @pointerleave=\"hide\"\n    @focusin=\"show\"\n    @focusout=\"hide\"\n    @keydown.esc=\"hide\"\n  >\n    <slot />\n    <AnimatePresence>\n      <motion.span\n        v-if=\"open\"\n        :id=\"tooltipId\"\n        role=\"tooltip\"\n        :class=\"cn(\n          'pointer-events-none absolute z-50 whitespace-nowrap rounded-md bg-foreground px-2.5 py-1 text-xs font-medium text-background shadow-lg',\n          placement[props.side],\n          props.class,\n        )\"\n        :initial=\"{ opacity: 0, scale: 0.85, filter: 'blur(2px)', ...offset }\"\n        :animate=\"{ opacity: 1, scale: 1, filter: 'blur(0px)', x: 0, y: 0 }\"\n        :exit=\"{ opacity: 0, scale: 0.9, filter: 'blur(2px)', ...offset }\"\n        :transition=\"{ type: 'spring', stiffness: 520, damping: 30 }\"\n      >\n        <slot name=\"content\">{{ props.content }}</slot>\n      </motion.span>\n    </AnimatePresence>\n  </span>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/animated-tooltip/index.ts",
+      "content": "export { default as AnimatedTooltip } from './AnimatedTooltip.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "primitives"
+  ],
+  "type": "registry:ui"
+}

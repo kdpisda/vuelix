@@ -1,0 +1,17 @@
+[
+  { "name": "spring-button", "title": "Spring Button", "category": "Primitives", "description": "A button with springy hover/press physics and a morphing loading state.", "dependencies": ["motion-v", "class-variance-authority"] },
+  { "name": "animated-tabs", "title": "Animated Tabs", "category": "Primitives", "description": "Tabs with a shared-layout indicator that glides between triggers.", "dependencies": ["motion-v"] },
+  { "name": "spring-switch", "title": "Spring Switch", "category": "Primitives", "description": "A toggle whose thumb springs across and stretches while pressed.", "dependencies": ["motion-v"] },
+  { "name": "animated-tooltip", "title": "Animated Tooltip", "category": "Primitives", "description": "A lightweight tooltip that springs out from any side with a blur-in.", "dependencies": ["motion-v"] },
+  { "name": "bouncy-accordion", "title": "Bouncy Accordion", "category": "Primitives", "description": "Accordion panels that open with a bouncy height spring and blur-in content.", "dependencies": ["motion-v"] },
+  { "name": "number-ticker", "title": "Number Ticker", "category": "Text & Numbers", "description": "Counts up to a value with spring physics when scrolled into view.", "dependencies": ["motion-v"] },
+  { "name": "text-reveal", "title": "Text Reveal", "category": "Text & Numbers", "description": "Staggered word or character reveal with blur and lift.", "dependencies": ["motion-v"] },
+  { "name": "tilt-card", "title": "Tilt Card", "category": "Surfaces", "description": "A 3D card that tilts toward the pointer with a moving glare.", "dependencies": ["motion-v"] },
+  { "name": "morphing-dialog", "title": "Morphing Dialog", "category": "Surfaces", "description": "A card that morphs into a full dialog using a shared layout transition.", "dependencies": ["motion-v"] },
+  { "name": "dock", "title": "Dock", "category": "Navigation", "description": "A magnifying dock where icons grow as the pointer approaches.", "dependencies": ["motion-v"] },
+  { "name": "theme-toggle", "title": "Theme Toggle", "category": "Navigation", "description": "A sun/moon toggle with a rotating swap animation.", "dependencies": ["motion-v", "@vueuse/core"] },
+  { "name": "toast-stack", "title": "Toast Stack", "category": "Feedback", "description": "Stacked notifications that fan out on hover, with a tiny imperative API.", "dependencies": ["motion-v"] },
+  { "name": "avatar-group", "title": "Avatar Group", "category": "Data Display", "description": "Overlapping avatars that spread apart on hover with springy name tags.", "dependencies": ["motion-v"] },
+  { "name": "sparkline", "title": "Sparkline", "category": "Charts", "description": "A tiny trend line that draws itself in, with a smooth monotone curve.", "dependencies": ["motion-v"] },
+  { "name": "otp-input", "title": "OTP Input", "category": "Forms", "description": "One-time-code input with popping digits, a blinking caret and an error shake.", "dependencies": ["motion-v"] }
+]

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "bouncy-accordion",
+  "title": "Bouncy Accordion",
+  "description": "Accordion panels that open with a bouncy height spring and blur-in content.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/bouncy-accordion/BouncyAccordion.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion } from 'motion-v'\nimport { useId } from 'vue'\nimport { cn } from '@/lib/utils'\n\nexport interface BouncyAccordionItem {\n  value: string\n  title: string\n  content?: string\n}\n\nconst props = withDefaults(defineProps<{\n  items: BouncyAccordionItem[]\n  /** Allow several panels open at once. */\n  multiple?: boolean\n  class?: HTMLAttributes['class']\n}>(), {\n  multiple: false,\n})\n\nconst open = defineModel<string[]>({ default: () => [] })\nconst uid = useId()\n\nfunction toggle(value: string) {\n  const isOpen = open.value.includes(value)\n  if (props.multiple)\n    open.value = isOpen ? open.value.filter(v => v !== value) : [...open.value, value]\n  else\n    open.value = isOpen ? [] : [value]\n}\n\nconst bounce = { type: 'spring', stiffness: 380, damping: 22, mass: 0.8 } as const\n</script>\n\n<template>\n  <div :class=\"cn('flex w-full flex-col gap-2', props.class)\">\n    <motion.div\n      v-for=\"item in props.items\"\n      :key=\"item.value\"\n      layout\n      :transition=\"bounce\"\n      :class=\"cn(\n        'overflow-hidden rounded-xl border bg-card text-card-foreground transition-shadow',\n        open.includes(item.value) && 'shadow-md',\n      )\"\n    >\n      <h3 class=\"m-0 text-base\">\n        <button\n          :id=\"`${uid}-${item.value}-trigger`\"\n          type=\"button\"\n          class=\"flex w-full items-center justify-between gap-4 px-4 py-3.5 text-left text-sm font-medium outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50\"\n          :aria-expanded=\"open.includes(item.value)\"\n          :aria-controls=\"`${uid}-${item.value}-panel`\"\n          @click=\"toggle(item.value)\"\n        >\n          <slot name=\"title\" :item=\"item\">{{ item.title }}</slot>\n          <motion.svg\n            class=\"size-4 shrink-0 text-muted-foreground\"\n            viewBox=\"0 0 24 24\"\n            fill=\"none\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n            stroke-linecap=\"round\"\n            stroke-linejoin=\"round\"\n            aria-hidden=\"true\"\n            :animate=\"{ rotate: open.includes(item.value) ? 180 : 0 }\"\n            :transition=\"bounce\"\n          >\n            <path d=\"m6 9 6 6 6-6\" />\n          </motion.svg>\n        </button>\n      </h3>\n      <AnimatePresence :initial=\"false\">\n        <motion.div\n          v-if=\"open.includes(item.value)\"\n          :id=\"`${uid}-${item.value}-panel`\"\n          role=\"region\"\n          :aria-labelledby=\"`${uid}-${item.value}-trigger`\"\n          :initial=\"{ height: 0, opacity: 0 }\"\n          :animate=\"{ height: 'auto', opacity: 1 }\"\n          :exit=\"{ height: 0, opacity: 0 }\"\n          :transition=\"bounce\"\n        >\n          <motion.div\n            class=\"px-4 pb-4 text-sm text-muted-foreground\"\n            :initial=\"{ y: -8, filter: 'blur(4px)' }\"\n            :animate=\"{ y: 0, filter: 'blur(0px)' }\"\n            :exit=\"{ y: -8, filter: 'blur(4px)' }\"\n            :transition=\"bounce\"\n          >\n            <slot name=\"content\" :item=\"item\">{{ item.content }}</slot>\n          </motion.div>\n        </motion.div>\n      </AnimatePresence>\n    </motion.div>\n  </div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/bouncy-accordion/index.ts",
+      "content": "export { default as BouncyAccordion } from './BouncyAccordion.vue'\nexport type { BouncyAccordionItem } from './BouncyAccordion.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "primitives"
+  ],
+  "type": "registry:ui"
+}

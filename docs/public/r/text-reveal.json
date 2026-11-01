@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "text-reveal",
+  "title": "Text Reveal",
+  "description": "Staggered word or character reveal with blur and lift.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/text-reveal/TextReveal.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { motion } from 'motion-v'\nimport { computed } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  text: string\n  /** Split into words or individual characters. */\n  by?: 'word' | 'char'\n  as?: string\n  /** Seconds between each piece. */\n  stagger?: number\n  delay?: number\n  /** Replay every time it enters the viewport. */\n  repeat?: boolean\n  class?: HTMLAttributes['class']\n}>(), {\n  by: 'word',\n  as: 'p',\n  stagger: 0.06,\n  delay: 0,\n  repeat: false,\n})\n\n// Keep words together when splitting by character so lines never break mid-word.\nconst words = computed(() => props.text.split(/(\\s+)/).filter(Boolean))\n\nconst container = computed(() => ({\n  hidden: {},\n  visible: { transition: { staggerChildren: props.stagger, delayChildren: props.delay } },\n}))\n\nconst piece = {\n  hidden: { opacity: 0, y: '0.4em', filter: 'blur(8px)' },\n  visible: {\n    opacity: 1,\n    y: '0em',\n    filter: 'blur(0px)',\n    transition: { type: 'spring', stiffness: 260, damping: 24 },\n  },\n}\n</script>\n\n<template>\n  <motion.div\n    :as=\"props.as\"\n    :class=\"cn(props.class)\"\n    :aria-label=\"props.text\"\n    initial=\"hidden\"\n    while-in-view=\"visible\"\n    :in-view-options=\"{ once: !props.repeat, amount: 0.4 }\"\n    :variants=\"container\"\n  >\n    <template v-for=\"(word, w) in words\" :key=\"w\">\n      <span v-if=\"/^\\s+$/.test(word)\" aria-hidden=\"true\">{{ word }}</span>\n      <motion.span\n        v-else-if=\"props.by === 'word'\"\n        aria-hidden=\"true\"\n        class=\"inline-block will-change-transform\"\n        :variants=\"piece\"\n      >\n        {{ word }}\n      </motion.span>\n      <span v-else aria-hidden=\"true\" class=\"inline-block whitespace-nowrap\">\n        <motion.span\n          v-for=\"(char, c) in word\"\n          :key=\"c\"\n          class=\"inline-block will-change-transform\"\n          :variants=\"piece\"\n        >{{ char }}</motion.span>\n      </span>\n    </template>\n  </motion.div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/text-reveal/index.ts",
+      "content": "export { default as TextReveal } from './TextReveal.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "text-numbers"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,59 @@
+# veulix
+
+**Animated, copy-paste components for Vue 3 & Nuxt.** Built on Tailwind CSS v4 and [Motion for Vue](https://motion.dev/docs/vue) (`motion-v`), distributed as a [shadcn-vue](https://shadcn-vue.com) registry.
+
+You don't install veulix as a dependency. You pull each component's **source** into your project and own it.
+
+```bash
+npx shadcn-vue@latest add https://raw.githubusercontent.com/kdpisda/veulix/main/docs/public/r/dock.json
+```
+
+## Components
+
+| Category | Components |
+| --- | --- |
+| Primitives | Spring Button, Animated Tabs, Spring Switch, Animated Tooltip, Bouncy Accordion |
+| Text & Numbers | Number Ticker, Text Reveal |
+| Surfaces | Tilt Card, Morphing Dialog |
+| Navigation | Dock, Theme Toggle |
+| Feedback | Toast Stack |
+| Data Display | Avatar Group |
+| Charts | Sparkline |
+| Forms | OTP Input |
+
+## Repo layout
+
+```
+registry/
+  catalog.json          # name, title, category, npm deps for every component
+  lib/utils.ts          # cn() helper (same as shadcn-vue)
+  ui/<name>/*.vue|ts    # component source (what users receive)
+docs/                   # VitePress docs site
+  .vitepress/           # config, theme, ComponentPreview, InstallTabs
+  demos/                # one live demo per component
+  components/<name>.md  # component pages
+  public/r/*.json       # built registry (generated)
+scripts/build-registry.mjs  # catalog.json → registry.json → docs/public/r
+```
+
+## Development
+
+```bash
+pnpm install
+pnpm dev              # docs at http://localhost:5173
+pnpm typecheck        # vue-tsc over registry + demos
+pnpm build            # builds the registry JSON, then the docs site
+```
+
+### Adding a component
+
+1. Create `registry/ui/<name>/` with the `.vue` file(s) and an `index.ts` barrel. Import helpers from `@/lib/utils`.
+2. Add an entry to `registry/catalog.json` (name, title, category, description, npm `dependencies`).
+3. Add a demo in `docs/demos/<Name>Demo.vue` and a page in `docs/components/<name>.md` (copy an existing one).
+4. Run `pnpm build` and commit the regenerated `registry.json` + `docs/public/r/*.json`.
+
+Use the shadcn-vue token names (`bg-primary`, `text-muted-foreground`, `border`, …) so components inherit the user's theme.
+
+## License
+
+MIT

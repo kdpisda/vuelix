@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "animated-tabs",
+  "title": "Animated Tabs",
+  "description": "Tabs with a shared-layout indicator that glides between triggers.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/animated-tabs/AnimatedTabs.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { motion } from 'motion-v'\nimport { useId } from 'vue'\nimport { cn } from '@/lib/utils'\n\nexport interface AnimatedTabItem {\n  value: string\n  label: string\n  disabled?: boolean\n}\n\nconst props = withDefaults(defineProps<{\n  items: AnimatedTabItem[]\n  variant?: 'pill' | 'underline'\n  class?: HTMLAttributes['class']\n}>(), {\n  variant: 'pill',\n})\n\nconst model = defineModel<string>()\nif (model.value === undefined && props.items.length)\n  model.value = props.items[0]!.value\n\n// Unique per instance so several tab bars on one page don't share an indicator.\nconst indicatorId = `vx-tabs-${useId()}`\n\nfunction onKeydown(e: KeyboardEvent, index: number) {\n  const enabled = props.items.map((item, i) => ({ item, i })).filter(({ item }) => !item.disabled)\n  const pos = enabled.findIndex(({ i }) => i === index)\n  let next: number | undefined\n  if (e.key === 'ArrowRight')\n    next = enabled[(pos + 1) % enabled.length]?.i\n  else if (e.key === 'ArrowLeft')\n    next = enabled[(pos - 1 + enabled.length) % enabled.length]?.i\n  else if (e.key === 'Home')\n    next = enabled[0]?.i\n  else if (e.key === 'End')\n    next = enabled.at(-1)?.i\n  if (next === undefined)\n    return\n  e.preventDefault()\n  model.value = props.items[next]!.value\n  const list = (e.currentTarget as HTMLElement).parentElement\n  ;(list?.children[next] as HTMLElement | undefined)?.focus()\n}\n</script>\n\n<template>\n  <div\n    role=\"tablist\"\n    :class=\"cn(\n      'relative inline-flex items-center',\n      props.variant === 'pill' ? 'gap-1 rounded-xl bg-muted p-1' : 'gap-4 border-b',\n      props.class,\n    )\"\n  >\n    <button\n      v-for=\"(item, index) in props.items\"\n      :key=\"item.value\"\n      type=\"button\"\n      role=\"tab\"\n      :aria-selected=\"model === item.value\"\n      :tabindex=\"model === item.value ? 0 : -1\"\n      :disabled=\"item.disabled\"\n      :class=\"cn(\n        'relative z-0 rounded-lg text-sm font-medium outline-none transition-colors focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50',\n        props.variant === 'pill' ? 'px-3 py-1.5' : 'px-1 pb-2.5 pt-1',\n        model === item.value ? 'text-foreground' : 'text-muted-foreground hover:text-foreground',\n      )\"\n      @click=\"model = item.value\"\n      @keydown=\"onKeydown($event, index)\"\n    >\n      <motion.span\n        v-if=\"model === item.value\"\n        :layout-id=\"indicatorId\"\n        aria-hidden=\"true\"\n        :class=\"cn(\n          'absolute -z-10',\n          props.variant === 'pill'\n            ? 'inset-0 rounded-lg bg-background shadow-sm ring-1 ring-border/60'\n            : 'inset-x-0 -bottom-px h-0.5 rounded-full bg-foreground',\n        )\"\n        :transition=\"{ type: 'spring', stiffness: 420, damping: 34 }\"\n      />\n      <slot name=\"item\" :item=\"item\" :active=\"model === item.value\">\n        {{ item.label }}\n      </slot>\n    </button>\n  </div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/animated-tabs/index.ts",
+      "content": "export { default as AnimatedTabs } from './AnimatedTabs.vue'\nexport type { AnimatedTabItem } from './AnimatedTabs.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "primitives"
+  ],
+  "type": "registry:ui"
+}

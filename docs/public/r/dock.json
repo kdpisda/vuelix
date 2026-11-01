@@ -1,0 +1,36 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "dock",
+  "title": "Dock",
+  "description": "A magnifying dock where icons grow as the pointer approaches.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/dock/Dock.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { motion, useMotionValue } from 'motion-v'\nimport { provide } from 'vue'\nimport { cn } from '@/lib/utils'\nimport { DOCK_KEY } from './context'\n\nconst props = withDefaults(defineProps<{\n  /** Resting icon size in px. */\n  baseSize?: number\n  /** Icon size directly under the pointer in px. */\n  magnification?: number\n  /** Pointer distance (px) over which neighbours grow. */\n  distance?: number\n  class?: HTMLAttributes['class']\n}>(), {\n  baseSize: 40,\n  magnification: 64,\n  distance: 140,\n})\n\nconst mouseX = useMotionValue(Number.POSITIVE_INFINITY)\n\nprovide(DOCK_KEY, {\n  mouseX,\n  baseSize: props.baseSize,\n  magnification: props.magnification,\n  distance: props.distance,\n})\n</script>\n\n<template>\n  <motion.div\n    role=\"toolbar\"\n    aria-orientation=\"horizontal\"\n    :class=\"cn(\n      'mx-auto flex w-max items-end gap-2 rounded-2xl border bg-background/70 px-2.5 pb-2.5 shadow-lg backdrop-blur-md',\n      props.class,\n    )\"\n    :style=\"{ height: `${props.baseSize + 20}px` }\"\n    @pointermove=\"mouseX.set($event.pageX)\"\n    @pointerleave=\"mouseX.set(Number.POSITIVE_INFINITY)\"\n  >\n    <slot />\n  </motion.div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/dock/DockItem.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion, useDomRef, useSpring, useTransform } from 'motion-v'\nimport { inject, ref } from 'vue'\nimport { cn } from '@/lib/utils'\nimport { DOCK_KEY } from './context'\n\nconst props = defineProps<{\n  label: string\n  href?: string\n  active?: boolean\n  class?: HTMLAttributes['class']\n}>()\n\nconst emit = defineEmits<{ click: [MouseEvent] }>()\n\nconst ctx = inject(DOCK_KEY)\nif (!ctx)\n  throw new Error('<DockItem> must be used inside <Dock>')\n\nconst el = useDomRef()\nconst hovered = ref(false)\n\nconst offset = useTransform(ctx.mouseX, (x) => {\n  const rect = (el.value as HTMLElement | null)?.getBoundingClientRect()\n  if (!rect || !Number.isFinite(x))\n    return Number.POSITIVE_INFINITY\n  return x - (rect.left + window.scrollX) - rect.width / 2\n})\n\nconst target = useTransform(\n  offset,\n  [-ctx.distance, 0, ctx.distance],\n  [ctx.baseSize, ctx.magnification, ctx.baseSize],\n  { clamp: true },\n)\nconst size = useSpring(target, { mass: 0.1, stiffness: 160, damping: 13 })\n</script>\n\n<template>\n  <motion.div\n    ref=\"el\"\n    :as=\"props.href ? 'a' : 'button'\"\n    :href=\"props.href\"\n    :type=\"props.href ? undefined : 'button'\"\n    :aria-label=\"props.label\"\n    :class=\"cn(\n      'relative flex aspect-square items-center justify-center rounded-xl bg-muted text-foreground outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 [&_svg]:size-1/2',\n      props.class,\n    )\"\n    :style=\"{ width: size, height: size }\"\n    @pointerenter=\"hovered = true\"\n    @pointerleave=\"hovered = false\"\n    @focus=\"hovered = true\"\n    @blur=\"hovered = false\"\n    @click=\"emit('click', $event)\"\n  >\n    <slot />\n    <AnimatePresence>\n      <motion.span\n        v-if=\"hovered\"\n        role=\"presentation\"\n        class=\"pointer-events-none absolute -top-9 left-1/2 whitespace-nowrap rounded-md border bg-popover px-2 py-0.5 text-xs text-popover-foreground shadow-sm\"\n        :initial=\"{ opacity: 0, y: 6, x: '-50%' }\"\n        :animate=\"{ opacity: 1, y: 0, x: '-50%' }\"\n        :exit=\"{ opacity: 0, y: 2, x: '-50%' }\"\n        :transition=\"{ duration: 0.15 }\"\n      >\n        {{ props.label }}\n      </motion.span>\n    </AnimatePresence>\n    <span\n      v-if=\"props.active\"\n      aria-hidden=\"true\"\n      class=\"absolute -bottom-2 left-1/2 size-1 -translate-x-1/2 rounded-full bg-foreground/70\"\n    />\n  </motion.div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/dock/context.ts",
+      "content": "import type { MotionValue } from 'motion-v'\nimport type { InjectionKey } from 'vue'\n\nexport interface DockContext {\n  mouseX: MotionValue<number>\n  baseSize: number\n  magnification: number\n  distance: number\n}\n\nexport const DOCK_KEY: InjectionKey<DockContext> = Symbol('VeulixDock')\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/dock/index.ts",
+      "content": "export { default as Dock } from './Dock.vue'\nexport { default as DockItem } from './DockItem.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "navigation"
+  ],
+  "type": "registry:ui"
+}

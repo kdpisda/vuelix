@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "otp-input",
+  "title": "OTP Input",
+  "description": "One-time-code input with popping digits, a blinking caret and an error shake.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/otp-input/OtpInput.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion, useAnimate } from 'motion-v'\nimport { computed, ref, watch } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  length?: number\n  /** Only accept digits. */\n  numeric?: boolean\n  disabled?: boolean\n  /** Show the error shake + red ring. */\n  invalid?: boolean\n  /** Insert a separator after this many slots (e.g. 3 → \"123-456\"). */\n  groupSize?: number\n  autofocus?: boolean\n  class?: HTMLAttributes['class']\n}>(), {\n  length: 6,\n  numeric: true,\n})\n\nconst emit = defineEmits<{ complete: [value: string] }>()\nconst model = defineModel<string>({ default: '' })\n\nconst input = ref<HTMLInputElement>()\nconst focused = ref(false)\nconst [scope, animate] = useAnimate()\n\nconst slots = computed(() => Array.from({ length: props.length }, (_, i) => model.value[i] ?? ''))\nconst activeIndex = computed(() => Math.min(model.value.length, props.length - 1))\n\nfunction onInput(e: Event) {\n  const el = e.target as HTMLInputElement\n  let v = el.value\n  if (props.numeric)\n    v = v.replace(/\\D/g, '')\n  v = v.slice(0, props.length)\n  el.value = v\n  model.value = v\n}\n\nwatch(model, (v) => {\n  if (v.length === props.length)\n    emit('complete', v)\n})\n\nwatch(() => props.invalid, (v) => {\n  if (v && scope.value)\n    animate(scope.value, { x: [0, -10, 9, -6, 4, 0] }, { duration: 0.4 })\n})\n</script>\n\n<template>\n  <div\n    ref=\"scope\"\n    :class=\"cn('relative inline-flex items-center gap-2', props.disabled && 'opacity-50', props.class)\"\n    @click=\"input?.focus()\"\n  >\n    <input\n      ref=\"input\"\n      :value=\"model\"\n      :maxlength=\"props.length\"\n      :disabled=\"props.disabled\"\n      :autofocus=\"props.autofocus\"\n      :inputmode=\"props.numeric ? 'numeric' : 'text'\"\n      :pattern=\"props.numeric ? '\\\\d*' : undefined\"\n      autocomplete=\"one-time-code\"\n      :aria-label=\"`${props.length}-character code`\"\n      :aria-invalid=\"props.invalid || undefined\"\n      class=\"absolute inset-0 z-10 size-full cursor-text opacity-0 disabled:cursor-not-allowed\"\n      @input=\"onInput\"\n      @focus=\"focused = true\"\n      @blur=\"focused = false\"\n    >\n    <template v-for=\"(char, i) in slots\" :key=\"i\">\n      <span\n        v-if=\"props.groupSize && i > 0 && i % props.groupSize === 0\"\n        aria-hidden=\"true\"\n        class=\"h-0.5 w-3 rounded-full bg-border\"\n      />\n      <motion.div\n        aria-hidden=\"true\"\n        :class=\"cn(\n          'relative flex size-12 items-center justify-center rounded-xl border bg-background text-xl font-semibold shadow-xs transition-colors',\n          focused && i === activeIndex && !props.invalid && 'border-ring ring-[3px] ring-ring/30',\n          props.invalid && 'border-destructive ring-[3px] ring-destructive/20',\n        )\"\n        :animate=\"{ scale: focused && i === activeIndex ? 1.06 : 1 }\"\n        :transition=\"{ type: 'spring', stiffness: 500, damping: 28 }\"\n      >\n        <AnimatePresence mode=\"popLayout\" :initial=\"false\">\n          <motion.span\n            v-if=\"char\"\n            :key=\"char + i\"\n            :initial=\"{ y: 14, opacity: 0, scale: 0.6, filter: 'blur(4px)' }\"\n            :animate=\"{ y: 0, opacity: 1, scale: 1, filter: 'blur(0px)' }\"\n            :exit=\"{ y: -10, opacity: 0, scale: 0.6, filter: 'blur(4px)' }\"\n            :transition=\"{ type: 'spring', stiffness: 500, damping: 26 }\"\n          >\n            {{ char }}\n          </motion.span>\n        </AnimatePresence>\n        <!-- Kept outside AnimatePresence: an infinitely repeating animation never finishes an exit. -->\n        <motion.span\n          v-if=\"!char && focused && i === activeIndex\"\n          class=\"absolute h-6 w-0.5 rounded-full bg-foreground\"\n          :initial=\"{ opacity: 1 }\"\n          :animate=\"{ opacity: [1, 1, 0, 0] }\"\n          :transition=\"{ duration: 1, repeat: Infinity, times: [0, 0.5, 0.5, 1] }\"\n        />\n      </motion.div>\n    </template>\n  </div>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/otp-input/index.ts",
+      "content": "export { default as OtpInput } from './OtpInput.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "type": "registry:ui"
+}

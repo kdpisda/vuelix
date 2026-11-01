@@ -1,0 +1,26 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "morphing-dialog",
+  "title": "Morphing Dialog",
+  "description": "A card that morphs into a full dialog using a shared layout transition.",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/morphing-dialog/MorphingDialog.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { AnimatePresence, motion, useDomRef } from 'motion-v'\nimport { nextTick, onBeforeUnmount, useId, watch } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<{\n  /** Classes for the closed (trigger) surface. */\n  class?: HTMLAttributes['class']\n  /** Classes for the open dialog surface. */\n  contentClass?: HTMLAttributes['class']\n  /** Accessible name for the dialog. */\n  label?: string\n}>()\n\nconst open = defineModel<boolean>('open', { default: false })\nconst uid = useId()\nconst layoutId = `vx-morph-${uid}`\n\nconst trigger = useDomRef()\nconst dialog = useDomRef()\n\nconst spring = { type: 'spring', stiffness: 260, damping: 30, mass: 0.9 } as const\n\nfunction close() {\n  open.value = false\n}\n\nfunction onKeydown(e: KeyboardEvent) {\n  if (e.key === 'Escape')\n    close()\n}\n\nwatch(open, async (isOpen) => {\n  if (typeof document === 'undefined')\n    return\n  if (isOpen) {\n    document.addEventListener('keydown', onKeydown)\n    document.documentElement.style.overflow = 'hidden'\n    await nextTick()\n    ;(dialog.value as HTMLElement | null)?.focus()\n  }\n  else {\n    document.removeEventListener('keydown', onKeydown)\n    document.documentElement.style.overflow = ''\n    await nextTick()\n    ;(trigger.value as HTMLElement | null)?.focus({ preventScroll: true })\n  }\n})\n\nonBeforeUnmount(() => {\n  if (typeof document === 'undefined')\n    return\n  document.removeEventListener('keydown', onKeydown)\n  document.documentElement.style.overflow = ''\n})\n</script>\n\n<template>\n  <div class=\"contents\">\n    <motion.button\n      v-if=\"!open\"\n      ref=\"trigger\"\n      type=\"button\"\n      :layout-id=\"layoutId\"\n      :aria-haspopup=\"'dialog'\"\n      :class=\"cn(\n        'block w-full cursor-pointer overflow-hidden rounded-2xl border bg-card text-left text-card-foreground outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50',\n        props.class,\n      )\"\n      :style=\"{ borderRadius: '16px' }\"\n      :transition=\"spring\"\n      @click=\"open = true\"\n    >\n      <slot name=\"trigger\" />\n    </motion.button>\n    <div\n      v-else\n      aria-hidden=\"true\"\n      :class=\"cn('invisible rounded-2xl border', props.class)\"\n    >\n      <slot name=\"trigger\" />\n    </div>\n  </div>\n\n  <Teleport to=\"body\">\n    <AnimatePresence>\n      <motion.div\n        v-if=\"open\"\n        key=\"overlay\"\n        class=\"fixed inset-0 z-[90] bg-black/40 backdrop-blur-sm\"\n        :initial=\"{ opacity: 0 }\"\n        :animate=\"{ opacity: 1 }\"\n        :exit=\"{ opacity: 0 }\"\n        @click=\"close\"\n      />\n    </AnimatePresence>\n    <!-- No exit animation here on purpose: the trigger re-mounts with the same\n         layout-id and morphs back from the dialog's last position. -->\n    <div\n        v-if=\"open\"\n        class=\"pointer-events-none fixed inset-0 z-[91] flex items-center justify-center p-4\"\n      >\n        <motion.div\n          ref=\"dialog\"\n          role=\"dialog\"\n          aria-modal=\"true\"\n          :aria-label=\"props.label\"\n          tabindex=\"-1\"\n          :layout-id=\"layoutId\"\n          :class=\"cn(\n            'pointer-events-auto relative max-h-[85vh] w-full max-w-lg overflow-auto border bg-card text-card-foreground shadow-2xl outline-none',\n            props.contentClass,\n          )\"\n          :style=\"{ borderRadius: '24px' }\"\n          :transition=\"spring\"\n        >\n          <slot name=\"content\" :close=\"close\" />\n          <motion.button\n            type=\"button\"\n            aria-label=\"Close\"\n            class=\"absolute right-3 top-3 inline-flex size-8 items-center justify-center rounded-full bg-background/80 text-muted-foreground outline-none backdrop-blur hover:text-foreground focus-visible:ring-[3px] focus-visible:ring-ring/50\"\n            :initial=\"{ opacity: 0, scale: 0.6 }\"\n            :animate=\"{ opacity: 1, scale: 1, transition: { delay: 0.15 } }\"\n            :exit=\"{ opacity: 0, scale: 0.6, transition: { duration: 0.1 } }\"\n            @click=\"close\"\n          >\n            <svg class=\"size-4\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\" /></svg>\n          </motion.button>\n        </motion.div>\n      </div>\n  </Teleport>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/morphing-dialog/index.ts",
+      "content": "export { default as MorphingDialog } from './MorphingDialog.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "surfaces"
+  ],
+  "type": "registry:ui"
+}

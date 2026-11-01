@@ -1,0 +1,27 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "theme-toggle",
+  "title": "Theme Toggle",
+  "description": "A sun/moon toggle with a rotating swap animation.",
+  "dependencies": [
+    "motion-v",
+    "@vueuse/core"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/theme-toggle/ThemeToggle.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { useDark, useToggle } from '@vueuse/core'\nimport { AnimatePresence, motion } from 'motion-v'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** localStorage key; match your framework's key to stay in sync (VitePress: `vitepress-theme-appearance`). */\n  storageKey?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  storageKey: 'veulix-color-scheme',\n})\n\nconst isDark = useDark({ storageKey: props.storageKey })\nconst toggle = useToggle(isDark)\n\nconst spring = { type: 'spring', stiffness: 380, damping: 22 } as const\n</script>\n\n<template>\n  <motion.button\n    type=\"button\"\n    :aria-label=\"isDark ? 'Switch to light theme' : 'Switch to dark theme'\"\n    :class=\"cn(\n      'relative inline-flex size-10 items-center justify-center overflow-hidden rounded-full border bg-background text-foreground outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50',\n      props.class,\n    )\"\n    :while-press=\"{ scale: 0.9 }\"\n    :transition=\"spring\"\n    @click=\"toggle()\"\n  >\n    <AnimatePresence mode=\"popLayout\" :initial=\"false\">\n      <motion.svg\n        v-if=\"isDark\"\n        key=\"moon\"\n        class=\"size-5\"\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n        stroke-linejoin=\"round\"\n        aria-hidden=\"true\"\n        :initial=\"{ y: 24, rotate: -90, opacity: 0 }\"\n        :animate=\"{ y: 0, rotate: 0, opacity: 1 }\"\n        :exit=\"{ y: -24, rotate: 90, opacity: 0 }\"\n        :transition=\"spring\"\n      >\n        <path d=\"M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401\" />\n      </motion.svg>\n      <motion.svg\n        v-else\n        key=\"sun\"\n        class=\"size-5\"\n        viewBox=\"0 0 24 24\"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n        stroke-linejoin=\"round\"\n        aria-hidden=\"true\"\n        :initial=\"{ y: 24, rotate: 90, opacity: 0 }\"\n        :animate=\"{ y: 0, rotate: 0, opacity: 1 }\"\n        :exit=\"{ y: -24, rotate: -90, opacity: 0 }\"\n        :transition=\"spring\"\n      >\n        <circle cx=\"12\" cy=\"12\" r=\"4\" />\n        <path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41\" />\n      </motion.svg>\n    </AnimatePresence>\n  </motion.button>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/theme-toggle/index.ts",
+      "content": "export { default as ThemeToggle } from './ThemeToggle.vue'\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "navigation"
+  ],
+  "type": "registry:ui"
+}

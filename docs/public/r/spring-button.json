@@ -1,0 +1,27 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry-item.json",
+  "name": "spring-button",
+  "title": "Spring Button",
+  "description": "A button with springy hover/press physics and a morphing loading state.",
+  "dependencies": [
+    "motion-v",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/spring-button/SpringButton.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport type { SpringButtonVariants } from '.'\nimport { AnimatePresence, motion } from 'motion-v'\nimport { cn } from '@/lib/utils'\nimport { springButtonVariants } from '.'\n\nconst props = withDefaults(defineProps<{\n  variant?: SpringButtonVariants['variant']\n  size?: SpringButtonVariants['size']\n  loading?: boolean\n  disabled?: boolean\n  type?: 'button' | 'submit' | 'reset'\n  class?: HTMLAttributes['class']\n}>(), {\n  type: 'button',\n})\n\nconst spring = { type: 'spring', stiffness: 500, damping: 30, mass: 0.6 } as const\n</script>\n\n<template>\n  <motion.button\n    layout\n    :type=\"props.type\"\n    :disabled=\"props.disabled || props.loading\"\n    :aria-busy=\"props.loading || undefined\"\n    :while-hover=\"props.disabled || props.loading ? undefined : { scale: 1.03 }\"\n    :while-press=\"props.disabled || props.loading ? undefined : { scale: 0.94 }\"\n    :transition=\"spring\"\n    :class=\"cn(springButtonVariants({ variant: props.variant, size: props.size }), props.class)\"\n  >\n    <AnimatePresence mode=\"popLayout\" :initial=\"false\">\n      <motion.span\n        v-if=\"props.loading\"\n        key=\"loading\"\n        class=\"inline-flex items-center gap-2\"\n        :initial=\"{ opacity: 0, y: 12, filter: 'blur(4px)' }\"\n        :animate=\"{ opacity: 1, y: 0, filter: 'blur(0px)' }\"\n        :exit=\"{ opacity: 0, y: -12, filter: 'blur(4px)' }\"\n        :transition=\"spring\"\n      >\n        <svg class=\"size-4 animate-spin\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\">\n          <circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"3\" />\n          <path d=\"M21 12a9 9 0 0 0-9-9\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        </svg>\n        <slot name=\"loading\" />\n      </motion.span>\n      <motion.span\n        v-else\n        key=\"idle\"\n        class=\"inline-flex items-center gap-2\"\n        :initial=\"{ opacity: 0, y: 12, filter: 'blur(4px)' }\"\n        :animate=\"{ opacity: 1, y: 0, filter: 'blur(0px)' }\"\n        :exit=\"{ opacity: 0, y: -12, filter: 'blur(4px)' }\"\n        :transition=\"spring\"\n      >\n        <slot />\n      </motion.span>\n    </AnimatePresence>\n  </motion.button>\n</template>\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "registry/ui/spring-button/index.ts",
+      "content": "import type { VariantProps } from 'class-variance-authority'\nimport { cva } from 'class-variance-authority'\n\nexport { default as SpringButton } from './SpringButton.vue'\n\nexport const springButtonVariants = cva(\n  'relative inline-flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-lg text-sm font-medium outline-none select-none focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0',\n  {\n    variants: {\n      variant: {\n        default: 'bg-primary text-primary-foreground shadow-sm',\n        secondary: 'bg-secondary text-secondary-foreground',\n        outline: 'border bg-background text-foreground shadow-xs hover:bg-accent',\n        ghost: 'text-foreground hover:bg-accent',\n        destructive: 'bg-destructive text-white shadow-sm',\n        brand: 'bg-brand text-black shadow-sm',\n      },\n      size: {\n        sm: 'h-8 px-3 text-xs',\n        default: 'h-10 px-4',\n        lg: 'h-12 px-6 text-base',\n        icon: 'size-10',\n      },\n    },\n    defaultVariants: {\n      variant: 'default',\n      size: 'default',\n    },\n  },\n)\n\nexport type SpringButtonVariants = VariantProps<typeof springButtonVariants>\n",
+      "type": "registry:ui"
+    }
+  ],
+  "categories": [
+    "primitives"
+  ],
+  "type": "registry:ui"
+}

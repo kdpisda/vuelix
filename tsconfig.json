@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "noEmit": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["vitepress/client", "node"],
+    "baseUrl": ".",
+    "paths": { "@/*": ["registry/*"] }
+  },
+  "include": ["docs/env.d.ts", "registry/**/*.ts", "registry/**/*.vue", "docs/demos/**/*.vue", "docs/.vitepress/**/*.ts", "docs/.vitepress/**/*.vue"]
+}
