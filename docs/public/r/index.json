@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 68,
+  "count": 76,
   "items": [
     {
       "slug": "cta-button",
@@ -1527,6 +1527,36 @@
       ]
     },
     {
+      "slug": "agent-activity",
+      "name": "Agent Activity",
+      "description": "Live feed of an agent's steps: new steps slide in, the current one shimmers, sub-steps fold away.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/agent-activity",
+      "detail_url": "https://vuelix.dev/r/agent-activity.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/agent-activity.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "AgentActivity"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/agent-activity/AgentActivity.vue",
+          "raw_url": "https://vuelix.dev/r/raw/agent-activity/AgentActivity.vue"
+        },
+        {
+          "path": "components/ui/agent-activity/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/agent-activity/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "approval-card",
       "name": "Approval Card",
       "description": "Asks the user to approve an agent action, then collapses into a compact resolved row with a stamp that slams in.",
@@ -1656,6 +1686,49 @@
       ]
     },
     {
+      "slug": "citations",
+      "name": "Citations",
+      "description": "Numbered citation chips with hover cards, linked to a sources list that lights up the cited source.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/citations",
+      "detail_url": "https://vuelix.dev/r/citations.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/citations.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "CitationChip",
+          "Citations"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/citations/CitationChip.vue",
+          "raw_url": "https://vuelix.dev/r/raw/citations/CitationChip.vue"
+        },
+        {
+          "path": "components/ui/citations/Citations.vue",
+          "raw_url": "https://vuelix.dev/r/raw/citations/Citations.vue"
+        },
+        {
+          "path": "components/ui/citations/SourceIcon.vue",
+          "raw_url": "https://vuelix.dev/r/raw/citations/SourceIcon.vue"
+        },
+        {
+          "path": "components/ui/citations/context.ts",
+          "raw_url": "https://vuelix.dev/r/raw/citations/context.ts"
+        },
+        {
+          "path": "components/ui/citations/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/citations/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "code-block",
       "name": "Code Block",
       "description": "Code with a file header, line numbers, highlighted lines, a copy-to-check button and a springy collapse for long snippets.",
@@ -1682,6 +1755,36 @@
         {
           "path": "components/ui/code-block/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/code-block/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "conversation-sidebar",
+      "name": "Conversation Sidebar",
+      "description": "Chat history grouped by date, with search, a gliding active marker, inline rename and an icon rail.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/conversation-sidebar",
+      "detail_url": "https://vuelix.dev/r/conversation-sidebar.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/conversation-sidebar.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ConversationSidebar"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/conversation-sidebar/ConversationSidebar.vue",
+          "raw_url": "https://vuelix.dev/r/raw/conversation-sidebar/ConversationSidebar.vue"
+        },
+        {
+          "path": "components/ui/conversation-sidebar/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/conversation-sidebar/index.ts"
         }
       ]
     },
@@ -1721,6 +1824,66 @@
       ]
     },
     {
+      "slug": "image-generation",
+      "name": "Image Generation",
+      "description": "Image placeholder where grainy colour fields sharpen behind a scan line, then the result fades in.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/image-generation",
+      "detail_url": "https://vuelix.dev/r/image-generation.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/image-generation.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ImageGeneration"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/image-generation/ImageGeneration.vue",
+          "raw_url": "https://vuelix.dev/r/raw/image-generation/ImageGeneration.vue"
+        },
+        {
+          "path": "components/ui/image-generation/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/image-generation/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "model-picker",
+      "name": "Model Picker",
+      "description": "Compact AI model dropdown with capability badges, typeahead and a check mark that glides to your pick.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/model-picker",
+      "detail_url": "https://vuelix.dev/r/model-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/model-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ModelPicker"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/model-picker/ModelPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/model-picker/ModelPicker.vue"
+        },
+        {
+          "path": "components/ui/model-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/model-picker/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "prompt-input",
       "name": "Prompt Input",
       "description": "An AI composer with an auto-growing textarea, pop-in attachment chips and a send button that morphs into stop.",
@@ -1751,6 +1914,76 @@
       ]
     },
     {
+      "slug": "streaming-text",
+      "name": "Streaming Text",
+      "description": "Streamed AI answers where each new chunk blurs in, with a blinking cursor and light Markdown.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/streaming-text",
+      "detail_url": "https://vuelix.dev/r/streaming-text.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/streaming-text.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "StreamingText",
+          "createTextStream",
+          "useTextStream"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/streaming-text/StreamingText.vue",
+          "raw_url": "https://vuelix.dev/r/raw/streaming-text/StreamingText.vue"
+        },
+        {
+          "path": "components/ui/streaming-text/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/streaming-text/index.ts"
+        },
+        {
+          "path": "components/ui/streaming-text/markdown.ts",
+          "raw_url": "https://vuelix.dev/r/raw/streaming-text/markdown.ts"
+        },
+        {
+          "path": "components/ui/streaming-text/use-text-stream.ts",
+          "raw_url": "https://vuelix.dev/r/raw/streaming-text/use-text-stream.ts"
+        }
+      ]
+    },
+    {
+      "slug": "suggestion-chips",
+      "name": "Suggestion Chips",
+      "description": "Prompt suggestions that stagger in, lift on hover, fly into your input on click and reshuffle.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/suggestion-chips",
+      "detail_url": "https://vuelix.dev/r/suggestion-chips.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/suggestion-chips.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "SuggestionChips"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/suggestion-chips/SuggestionChips.vue",
+          "raw_url": "https://vuelix.dev/r/raw/suggestion-chips/SuggestionChips.vue"
+        },
+        {
+          "path": "components/ui/suggestion-chips/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/suggestion-chips/index.ts"
+        }
+      ]
+    },
+    {
       "slug": "task-list",
       "name": "Task List",
       "description": "An agent's plan with a live progress bar, spinning active step, drawn checkmarks and a strike that sweeps across.",
@@ -1777,6 +2010,36 @@
         {
           "path": "components/ui/task-list/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/task-list/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "thinking-indicator",
+      "name": "Thinking Indicator",
+      "description": "AI loading states: wave dots, shimmering text, a pulsing orb, a scan bar and a collapsible reasoning panel.",
+      "section": "ai",
+      "category": "AI",
+      "page_url": "https://vuelix.dev/ai/thinking-indicator",
+      "detail_url": "https://vuelix.dev/r/thinking-indicator.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/thinking-indicator.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ThinkingIndicator"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/thinking-indicator/ThinkingIndicator.vue",
+          "raw_url": "https://vuelix.dev/r/raw/thinking-indicator/ThinkingIndicator.vue"
+        },
+        {
+          "path": "components/ui/thinking-indicator/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/thinking-indicator/index.ts"
         }
       ]
     },

@@ -127,6 +127,12 @@
   all: revert-layer;
 }
 
+/* `.vp-doc a:hover` (0,2,1) also needs beating for links inside demos. */
+.vp-raw.vp-raw :where(a):hover,
+.vp-raw.vp-raw:where(a):hover {
+  all: revert-layer;
+}
+
 /*
  * Overlays teleported to <body> (popovers, dialogs, drawers, lightboxes…) live outside .vp-raw,
  * so give them the same treatment. VitePress' own teleported search box is excluded.

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ThinkingIndicator } from '@/ui/thinking-indicator'
+import { ThinkingIndicator } from '@/components/ui/thinking-indicator'
 import { RotateCcw } from 'lucide-vue-next'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 

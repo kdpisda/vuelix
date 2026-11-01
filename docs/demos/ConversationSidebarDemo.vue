@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ConversationSidebarItem } from '@/ui/conversation-sidebar'
-import { ConversationSidebar } from '@/ui/conversation-sidebar'
+import type { ConversationSidebarItem } from '@/components/ui/conversation-sidebar'
+import { ConversationSidebar } from '@/components/ui/conversation-sidebar'
 import { MessageSquare } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 

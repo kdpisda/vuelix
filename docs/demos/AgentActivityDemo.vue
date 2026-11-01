@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { AgentActivityStep } from '@/ui/agent-activity'
-import { AgentActivity } from '@/ui/agent-activity'
+import type { AgentActivityStep } from '@/components/ui/agent-activity'
+import { AgentActivity } from '@/components/ui/agent-activity'
 import { RotateCcw } from 'lucide-vue-next'
 import { onBeforeUnmount, onMounted, reactive, ref } from 'vue'
 

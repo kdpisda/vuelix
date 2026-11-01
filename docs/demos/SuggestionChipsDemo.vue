@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { SuggestionChipItem } from '@/ui/suggestion-chips'
-import { SuggestionChips } from '@/ui/suggestion-chips'
+import type { SuggestionChipItem } from '@/components/ui/suggestion-chips'
+import { SuggestionChips } from '@/components/ui/suggestion-chips'
 import { ArrowUp, BarChart3, Bug, Code2, Globe, Lightbulb, Mail, PenLine, Plane } from 'lucide-vue-next'
 import { onBeforeUnmount, ref } from 'vue'
 

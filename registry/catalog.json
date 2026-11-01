@@ -686,6 +686,20 @@
     ]
   },
   {
+    "name": "agent-activity",
+    "title": "Agent Activity",
+    "description": "Live feed of an agent's steps: new steps slide in, the current one shimmers, sub-steps fold away.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/agent-activity",
+    "exports": [
+      "AgentActivity"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "approval-card",
     "title": "Approval Card",
     "description": "Asks the user to approve an agent action, then collapses into a compact resolved row with a stamp that slams in.",
@@ -743,6 +757,21 @@
     ]
   },
   {
+    "name": "citations",
+    "title": "Citations",
+    "description": "Numbered citation chips with hover cards, linked to a sources list that lights up the cited source.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/citations",
+    "exports": [
+      "CitationChip",
+      "Citations"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "code-block",
     "title": "Code Block",
     "description": "Code with a file header, line numbers, highlighted lines, a copy-to-check button and a springy collapse for long snippets.",
@@ -751,6 +780,20 @@
     "url": "/ai/code-block",
     "exports": [
       "CodeBlock"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "conversation-sidebar",
+    "title": "Conversation Sidebar",
+    "description": "Chat history grouped by date, with search, a gliding active marker, inline rename and an icon rail.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/conversation-sidebar",
+    "exports": [
+      "ConversationSidebar"
     ],
     "dependencies": [
       "motion-v"
@@ -772,6 +815,34 @@
     ]
   },
   {
+    "name": "image-generation",
+    "title": "Image Generation",
+    "description": "Image placeholder where grainy colour fields sharpen behind a scan line, then the result fades in.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/image-generation",
+    "exports": [
+      "ImageGeneration"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "model-picker",
+    "title": "Model Picker",
+    "description": "Compact AI model dropdown with capability badges, typeahead and a check mark that glides to your pick.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/model-picker",
+    "exports": [
+      "ModelPicker"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "prompt-input",
     "title": "Prompt Input",
     "description": "An AI composer with an auto-growing textarea, pop-in attachment chips and a send button that morphs into stop.",
@@ -786,6 +857,36 @@
     ]
   },
   {
+    "name": "streaming-text",
+    "title": "Streaming Text",
+    "description": "Streamed AI answers where each new chunk blurs in, with a blinking cursor and light Markdown.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/streaming-text",
+    "exports": [
+      "StreamingText",
+      "createTextStream",
+      "useTextStream"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "suggestion-chips",
+    "title": "Suggestion Chips",
+    "description": "Prompt suggestions that stagger in, lift on hover, fly into your input on click and reshuffle.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/suggestion-chips",
+    "exports": [
+      "SuggestionChips"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "task-list",
     "title": "Task List",
     "description": "An agent's plan with a live progress bar, spinning active step, drawn checkmarks and a strike that sweeps across.",
@@ -794,6 +895,20 @@
     "url": "/ai/task-list",
     "exports": [
       "TaskList"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
+    "name": "thinking-indicator",
+    "title": "Thinking Indicator",
+    "description": "AI loading states: wave dots, shimmering text, a pulsing orb, a scan bar and a collapsible reasoning panel.",
+    "section": "ai",
+    "category": "AI",
+    "url": "/ai/thinking-indicator",
+    "exports": [
+      "ThinkingIndicator"
     ],
     "dependencies": [
       "motion-v"

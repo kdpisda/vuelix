@@ -49,14 +49,22 @@ import { Lightbox } from './ui/lightbox'
 import { MotionBadge } from './ui/motion-badge'
 import { SortableList } from './ui/sortable-list'
 import { Timeline } from './ui/timeline'
+import { AgentActivity } from './ui/agent-activity'
 import { ApprovalCard } from './ui/approval-card'
 import { ChatApp } from './ui/chat-app'
 import { ChatBubble, ChatMessage } from './ui/chat-message'
 import { ChatScroller } from './ui/chat-scroller'
+import { CitationChip, Citations } from './ui/citations'
 import { CodeBlock } from './ui/code-block'
+import { ConversationSidebar } from './ui/conversation-sidebar'
 import { FileDiff } from './ui/file-diff'
+import { ImageGeneration } from './ui/image-generation'
+import { ModelPicker } from './ui/model-picker'
 import { PromptInput } from './ui/prompt-input'
+import { StreamingText } from './ui/streaming-text'
+import { SuggestionChips } from './ui/suggestion-chips'
 import { TaskList } from './ui/task-list'
+import { ThinkingIndicator } from './ui/thinking-indicator'
 import { ToolCall } from './ui/tool-call'
 import { VoiceOrb } from './ui/voice-orb'
 import { BarChart } from './ui/bar-chart'
@@ -118,14 +126,22 @@ export * from './ui/lightbox'
 export * from './ui/motion-badge'
 export * from './ui/sortable-list'
 export * from './ui/timeline'
+export * from './ui/agent-activity'
 export * from './ui/approval-card'
 export * from './ui/chat-app'
 export * from './ui/chat-message'
 export * from './ui/chat-scroller'
+export * from './ui/citations'
 export * from './ui/code-block'
+export * from './ui/conversation-sidebar'
 export * from './ui/file-diff'
+export * from './ui/image-generation'
+export * from './ui/model-picker'
 export * from './ui/prompt-input'
+export * from './ui/streaming-text'
+export * from './ui/suggestion-chips'
 export * from './ui/task-list'
+export * from './ui/thinking-indicator'
 export * from './ui/tool-call'
 export * from './ui/voice-orb'
 export * from './ui/bar-chart'
@@ -193,15 +209,24 @@ const components: Record<string, Component> = {
   MotionBadge,
   SortableList,
   Timeline,
+  AgentActivity,
   ApprovalCard,
   ChatApp,
   ChatBubble,
   ChatMessage,
   ChatScroller,
+  CitationChip,
+  Citations,
   CodeBlock,
+  ConversationSidebar,
   FileDiff,
+  ImageGeneration,
+  ModelPicker,
   PromptInput,
+  StreamingText,
+  SuggestionChips,
   TaskList,
+  ThinkingIndicator,
   ToolCall,
   VoiceOrb,
   BarChart,

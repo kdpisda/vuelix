@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { CitationSource } from '@/ui/citations'
-import { Citations } from '@/ui/citations'
+import type { CitationSource } from '@/components/ui/citations'
+import { Citations } from '@/components/ui/citations'
 import { Globe } from 'lucide-vue-next'
 
 const sources: CitationSource[] = [

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ModelPickerOption } from '@/ui/model-picker'
-import { ModelPicker } from '@/ui/model-picker'
+import type { ModelPickerOption } from '@/components/ui/model-picker'
+import { ModelPicker } from '@/components/ui/model-picker'
 import { ArrowUp, Brain, Feather, Paperclip, Sparkles, Telescope } from 'lucide-vue-next'
 import { ref } from 'vue'
 

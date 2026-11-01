@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { StreamingText, useTextStream } from '@/ui/streaming-text'
+import { StreamingText, useTextStream } from '@/components/ui/streaming-text'
 import { RotateCcw, Sparkles, Square } from 'lucide-vue-next'
 
 const answer = `Debounce the **watcher**, not the input, so typing stays instant and only the request waits.

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ImageGeneration } from '@/ui/image-generation'
+import { ImageGeneration } from '@/components/ui/image-generation'
 import { RotateCcw, Zap } from 'lucide-vue-next'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
