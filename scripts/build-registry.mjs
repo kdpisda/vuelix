@@ -6,7 +6,7 @@
 //   docs/public/r/*.json    — installable registry items (via `shadcn-vue build`)
 //   registry/index.ts       — entry point of the `vuelix` npm package
 import { execSync } from 'node:child_process'
-import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -108,6 +108,47 @@ writeFileSync(join(root, 'registry.json'), `${JSON.stringify(registry, null, 2)}
 console.log(`registry.json: ${items.length} items`)
 
 execSync('npx shadcn-vue build registry.json -o docs/public/r', { cwd: root, stdio: 'inherit' })
+
+// ---------------------------------------------------------------------------
+// Agent-friendly endpoints (see docs/docs/ai-agents.md)
+//   /r/index.json            catalogue of every item (also served at /r)
+//   /r/raw/<slug>/<file>     plain-text source of each file
+// ---------------------------------------------------------------------------
+const SITE = 'https://vuelix.dev'
+const rawDir = join(root, 'docs/public/r/raw')
+rmSync(rawDir, { recursive: true, force: true })
+const index = items.map((item) => {
+  const files = item.files.map((path) => {
+    const file = path.split('/').pop()
+    mkdirSync(join(rawDir, item.name), { recursive: true })
+    writeFileSync(join(rawDir, item.name, file), readFileSync(join(root, path), 'utf8'))
+    return { path: `components/ui/${item.name}/${file}`, raw_url: `${SITE}/r/raw/${item.name}/${file}` }
+  })
+  return {
+    slug: item.name,
+    name: item.title,
+    description: item.description,
+    section: item.section,
+    category: item.category,
+    page_url: `${SITE}${item.url}`,
+    detail_url: `${SITE}/r/${item.name}.json`,
+    install: `npx shadcn-vue@latest add ${SITE}/r/${item.name}.json`,
+    npm: { package: 'vuelix', imports: item.exports },
+    dependencies: item.dependencies ?? [],
+    registry_dependencies: item.registryDependencies ?? [],
+    files,
+  }
+})
+writeFileSync(join(root, 'docs/public/r/index.json'), `${JSON.stringify({
+  name: 'vuelix',
+  homepage: SITE,
+  description: 'Animated, copy-paste components for Vue 3 & Nuxt, built on Tailwind CSS v4 and motion-v.',
+  utils: { path: 'lib/utils.ts', raw_url: `${SITE}/r/raw/utils.ts` },
+  count: index.length,
+  items: index,
+}, null, 2)}\n`)
+writeFileSync(join(rawDir, 'utils.ts'), readFileSync(join(root, 'registry/lib/utils.ts'), 'utf8'))
+console.log(`r/index.json + r/raw: ${index.length} items`)
 
 // ---------------------------------------------------------------------------
 // registry/index.ts — entry point for the `vuelix` npm package

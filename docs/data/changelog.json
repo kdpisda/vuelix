@@ -1,0 +1,15 @@
+[
+  {
+    "version": "0.1.0",
+    "date": "2026-11-01",
+    "title": "vuelix is live",
+    "summary": "Animated, copy-paste components for Vue 3 & Nuxt, built on Tailwind CSS v4 and motion-v.",
+    "items": [
+      "15 components across buttons, inputs, overlays, navigation, surfaces, text, feedback and charts",
+      "shadcn-vue compatible registry: npx shadcn-vue add https://vuelix.dev/r/<name>.json",
+      "The vuelix npm package with tree-shakeable ESM, types and a one-line Tailwind setup",
+      "Agent-friendly endpoints: llms.txt, /r catalogue, raw sources and an MCP server at /mcp",
+      "Docs at vuelix.dev with live previews, light and dark themes"
+    ]
+  }
+]
