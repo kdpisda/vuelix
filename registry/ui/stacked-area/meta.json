@@ -1,0 +1,9 @@
+{
+  "title": "Stacked Area",
+  "description": "Composition over time, stacked or 100%; bands morph between modes and an interactive legend isolates series.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ]
+}

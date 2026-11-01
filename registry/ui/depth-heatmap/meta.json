@@ -1,0 +1,9 @@
+{
+  "title": "Depth Heatmap",
+  "description": "Price × time heatmap of resting liquidity with a price trace; new snapshots slide in live.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ]
+}

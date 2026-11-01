@@ -1,0 +1,9 @@
+{
+  "title": "Sankey Chart",
+  "description": "Weighted flows between columns of nodes; ribbons draw in and hovering traces a node's whole path.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ]
+}
