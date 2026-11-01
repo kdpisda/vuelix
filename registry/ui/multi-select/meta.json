@@ -1,0 +1,9 @@
+{
+  "title": "Multi Select",
+  "description": "Pick many options: choices pop into the field as chips and reflow with layout animation.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

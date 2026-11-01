@@ -1,0 +1,9 @@
+{
+  "title": "Spring Checkbox",
+  "description": "Checkbox that squishes on press and draws its check mark in, with an indeterminate state.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

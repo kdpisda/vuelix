@@ -1,0 +1,9 @@
+{
+  "title": "Radio Cards",
+  "description": "Radio group where the selection ring and dot spring between options, as cards or a compact list.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}
