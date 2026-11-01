@@ -22,7 +22,7 @@ Stacked notifications that fan out on hover, with a tiny imperative API.
 
 ## Installation
 
-<InstallTabs name="toast-stack" />
+<InstallTabs name="toast-stack" :imports="['ToastStack', 'toast']" />
 
 :::: details Manual installation
 Install the dependencies:

@@ -22,7 +22,7 @@ A magnifying dock where icons grow as the pointer approaches.
 
 ## Installation
 
-<InstallTabs name="dock" />
+<InstallTabs name="dock" :imports="['Dock', 'DockItem']" />
 
 :::: details Manual installation
 Install the dependencies:

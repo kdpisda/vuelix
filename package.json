@@ -8,7 +8,9 @@
     "build": "pnpm registry:build && vitepress build docs",
     "preview": "vitepress preview docs",
     "registry:build": "node scripts/build-registry.mjs",
-    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
+    "build:package": "pnpm --filter vuelix build",
+    "pack:package": "pnpm --filter vuelix pack"
   },
   "dependencies": {
     "@vueuse/core": "^15.0.0",

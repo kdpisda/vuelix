@@ -54,12 +54,14 @@ export default defineConfig({
     search: { provider: 'local' },
     outline: [2, 3],
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Built with Vue, Tailwind CSS and Motion.',
+      message: 'Released under the MIT License. Built with Vue, Tailwind CSS and Motion.',
+      copyright: 'Designed by <a href="https://kdpisda.in" target="_blank">Kuldeep Pisda</a>',
     },
   },
   vite: {
-    plugins: [tailwindcss()],
+    // VitePress bundles Vite 5 while the workspace also has Vite 7 (for the npm package);
+    // the plugin works with both, only their type declarations disagree.
+    plugins: [tailwindcss() as any],
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('../../registry', import.meta.url)),
