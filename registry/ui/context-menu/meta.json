@@ -1,0 +1,9 @@
+{
+  "title": "Context Menu",
+  "description": "A right-click / long-press menu with a gliding highlight, shortcuts and a submenu that slides out.",
+  "section": "components",
+  "category": "Overlays",
+  "dependencies": [
+    "motion-v"
+  ]
+}

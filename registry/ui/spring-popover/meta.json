@@ -1,0 +1,9 @@
+{
+  "title": "Spring Popover",
+  "description": "A click-to-open popover that springs out of its trigger, with an arrow and smart flipping.",
+  "section": "components",
+  "category": "Overlays",
+  "dependencies": [
+    "motion-v"
+  ]
+}
