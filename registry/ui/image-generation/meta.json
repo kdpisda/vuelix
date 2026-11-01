@@ -1,0 +1,9 @@
+{
+  "title": "Image Generation",
+  "description": "Image placeholder where grainy colour fields sharpen behind a scan line, then the result fades in.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

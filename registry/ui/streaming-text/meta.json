@@ -1,0 +1,9 @@
+{
+  "title": "Streaming Text",
+  "description": "Streamed AI answers where each new chunk blurs in, with a blinking cursor and light Markdown.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

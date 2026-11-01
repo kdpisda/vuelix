@@ -1,0 +1,9 @@
+{
+  "title": "Citations",
+  "description": "Numbered citation chips with hover cards, linked to a sources list that lights up the cited source.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

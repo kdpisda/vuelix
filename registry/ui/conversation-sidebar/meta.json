@@ -1,0 +1,9 @@
+{
+  "title": "Conversation Sidebar",
+  "description": "Chat history grouped by date, with search, a gliding active marker, inline rename and an icon rail.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

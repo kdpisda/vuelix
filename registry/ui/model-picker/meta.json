@@ -1,0 +1,9 @@
+{
+  "title": "Model Picker",
+  "description": "Compact AI model dropdown with capability badges, typeahead and a check mark that glides to your pick.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}
