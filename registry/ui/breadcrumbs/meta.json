@@ -1,0 +1,9 @@
+{
+  "title": "Breadcrumbs",
+  "description": "A breadcrumb trail that staggers in, underlines the current page and springs open collapsed levels.",
+  "section": "components",
+  "category": "Navigation",
+  "dependencies": [
+    "motion-v"
+  ]
+}

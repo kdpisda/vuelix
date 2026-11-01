@@ -1,0 +1,9 @@
+{
+  "title": "Expanding Modal",
+  "description": "A modal that grows out of the exact button that opened it and collapses back into it.",
+  "section": "components",
+  "category": "Overlays",
+  "dependencies": [
+    "motion-v"
+  ]
+}
