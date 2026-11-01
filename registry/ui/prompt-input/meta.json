@@ -1,0 +1,9 @@
+{
+  "title": "Prompt Input",
+  "description": "An AI composer with an auto-growing textarea, pop-in attachment chips and a send button that morphs into stop.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

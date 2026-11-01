@@ -1,0 +1,9 @@
+{
+  "title": "Tool Call",
+  "description": "A collapsible card for a tool invocation with a live status indicator, timer and pretty-printed arguments and result.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "File Diff",
+  "description": "A unified diff viewer with a change bar, folding unchanged lines and per-hunk accept or reject that springs shut.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}
