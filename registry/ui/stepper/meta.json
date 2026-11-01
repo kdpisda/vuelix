@@ -1,0 +1,9 @@
+{
+  "title": "Stepper",
+  "description": "Multi-step progress with spring-filled connectors, steps that morph into checks and a pulsing current step.",
+  "section": "components",
+  "category": "Navigation",
+  "dependencies": [
+    "motion-v"
+  ]
+}

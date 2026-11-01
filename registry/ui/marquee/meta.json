@@ -1,0 +1,9 @@
+{
+  "title": "Marquee",
+  "description": "Seamless infinite scroller in any direction that eases to a stop on hover, with faded edges.",
+  "section": "components",
+  "category": "Text & Motion",
+  "dependencies": [
+    "motion-v"
+  ]
+}

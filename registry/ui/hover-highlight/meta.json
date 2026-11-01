@@ -1,0 +1,9 @@
+{
+  "title": "Hover Highlight",
+  "description": "List, nav or grid where one shared background glides to the hovered item and fades out on leave.",
+  "section": "components",
+  "category": "Layout & Surfaces",
+  "dependencies": [
+    "motion-v"
+  ]
+}

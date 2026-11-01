@@ -1,0 +1,9 @@
+{
+  "title": "Scroll Reveal",
+  "description": "Reveals children with staggered presets as they scroll into view, plus a springy reading progress bar.",
+  "section": "components",
+  "category": "Text & Motion",
+  "dependencies": [
+    "motion-v"
+  ]
+}

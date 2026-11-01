@@ -1,0 +1,10 @@
+{
+  "title": "Motion Badge",
+  "description": "Badge with odometer-style rolling counts and an optional pulsing live dot.",
+  "section": "components",
+  "category": "Data Display",
+  "dependencies": [
+    "motion-v",
+    "class-variance-authority"
+  ]
+}
