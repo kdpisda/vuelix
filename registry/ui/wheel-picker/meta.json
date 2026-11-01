@@ -1,0 +1,9 @@
+{
+  "title": "Wheel Picker",
+  "description": "An iOS-style 3D scroll wheel with flick momentum that snaps to items; combine wheels for time pickers.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

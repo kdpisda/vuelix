@@ -1,0 +1,9 @@
+{
+  "title": "Orbit Carousel",
+  "description": "Cards on a 3D ring: drag to spin with inertia that snaps to the nearest card, or let it orbit slowly.",
+  "section": "components",
+  "category": "Layout & Surfaces",
+  "dependencies": [
+    "motion-v"
+  ]
+}
