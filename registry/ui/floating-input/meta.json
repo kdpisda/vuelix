@@ -1,0 +1,9 @@
+{
+  "title": "Floating Input",
+  "description": "Text field whose label springs up on focus, with an animated focus ring, clear button and sliding error.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

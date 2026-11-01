@@ -1,0 +1,9 @@
+{
+  "title": "Range Slider",
+  "description": "Single or dual-thumb slider with growing thumbs, a value bubble that follows, and an animated fill.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

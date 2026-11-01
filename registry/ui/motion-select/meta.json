@@ -1,0 +1,9 @@
+{
+  "title": "Motion Select",
+  "description": "Single-select dropdown that scales out of its trigger, with a gliding highlight and drawn-in check.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}
