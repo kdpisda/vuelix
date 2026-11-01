@@ -1,0 +1,9 @@
+{
+  "title": "Expanding Button",
+  "description": "A compact button that springs open into an inline panel of actions or a small form, then folds back.",
+  "section": "components",
+  "category": "Buttons & Actions",
+  "dependencies": [
+    "motion-v"
+  ]
+}

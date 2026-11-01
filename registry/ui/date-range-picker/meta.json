@@ -1,0 +1,9 @@
+{
+  "title": "Date Range Picker",
+  "description": "A calendar popover with presets, a range band that stretches between dates and sliding months.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

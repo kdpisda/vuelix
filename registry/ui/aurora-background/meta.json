@@ -1,0 +1,9 @@
+{
+  "title": "Aurora Background",
+  "description": "A section backdrop of soft, slowly drifting gradient blobs with optional film grain; transform-only and light on CPU.",
+  "section": "components",
+  "category": "Layout & Surfaces",
+  "dependencies": [
+    "motion-v"
+  ]
+}

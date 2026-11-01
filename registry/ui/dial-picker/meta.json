@@ -1,0 +1,9 @@
+{
+  "title": "Dial Picker",
+  "description": "A circular dial: drag the knob around a ticked arc, it snaps to steps while the readout rolls.",
+  "section": "components",
+  "category": "Inputs & Forms",
+  "dependencies": [
+    "motion-v"
+  ]
+}

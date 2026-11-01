@@ -1,0 +1,9 @@
+{
+  "title": "Pull to Refresh",
+  "description": "Pull a scroll area down with rubber-band resistance; a spinning indicator holds while your refresh runs.",
+  "section": "components",
+  "category": "Feedback",
+  "dependencies": [
+    "motion-v"
+  ]
+}
