@@ -1,0 +1,9 @@
+{
+  "title": "Fluid Tabs",
+  "description": "Tabs whose indicator stretches like liquid between triggers while panels slide and resize.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}

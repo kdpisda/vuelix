@@ -1,0 +1,9 @@
+{
+  "title": "Action Bar",
+  "description": "A floating bulk-action bar that springs in on selection, rolls its count and confirms in place.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}
