@@ -1,0 +1,9 @@
+{
+  "title": "Approval Card",
+  "description": "Asks the user to approve an agent action, then collapses into a compact resolved row with a stamp that slams in.",
+  "section": "ai",
+  "category": "AI",
+  "dependencies": [
+    "motion-v"
+  ]
+}
