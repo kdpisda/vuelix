@@ -3,6 +3,7 @@
 import type { App, Component } from 'vue'
 import { SpringButton } from './ui/spring-button'
 import { ThemeToggle } from './ui/theme-toggle'
+import { ColorPicker, ColorPickerPopover } from './ui/color-picker'
 import { ColorSwatches } from './ui/color-swatches'
 import { Combobox } from './ui/combobox'
 import { FloatingInput } from './ui/floating-input'
@@ -27,6 +28,7 @@ import { Sparkline } from './ui/sparkline'
 
 export * from './ui/spring-button'
 export * from './ui/theme-toggle'
+export * from './ui/color-picker'
 export * from './ui/color-swatches'
 export * from './ui/combobox'
 export * from './ui/floating-input'
@@ -53,6 +55,8 @@ export { cn } from './lib/utils'
 const components: Record<string, Component> = {
   SpringButton,
   ThemeToggle,
+  ColorPicker,
+  ColorPickerPopover,
   ColorSwatches,
   Combobox,
   FloatingInput,

@@ -6,7 +6,7 @@
     "path": "lib/utils.ts",
     "raw_url": "https://vuelix.dev/r/raw/utils.ts"
   },
-  "count": 23,
+  "count": 24,
   "items": [
     {
       "slug": "spring-button",
@@ -67,6 +67,45 @@
         {
           "path": "components/ui/theme-toggle/index.ts",
           "raw_url": "https://vuelix.dev/r/raw/theme-toggle/index.ts"
+        }
+      ]
+    },
+    {
+      "slug": "color-picker",
+      "name": "Color Picker",
+      "description": "HSV color picker with springy thumbs, hex/RGB/HSL fields, eyedropper, recents and a popover variant.",
+      "section": "components",
+      "category": "Inputs & Forms",
+      "page_url": "https://vuelix.dev/components/color-picker",
+      "detail_url": "https://vuelix.dev/r/color-picker.json",
+      "install": "npx shadcn-vue@latest add https://vuelix.dev/r/color-picker.json",
+      "npm": {
+        "package": "vuelix",
+        "imports": [
+          "ColorPicker",
+          "ColorPickerPopover"
+        ]
+      },
+      "dependencies": [
+        "motion-v"
+      ],
+      "registry_dependencies": [],
+      "files": [
+        {
+          "path": "components/ui/color-picker/ColorPicker.vue",
+          "raw_url": "https://vuelix.dev/r/raw/color-picker/ColorPicker.vue"
+        },
+        {
+          "path": "components/ui/color-picker/ColorPickerPopover.vue",
+          "raw_url": "https://vuelix.dev/r/raw/color-picker/ColorPickerPopover.vue"
+        },
+        {
+          "path": "components/ui/color-picker/color.ts",
+          "raw_url": "https://vuelix.dev/r/raw/color-picker/color.ts"
+        },
+        {
+          "path": "components/ui/color-picker/index.ts",
+          "raw_url": "https://vuelix.dev/r/raw/color-picker/index.ts"
         }
       ]
     },

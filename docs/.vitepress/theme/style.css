@@ -126,3 +126,13 @@
 .vp-raw.vp-raw:where(a, button, p, h2) {
   all: revert-layer;
 }
+
+/*
+ * Overlays teleported to <body> (popovers, dialogs, drawers, lightboxes…) live outside .vp-raw,
+ * so give them the same treatment. VitePress' own teleported search box is excluded.
+ */
+body > :where(:not(#app):not(.VPLocalSearchBox)) :where(button, input, select, textarea, a, p, h1, h2, h3, h4, h5, h6, ul, ol, li, table, img, svg, pre, code, label),
+body > :where(:not(#app):not(.VPLocalSearchBox)):where(button, a) {
+  all: revert-layer;
+}
+

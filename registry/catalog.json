@@ -30,6 +30,21 @@
     ]
   },
   {
+    "name": "color-picker",
+    "title": "Color Picker",
+    "description": "HSV color picker with springy thumbs, hex/RGB/HSL fields, eyedropper, recents and a popover variant.",
+    "section": "components",
+    "category": "Inputs & Forms",
+    "url": "/components/color-picker",
+    "exports": [
+      "ColorPicker",
+      "ColorPickerPopover"
+    ],
+    "dependencies": [
+      "motion-v"
+    ]
+  },
+  {
     "name": "color-swatches",
     "title": "Color Swatches",
     "description": "Color picker where a springy ring hops between swatches, with an optional custom color.",
