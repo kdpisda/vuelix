@@ -8,3 +8,6 @@ packages/*/dist
 .shots
 .claude/
 .shots-*.txt
+.shots-run.sh
+.shots-part-*
+.shots-p.txt
