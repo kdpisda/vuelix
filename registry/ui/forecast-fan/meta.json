@@ -1,0 +1,9 @@
+{
+  "title": "Forecast Fan",
+  "description": "Price history that opens into a fan of low / median / high targets, with a scrubber that reads into the future.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ]
+}

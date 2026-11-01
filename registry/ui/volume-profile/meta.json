@@ -1,0 +1,9 @@
+{
+  "title": "Volume Profile",
+  "description": "Volume-by-price histogram with a highlighted point of control and value area; bars ripple out from the POC.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ]
+}

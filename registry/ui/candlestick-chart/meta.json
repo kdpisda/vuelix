@@ -1,0 +1,9 @@
+{
+  "title": "Candlestick Chart",
+  "description": "Live OHLC candles with volume, a last-price tag and crosshair readout; new candles slide in.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ]
+}
