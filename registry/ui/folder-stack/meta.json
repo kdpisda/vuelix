@@ -1,0 +1,9 @@
+{
+  "title": "Folder Stack",
+  "description": "A folder whose flap tips open as its cards fan out, plus a card pile that deals itself into a grid.",
+  "section": "blocks",
+  "category": "Blocks",
+  "dependencies": [
+    "motion-v"
+  ]
+}
