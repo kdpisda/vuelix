@@ -1,0 +1,12 @@
+{
+  "title": "Treemap",
+  "description": "Squarified treemap whose tiles glide to their new size and position whenever the data changes.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chart-utils.json"
+  ]
+}

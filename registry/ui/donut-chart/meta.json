@@ -1,0 +1,13 @@
+{
+  "title": "Donut Chart",
+  "description": "Rounded ring segments that sweep in; hovering one swells it and counts its value up in the centre.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chart-utils.json",
+    "https://vuelix.dev/r/number-ticker.json"
+  ]
+}

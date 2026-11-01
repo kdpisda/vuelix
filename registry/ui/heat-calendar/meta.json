@@ -1,0 +1,12 @@
+{
+  "title": "Heat Calendar",
+  "description": "A year of daily activity as a weeks × weekdays grid that ripples in; drag across days to select a range.",
+  "section": "charts",
+  "category": "Charts",
+  "dependencies": [
+    "motion-v"
+  ],
+  "registryDependencies": [
+    "https://vuelix.dev/r/chart-utils.json"
+  ]
+}
