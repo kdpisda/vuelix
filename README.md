@@ -56,19 +56,13 @@ Use the shadcn-vue token names (`bg-primary`, `text-muted-foreground`, `border`,
 
 ## Deployment
 
-The docs + registry are hosted on **Cloudflare Pages** (project `vuelix`) at [vuelix.dev](https://vuelix.dev).
-Every push to `main` builds the site and deploys it via `.github/workflows/deploy.yml`, which needs two repository secrets:
+The docs + registry are hosted on **Cloudflare Pages** (project `vuelix`) at [vuelix.dev](https://vuelix.dev),
+using Pages' built-in GitHub integration — no Actions or secrets involved:
 
-| Secret | Value |
-| --- | --- |
-| `CLOUDFLARE_API_TOKEN` | API token with **Account → Cloudflare Pages → Edit** |
-| `CLOUDFLARE_ACCOUNT_ID` | The Cloudflare account ID that owns the `vuelix` project |
+- **Push to `main`** → Cloudflare builds (`pnpm build`) and deploys `docs/.vitepress/dist` to production.
+- **Any other branch / PR** → a preview deployment at `<branch>.vuelix.pages.dev`, linked from the PR.
 
-Manual deploy from a machine logged in with wrangler:
-
-```bash
-pnpm build && npx wrangler pages deploy docs/.vitepress/dist --project-name=vuelix --branch=main
-```
+Build settings live in the Cloudflare dashboard (Workers & Pages → vuelix → Settings → Builds): Node 22, root `/`.
 
 ## License
 
