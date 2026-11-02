@@ -49,9 +49,23 @@ const gettingStarted = {
   ],
 }
 
+const proGroup = {
+  text: 'vuelix Pro',
+  items: [
+    { text: 'Everything in Pro', link: '/pro' },
+    { text: 'Marketing blocks', link: '/pro#blocks' },
+    { text: 'App blocks', link: '/pro#app' },
+    { text: 'Components', link: '/pro#components' },
+    { text: 'Illustrations', link: '/pro#illustrations' },
+    { text: 'Templates', link: '/pro#templates' },
+    { text: 'Pricing', link: 'https://pro.vuelix.dev/pricing' },
+  ],
+}
+
 const sidebar = [
   gettingStarted,
   ...Object.keys(SECTION_TITLES).flatMap(sectionGroups),
+  proGroup,
 ]
 
 export default defineConfig({
@@ -82,6 +96,7 @@ gtag('config', 'G-1097SSK6TJ');`],
       { text: 'Blocks', link: '/blocks/', activeMatch: '^/blocks/' },
       { text: 'AI', link: '/ai/', activeMatch: '^/ai/' },
       { text: 'Charts', link: '/charts/', activeMatch: '^/charts/' },
+      { text: 'Pro', link: '/pro', activeMatch: '^/pro' },
       { text: 'Sponsors', link: '/sponsors' },
     ],
     sidebar: {
@@ -92,6 +107,7 @@ gtag('config', 'G-1097SSK6TJ');`],
       '/charts/': sidebar,
       '/changelog': sidebar,
       '/sponsors': sidebar,
+      '/pro': sidebar,
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/kdpisda/vuelix' }],
     search: { provider: 'local' },
@@ -104,6 +120,7 @@ gtag('config', 'G-1097SSK6TJ');`],
         '<a href="/docs/ai-agents">Agent guide</a>',
         '<a href="/llms.txt">llms.txt</a>',
         '<a href="/sponsors">Sponsor</a>',
+        '<a href="https://pro.vuelix.dev">vuelix Pro</a>',
       ].join(' · ') + '<br>Released under the MIT License. Built with Vue, Tailwind CSS and Motion.',
       copyright: 'Designed by <a href="https://kdpisda.in" target="_blank">Kuldeep Pisda</a>',
     },
@@ -118,6 +135,8 @@ gtag('config', 'G-1097SSK6TJ');`],
 > Animated, copy-paste components for Vue 3 & Nuxt, built on Tailwind CSS v4 and motion-v. Install copy-paste source with \`npx shadcn-vue@latest add ${SITE}/r/<slug>.json\`, or use the \`@vuelix/ui\` npm package (\`npm install @vuelix/ui motion-v\`, then \`@import "@vuelix/ui/tailwind.css";\`).
 
 Components use shadcn-vue theme tokens (bg-primary, text-muted-foreground, border, …) so they inherit the app's theme. A JSON catalogue of everything is at ${SITE}/r and an MCP server at ${SITE}/mcp.
+
+Premium sections, app screens, illustrations and templates built on vuelix are available in vuelix Pro (https://pro.vuelix.dev, catalogue at https://pro.vuelix.dev/r/index.json, MCP at https://pro.vuelix.dev/mcp).
 
 ## Docs
 

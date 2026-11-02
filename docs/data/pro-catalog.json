@@ -1,0 +1,914 @@
+[
+  {
+    "name": "hero-spotlight",
+    "title": "Hero Spotlight",
+    "description": "Hero with a pointer-following spotlight, word-by-word headline reveal and a product window that rises in.",
+    "section": "blocks",
+    "category": "Hero",
+    "url": "https://pro.vuelix.dev/blocks/hero-spotlight"
+  },
+  {
+    "name": "hero-gradient-mesh",
+    "title": "Hero Gradient Mesh",
+    "description": "Centered hero over a slowly morphing gradient mesh, a cycling highlighted word, email capture and social proof.",
+    "section": "blocks",
+    "category": "Hero",
+    "url": "https://pro.vuelix.dev/blocks/hero-gradient-mesh"
+  },
+  {
+    "name": "hero-split-showcase",
+    "title": "Hero Split Showcase",
+    "description": "Two-column hero: copy on the left, a stack of floating product cards that stagger in and drift with pointer parallax.",
+    "section": "blocks",
+    "category": "Hero",
+    "url": "https://pro.vuelix.dev/blocks/hero-split-showcase"
+  },
+  {
+    "name": "hero-terminal",
+    "title": "Hero Terminal",
+    "description": "Developer-tool hero with a copyable install chip and a terminal that types commands and streams live output.",
+    "section": "blocks",
+    "category": "Hero",
+    "url": "https://pro.vuelix.dev/blocks/hero-terminal"
+  },
+  {
+    "name": "hero-video-frame",
+    "title": "Hero Video Frame",
+    "description": "Bold headline over a tilted 3D product frame that straightens as you scroll, with a play button that opens a video lightbox.",
+    "section": "blocks",
+    "category": "Hero",
+    "url": "https://pro.vuelix.dev/blocks/hero-video-frame"
+  },
+  {
+    "name": "features-bento",
+    "title": "Features Bento",
+    "description": "Six-card bento grid where every card runs its own live micro-demo and lifts with a spotlight on hover.",
+    "section": "blocks",
+    "category": "Features",
+    "url": "https://pro.vuelix.dev/blocks/features-bento"
+  },
+  {
+    "name": "features-tabs-showcase",
+    "title": "Features Tabs Showcase",
+    "description": "Auto-advancing feature tabs with a progress bar per tab and a product visual that blurs and morphs on change.",
+    "section": "blocks",
+    "category": "Features",
+    "url": "https://pro.vuelix.dev/blocks/features-tabs-showcase"
+  },
+  {
+    "name": "features-icon-grid",
+    "title": "Features Icon Grid",
+    "description": "3 × 2 feature grid whose hairlines and line icons draw themselves in on view, and redraw on hover.",
+    "section": "blocks",
+    "category": "Features",
+    "url": "https://pro.vuelix.dev/blocks/features-icon-grid"
+  },
+  {
+    "name": "features-scroll-sticky",
+    "title": "Features Scroll Sticky",
+    "description": "Feature story with a sticky product window that morphs as each paragraph scrolls past a filling progress rail.",
+    "section": "blocks",
+    "category": "Features",
+    "url": "https://pro.vuelix.dev/blocks/features-scroll-sticky"
+  },
+  {
+    "name": "features-comparison",
+    "title": "Features Comparison",
+    "description": "Before-and-after product split with a draggable, keyboard-accessible divider and a row of measured gains.",
+    "section": "blocks",
+    "category": "Features",
+    "url": "https://pro.vuelix.dev/blocks/features-comparison"
+  },
+  {
+    "name": "logo-marquee",
+    "title": "Logo Marquee",
+    "description": "Two rows of customer logos gliding in opposite directions with soft edge fades; hovering a row eases it to a stop.",
+    "section": "blocks",
+    "category": "Logo Cloud",
+    "url": "https://pro.vuelix.dev/blocks/logo-marquee"
+  },
+  {
+    "name": "logo-grid-reveal",
+    "title": "Logo Grid Reveal",
+    "description": "Hairline grid of logo tiles that swap to new customers one at a time, with a rolling crossfade and a flash of brand light.",
+    "section": "blocks",
+    "category": "Logo Cloud",
+    "url": "https://pro.vuelix.dev/blocks/logo-grid-reveal"
+  },
+  {
+    "name": "logo-wall-stats",
+    "title": "Logo Wall Stats",
+    "description": "Counting “Trusted by 4,000+ teams” headline and stats over a logo wall whose grid lines light up around the cursor.",
+    "section": "blocks",
+    "category": "Logo Cloud",
+    "url": "https://pro.vuelix.dev/blocks/logo-wall-stats"
+  },
+  {
+    "name": "steps-timeline",
+    "title": "Steps Timeline",
+    "description": "Numbered steps along a line that fills as you scroll, each revealing an animated illustration card.",
+    "section": "blocks",
+    "category": "How It Works",
+    "url": "https://pro.vuelix.dev/blocks/steps-timeline"
+  },
+  {
+    "name": "steps-cards-connected",
+    "title": "Steps Cards Connected",
+    "description": "Step cards linked by a marching dashed path, with a glowing dot that travels it and lights up each step.",
+    "section": "blocks",
+    "category": "How It Works",
+    "url": "https://pro.vuelix.dev/blocks/steps-cards-connected"
+  },
+  {
+    "name": "steps-code-flow",
+    "title": "Steps Code Flow",
+    "description": "Developer quickstart: steps on the left drive a code editor's moving line highlight and a live result preview.",
+    "section": "blocks",
+    "category": "How It Works",
+    "url": "https://pro.vuelix.dev/blocks/steps-code-flow"
+  },
+  {
+    "name": "stats-counters",
+    "title": "Stats Counters",
+    "description": "Big counting numbers with trend badges and sparklines that draw in together when the panel scrolls into view.",
+    "section": "blocks",
+    "category": "Stats",
+    "url": "https://pro.vuelix.dev/blocks/stats-counters"
+  },
+  {
+    "name": "stats-globe",
+    "title": "Stats Globe",
+    "description": "Key numbers orbiting a spinning dotted globe, with pulsing cities, travelling arcs and a live request counter.",
+    "section": "blocks",
+    "category": "Stats",
+    "url": "https://pro.vuelix.dev/blocks/stats-globe"
+  },
+  {
+    "name": "stats-milestones",
+    "title": "Stats Milestones",
+    "description": "Company milestones on a track that fills over a growth curve, lighting each marker and counting up its metric.",
+    "section": "blocks",
+    "category": "Stats",
+    "url": "https://pro.vuelix.dev/blocks/stats-milestones"
+  },
+  {
+    "name": "testimonials-wall",
+    "title": "Testimonials Wall",
+    "description": "Masonry wall of quote cards in three columns drifting up and down in opposite directions, pausing on hover.",
+    "section": "blocks",
+    "category": "Testimonials",
+    "url": "https://pro.vuelix.dev/blocks/testimonials-wall"
+  },
+  {
+    "name": "testimonials-spotlight",
+    "title": "Testimonials Spotlight",
+    "description": "One large featured quote that swaps word by word through a blur, with auto-advance, arrows and an avatar strip.",
+    "section": "blocks",
+    "category": "Testimonials",
+    "url": "https://pro.vuelix.dev/blocks/testimonials-spotlight"
+  },
+  {
+    "name": "testimonials-metrics",
+    "title": "Testimonials Metrics",
+    "description": "Case-study cards pairing a wordmark and quote with a headline metric that counts up, a drawn trend line and hover tilt.",
+    "section": "blocks",
+    "category": "Testimonials",
+    "url": "https://pro.vuelix.dev/blocks/testimonials-metrics"
+  },
+  {
+    "name": "testimonials-tweets",
+    "title": "Testimonials Tweets",
+    "description": "Social-post cards with handles, dates and likeable hearts that sit in a fanned pile, then deal out into a masonry grid.",
+    "section": "blocks",
+    "category": "Testimonials",
+    "url": "https://pro.vuelix.dev/blocks/testimonials-tweets"
+  },
+  {
+    "name": "pricing-tiers",
+    "title": "Pricing Tiers",
+    "description": "Three plans with a monthly/yearly switch: prices roll like an odometer, a savings badge springs in, the hero tier glows.",
+    "section": "blocks",
+    "category": "Pricing",
+    "url": "https://pro.vuelix.dev/blocks/pricing-tiers"
+  },
+  {
+    "name": "pricing-slider",
+    "title": "Pricing Slider",
+    "description": "Usage-based pricing: drag a stepped slider and the price rolls digit by digit while the recommended plan morphs.",
+    "section": "blocks",
+    "category": "Pricing",
+    "url": "https://pro.vuelix.dev/blocks/pricing-slider"
+  },
+  {
+    "name": "pricing-comparison",
+    "title": "Pricing Comparison",
+    "description": "Full feature comparison table with a sticky plan header, collapsible groups, popping checkmarks and feature tooltips.",
+    "section": "blocks",
+    "category": "Pricing",
+    "url": "https://pro.vuelix.dev/blocks/pricing-comparison"
+  },
+  {
+    "name": "pricing-single",
+    "title": "Pricing Single",
+    "description": "A single-plan offer: the checklist ticks itself off in sequence, a guarantee seal spins and the CTA shimmers.",
+    "section": "blocks",
+    "category": "Pricing",
+    "url": "https://pro.vuelix.dev/blocks/pricing-single"
+  },
+  {
+    "name": "faq-two-column",
+    "title": "FAQ Two Column",
+    "description": "Sticky intro, live search and contact card beside a bouncy accordion that filters and highlights matches as you type.",
+    "section": "blocks",
+    "category": "FAQ",
+    "url": "https://pro.vuelix.dev/blocks/faq-two-column"
+  },
+  {
+    "name": "faq-categories",
+    "title": "FAQ Categories",
+    "description": "Category tabs with live counts filter a two-column grid of question cards that reflow and expand inline.",
+    "section": "blocks",
+    "category": "FAQ",
+    "url": "https://pro.vuelix.dev/blocks/faq-categories"
+  },
+  {
+    "name": "faq-chat",
+    "title": "FAQ Chat",
+    "description": "FAQ as a support chat: tap a suggested question, it morphs into your bubble and the answer types itself in.",
+    "section": "blocks",
+    "category": "FAQ",
+    "url": "https://pro.vuelix.dev/blocks/faq-chat"
+  },
+  {
+    "name": "integrations-orbit",
+    "title": "Integrations Orbit",
+    "description": "Product mark circled by integration icons on three rings at different speeds; hover pauses and shows a card.",
+    "section": "blocks",
+    "category": "Integrations",
+    "url": "https://pro.vuelix.dev/blocks/integrations-orbit"
+  },
+  {
+    "name": "integrations-grid",
+    "title": "Integrations Grid",
+    "description": "Searchable integration directory with category tabs, layout-animated filtering and Connected toggles.",
+    "section": "blocks",
+    "category": "Integrations",
+    "url": "https://pro.vuelix.dev/blocks/integrations-grid"
+  },
+  {
+    "name": "integrations-flow",
+    "title": "Integrations Flow",
+    "description": "Sources stream through animated SVG beams into your product hub and out to destinations, with a live counter.",
+    "section": "blocks",
+    "category": "Integrations",
+    "url": "https://pro.vuelix.dev/blocks/integrations-flow"
+  },
+  {
+    "name": "content-blog-grid",
+    "title": "Content Blog Grid",
+    "description": "Blog index with a featured lead story, animated category chips, zooming cover images and reading times.",
+    "section": "blocks",
+    "category": "Content",
+    "url": "https://pro.vuelix.dev/blocks/content-blog-grid"
+  },
+  {
+    "name": "content-changelog",
+    "title": "Content Changelog",
+    "description": "Release timeline with version badges, tagged changes, tag filters, expandable details and a scroll-drawn line.",
+    "section": "blocks",
+    "category": "Content",
+    "url": "https://pro.vuelix.dev/blocks/content-changelog"
+  },
+  {
+    "name": "content-article-hero",
+    "title": "Content Article Hero",
+    "description": "Long-form article header with byline, scroll progress bar, parallax cover and a table of contents that tracks you.",
+    "section": "blocks",
+    "category": "Content",
+    "url": "https://pro.vuelix.dev/blocks/content-article-hero"
+  },
+  {
+    "name": "gallery-masonry",
+    "title": "Gallery Masonry",
+    "description": "Photo masonry with animated filter tabs, hover captions and a lightbox that morphs open from the tile.",
+    "section": "blocks",
+    "category": "Gallery",
+    "url": "https://pro.vuelix.dev/blocks/gallery-masonry"
+  },
+  {
+    "name": "gallery-carousel-3d",
+    "title": "Gallery Carousel 3D",
+    "description": "Coverflow-style screenshot carousel with perspective, drag with momentum, captions and progress dots.",
+    "section": "blocks",
+    "category": "Gallery",
+    "url": "https://pro.vuelix.dev/blocks/gallery-carousel-3d"
+  },
+  {
+    "name": "gallery-before-after",
+    "title": "Gallery Before / After",
+    "description": "Case-study grid of draggable before/after comparison sliders with a hint sweep, results and links.",
+    "section": "blocks",
+    "category": "Gallery",
+    "url": "https://pro.vuelix.dev/blocks/gallery-before-after"
+  },
+  {
+    "name": "team-grid",
+    "title": "Team Grid",
+    "description": "Team portraits with a department filter, layout-animated re-flow and social links that slide in on hover.",
+    "section": "blocks",
+    "category": "Team",
+    "url": "https://pro.vuelix.dev/blocks/team-grid"
+  },
+  {
+    "name": "team-orbit-hiring",
+    "title": "Team Orbit Hiring",
+    "description": "Careers section with a slowly orbiting team photo collage, department chips and an animated open-roles list.",
+    "section": "blocks",
+    "category": "Team",
+    "url": "https://pro.vuelix.dev/blocks/team-orbit-hiring"
+  },
+  {
+    "name": "team-leadership",
+    "title": "Team Leadership",
+    "description": "Large leadership portraits that morph into a shared-layout bio dialog with quote, history and links.",
+    "section": "blocks",
+    "category": "Team",
+    "url": "https://pro.vuelix.dev/blocks/team-leadership"
+  },
+  {
+    "name": "newsletter-inline",
+    "title": "Newsletter Inline",
+    "description": "Compact signup band whose button morphs from label to spinner to a success check with a confetti burst.",
+    "section": "blocks",
+    "category": "Newsletter",
+    "url": "https://pro.vuelix.dev/blocks/newsletter-inline"
+  },
+  {
+    "name": "newsletter-card-stack",
+    "title": "Newsletter Card Stack",
+    "description": "Signup card with a deck of past-issue previews fanned behind it that shuffles when you hover the deck.",
+    "section": "blocks",
+    "category": "Newsletter",
+    "url": "https://pro.vuelix.dev/blocks/newsletter-card-stack"
+  },
+  {
+    "name": "newsletter-split",
+    "title": "Newsletter Split",
+    "description": "Split signup: benefits that tick in, a live subscriber count with arriving avatars, and a floating-label form.",
+    "section": "blocks",
+    "category": "Newsletter",
+    "url": "https://pro.vuelix.dev/blocks/newsletter-split"
+  },
+  {
+    "name": "cta-aurora",
+    "title": "CTA Aurora",
+    "description": "Full-width call to action over a drifting aurora with a glowing horizon, word-by-word headline and two buttons.",
+    "section": "blocks",
+    "category": "CTA",
+    "url": "https://pro.vuelix.dev/blocks/cta-aurora"
+  },
+  {
+    "name": "cta-spotlight-card",
+    "title": "CTA Spotlight Card",
+    "description": "Boxed CTA with a light beam circling its border, a grid that glows under the pointer and a testimonial.",
+    "section": "blocks",
+    "category": "CTA",
+    "url": "https://pro.vuelix.dev/blocks/cta-spotlight-card"
+  },
+  {
+    "name": "cta-app-download",
+    "title": "CTA App Download",
+    "description": "Mobile app CTA: a phone mock cycling through live app screens, store-style buttons and a scannable QR card.",
+    "section": "blocks",
+    "category": "CTA",
+    "url": "https://pro.vuelix.dev/blocks/cta-app-download"
+  },
+  {
+    "name": "cta-terminal-install",
+    "title": "CTA Terminal Install",
+    "description": "Developer CTA: package-manager tabs, a big install command with a copy animation and replaying terminal output.",
+    "section": "blocks",
+    "category": "CTA",
+    "url": "https://pro.vuelix.dev/blocks/cta-terminal-install"
+  },
+  {
+    "name": "footer-columns",
+    "title": "Footer Columns",
+    "description": "Classic multi-column footer with a mini newsletter form, socials, a live status pill and a theme toggle.",
+    "section": "blocks",
+    "category": "Footer",
+    "url": "https://pro.vuelix.dev/blocks/footer-columns"
+  },
+  {
+    "name": "footer-big-wordmark",
+    "title": "Footer Big Wordmark",
+    "description": "Editorial footer whose oversized wordmark rises letter by letter out of a masked line as it scrolls into view.",
+    "section": "blocks",
+    "category": "Footer",
+    "url": "https://pro.vuelix.dev/blocks/footer-big-wordmark"
+  },
+  {
+    "name": "footer-minimal",
+    "title": "Footer Minimal",
+    "description": "Single-row footer: one underline glides between links on hover, and a back-to-top button whose arrow loops up.",
+    "section": "blocks",
+    "category": "Footer",
+    "url": "https://pro.vuelix.dev/blocks/footer-minimal"
+  },
+  {
+    "name": "footer-cta",
+    "title": "Footer CTA",
+    "description": "Footer that opens with an inverted CTA panel, then a light-swept gradient divider and a six-column sitemap.",
+    "section": "blocks",
+    "category": "Footer",
+    "url": "https://pro.vuelix.dev/blocks/footer-cta"
+  },
+  {
+    "name": "navbar-floating",
+    "title": "Navbar Floating",
+    "description": "Navbar that condenses into a blurred floating pill on scroll, with a gliding active indicator and a menu that morphs out of the pill.",
+    "section": "blocks",
+    "category": "Navbar",
+    "url": "https://pro.vuelix.dev/blocks/navbar-floating"
+  },
+  {
+    "name": "navbar-mega",
+    "title": "Navbar Mega",
+    "description": "Navbar with mega-menu dropdowns — icon link columns and a featured card in one surface that resizes and slides between menus.",
+    "section": "blocks",
+    "category": "Navbar",
+    "url": "https://pro.vuelix.dev/blocks/navbar-mega"
+  },
+  {
+    "name": "navbar-announcement",
+    "title": "Navbar Announcement",
+    "description": "Dismissible announcement bar that collapses away above a centered-link navbar, with a slide-in mobile drawer.",
+    "section": "blocks",
+    "category": "Navbar",
+    "url": "https://pro.vuelix.dev/blocks/navbar-announcement"
+  },
+  {
+    "name": "kpi-overview",
+    "title": "KPI Overview",
+    "description": "KPI card row with ticking values, delta badges and hoverable sparklines that stagger in per period.",
+    "section": "app",
+    "category": "Dashboards",
+    "url": "https://pro.vuelix.dev/app/kpi-overview"
+  },
+  {
+    "name": "analytics-overview",
+    "title": "Analytics Overview",
+    "description": "Web analytics panel: metric tabs drive an area chart, with top pages, traffic sources and a date range.",
+    "section": "app",
+    "category": "Dashboards",
+    "url": "https://pro.vuelix.dev/app/analytics-overview"
+  },
+  {
+    "name": "revenue-dashboard",
+    "title": "Revenue Dashboard",
+    "description": "MRR/ARR panel with plan-stacked growth, a net revenue waterfall that builds in and a cohort retention grid.",
+    "section": "app",
+    "category": "Dashboards",
+    "url": "https://pro.vuelix.dev/app/revenue-dashboard"
+  },
+  {
+    "name": "performance-report",
+    "title": "Performance Report",
+    "description": "Report card with score rings that fill, target-vs-actual bars with status filters and an export menu.",
+    "section": "app",
+    "category": "Dashboards",
+    "url": "https://pro.vuelix.dev/app/performance-report"
+  },
+  {
+    "name": "usage-meter",
+    "title": "Usage Meter",
+    "description": "Plan usage panel: spring-filled meters with projections, threshold warnings and a contextual upgrade nudge.",
+    "section": "app",
+    "category": "Dashboards",
+    "url": "https://pro.vuelix.dev/app/usage-meter"
+  },
+  {
+    "name": "activity-heatmap-panel",
+    "title": "Activity Heatmap Panel",
+    "description": "Year heat calendar with streak stats and a recent-activity feed that filters to the days you drag across.",
+    "section": "app",
+    "category": "Dashboards",
+    "url": "https://pro.vuelix.dev/app/activity-heatmap-panel"
+  },
+  {
+    "name": "log-explorer",
+    "title": "Log Explorer",
+    "description": "Log viewer with level chips, highlighted search, a volume histogram, JSON rows that expand and a live tail.",
+    "section": "app",
+    "category": "Data",
+    "url": "https://pro.vuelix.dev/app/log-explorer"
+  },
+  {
+    "name": "audit-trail",
+    "title": "Audit Trail",
+    "description": "Audit log timeline with actor avatars, before → after diff chips, actor and action filters and relative times.",
+    "section": "app",
+    "category": "Data",
+    "url": "https://pro.vuelix.dev/app/audit-trail"
+  },
+  {
+    "name": "data-grid-pro",
+    "title": "Data Grid Pro",
+    "description": "Advanced table: column menu, sortable headers, selection with a bulk bar, inline status edits and pagination.",
+    "section": "app",
+    "category": "Data",
+    "url": "https://pro.vuelix.dev/app/data-grid-pro"
+  },
+  {
+    "name": "invoice-list",
+    "title": "Invoice List",
+    "description": "Invoices with totals, status filters and due-date cues; rows open a preview panel that docks in beside the list.",
+    "section": "app",
+    "category": "Data",
+    "url": "https://pro.vuelix.dev/app/invoice-list"
+  },
+  {
+    "name": "user-directory",
+    "title": "User Directory",
+    "description": "Member management list with inline role menus, status filters, row actions and an invite dialog with email chips.",
+    "section": "app",
+    "category": "Data",
+    "url": "https://pro.vuelix.dev/app/user-directory"
+  },
+  {
+    "name": "kanban-board",
+    "title": "Kanban Board",
+    "description": "Drag cards within and across columns with springy layout motion, WIP limits, inline add and keyboard moves.",
+    "section": "app",
+    "category": "Workflows",
+    "url": "https://pro.vuelix.dev/app/kanban-board"
+  },
+  {
+    "name": "approval-queue",
+    "title": "Approval Queue",
+    "description": "Expense, access and deploy requests with risk, filters, a detail drawer and approvals that stamp and slide out.",
+    "section": "app",
+    "category": "Workflows",
+    "url": "https://pro.vuelix.dev/app/approval-queue"
+  },
+  {
+    "name": "onboarding-checklist",
+    "title": "Onboarding Checklist",
+    "description": "Setup guide with a progress ring, expanding step instructions, a check burst on completion and dismiss.",
+    "section": "app",
+    "category": "Workflows",
+    "url": "https://pro.vuelix.dev/app/onboarding-checklist"
+  },
+  {
+    "name": "workflow-builder",
+    "title": "Workflow Builder",
+    "description": "Node-graph canvas with animated bezier edges, pan and zoom, drag-to-connect, a step palette and a settings panel.",
+    "section": "app",
+    "category": "Workflows",
+    "url": "https://pro.vuelix.dev/app/workflow-builder"
+  },
+  {
+    "name": "release-timeline",
+    "title": "Release Timeline",
+    "description": "Gantt-style roadmap with swimlanes, bars that grow into place, a today marker and week / month zoom.",
+    "section": "app",
+    "category": "Workflows",
+    "url": "https://pro.vuelix.dev/app/release-timeline"
+  },
+  {
+    "name": "comment-thread",
+    "title": "Comment Thread",
+    "description": "Threaded comments with bumping emoji reactions, expanding replies, mention chips and a formatting-aware composer.",
+    "section": "app",
+    "category": "Collaboration",
+    "url": "https://pro.vuelix.dev/app/comment-thread"
+  },
+  {
+    "name": "mail-inbox",
+    "title": "Mail Inbox",
+    "description": "Three-pane inbox with folders, unread states, swipe-to-archive rows and a reading pane that slides in on mobile.",
+    "section": "app",
+    "category": "Collaboration",
+    "url": "https://pro.vuelix.dev/app/mail-inbox"
+  },
+  {
+    "name": "team-manager",
+    "title": "Team Manager",
+    "description": "Members with role menus, pending invites, a multi-email chip input and removals with an undo toast.",
+    "section": "app",
+    "category": "Collaboration",
+    "url": "https://pro.vuelix.dev/app/team-manager"
+  },
+  {
+    "name": "calendar-week",
+    "title": "Calendar Week",
+    "description": "Week calendar with time-positioned events, a live now line, drag to move or resize, drag-to-create and popovers.",
+    "section": "app",
+    "category": "Collaboration",
+    "url": "https://pro.vuelix.dev/app/calendar-week"
+  },
+  {
+    "name": "settings-page",
+    "title": "Settings Page",
+    "description": "Account settings with a responsive section nav, avatar upload, toggles, danger zone and a slide-up unsaved-changes bar.",
+    "section": "app",
+    "category": "Settings",
+    "url": "https://pro.vuelix.dev/app/settings-page"
+  },
+  {
+    "name": "billing-settings",
+    "title": "Billing Settings",
+    "description": "Plan, usage meters, payment card and invoices, with a prorated plan-switcher dialog and a two-step cancel flow.",
+    "section": "app",
+    "category": "Settings",
+    "url": "https://pro.vuelix.dev/app/billing-settings"
+  },
+  {
+    "name": "api-keys-manager",
+    "title": "API Keys Manager",
+    "description": "Masked key list with scopes and last-used times, a scoped create dialog, decode-in reveal-once secret and inline revoke.",
+    "section": "app",
+    "category": "Settings",
+    "url": "https://pro.vuelix.dev/app/api-keys-manager"
+  },
+  {
+    "name": "notification-preferences",
+    "title": "Notification Preferences",
+    "description": "Notification types × channels matrix with keyboard-navigable toggles and presets that ripple across the grid.",
+    "section": "app",
+    "category": "Settings",
+    "url": "https://pro.vuelix.dev/app/notification-preferences"
+  },
+  {
+    "name": "auth-split-login",
+    "title": "Auth Split Login",
+    "description": "Split-screen sign-in with social buttons, inline validation and an error shake, beside a rotating testimonial panel.",
+    "section": "app",
+    "category": "Auth",
+    "url": "https://pro.vuelix.dev/app/auth-split-login"
+  },
+  {
+    "name": "signup-stepper",
+    "title": "Signup Stepper",
+    "description": "Multi-step sign-up — account, workspace, team invites — with per-step validation, sliding steps and a success burst.",
+    "section": "app",
+    "category": "Auth",
+    "url": "https://pro.vuelix.dev/app/signup-stepper"
+  },
+  {
+    "name": "two-factor-setup",
+    "title": "Two-Factor Setup",
+    "description": "2FA enrolment: QR with manual key, OTP verification with a code-window timer, recovery codes to copy or download.",
+    "section": "app",
+    "category": "Auth",
+    "url": "https://pro.vuelix.dev/app/two-factor-setup"
+  },
+  {
+    "name": "magic-link-flow",
+    "title": "Magic Link Flow",
+    "description": "Passwordless sign-in: email entry, an animated envelope with resend countdown, verifying, success and expired states.",
+    "section": "app",
+    "category": "Auth",
+    "url": "https://pro.vuelix.dev/app/magic-link-flow"
+  },
+  {
+    "name": "emoji-picker",
+    "title": "Emoji Picker",
+    "description": "Emoji popover with search, gliding category tabs, skin tones, recents and arrow-key grid navigation.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/emoji-picker"
+  },
+  {
+    "name": "receipt",
+    "title": "Receipt",
+    "description": "Receipt that prints line by line from a slot, counts up its totals and slams down a PAID stamp.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/receipt"
+  },
+  {
+    "name": "image-compare",
+    "title": "Image Compare",
+    "description": "Before/after slider with a springy draggable handle, keyboard control, fading labels and zoom-on-hover.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/image-compare"
+  },
+  {
+    "name": "product-tour",
+    "title": "Product Tour",
+    "description": "Onboarding tour whose spotlight glides between targets, with a tooltip card, step dots and keyboard control.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/product-tour"
+  },
+  {
+    "name": "animated-dropdown",
+    "title": "Animated Dropdown",
+    "description": "Dropdown menu that morphs its size as submenu pages slide in, with checkable rows, shortcuts and typeahead.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/animated-dropdown"
+  },
+  {
+    "name": "countdown-timer",
+    "title": "Countdown Timer",
+    "description": "Countdown to a date with split-flap digits that flip in 3D, configurable units and a completion event.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/countdown-timer"
+  },
+  {
+    "name": "rating",
+    "title": "Rating",
+    "description": "Star, heart or emoji rating with hover preview, half steps, a particle burst on select and read-only mode.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/rating"
+  },
+  {
+    "name": "cookie-consent",
+    "title": "Cookie Consent",
+    "description": "Cookie banner that slides in and unfolds into per-category spring switches, saving choices to v-model.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/cookie-consent"
+  },
+  {
+    "name": "kbd-shortcuts",
+    "title": "Keyboard Shortcuts",
+    "description": "Shortcut cheat sheet opened with “?”: searchable groups and key caps that press down as you type.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/kbd-shortcuts"
+  },
+  {
+    "name": "progress-celebration",
+    "title": "Progress Celebration",
+    "description": "Goal ring or bar that springs toward its target and bursts into confetti with a message at 100%.",
+    "section": "components",
+    "category": "Components",
+    "url": "https://pro.vuelix.dev/components/progress-celebration"
+  },
+  {
+    "name": "illus-ai-spark",
+    "title": "AI Spark",
+    "description": "A glowing sparkle core with nodes orbiting on tilted rings and pulsing links. For AI features.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-ai-spark"
+  },
+  {
+    "name": "illus-calendar",
+    "title": "Calendar",
+    "description": "A calendar whose page flips over before a pin drops onto a date. For scheduling and empty agendas.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-calendar"
+  },
+  {
+    "name": "illus-connection-lost",
+    "title": "Connection Lost",
+    "description": "Two plugs tugging apart on swaying cables with sparks crackling in the gap. For offline and error states.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-connection-lost"
+  },
+  {
+    "name": "illus-growth",
+    "title": "Growth",
+    "description": "A bar chart that grows in while a trend line draws up and to the right with an arrowhead. For analytics.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-growth"
+  },
+  {
+    "name": "illus-notifications",
+    "title": "Notifications",
+    "description": "A bell that swings with a lagging clapper, a badge that pops and ripples. For alerts and empty feeds.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-notifications"
+  },
+  {
+    "name": "illus-payment",
+    "title": "Payment",
+    "description": "A card sliding up out of a wallet with contactless waves pulsing from it. For billing and checkout.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-payment"
+  },
+  {
+    "name": "illus-rocket-launch",
+    "title": "Rocket Launch",
+    "description": "A rocket lifting off over a bank of smoke puffs with a flickering flame. For onboarding and launches.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-rocket-launch"
+  },
+  {
+    "name": "illus-secure",
+    "title": "Secure",
+    "description": "A shield with a padlock that clicks shut while a scan line sweeps across it. For security and privacy.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-secure"
+  },
+  {
+    "name": "illus-success",
+    "title": "Success",
+    "description": "A scalloped check badge that stamps in, draws its tick and bursts into confetti. For completed flows.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-success"
+  },
+  {
+    "name": "illus-sync",
+    "title": "Sync",
+    "description": "Two servers trading data packets along curved lanes around a spinning sync badge. For sync and backups.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-sync"
+  },
+  {
+    "name": "illus-team",
+    "title": "Team",
+    "description": "Three avatar bubbles joined by flowing links, with a typing indicator. For teams, invites and sharing.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-team"
+  },
+  {
+    "name": "illus-upload",
+    "title": "Upload",
+    "description": "Files floating up into a cloud while a progress ring fills and ticks complete. For upload and import states.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-upload"
+  },
+  {
+    "name": "illus-empty-inbox",
+    "title": "Empty Inbox",
+    "description": "An open inbox tray with a paper plane looping around it on a dotted orbit. For inbox-zero states.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-empty-inbox"
+  },
+  {
+    "name": "illus-no-results",
+    "title": "No Results",
+    "description": "A magnifier sweeping back and forth over a stack of blank result cards. For empty searches and filters.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-no-results"
+  },
+  {
+    "name": "illus-lost",
+    "title": "Lost",
+    "description": "A compass with a hunting, wobbling needle at the end of a dotted trail. For 404 and dead-end pages.",
+    "section": "illustrations",
+    "category": "Illustrations",
+    "url": "https://pro.vuelix.dev/illustrations/illus-lost"
+  },
+  {
+    "name": "template-ai-product",
+    "title": "AI Product Landing",
+    "description": "Launch page for an AI research agent: a live hero where the agent searches, reads and streams a cited brief.",
+    "section": "templates",
+    "category": "Landing Pages",
+    "url": "https://pro.vuelix.dev/templates/template-ai-product"
+  },
+  {
+    "name": "template-devtool",
+    "title": "Devtool Landing",
+    "description": "Launch page for a developer tool: live install terminal, code walkthrough, SDK tabs, benchmarks and usage pricing.",
+    "section": "templates",
+    "category": "Landing Pages",
+    "url": "https://pro.vuelix.dev/templates/template-devtool"
+  },
+  {
+    "name": "template-saas",
+    "title": "SaaS Landing",
+    "description": "Launch-ready B2B SaaS landing page: live product hero, bento features, steps, results, pricing and FAQ.",
+    "section": "templates",
+    "category": "Landing Pages",
+    "url": "https://pro.vuelix.dev/templates/template-saas"
+  },
+  {
+    "name": "template-portfolio",
+    "title": "Portfolio",
+    "description": "Personal site for an independent designer-engineer: rotating-word hero, before/after case studies and a booking form.",
+    "section": "templates",
+    "category": "Portfolio",
+    "url": "https://pro.vuelix.dev/templates/template-portfolio"
+  },
+  {
+    "name": "template-analytics",
+    "title": "Analytics Dashboard",
+    "description": "Complete analytics app: collapsible sidebar, ⌘K search, KPIs, revenue, logs, customers and settings views.",
+    "section": "templates",
+    "category": "Apps",
+    "url": "https://pro.vuelix.dev/templates/template-analytics"
+  }
+]
