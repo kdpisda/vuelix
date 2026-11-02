@@ -1,5 +1,16 @@
 [
   {
+    "version": "0.2.1",
+    "date": "2026-11-02",
+    "title": "Install from npm as @vuelix/ui",
+    "summary": "The npm package now publishes from GitHub Actions with npm trusted publishing and provenance.",
+    "items": [
+      "npm install @vuelix/ui motion-v, then @import \"@vuelix/ui/tailwind.css\"",
+      "Releases are published by the release workflow using OIDC trusted publishing, with signed provenance and no tokens",
+      "No component changes since 0.2.0"
+    ]
+  },
+  {
     "version": "0.2.0",
     "date": "2026-11-01",
     "title": "100+ components, blocks, AI interfaces and charts",

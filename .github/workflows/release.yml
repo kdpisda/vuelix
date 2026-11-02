@@ -19,6 +19,8 @@ jobs:
           node-version: 24
           cache: pnpm
           registry-url: https://registry.npmjs.org
+      # Trusted publishing (OIDC, no token) needs npm >= 11.5.1
+      - run: npm install -g npm@latest
       - run: pnpm install --frozen-lockfile
       - run: pnpm typecheck
       - run: pnpm build:package
@@ -27,9 +29,7 @@ jobs:
         run: |
           version=$(node -p "require('./packages/vuelix/package.json').version")
           test "${GITHUB_REF_NAME}" = "v${version}" || { echo "Tag ${GITHUB_REF_NAME} != v${version}"; exit 1; }
+      # Authenticates via npm trusted publishing (kdpisda/vuelix · release.yml) — no token needed.
       - name: Publish
         working-directory: packages/vuelix
         run: npm publish --access public --provenance
-        env:
-          # Only needed until trusted publishing is configured on npmjs.com
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
