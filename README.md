@@ -72,9 +72,8 @@ Use the shadcn-vue token names (`bg-primary`, `text-muted-foreground`, `border`,
 2. Create a GitHub release tagged `v<version>` (e.g. `v0.2.0`).
 3. `.github/workflows/release.yml` builds and publishes to npm with provenance.
 
-Publishing auth uses npm **trusted publishing** (OIDC, no token). Set it up once on npmjs.com →
-`@vuelix/ui` → Settings → Trusted publishing → GitHub Actions, repo `kdpisda/vuelix`, workflow `release.yml`.
-Until that's configured, add an `NPM_TOKEN` repository secret (automation token) instead.
+Publishing authenticates with npm **trusted publishing** (OIDC, no token), configured on npmjs.com for
+`@vuelix/ui` → repo `kdpisda/vuelix`, workflow `release.yml`.
 
 ## Deployment
 
