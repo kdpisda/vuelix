@@ -6,7 +6,7 @@ Use it two ways:
 
 ```bash
 # 1. npm package — install and import
-npm install vuelix motion-v        # then: @import "vuelix/tailwind.css";
+npm install @vuelix/ui motion-v    # then: @import "@vuelix/ui/tailwind.css";
 
 # 2. Copy source — own and edit the code
 npx shadcn-vue@latest add https://vuelix.dev/r/dock.json
@@ -73,7 +73,7 @@ Use the shadcn-vue token names (`bg-primary`, `text-muted-foreground`, `border`,
 3. `.github/workflows/release.yml` builds and publishes to npm with provenance.
 
 Publishing auth uses npm **trusted publishing** (OIDC, no token). Set it up once on npmjs.com →
-`vuelix` → Settings → Trusted publishing → GitHub Actions, repo `kdpisda/vuelix`, workflow `release.yml`.
+`@vuelix/ui` → Settings → Trusted publishing → GitHub Actions, repo `kdpisda/vuelix`, workflow `release.yml`.
 Until that's configured, add an `NPM_TOKEN` repository secret (automation token) instead.
 
 ## Deployment

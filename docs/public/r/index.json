@@ -18,7 +18,7 @@
       "detail_url": "https://vuelix.dev/r/cta-button.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/cta-button.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "CtaButton"
         ]
@@ -49,7 +49,7 @@
       "detail_url": "https://vuelix.dev/r/expanding-button.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expanding-button.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ExpandingButton"
         ]
@@ -79,7 +79,7 @@
       "detail_url": "https://vuelix.dev/r/icon-swap.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/icon-swap.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "IconSwap"
         ]
@@ -110,7 +110,7 @@
       "detail_url": "https://vuelix.dev/r/spring-button.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-button.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SpringButton"
         ]
@@ -141,7 +141,7 @@
       "detail_url": "https://vuelix.dev/r/theme-toggle.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/theme-toggle.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ThemeToggle"
         ]
@@ -172,7 +172,7 @@
       "detail_url": "https://vuelix.dev/r/color-picker.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/color-picker.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ColorPicker",
           "ColorPickerPopover"
@@ -211,7 +211,7 @@
       "detail_url": "https://vuelix.dev/r/color-swatches.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/color-swatches.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ColorSwatches"
         ]
@@ -241,7 +241,7 @@
       "detail_url": "https://vuelix.dev/r/combobox.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/combobox.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Combobox"
         ]
@@ -271,7 +271,7 @@
       "detail_url": "https://vuelix.dev/r/date-range-picker.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/date-range-picker.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "DateRangePicker",
           "defaultPresets"
@@ -306,7 +306,7 @@
       "detail_url": "https://vuelix.dev/r/dial-picker.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dial-picker.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "DialPicker"
         ]
@@ -336,7 +336,7 @@
       "detail_url": "https://vuelix.dev/r/floating-input.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/floating-input.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "FloatingInput"
         ]
@@ -366,7 +366,7 @@
       "detail_url": "https://vuelix.dev/r/motion-select.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/motion-select.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "MotionSelect"
         ]
@@ -396,7 +396,7 @@
       "detail_url": "https://vuelix.dev/r/multi-select.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/multi-select.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "MultiSelect"
         ]
@@ -426,7 +426,7 @@
       "detail_url": "https://vuelix.dev/r/otp-input.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/otp-input.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "OtpInput"
         ]
@@ -456,7 +456,7 @@
       "detail_url": "https://vuelix.dev/r/radio-cards.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/radio-cards.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "RadioCards"
         ]
@@ -486,7 +486,7 @@
       "detail_url": "https://vuelix.dev/r/range-slider.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/range-slider.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "RangeSlider"
         ]
@@ -516,7 +516,7 @@
       "detail_url": "https://vuelix.dev/r/spring-checkbox.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-checkbox.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SpringCheckbox"
         ]
@@ -546,7 +546,7 @@
       "detail_url": "https://vuelix.dev/r/spring-switch.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-switch.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SpringSwitch"
         ]
@@ -576,7 +576,7 @@
       "detail_url": "https://vuelix.dev/r/wheel-picker.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/wheel-picker.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "WheelPicker",
           "WheelPickerGroup"
@@ -619,7 +619,7 @@
       "detail_url": "https://vuelix.dev/r/animated-tooltip.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/animated-tooltip.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "AnimatedTooltip"
         ]
@@ -649,7 +649,7 @@
       "detail_url": "https://vuelix.dev/r/bottom-sheet.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bottom-sheet.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "BottomSheet"
         ]
@@ -679,7 +679,7 @@
       "detail_url": "https://vuelix.dev/r/context-menu.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/context-menu.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ContextMenu"
         ]
@@ -717,7 +717,7 @@
       "detail_url": "https://vuelix.dev/r/expanding-modal.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expanding-modal.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ExpandingModal"
         ]
@@ -747,7 +747,7 @@
       "detail_url": "https://vuelix.dev/r/morphing-dialog.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/morphing-dialog.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "MorphingDialog"
         ]
@@ -777,7 +777,7 @@
       "detail_url": "https://vuelix.dev/r/spring-drawer.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-drawer.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SpringDrawer"
         ]
@@ -807,7 +807,7 @@
       "detail_url": "https://vuelix.dev/r/spring-popover.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-popover.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SpringPopover"
         ]
@@ -837,7 +837,7 @@
       "detail_url": "https://vuelix.dev/r/animated-tabs.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/animated-tabs.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "AnimatedTabs"
         ]
@@ -867,7 +867,7 @@
       "detail_url": "https://vuelix.dev/r/breadcrumbs.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/breadcrumbs.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Breadcrumbs"
         ]
@@ -897,7 +897,7 @@
       "detail_url": "https://vuelix.dev/r/dock.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dock.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Dock",
           "DockItem"
@@ -936,7 +936,7 @@
       "detail_url": "https://vuelix.dev/r/pagination.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/pagination.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Pagination"
         ]
@@ -966,7 +966,7 @@
       "detail_url": "https://vuelix.dev/r/spring-sidebar.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spring-sidebar.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SpringSidebar"
         ]
@@ -996,7 +996,7 @@
       "detail_url": "https://vuelix.dev/r/stepper.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/stepper.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Stepper"
         ]
@@ -1026,7 +1026,7 @@
       "detail_url": "https://vuelix.dev/r/aspect-ratio.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/aspect-ratio.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "AspectRatio"
         ]
@@ -1056,7 +1056,7 @@
       "detail_url": "https://vuelix.dev/r/aurora-background.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/aurora-background.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "AuroraBackground"
         ]
@@ -1086,7 +1086,7 @@
       "detail_url": "https://vuelix.dev/r/bouncy-accordion.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bouncy-accordion.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "BouncyAccordion"
         ]
@@ -1116,7 +1116,7 @@
       "detail_url": "https://vuelix.dev/r/collapsible.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/collapsible.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Collapsible"
         ]
@@ -1146,7 +1146,7 @@
       "detail_url": "https://vuelix.dev/r/hover-highlight.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/hover-highlight.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "HoverHighlight"
         ]
@@ -1176,7 +1176,7 @@
       "detail_url": "https://vuelix.dev/r/orbit-carousel.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/orbit-carousel.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "OrbitCarousel"
         ]
@@ -1210,7 +1210,7 @@
       "detail_url": "https://vuelix.dev/r/spotlight-card.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/spotlight-card.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SpotlightCard"
         ]
@@ -1240,7 +1240,7 @@
       "detail_url": "https://vuelix.dev/r/tilt-card.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/tilt-card.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "TiltCard"
         ]
@@ -1270,7 +1270,7 @@
       "detail_url": "https://vuelix.dev/r/marquee.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/marquee.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Marquee"
         ]
@@ -1300,7 +1300,7 @@
       "detail_url": "https://vuelix.dev/r/number-ticker.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/number-ticker.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "NumberTicker"
         ]
@@ -1330,7 +1330,7 @@
       "detail_url": "https://vuelix.dev/r/scroll-reveal.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/scroll-reveal.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ScrollProgress",
           "ScrollReveal"
@@ -1365,7 +1365,7 @@
       "detail_url": "https://vuelix.dev/r/text-reveal.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/text-reveal.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "TextReveal"
         ]
@@ -1395,7 +1395,7 @@
       "detail_url": "https://vuelix.dev/r/alert.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/alert.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Alert"
         ]
@@ -1426,7 +1426,7 @@
       "detail_url": "https://vuelix.dev/r/loader.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/loader.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Loader"
         ]
@@ -1456,7 +1456,7 @@
       "detail_url": "https://vuelix.dev/r/pull-to-refresh.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/pull-to-refresh.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "PullToRefresh"
         ]
@@ -1486,7 +1486,7 @@
       "detail_url": "https://vuelix.dev/r/toast-stack.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/toast-stack.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ToastStack",
           "toast",
@@ -1523,7 +1523,7 @@
       "detail_url": "https://vuelix.dev/r/avatar-group.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/avatar-group.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "AvatarGroup"
         ]
@@ -1553,7 +1553,7 @@
       "detail_url": "https://vuelix.dev/r/data-table.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/data-table.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "DataTable"
         ]
@@ -1591,7 +1591,7 @@
       "detail_url": "https://vuelix.dev/r/file-tree.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-tree.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "FileTree"
         ]
@@ -1633,7 +1633,7 @@
       "detail_url": "https://vuelix.dev/r/filmstrip.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/filmstrip.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Filmstrip"
         ]
@@ -1663,7 +1663,7 @@
       "detail_url": "https://vuelix.dev/r/lightbox.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/lightbox.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Lightbox"
         ]
@@ -1693,7 +1693,7 @@
       "detail_url": "https://vuelix.dev/r/motion-badge.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/motion-badge.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "MotionBadge"
         ]
@@ -1724,7 +1724,7 @@
       "detail_url": "https://vuelix.dev/r/sortable-list.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/sortable-list.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SortableList"
         ]
@@ -1754,7 +1754,7 @@
       "detail_url": "https://vuelix.dev/r/timeline.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/timeline.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Timeline"
         ]
@@ -1784,7 +1784,7 @@
       "detail_url": "https://vuelix.dev/r/action-bar.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/action-bar.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ActionBar"
         ]
@@ -1814,7 +1814,7 @@
       "detail_url": "https://vuelix.dev/r/auth-form.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/auth-form.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "AuthForm",
           "passwordStrength"
@@ -1853,7 +1853,7 @@
       "detail_url": "https://vuelix.dev/r/availability-picker.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/availability-picker.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "AvailabilityPicker",
           "dayMinutes"
@@ -1892,7 +1892,7 @@
       "detail_url": "https://vuelix.dev/r/card-fan.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/card-fan.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "CardFan"
         ]
@@ -1922,7 +1922,7 @@
       "detail_url": "https://vuelix.dev/r/command-palette.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/command-palette.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "CommandPalette",
           "highlightSegments",
@@ -1958,7 +1958,7 @@
       "detail_url": "https://vuelix.dev/r/dynamic-island.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dynamic-island.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "DynamicIsland"
         ]
@@ -1988,7 +1988,7 @@
       "detail_url": "https://vuelix.dev/r/expandable-tabs.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/expandable-tabs.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ExpandableTabs"
         ]
@@ -2018,7 +2018,7 @@
       "detail_url": "https://vuelix.dev/r/feedback-widget.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/feedback-widget.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "FeedbackWidget"
         ]
@@ -2048,7 +2048,7 @@
       "detail_url": "https://vuelix.dev/r/file-dropzone.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-dropzone.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "FileDropzone"
         ]
@@ -2078,7 +2078,7 @@
       "detail_url": "https://vuelix.dev/r/fluid-tabs.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/fluid-tabs.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "FluidTabs"
         ]
@@ -2108,7 +2108,7 @@
       "detail_url": "https://vuelix.dev/r/folder-stack.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/folder-stack.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "FolderStack"
         ]
@@ -2138,7 +2138,7 @@
       "detail_url": "https://vuelix.dev/r/masonry-grid.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/masonry-grid.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "MasonryGrid"
         ]
@@ -2168,7 +2168,7 @@
       "detail_url": "https://vuelix.dev/r/match-fixtures.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/match-fixtures.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "MatchFixtures"
         ]
@@ -2206,7 +2206,7 @@
       "detail_url": "https://vuelix.dev/r/morphing-search.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/morphing-search.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "MorphingSearch"
         ]
@@ -2236,7 +2236,7 @@
       "detail_url": "https://vuelix.dev/r/not-found.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/not-found.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "NotFound"
         ]
@@ -2270,7 +2270,7 @@
       "detail_url": "https://vuelix.dev/r/notification-center.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/notification-center.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "NotificationCenter"
         ]
@@ -2300,7 +2300,7 @@
       "detail_url": "https://vuelix.dev/r/odds-card.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/odds-card.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "OddsCard"
         ]
@@ -2334,7 +2334,7 @@
       "detail_url": "https://vuelix.dev/r/overflow-toolbar.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/overflow-toolbar.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "OverflowToolbar"
         ]
@@ -2364,7 +2364,7 @@
       "detail_url": "https://vuelix.dev/r/radial-menu.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/radial-menu.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "RadialMenu"
         ]
@@ -2394,7 +2394,7 @@
       "detail_url": "https://vuelix.dev/r/swipe-actions.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/swipe-actions.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SwipeActions"
         ]
@@ -2432,7 +2432,7 @@
       "detail_url": "https://vuelix.dev/r/token-swap.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/token-swap.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "TokenSwap"
         ]
@@ -2474,7 +2474,7 @@
       "detail_url": "https://vuelix.dev/r/wallet-card.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/wallet-card.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "WalletCard"
         ]
@@ -2508,7 +2508,7 @@
       "detail_url": "https://vuelix.dev/r/agent-activity.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/agent-activity.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "AgentActivity"
         ]
@@ -2538,7 +2538,7 @@
       "detail_url": "https://vuelix.dev/r/approval-card.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/approval-card.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ApprovalCard"
         ]
@@ -2568,7 +2568,7 @@
       "detail_url": "https://vuelix.dev/r/chat-app.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-app.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ChatApp"
         ]
@@ -2602,7 +2602,7 @@
       "detail_url": "https://vuelix.dev/r/chat-message.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-message.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ChatBubble",
           "ChatMessage"
@@ -2637,7 +2637,7 @@
       "detail_url": "https://vuelix.dev/r/chat-scroller.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chat-scroller.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ChatScroller"
         ]
@@ -2667,7 +2667,7 @@
       "detail_url": "https://vuelix.dev/r/citations.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/citations.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "CitationChip",
           "Citations"
@@ -2710,7 +2710,7 @@
       "detail_url": "https://vuelix.dev/r/code-block.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/code-block.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "CodeBlock"
         ]
@@ -2740,7 +2740,7 @@
       "detail_url": "https://vuelix.dev/r/conversation-sidebar.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/conversation-sidebar.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ConversationSidebar"
         ]
@@ -2770,7 +2770,7 @@
       "detail_url": "https://vuelix.dev/r/file-diff.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/file-diff.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "FileDiff",
           "parseUnifiedDiff"
@@ -2805,7 +2805,7 @@
       "detail_url": "https://vuelix.dev/r/image-generation.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/image-generation.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ImageGeneration"
         ]
@@ -2835,7 +2835,7 @@
       "detail_url": "https://vuelix.dev/r/model-picker.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/model-picker.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ModelPicker"
         ]
@@ -2865,7 +2865,7 @@
       "detail_url": "https://vuelix.dev/r/prompt-input.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/prompt-input.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "PromptInput"
         ]
@@ -2895,7 +2895,7 @@
       "detail_url": "https://vuelix.dev/r/streaming-text.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/streaming-text.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "StreamingText",
           "createTextStream",
@@ -2935,7 +2935,7 @@
       "detail_url": "https://vuelix.dev/r/suggestion-chips.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/suggestion-chips.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SuggestionChips"
         ]
@@ -2965,7 +2965,7 @@
       "detail_url": "https://vuelix.dev/r/task-list.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/task-list.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "TaskList"
         ]
@@ -2995,7 +2995,7 @@
       "detail_url": "https://vuelix.dev/r/thinking-indicator.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/thinking-indicator.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ThinkingIndicator"
         ]
@@ -3025,7 +3025,7 @@
       "detail_url": "https://vuelix.dev/r/tool-call.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/tool-call.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ToolCall"
         ]
@@ -3055,7 +3055,7 @@
       "detail_url": "https://vuelix.dev/r/voice-orb.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/voice-orb.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "VoiceOrb"
         ]
@@ -3085,7 +3085,7 @@
       "detail_url": "https://vuelix.dev/r/bar-chart.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bar-chart.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "BarChart"
         ]
@@ -3121,7 +3121,7 @@
       "detail_url": "https://vuelix.dev/r/bump-chart.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/bump-chart.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "BumpChart"
         ]
@@ -3157,7 +3157,7 @@
       "detail_url": "https://vuelix.dev/r/candlestick-chart.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/candlestick-chart.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "CandlestickChart"
         ]
@@ -3191,7 +3191,7 @@
       "detail_url": "https://vuelix.dev/r/depth-heatmap.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/depth-heatmap.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "DepthHeatmap"
         ]
@@ -3225,7 +3225,7 @@
       "detail_url": "https://vuelix.dev/r/donut-chart.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/donut-chart.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "DonutChart"
         ]
@@ -3262,7 +3262,7 @@
       "detail_url": "https://vuelix.dev/r/forecast-fan.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/forecast-fan.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ForecastFan"
         ]
@@ -3296,7 +3296,7 @@
       "detail_url": "https://vuelix.dev/r/funnel-chart.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/funnel-chart.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "FunnelChart"
         ]
@@ -3333,7 +3333,7 @@
       "detail_url": "https://vuelix.dev/r/heat-calendar.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/heat-calendar.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "HeatCalendar"
         ]
@@ -3369,7 +3369,7 @@
       "detail_url": "https://vuelix.dev/r/line-chart.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/line-chart.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "LineChart"
         ]
@@ -3405,7 +3405,7 @@
       "detail_url": "https://vuelix.dev/r/order-book.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/order-book.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "OrderBook"
         ]
@@ -3439,7 +3439,7 @@
       "detail_url": "https://vuelix.dev/r/returns-calendar.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/returns-calendar.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ReturnsCalendar"
         ]
@@ -3473,7 +3473,7 @@
       "detail_url": "https://vuelix.dev/r/sankey-chart.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/sankey-chart.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "SankeyChart"
         ]
@@ -3507,7 +3507,7 @@
       "detail_url": "https://vuelix.dev/r/sparkline.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/sparkline.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Sparkline"
         ]
@@ -3537,7 +3537,7 @@
       "detail_url": "https://vuelix.dev/r/stacked-area.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/stacked-area.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "StackedArea"
         ]
@@ -3571,7 +3571,7 @@
       "detail_url": "https://vuelix.dev/r/status-history.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/status-history.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "StatusHistory"
         ]
@@ -3608,7 +3608,7 @@
       "detail_url": "https://vuelix.dev/r/treemap.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/treemap.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "Treemap",
           "squarify"
@@ -3649,7 +3649,7 @@
       "detail_url": "https://vuelix.dev/r/volume-profile.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/volume-profile.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "VolumeProfile"
         ]
@@ -3683,7 +3683,7 @@
       "detail_url": "https://vuelix.dev/r/chart-utils.json",
       "install": "npx shadcn-vue@latest add https://vuelix.dev/r/chart-utils.json",
       "npm": {
-        "package": "vuelix",
+        "package": "@vuelix/ui",
         "imports": [
           "ChartTooltip",
           "areaPath",

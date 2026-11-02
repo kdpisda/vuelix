@@ -9,8 +9,8 @@
     "preview": "vitepress preview docs",
     "registry:build": "node scripts/build-registry.mjs",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",
-    "build:package": "pnpm --filter vuelix build",
-    "pack:package": "pnpm --filter vuelix pack"
+    "build:package": "pnpm --filter @vuelix/ui build",
+    "pack:package": "pnpm --filter @vuelix/ui pack"
   },
   "dependencies": {
     "@vueuse/core": "^15.0.0",

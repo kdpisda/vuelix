@@ -9,7 +9,8 @@
       "Blocks: command palette, dynamic island, morphing search, action bar, notification center, file dropzone, auth form, token swap, wallet card, card fan, radial menu, 404 and more",
       "AI: chat app, chat message and scroller, prompt input, streaming text, tool calls, approvals, file diffs, citations, agent activity, voice orb and model picker",
       "Charts: line, bar, donut, funnel, treemap, sankey, candlestick, order book, heat calendar, stacked area, forecast fan and more, all hand-rolled SVG with no chart library",
-      "Cross-component imports now use @/components/ui/<name>, so items with dependencies resolve after a CLI install"
+      "Cross-component imports now use @/components/ui/<name>, so items with dependencies resolve after a CLI install",
+      "The npm package is published as @vuelix/ui: npm install @vuelix/ui motion-v"
     ]
   },
   {
@@ -20,7 +21,7 @@
     "items": [
       "15 components across buttons, inputs, overlays, navigation, surfaces, text, feedback and charts",
       "shadcn-vue compatible registry: npx shadcn-vue add https://vuelix.dev/r/<name>.json",
-      "The vuelix npm package with tree-shakeable ESM, types and a one-line Tailwind setup",
+      "The @vuelix/ui npm package with tree-shakeable ESM, types and a one-line Tailwind setup",
       "Agent-friendly endpoints: llms.txt, /r catalogue, raw sources and an MCP server at /mcp",
       "Docs at vuelix.dev with live previews, light and dark themes"
     ]

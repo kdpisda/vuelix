@@ -83,7 +83,7 @@ Components use shadcn-vue's semantic tokens (`bg-primary`, `text-muted-foregroun
   "page_url": "https://vuelix.dev/components/dock",
   "detail_url": "https://vuelix.dev/r/dock.json",
   "install": "npx shadcn-vue@latest add https://vuelix.dev/r/dock.json",
-  "npm": { "package": "vuelix", "imports": ["Dock", "DockItem"] },
+  "npm": { "package": "@vuelix/ui", "imports": ["Dock", "DockItem"] },
   "dependencies": ["motion-v"],
   "files": [
     { "path": "components/ui/dock/Dock.vue", "raw_url": "https://vuelix.dev/r/raw/dock/Dock.vue" }

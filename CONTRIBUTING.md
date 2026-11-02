@@ -1,7 +1,7 @@
 # Contributing a component
 
 vuelix ships every component two ways — as copy-paste source (shadcn-vue registry) and as the
-`vuelix` npm package — both built from the same files in `registry/ui/<name>/`. This guide is the
+`@vuelix/ui` npm package — both built from the same files in `registry/ui/<name>/`. This guide is the
 contract every component follows. Read an existing component first; `registry/ui/animated-tabs`,
 `registry/ui/toast-stack` and `registry/ui/sparkline` are good references.
 

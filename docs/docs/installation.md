@@ -8,7 +8,7 @@ There are two ways to use vuelix. Pick whichever fits. You can mix them, too.
 
 | | Copy source (CLI) | npm package |
 | --- | --- | --- |
-| Install | `shadcn-vue add …` | `npm install vuelix` |
+| Install | `shadcn-vue add …` | `npm install @vuelix/ui` |
 | Code lives in | your repo (`components/ui/…`) | `node_modules` |
 | Customise | edit anything | props + `class` |
 | Updates | re-run the CLI | bump the version |
@@ -16,14 +16,14 @@ There are two ways to use vuelix. Pick whichever fits. You can mix them, too.
 ## npm package
 
 ```bash
-npm install vuelix motion-v
+npm install @vuelix/ui motion-v
 ```
 
 Requires **Tailwind CSS v4**. Add one line to your CSS entry, after Tailwind:
 
 ```css
 @import "tailwindcss";
-@import "vuelix/tailwind.css";
+@import "@vuelix/ui/tailwind.css";
 ```
 
 This tells Tailwind to scan vuelix's components for class names and adds default theme tokens. If you already have a shadcn-vue theme, yours wins automatically.
@@ -32,7 +32,7 @@ Import what you need (tree-shakeable):
 
 ```vue
 <script setup lang="ts">
-import { SpringButton, toast, ToastStack } from 'vuelix'
+import { SpringButton, toast, ToastStack } from '@vuelix/ui'
 </script>
 
 <template>
@@ -44,7 +44,7 @@ import { SpringButton, toast, ToastStack } from 'vuelix'
 Or register everything globally:
 
 ```ts
-import { Vuelix } from 'vuelix'
+import { Vuelix } from '@vuelix/ui'
 
 app.use(Vuelix)                   // <SpringButton />
 app.use(Vuelix, { prefix: 'Vx' }) // <VxSpringButton />

@@ -88,7 +88,7 @@ const TOOLS = [
   {
     name: 'get_install_command',
     title: 'Get install command',
-    description: 'Get the command to add a component, either as copy-paste source (shadcn-vue CLI) or from the vuelix npm package.',
+    description: 'Get the command to add a component, either as copy-paste source (shadcn-vue CLI) or from the @vuelix/ui npm package.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -189,7 +189,7 @@ async function callTool(ctx: Ctx, name: string, args: Record<string, any> = {}) 
       const out = {
         ...summary(item),
         dependencies: item.dependencies,
-        install: { source: item.install, npm: `npm install vuelix motion-v  # then: import { ${item.npm.imports.join(', ')} } from 'vuelix'` },
+        install: { source: item.install, npm: `npm install @vuelix/ui motion-v  # then: import { ${item.npm.imports.join(', ')} } from '@vuelix/ui'` },
         notes: 'Files import `cn` from "@/lib/utils" (clsx + tailwind-merge). Requires Tailwind CSS v4 and shadcn-vue style CSS variables.',
         files,
       }
@@ -201,9 +201,9 @@ async function callTool(ctx: Ctx, name: string, args: Record<string, any> = {}) 
       if (args.method === 'npm') {
         const add = { pnpm: 'pnpm add', npm: 'npm install', yarn: 'yarn add', bun: 'bun add' }[pm]
         const out = {
-          command: `${add} vuelix motion-v`,
-          css: '@import "tailwindcss";\n@import "vuelix/tailwind.css";',
-          import: `import { ${item.npm.imports.join(', ')} } from 'vuelix'`,
+          command: `${add} @vuelix/ui motion-v`,
+          css: '@import "tailwindcss";\n@import "@vuelix/ui/tailwind.css";',
+          import: `import { ${item.npm.imports.join(', ')} } from '@vuelix/ui'`,
         }
         return text(out, out)
       }

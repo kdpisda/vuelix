@@ -115,7 +115,7 @@ gtag('config', 'G-1097SSK6TJ');`],
       .map(c => `- [${c.title}](${SITE}${c.url}): ${c.description} Source: ${SITE}/r/${c.name}.json`).join('\n')
     const llms = `# vuelix
 
-> Animated, copy-paste components for Vue 3 & Nuxt, built on Tailwind CSS v4 and motion-v. Install copy-paste source with \`npx shadcn-vue@latest add ${SITE}/r/<slug>.json\`, or use the \`vuelix\` npm package (\`npm install vuelix motion-v\`, then \`@import "vuelix/tailwind.css";\`).
+> Animated, copy-paste components for Vue 3 & Nuxt, built on Tailwind CSS v4 and motion-v. Install copy-paste source with \`npx shadcn-vue@latest add ${SITE}/r/<slug>.json\`, or use the \`@vuelix/ui\` npm package (\`npm install @vuelix/ui motion-v\`, then \`@import "@vuelix/ui/tailwind.css";\`).
 
 Components use shadcn-vue theme tokens (bg-primary, text-muted-foreground, border, …) so they inherit the app's theme. A JSON catalogue of everything is at ${SITE}/r and an MCP server at ${SITE}/mcp.
 
