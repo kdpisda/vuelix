@@ -4,8 +4,8 @@
   "type": "module",
   "packageManager": "pnpm@10.28.0",
   "scripts": {
-    "dev": "pnpm registry:build && vitepress dev docs",
-    "build": "pnpm registry:build && NODE_OPTIONS=--max-old-space-size=6144 vitepress build docs",
+    "dev": "node scripts/sync-pro.mjs && pnpm registry:build && vitepress dev docs",
+    "build": "node scripts/sync-pro.mjs && pnpm registry:build && NODE_OPTIONS=--max-old-space-size=6144 vitepress build docs",
     "preview": "vitepress preview docs",
     "registry:build": "node scripts/build-registry.mjs",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json",

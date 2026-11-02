@@ -16,6 +16,9 @@ hero:
 
 <script setup>
 import HomeShowcase from './.vitepress/theme/components/HomeShowcase.vue'
+import ProTeaser from './.vitepress/theme/components/ProTeaser.vue'
 </script>
 
 <HomeShowcase />
+
+<ProTeaser />

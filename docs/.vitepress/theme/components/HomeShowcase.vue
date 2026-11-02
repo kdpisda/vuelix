@@ -122,7 +122,7 @@ const people = [
       <p class="mx-auto mt-3 max-w-xl text-muted-foreground">
         {{ catalog.length }} components and counting. Each one is a single command away, and the code is yours.
       </p>
-      <pre class="mx-auto mt-6 inline-block rounded-xl border bg-muted px-5 py-3 text-left font-mono text-sm">npx shadcn-vue@latest add @vuelix/dock</pre>
+      <pre class="mx-auto mt-6 inline-block max-w-full overflow-x-auto rounded-xl border bg-muted px-5 py-3 text-left font-mono text-xs sm:text-sm">npx shadcn-vue@latest add @vuelix/dock</pre>
     </div>
 
     <ToastStack />
