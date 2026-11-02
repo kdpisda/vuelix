@@ -1,5 +1,5 @@
 {
-  "name": "vuelix",
+  "name": "@vuelix/ui",
   "version": "0.2.0",
   "description": "Animated components for Vue 3 & Nuxt, built on Tailwind CSS and Motion.",
   "license": "MIT",

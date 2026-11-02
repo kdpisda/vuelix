@@ -22,9 +22,9 @@ const copied = ref(false)
 const pascal = computed(() => props.name.split('-').map(p => p[0]!.toUpperCase() + p.slice(1)).join(''))
 const command = computed(() => mode.value === 'cli'
   ? `${runner[pm.value]} shadcn-vue@latest add ${REGISTRY_URL}/${props.name}.json`
-  : `${adder[pm.value]} vuelix motion-v`)
+  : `${adder[pm.value]} @vuelix/ui motion-v`)
 const exportsFor = computed(() => props.imports ?? catalog.find(c => c.name === props.name)?.exports ?? [pascal.value])
-const importLine = computed(() => `import { ${exportsFor.value.join(', ')} } from 'vuelix'`)
+const importLine = computed(() => `import { ${exportsFor.value.join(', ')} } from '@vuelix/ui'`)
 
 async function copy() {
   await navigator.clipboard.writeText(command.value)
@@ -69,7 +69,7 @@ async function copy() {
       <pre class="m-0 overflow-x-auto px-4 py-3.5 font-mono text-[13px] leading-6 text-[var(--vp-code-block-color)]"><code>{{ command }}</code></pre>
     </div>
     <p v-if="mode === 'package'" class="mt-2 text-sm text-muted-foreground">
-      Add <code class="rounded bg-muted px-1 py-0.5 text-[13px]">@import "vuelix/tailwind.css";</code> after
+      Add <code class="rounded bg-muted px-1 py-0.5 text-[13px]">@import "@vuelix/ui/tailwind.css";</code> after
       <code class="rounded bg-muted px-1 py-0.5 text-[13px]">@import "tailwindcss";</code>, then
       <code class="rounded bg-muted px-1 py-0.5 text-[13px]">{{ importLine }}</code>.
       <a href="/docs/installation#npm-package" class="text-brand underline-offset-2 hover:underline">More</a>

@@ -7,14 +7,14 @@ Animated components for **Vue 3** and **Nuxt**, built on Tailwind CSS v4 and [Mo
 ## Install
 
 ```bash
-npm install vuelix motion-v
+npm install @vuelix/ui motion-v
 ```
 
 Add one line to your Tailwind CSS entry (Tailwind v4):
 
 ```css
 @import "tailwindcss";
-@import "vuelix/tailwind.css";
+@import "@vuelix/ui/tailwind.css";
 ```
 
 That registers the components' class names with Tailwind and adds default theme tokens. If you already use shadcn-vue, your existing theme wins automatically.
@@ -23,7 +23,7 @@ That registers the components' class names with Tailwind and adds default theme 
 
 ```vue
 <script setup lang="ts">
-import { SpringButton, toast, ToastStack } from 'vuelix'
+import { SpringButton, toast, ToastStack } from '@vuelix/ui'
 </script>
 
 <template>
@@ -35,7 +35,7 @@ import { SpringButton, toast, ToastStack } from 'vuelix'
 Or register everything globally:
 
 ```ts
-import { Vuelix } from 'vuelix'
+import { Vuelix } from '@vuelix/ui'
 
 app.use(Vuelix)                   // <SpringButton />
 app.use(Vuelix, { prefix: 'Vx' }) // <VxSpringButton />
